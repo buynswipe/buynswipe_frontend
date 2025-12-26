@@ -328,6 +328,116 @@ export default function CreditCardPage() {
           </div>
         </section>
 
+        {/* Featured Affiliate Credit Cards Section */}
+        <section className="py-16 bg-gradient-to-br from-pink-50 to-purple-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Top Rated Affiliate Credit Cards</h2>
+              <p className="text-xl text-gray-600">Exclusive offers from our trusted credit card partners</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "Axis Flipkart Credit Card",
+                  bank: "Axis Bank",
+                  fee: "₹500 (waivable)",
+                  benefits: ["7.5% Flipkart Cashback", "5% Cleartrip", "4% Swiggy/Uber"],
+                  cashback: "Up to 7.5%",
+                  link: "https://bitli.in/bjbj87N",
+                },
+                {
+                  name: "SBI Cashback Credit Card",
+                  bank: "SBI Card",
+                  fee: "₹999 (waivable)",
+                  benefits: ["5% Online Cashback", "1% Offline", "Auto-credited"],
+                  cashback: "Up to 5%",
+                  link: "https://bitli.in/H1FTrl7",
+                },
+                {
+                  name: "IDFC First Credit Card",
+                  bank: "IDFC Bank",
+                  fee: "Lifetime FREE",
+                  benefits: ["Never Expiring Rewards", "Railway Lounge", "₹500 Welcome"],
+                  cashback: "Never Expires",
+                  link: "https://bitli.in/Jj79KD4",
+                },
+                {
+                  name: "Axis MyZone Visa Card",
+                  bank: "Axis Bank",
+                  fee: "Lifetime FREE",
+                  benefits: ["Buy 1 Get 1 Movies", "₹2,880 Swiggy", "Lounge Access"],
+                  cashback: "4 Edge Points",
+                  link: "https://bitli.in/F129erC",
+                },
+                {
+                  name: "Axis IOCL Rupay Card",
+                  bank: "Axis Bank",
+                  fee: "₹500 (waivable)",
+                  benefits: ["4% IOCL Fuel", "1% Surcharge Waiver", "15% Dining"],
+                  cashback: "Up to 4%",
+                  link: "https://bitli.in/jk4HHOI",
+                },
+                {
+                  name: "IDFC First Power Card",
+                  bank: "IDFC Bank",
+                  fee: "₹199 (waivable)",
+                  benefits: ["3.5% Fuel Savings", "Roadside Assistance", "₹250 Welcome"],
+                  cashback: "Up to 3.5%",
+                  link: "https://bitli.in/Wnh6FzN",
+                },
+              ].map((card) => (
+                <Card key={card.name} className="hover:shadow-xl transition-all">
+                  <CardHeader>
+                    <div className="flex justify-between items-start mb-2">
+                      <div>
+                        <CardTitle className="text-lg">{card.name}</CardTitle>
+                        <CardDescription>{card.bank}</CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4 py-3 border-y">
+                        <div>
+                          <p className="text-sm text-gray-600">Annual Fee</p>
+                          <p className="font-bold text-purple-600">{card.fee}</p>
+                        </div>
+                        <div>
+                          <p className="text-sm text-gray-600">Cashback</p>
+                          <p className="font-bold text-green-600">{card.cashback}</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium mb-2">Top Benefits:</p>
+                        <ul className="space-y-1">
+                          {card.benefits.map((benefit) => (
+                            <li key={benefit} className="text-sm text-gray-600 flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4 text-green-600" />
+                              {benefit}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
+                        <Link href={card.link} target="_blank" rel="noopener noreferrer">
+                          Apply Now
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Button asChild size="lg" variant="outline">
+                <Link href="/credit/affiliate-credit-cards">View All 15+ Credit Cards</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Card Categories */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -386,15 +496,12 @@ export default function CreditCardPage() {
               {topCards.map((card) => (
                 <Card key={card.name} className="hover:shadow-xl transition-all">
                   <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="secondary">{card.highlight}</Badge>
-                      <div className="flex items-center gap-1">
-                        <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                        <span className="font-medium">{card.rating}</span>
+                    <div className="flex justify-between items-start mb-2">
+                      <div>
+                        <CardTitle className="text-lg">{card.name}</CardTitle>
+                        <CardDescription>{card.bank}</CardDescription>
                       </div>
                     </div>
-                    <CardTitle className="text-lg">{card.name}</CardTitle>
-                    <CardDescription>{card.bank}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
@@ -504,6 +611,127 @@ export default function CreditCardPage() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Credit Cards from Top Banks */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+                Featured Credit Cards from Top Banks
+              </h2>
+              <p className="text-gray-600 text-center max-w-2xl mx-auto">
+                Apply for premium credit cards with exclusive benefits and rewards
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Axis Flipkart Card */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">AXIS</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Axis Flipkart Card</h3>
+                    <p className="text-sm text-gray-500">Annual Fee: ₹0 (Lifetime)</p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4 text-sm">
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    5% cashback on Flipkart & Amazon
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    1% cashback on other purchases
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    Instant activation
+                  </div>
+                </div>
+                <a
+                  href="https://www.axisbank.com/credit-cards/flipkart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
+
+              {/* SBI Cashback Card */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">SBI</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">SBI SimpliClick Card</h3>
+                    <p className="text-sm text-gray-500">Annual Fee: ₹499</p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4 text-sm">
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                    10% cashback on online shopping
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                    5% cashback on utility bills
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                    Fuel surcharge waiver
+                  </div>
+                </div>
+                <a
+                  href="https://www.sbicard.com/en/personal/cards/credit-cards/simplishopping.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
+
+              {/* HDFC MoneyBack Card */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">HDFC</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">HDFC MoneyBack Card</h3>
+                    <p className="text-sm text-gray-500">Annual Fee: ₹500</p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4 text-sm">
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+                    5% cashback on grocery
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+                    2.5% on dining
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+                    Complimentary airport lounge
+                  </div>
+                </div>
+                <a
+                  href="https://www.hdfcbank.com/credit-cards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
             </div>
           </div>
         </section>

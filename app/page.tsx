@@ -40,20 +40,44 @@ export default function BuyNswipeLanding() {
               For Sale
             </Badge>
           </div>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+          <nav className="hidden lg:flex space-x-1">
+            <Link href="/" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Home
+            </Link>
+            <Link href="#about" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
               About
             </Link>
-            <Link href="#assets" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Assets
+            <Link
+              href="/credit"
+              className="px-3 py-2 text-emerald-600 hover:text-emerald-700 font-semibold transition-colors"
+            >
+              Credit
             </Link>
-            <Link href="/credit" className="text-emerald-600 hover:text-emerald-700 font-semibold transition-colors">
-              BuyNswipe Credit
+            <Link
+              href="/payment-solutions"
+              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
+            >
+              Payment Solutions
             </Link>
-            <Link href="#funding" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Funding
+            <Link
+              href="/solutions"
+              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
+            >
+              Solutions
             </Link>
-            <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link
+              href="/resources"
+              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
+            >
+              Resources
+            </Link>
+            <Link href="/blog" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="px-3 py-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+            >
               Contact
             </Link>
           </nav>
@@ -972,7 +996,7 @@ export default function BuyNswipeLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-gray-900 text-gray-300">
+      {/* <footer className="py-8 px-4 bg-gray-900 text-gray-300">
         <div className="container mx-auto text-center">
           <p className="text-sm">
             BuyNswipe Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially Recognized
@@ -980,6 +1004,256 @@ export default function BuyNswipeLanding() {
           <p className="text-xs mt-2 text-gray-400">
             All trademarks, domains, and digital assets included in asset sale.
           </p>
+        </div>
+      </footer> */}
+
+      {/* Added comprehensive footer with links to all major sections */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            {/* Brand */}
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">B</span>
+                </div>
+                <span className="text-lg font-bold">BuyNswipe</span>
+              </div>
+              <p className="text-gray-400 text-sm">
+                Pre-funded, govt-recognized fintech SaaS startup for strategic acquisition.
+              </p>
+            </div>
+
+            {/* Credit Products */}
+            <div>
+              <h4 className="font-semibold mb-4 text-blue-400">Credit Products</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/credit" className="hover:text-white transition-colors">
+                    Credit Marketplace
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/personal-loan" className="hover:text-white transition-colors">
+                    Personal Loan
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/business-loan" className="hover:text-white transition-colors">
+                    Business Loan
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/credit-card" className="hover:text-white transition-colors">
+                    Credit Card
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/home-loan" className="hover:text-white transition-colors">
+                    Home Loan
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/bnpl" className="hover:text-white transition-colors">
+                    Buy Now Pay Later
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Payment Solutions */}
+            <div>
+              <h4 className="font-semibold mb-4 text-emerald-400">Payment Solutions</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/payment-solutions" className="hover:text-white transition-colors">
+                    Payment Hub
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/payment-solutions/pos-systems" className="hover:text-white transition-colors">
+                    POS Systems
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/payment-solutions/digital-payments" className="hover:text-white transition-colors">
+                    Digital Payments
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/payment-solutions/merchant-services" className="hover:text-white transition-colors">
+                    Merchant Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/aeps" className="hover:text-white transition-colors">
+                    AEPS
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div>
+              <h4 className="font-semibold mb-4 text-purple-400">Company</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/about" className="hover:text-white transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-white transition-colors">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/pricing" className="hover:text-white transition-colors">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/security-compliance" className="hover:text-white transition-colors">
+                    Security
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/press" className="hover:text-white transition-colors">
+                    Press
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Second Row */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            {/* Solutions */}
+            <div>
+              <h4 className="font-semibold mb-4 text-indigo-400">Industry Solutions</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/solutions" className="hover:text-white transition-colors">
+                    All Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/solutions/restaurants" className="hover:text-white transition-colors">
+                    Restaurants
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/solutions/retail" className="hover:text-white transition-colors">
+                    Retail
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/solutions/ecommerce" className="hover:text-white transition-colors">
+                    E-commerce
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources & Learning */}
+            <div>
+              <h4 className="font-semibold mb-4 text-blue-400">Learning Hub</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/resources" className="hover:text-white transition-colors">
+                    Resources
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" className="hover:text-white transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/case-studies" className="hover:text-white transition-colors">
+                    Case Studies
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/testimonials" className="hover:text-white transition-colors">
+                    Testimonials
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Developers */}
+            <div>
+              <h4 className="font-semibold mb-4 text-green-400">Developers</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/api-docs" className="hover:text-white transition-colors">
+                    API Documentation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/integrations" className="hover:text-white transition-colors">
+                    Integrations
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/partnerships" className="hover:text-white transition-colors">
+                    Partnerships
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/support" className="hover:text-white transition-colors">
+                    Support
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Tools */}
+            <div>
+              <h4 className="font-semibold mb-4 text-pink-400">Financial Tools</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <Link href="/credit/emi-calculator" className="hover:text-white transition-colors">
+                    EMI Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/cibil-score" className="hover:text-white transition-colors">
+                    CIBIL Score Check
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/credit/eligibility-checker" className="hover:text-white transition-colors">
+                    Eligibility Checker
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq" className="hover:text-white transition-colors">
+                    FAQ
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Legal */}
+          <div className="border-t border-gray-700 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm">© 2025 BuyNswipe Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
+              <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
+                <a href="#" className="hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:text-white transition-colors">
+                  Terms of Service
+                </a>
+                <a href="#" className="hover:text-white transition-colors">
+                  Cookie Policy
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

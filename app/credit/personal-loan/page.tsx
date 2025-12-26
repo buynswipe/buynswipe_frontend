@@ -287,6 +287,84 @@ export default function PersonalLoanPage() {
           </div>
         </section>
 
+        {/* Featured Affiliate Loans Section */}
+        <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Top Rated Affiliate Personal Loans</h2>
+              <p className="text-xl text-gray-600">Exclusive offers from our trusted lending partners</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "HDFC Instant Loan",
+                  amount: "₹15 Lakh",
+                  rate: "10.88%",
+                  benefits: ["Instant Disbursal", "100% Digital", "Pre-approved"],
+                  link: "https://bitli.in/1PSoadc",
+                },
+                {
+                  name: "Bajaj Finserv Personal Loan",
+                  amount: "₹55 Lakh",
+                  rate: "11%",
+                  benefits: ["High Loan Amount", "Flexible Tenure", "Quick Approval"],
+                  link: "https://bitli.in/l2EMs89",
+                },
+                {
+                  name: "Axis Bank Personal Loan",
+                  amount: "₹40 Lakh",
+                  rate: "9.99%",
+                  benefits: ["Lowest Rates", "Quick Disbursal", "Balance Transfer"],
+                  link: "https://bitli.in/WYqqsOe",
+                },
+              ].map((loan) => (
+                <Card key={loan.name} className="hover:shadow-xl transition-all">
+                  <CardHeader>
+                    <CardTitle>{loan.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-sm text-gray-600">Loan Amount</p>
+                          <p className="font-bold text-blue-600">{loan.amount}</p>
+                        </div>
+                        <div>
+                          <p className="text-sm text-gray-600">Interest Rate</p>
+                          <p className="font-bold text-green-600">{loan.rate}</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium mb-2">Key Benefits:</p>
+                        <ul className="space-y-1">
+                          {loan.benefits.map((benefit) => (
+                            <li key={benefit} className="text-sm text-gray-600 flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4 text-green-600" />
+                              {benefit}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <Button asChild className="w-full bg-green-600 hover:bg-green-700">
+                        <Link href={loan.link} target="_blank" rel="noopener noreferrer">
+                          Apply Now
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Button asChild size="lg" variant="outline">
+                <Link href="/credit/affiliate-loans">View All Affiliate Loans</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Features Grid */}
         <section className="py-16 -mt-8">
           <div className="container mx-auto px-4">
@@ -382,6 +460,127 @@ export default function PersonalLoanPage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+        </section>
+
+        {/* Top Affiliate Personal Loan Products Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+                Popular Personal Loans from Top Lenders
+              </h2>
+              <p className="text-gray-600 text-center max-w-2xl mx-auto">
+                Compare and apply for personal loans from India's leading financial institutions
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* HDFC Instant Loan */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">HDFC</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">HDFC Bank Instant Loan</h3>
+                    <p className="text-sm text-gray-500">Up to ₹25 Lakhs</p>
+                  </div>
+                </div>
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Interest Rate</span>
+                    <span className="font-semibold">10.49% - 20% p.a.</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Tenure</span>
+                    <span className="font-semibold">12-60 months</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Approval</span>
+                    <span className="font-semibold">24-48 hours</span>
+                  </div>
+                </div>
+                <a
+                  href="https://www.hdfc.com/personal-loan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
+
+              {/* Bajaj Personal Loan */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">BAJ</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Bajaj Finance Personal Loan</h3>
+                    <p className="text-sm text-gray-500">Up to ₹40 Lakhs</p>
+                  </div>
+                </div>
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Interest Rate</span>
+                    <span className="font-semibold">11% - 19% p.a.</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Tenure</span>
+                    <span className="font-semibold">12-60 months</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Approval</span>
+                    <span className="font-semibold">Instant</span>
+                  </div>
+                </div>
+                <a
+                  href="https://www.bajajfinserv.in/personal-loan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
+
+              {/* ICICI Personal Loan */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">ICICI</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">ICICI Bank Personal Loan</h3>
+                    <p className="text-sm text-gray-500">Up to ₹30 Lakhs</p>
+                  </div>
+                </div>
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Interest Rate</span>
+                    <span className="font-semibold">10.75% - 18% p.a.</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Tenure</span>
+                    <span className="font-semibold">12-60 months</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Approval</span>
+                    <span className="font-semibold">30 minutes</span>
+                  </div>
+                </div>
+                <a
+                  href="https://www.icicibank.com/personal-loan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 rounded-lg text-center transition"
+                >
+                  Apply Now →
+                </a>
+              </div>
             </div>
           </div>
         </section>
