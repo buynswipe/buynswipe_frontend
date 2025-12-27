@@ -67,12 +67,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/case-studies/retail-store-success", priority: 0.7, changeFrequency: "monthly" as const },
   ]
 
+  const blogPages = [
+    { url: "/blog", priority: 0.8, changeFrequency: "weekly" as const },
+    // Credit Card Blog Posts
+    { url: "/blog/what-is-credit-card", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-activate-credit-card", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/zero-percent-interest-credit-card", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-advantages-disadvantages", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-charges-and-fees", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-apply-credit-card", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-eligibility-requirements", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/best-credit-cards-by-category", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-vs-debit-card", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-increase-credit-card-limit", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-payment-methods", priority: 0.6, changeFrequency: "monthly" as const },
+    // Loan Blog Posts
+    { url: "/blog/personal-loan-complete-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-apply-personal-loan", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/personal-loan-eligibility-criteria", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/types-of-personal-loans", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/business-loan-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/home-loan-everything-you-need-to-know", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/education-loan-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-score-importance", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/loan-vs-credit-card", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-improve-credit-score-quickly", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/personal-finance-tips", priority: 0.6, changeFrequency: "monthly" as const },
+  ]
+
   const companyPages = [
     { url: "/about", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/contact", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/faq", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/blog/personal-finance-tips", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/pricing", priority: 0.7, changeFrequency: "weekly" as const },
     { url: "/security-compliance", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/api-docs", priority: 0.6, changeFrequency: "monthly" as const },
@@ -81,6 +107,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/press", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/partnerships", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/integrations", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/privacy-policy", priority: 0.5, changeFrequency: "monthly" as const },
+    { url: "/terms-of-service", priority: 0.5, changeFrequency: "monthly" as const },
+    { url: "/cookie-policy", priority: 0.5, changeFrequency: "monthly" as const },
   ]
 
   const allPages = [
@@ -115,6 +144,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: page.priority,
     })),
     ...caseStudyPages.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...blogPages.map((page) => ({
       url: `${baseUrl}${page.url}`,
       lastModified: new Date(),
       changeFrequency: page.changeFrequency,
