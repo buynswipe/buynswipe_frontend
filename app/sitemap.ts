@@ -81,6 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/credit-card-vs-debit-card", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/how-to-increase-credit-card-limit", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/blog/credit-card-payment-methods", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/credit-card-rewards-cashback", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-use-credit-card-wisely", priority: 0.6, changeFrequency: "monthly" as const },
     // Loan Blog Posts
     { url: "/blog/personal-loan-complete-guide", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/how-to-apply-personal-loan", priority: 0.7, changeFrequency: "monthly" as const },
@@ -92,7 +94,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/credit-score-importance", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/blog/loan-vs-credit-card", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/blog/how-to-improve-credit-score-quickly", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/auto-loan-guide", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/two-wheeler-loan-guide", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/loan-against-property-guide", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/gold-loan-guide", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/emi-calculator-guide", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/blog/loan-repayment-tips", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/blog/personal-finance-tips", priority: 0.6, changeFrequency: "monthly" as const },
+  ]
+
+  const toolPages = [
+    { url: "/tools/emi-calculator", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/tools/affordability-calculator", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/tools/investment-roi-calculator", priority: 0.6, changeFrequency: "monthly" as const },
+  ]
+
+  const engagementPages = [
+    { url: "/glossary", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/resources/free-credit-report-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/resources/loan-application-checklist", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/resources/credit-card-comparison-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/video/loan-application-tutorial", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/video/credit-card-benefits-explained", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/apply/quick-loan-assessment", priority: 0.8, changeFrequency: "weekly" as const },
+    { url: "/mobile-app", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/webinars", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/webinars/personal-loan-101", priority: 0.6, changeFrequency: "monthly" as const },
+    { url: "/webinars/credit-card-mastery", priority: 0.6, changeFrequency: "monthly" as const },
+  ]
+
+  const investorPages = [
+    { url: "/investor-relations", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/investor-relations/financial-metrics", priority: 0.6, changeFrequency: "weekly" as const },
+    { url: "/compliance/rbi-regulations", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/compliance/data-privacy", priority: 0.7, changeFrequency: "monthly" as const },
   ]
 
   const companyPages = [
@@ -150,6 +185,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: page.priority,
     })),
     ...blogPages.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...toolPages.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...engagementPages.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...investorPages.map((page) => ({
       url: `${baseUrl}${page.url}`,
       lastModified: new Date(),
       changeFrequency: page.changeFrequency,
