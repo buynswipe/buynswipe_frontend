@@ -33,14 +33,14 @@
 
 #### 1. Verify EMI Calculator Works in Production
 **Task:** Deploy EMI calculator fix and test thoroughly
-```
+\`\`\`
 Steps:
 1. Run `npm run build` to verify no errors
 2. Test calculator on production URL
 3. Verify mobile responsiveness
 4. Check browser console for errors
 5. Monitor for performance issues
-```
+\`\`\`
 **Assignee:** Frontend Developer
 **Timeline:** 2 hours
 **Status:** ⏳ Pending
@@ -49,14 +49,14 @@ Steps:
 
 #### 2. Verify Anchor Navigation
 **Task:** Test all credit card submenu links work correctly
-```
+\`\`\`
 Steps:
 1. Test /credit/credit-card#cashback
 2. Test /credit/credit-card#travel  
 3. Test /credit/credit-card#lifetime-free
 4. Verify scroll behavior
 5. Check on mobile browsers
-```
+\`\`\`
 **Assignee:** QA / Frontend
 **Timeline:** 1 hour
 **Status:** ⏳ Pending
@@ -65,7 +65,7 @@ Steps:
 
 #### 3. Replace Testimonial Data
 **Task:** Collect real customer testimonials to replace placeholders
-```
+\`\`\`
 Current Placeholders:
 - RK (Rajesh Kumar) - Delhi - ₹5L
 - PM (Priya Mishra) - Bangalore - ₹3L
@@ -77,7 +77,7 @@ Required:
 - Genuine use cases
 - Permission to use stories
 - Real photos (optional)
-```
+\`\`\`
 **Assignee:** Content/Marketing
 **Timeline:** 3-5 days
 **Status:** ⏳ Pending
@@ -87,7 +87,7 @@ Required:
 
 #### 4. Test Live Chat Widget
 **Task:** Verify live chat doesn't overlap CTAs on small screens
-```
+\`\`\`
 Test Devices:
 - iPhone SE (375px width)
 - Galaxy S8 (360px width)
@@ -99,7 +99,7 @@ Check:
 - CTA button accessibility
 - No overlap with forms
 - Touch targets > 44px
-```
+\`\`\`
 **Assignee:** QA / Mobile Developer
 **Timeline:** 2 hours
 **Status:** ⏳ Pending
@@ -108,7 +108,7 @@ Check:
 
 #### 5. Verify Affiliate Tracking
 **Task:** Audit affiliate product pages and tracking pixels
-```
+\`\`\`
 Affiliate Pages to Check:
 - /credit/affiliate-loans
 - /credit/affiliate-credit-cards
@@ -121,7 +121,7 @@ Verify:
 - Commission calculation correct
 - Links are not broken
 - Partner attribution accurate
-```
+\`\`\`
 **Assignee:** Marketing/Analytics
 **Timeline:** 2 hours
 **Status:** ⏳ Pending
@@ -132,7 +132,7 @@ Verify:
 
 #### 6. Add Form Validation
 **Task:** Implement validation for all user input forms
-```
+\`\`\`
 Forms to Update:
 1. Eligibility Checker
    - Mobile number format
@@ -157,7 +157,7 @@ Implementation:
 - Show error messages inline
 - Highlight invalid fields
 - Prevent submission with errors
-```
+\`\`\`
 **Assignee:** Frontend Developer
 **Timeline:** 4-6 hours
 **Status:** ⏳ Pending
@@ -166,7 +166,7 @@ Implementation:
 
 #### 7. Implement Loading States
 **Task:** Add skeleton screens and loading indicators
-```
+\`\`\`
 Pages to Update:
 - Eligibility Checker results
 - Loan comparison results
@@ -178,7 +178,7 @@ Implementation:
 - Add loading spinner for async operations
 - Show estimated load time
 - Fallback content for slow networks
-```
+\`\`\`
 **Assignee:** Frontend Developer
 **Timeline:** 3-4 hours
 **Status:** ⏳ Pending
@@ -187,7 +187,7 @@ Implementation:
 
 #### 8. Fix Live Chat Widget
 **Task:** Adjust positioning and z-index for mobile
-```
+\`\`\`
 Changes Needed:
 - Update CSS positioning
 - Adjust bottom/right values for small screens
@@ -201,7 +201,7 @@ Testing:
 - iPhone SE, Galaxy S8 (portrait)
 - All orientations
 - All browsers
-```
+\`\`\`
 **Assignee:** Frontend Developer
 **Timeline:** 1-2 hours
 **Status:** ⏳ Pending
@@ -210,7 +210,7 @@ Testing:
 
 #### 9. Add Page Transition Animations
 **Task:** Improve UX with smooth page transitions
-```
+\`\`\`
 Animations to Add:
 - Fade in on page load
 - Slide transitions between pages
@@ -221,7 +221,7 @@ Tools:
 - Framer Motion or Tailwind transitions
 - CSS animations
 - Next.js page transitions
-```
+\`\`\`
 **Assignee:** Frontend Developer
 **Timeline:** 3-4 hours
 **Status:** ⏳ Pending
@@ -232,7 +232,7 @@ Tools:
 
 #### 10. Implement User Authentication
 **Task:** Add user login, signup, and dashboard
-```
+\`\`\`
 Features:
 - Email/password signup
 - Email verification
@@ -249,7 +249,7 @@ Stack Options:
 - Custom implementation
 
 Timeline:** 2-3 weeks
-```
+\`\`\`
 **Assignee:** Backend + Frontend Team
 **Status:** ⏳ Planning
 
@@ -257,7 +257,7 @@ Timeline:** 2-3 weeks
 
 #### 11. Integrate Payment Gateway
 **Task:** Add payment processing for premium services
-```
+\`\`\`
 Options:
 - Razorpay (recommended for India)
 - Stripe
@@ -272,7 +272,7 @@ Features:
 - Refund handling
 
 Timeline:** 1-2 weeks
-```
+\`\`\`
 **Assignee:** Backend Developer + Payment Expert
 **Status:** ⏳ Planning
 
@@ -280,7 +280,7 @@ Timeline:** 1-2 weeks
 
 #### 12. Create Admin Dashboard
 **Task:** Build admin panel for content management
-```
+\`\`\`
 Features Needed:
 - Blog post management (CRUD)
 - Testimonial management
@@ -298,7 +298,7 @@ Tech Stack:
 - Authentication for admins
 
 Timeline:** 3-4 weeks
-```
+\`\`\`
 **Assignee:** Full Stack Team
 **Status:** ⏳ Planning
 
@@ -308,7 +308,7 @@ Timeline:** 3-4 weeks
 
 ### For Each Action Item, Track:
 
-```markdown
+\`\`\`markdown
 ## [ACTION ITEM NAME]
 - **Status:** ⏳ Pending / 🔄 In Progress / ✅ Done
 - **Assignee:** [Name]
@@ -317,7 +317,7 @@ Timeline:** 3-4 weeks
 - **Completion %:** [%]
 - **Blocker Issues:** [If any]
 - **Notes:** [Progress notes]
-```
+\`\`\`
 
 ---
 

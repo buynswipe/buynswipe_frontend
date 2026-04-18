@@ -158,16 +158,16 @@
 ## RECOMMENDED CONSOLIDATED URL STRUCTURE
 
 ### Before (Current - Scattered)
-```
+\`\`\`
 /blog/personal-loan-complete-guide
 /blog/personal-loan-eligibility-criteria
 /credit/personal-loan
 /credit/personal-loan/page.tsx
 /resources/guide-to-personal-loans
-```
+\`\`\`
 
 ### After (Proposed - Consolidated)
-```
+\`\`\`
 /loans/personal-loan/ (main hub)
   ├─ /loans/personal-loan/eligibility
   ├─ /loans/personal-loan/how-to-apply
@@ -179,7 +179,7 @@
   ├─ /loans/credit-cards/comparison
   ├─ /loans/credit-cards/faq
   └─ /loans/credit-cards/eligibility-checker
-```
+\`\`\`
 
 ---
 

@@ -55,7 +55,7 @@
 ### 4. Global Layout Integration
 ✓ **Updated**: `app/layout.tsx`
 ✓ **Structure**:
-```
+\`\`\`
 <html>
   <body>
     <Header />
@@ -63,7 +63,7 @@
     <Footer />
   </body>
 </html>
-```
+\`\`\`
 ✓ **Feature**: Flexbox ensures footer sticks to bottom
 
 ### 5. Mobile Menu Enhancement
@@ -139,7 +139,7 @@ Centralized configuration with:
 ## NAVIGATION STRUCTURE
 
 ### Primary Navigation (Header)
-```
+\`\`\`
 Credit (6 items)
 ├─ Personal Loan
 ├─ Credit Card
@@ -163,10 +163,10 @@ Tools (4 items)
 └─ ROI Calculator
 
 Resources (1 item)
-```
+\`\`\`
 
 ### Footer Navigation (24 links)
-```
+\`\`\`
 Credit Products (6)
 Payment Solutions (5)
 Tools & Resources (6)
@@ -174,10 +174,10 @@ Company (6)
 Legal (3)
 Support (3)
 Compliance (3)
-```
+\`\`\`
 
 ### Mobile Menu (14 items)
-```
+\`\`\`
 Home
 Credit Products
 ├─ Personal Loan
@@ -192,7 +192,7 @@ Reviews
 Support
 About
 Contact
-```
+\`\`\`
 
 ---
 
@@ -339,7 +339,7 @@ Contact
 If issues occur in production:
 
 ### Quick Rollback
-```bash
+\`\`\`bash
 # If deployed to Git
 git revert <commit-hash>
 git push origin main
@@ -348,7 +348,7 @@ git push origin main
 cp components/header.tsx.backup components/header.tsx
 cp components/footer.tsx.backup components/footer.tsx
 npm run build && npm run start
-```
+\`\`\`
 
 ### Communication
 1. Alert team immediately

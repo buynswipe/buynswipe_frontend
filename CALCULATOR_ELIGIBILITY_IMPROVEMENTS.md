@@ -206,7 +206,7 @@ Comprehensive enhancements to the EMI Calculator and new Eligibility Checker imp
 ## FRONTEND EVENT HANDLING
 
 ### EMI Calculator Events
-```tsx
+\`\`\`tsx
 // Loan Amount Slider
 onChange: (e) => setLoanAmount(Number(e.target.value))
 // Triggers: Memoized EMI calculation → Display update
@@ -226,10 +226,10 @@ onClick: handleCopyResults
 // Share Button
 onClick: handleShareWhatsApp
 // Triggers: Opens WhatsApp with pre-filled message
-```
+\`\`\`
 
 ### Eligibility Checker Events
-```tsx
+\`\`\`tsx
 // All Form Inputs
 onChange: (e) => handleInputChange('field', value)
 // Triggers: State update → Real-time calculation → Results update
@@ -241,14 +241,14 @@ onClick: handleSubmit
 // Apply Button
 onClick: handleApply
 // Triggers: Navigation to application form
-```
+\`\`\`
 
 ---
 
 ## DATA PROCESSING
 
 ### EMI Calculation Formula
-```
+\`\`\`
 EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)
 
 Where:
@@ -258,12 +258,12 @@ n = Number of Months (Tenure)
 
 Special case: If r = 0 (0% interest)
 EMI = P / n
-```
+\`\`\`
 
 **Validation:** Formula tested with multiple values, all results accurate ✅
 
 ### Eligibility Scoring System
-```
+\`\`\`
 Base Score: 0-6 points
 
 Criteria & Points:
@@ -277,7 +277,7 @@ Criteria & Points:
 Final Percentage = (Score / 6) × 100
 
 Eligibility Threshold: ≥ 50%
-```
+\`\`\`
 
 ---
 

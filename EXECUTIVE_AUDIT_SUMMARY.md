@@ -198,7 +198,7 @@ Comprehensive functional audit of **BuyNswipe Credit** fintech application cover
 ### Prerequisites (BLOCKING - 4-5 hours)
 
 **1. Upload Required Files to `/public/` folder:**
-```
+\`\`\`
 /public/documents/
   ├── buynswipe-teaser.pdf
   ├── buynswipe-brand-guidelines.pdf
@@ -206,7 +206,7 @@ Comprehensive functional audit of **BuyNswipe Credit** fintech application cover
 
 /public/media/
   └── buynswipe-logos.zip
-```
+\`\`\`
 **Timeline:** 1-2 hours
 
 **2. Test All Fixed Links:**

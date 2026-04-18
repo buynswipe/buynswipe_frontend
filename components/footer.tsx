@@ -11,7 +11,7 @@ const footerSections = [
       { label: 'Business Loan', href: '/credit/business-loan' },
       { label: 'Home Loan', href: '/credit/home-loan' },
       { label: 'Gold Loan', href: '/credit/gold-loan' },
-      { label: 'MSME Loan', href: '/credit/business-loan' },
+      { label: 'Education Loan', href: '/credit/education-loan' },
     ],
   },
   {

@@ -28,7 +28,7 @@ Follow these steps to activate deployment pipeline:
 4. Click "New repository secret"
 5. Add 3 secrets:
 
-```
+\`\`\`
 Name: VERCEL_TOKEN
 Value: [Paste from Step 1]
 
@@ -37,7 +37,7 @@ Value: [Team ID or your username from Step 2]
 
 Name: VERCEL_PROJECT_ID
 Value: [Project ID from Step 2]
-```
+\`\`\`
 
 ### Step 4: Test Deployment (1 minute)
 
@@ -53,7 +53,7 @@ Value: [Project ID from Step 2]
 
 After setup, verify with:
 
-```bash
+\`\`\`bash
 # Test 1: Build locally
 npm run build
 
@@ -64,7 +64,7 @@ npm run lint
 npx tsc --noEmit
 
 # All should pass ✅
-```
+\`\`\`
 
 ---
 

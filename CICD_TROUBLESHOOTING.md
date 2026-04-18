@@ -21,13 +21,13 @@
 **Cause:** Missing GitHub Secrets
 
 **Fix:**
-```
+\`\`\`
 Settings → Secrets and variables → Actions
 Add:
 - VERCEL_TOKEN (from Vercel)
 - VERCEL_ORG_ID (from Vercel)
 - VERCEL_PROJECT_ID (from Vercel)
-```
+\`\`\`
 
 ---
 
@@ -38,12 +38,12 @@ Add:
 **Fix:**
 1. Check Node.js version (should be 18.x or 20.x)
 2. Delete `package-lock.json` and regenerate:
-   ```bash
+   \`\`\`bash
    rm package-lock.json
    npm install
    git add package-lock.json
    git commit -m "Update lock file"
-   ```
+   \`\`\`
 
 ---
 
@@ -65,10 +65,10 @@ Add:
 **Fix:**
 1. Verify all 3 secrets are correctly set
 2. Test VERCEL_TOKEN locally:
-   ```bash
+   \`\`\`bash
    npm install -g vercel
    vercel --token YOUR_TOKEN
-   ```
+   \`\`\`
 3. Check `vercel.json` configuration
 4. Re-create secrets if they're old
 
@@ -82,9 +82,9 @@ Add:
 1. Optimize dependencies (remove unused packages)
 2. Check for infinite loops in build
 3. Increase Node.js memory:
-   ```
+   \`\`\`
    NODE_OPTIONS=--max-old-space-size=4096
-   ```
+   \`\`\`
 
 ---
 
@@ -92,7 +92,7 @@ Add:
 
 ### Validate Everything Locally
 
-```bash
+\`\`\`bash
 # 1. Install dependencies exactly as CI does
 npm ci
 
@@ -107,7 +107,7 @@ npm run build
 
 # 5. Test the build
 npm start
-```
+\`\`\`
 
 If all pass locally, they should pass in CI.
 
@@ -123,10 +123,10 @@ Check logs for:
 - Environment variable issues
 
 Fix:
-```bash
+\`\`\`bash
 npm ci --verbose
 npm run build --verbose
-```
+\`\`\`
 
 ### Job: deploy-to-vercel
 
@@ -155,10 +155,10 @@ Check:
 ### Enable Debug Logging in GitHub Actions
 
 Add to workflow file:
-```yaml
+\`\`\`yaml
 env:
   ACTIONS_STEP_DEBUG: true
-```
+\`\`\`
 
 Then re-run failed job with "Enable debug logging"
 
@@ -177,11 +177,11 @@ If any step exceeds normal time, it's the bottleneck.
 ### Check Disk Space
 
 If build fails unexpectedly:
-```bash
+\`\`\`bash
 # Add to workflow
 - name: Check disk space
   run: df -h
-```
+\`\`\`
 
 GitHub Actions runners typically have 35GB available.
 

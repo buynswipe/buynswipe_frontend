@@ -102,10 +102,10 @@
 **Severity:** Medium  
 **Impact:** Users cannot download mobile app
 
-```
+\`\`\`
 Line 36: <a href="#"> Download on App Store </a>
 Line 52: <a href="#"> Get on Google Play </a>
-```
+\`\`\`
 
 **Fix Required:**
 - Replace `href="#"` with actual App Store link
@@ -122,10 +122,10 @@ Line 52: <a href="#"> Get on Google Play </a>
 **Severity:** Low-Medium  
 **Impact:** Investor document downloads not working
 
-```
+\`\`\`
 Line 34: <a href="#"> Download Teaser </a>
 Line 183: Additional placeholder link
-```
+\`\`\`
 
 **Fix Required:**
 - Replace with actual document URLs or PDF downloads
@@ -141,9 +141,9 @@ Line 183: Additional placeholder link
 **Severity:** Low  
 **Impact:** Press release links not functional
 
-```
+\`\`\`
 Line 55: <a href="#"> Read Full Article → </a>
-```
+\`\`\`
 
 **Fix Required:**
 - Replace with actual press release article links
@@ -162,24 +162,24 @@ Line 55: <a href="#"> Read Full Article → </a>
 **Impact:** Users confused by identical links
 
 **Problem:**
-```
+\`\`\`
 { label: 'Cashback Cards', href: '/credit/credit-card' },
 { label: 'Travel Cards', href: '/credit/credit-card' },
 { label: 'Lifetime Free Cards', href: '/credit/credit-card' },
 { label: 'Student Cards', href: '/credit/credit-card' },
 { label: 'Business Cards', href: '/credit/credit-card' },
-```
+\`\`\`
 
 All point to same page. Should use anchor links:
 
 **Fix Required:**
-```
+\`\`\`
 { label: 'Cashback Cards', href: '/credit/credit-card#cashback' },
 { label: 'Travel Cards', href: '/credit/credit-card#travel' },
 { label: 'Lifetime Free Cards', href: '/credit/credit-card#lifetime-free' },
 { label: 'Student Cards', href: '/credit/credit-card#student' },
 { label: 'Business Cards', href: '/credit/credit-card#business' },
-```
+\`\`\`
 
 **Timeline:** 10 minutes
 
@@ -191,9 +191,9 @@ All point to same page. Should use anchor links:
 **Severity:** Low  
 **Impact:** Media kit downloads not working
 
-```
+\`\`\`
 Line 78: <button> Download (2.5 MB) </button>
-```
+\`\`\`
 
 Button has no onClick handler or download link.
 

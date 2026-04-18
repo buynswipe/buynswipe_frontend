@@ -18,7 +18,7 @@ The BuyNswipe header and footer are global components designed for consistency, 
 
 ### Navigation Structure
 
-```
+\`\`\`
 BuyNswipe (Logo)
 ├── Credit
 │   ├── Personal Loan
@@ -39,7 +39,7 @@ BuyNswipe (Logo)
 │   ├── Interest Rate Comparison
 │   └── ROI Calculator
 └── Resources
-```
+\`\`\`
 
 ### Key Components
 1. **Logo/Brand**: Links to homepage, includes Zap icon
@@ -100,7 +100,7 @@ BuyNswipe (Logo)
 Centralized configuration file for all navigation links across the site. Single source of truth for maintaining navigation consistency.
 
 ### Structure
-```typescript
+\`\`\`typescript
 export const headerNavigation = [...]     // Header dropdowns
 export const footerNavigation = [...]     // Footer sections
 export const legalLinks = [...]           // Legal links
@@ -109,7 +109,7 @@ export const complianceLinks = [...]      // Compliance links
 export const socialLinks = [...]          // Social media
 export const mobileNavigation = [...]     // Mobile menu
 export const companyInfo = {...}          // Company details
-```
+\`\`\`
 
 ### Benefits
 - **Centralized Updates**: Change navigation in one place
@@ -149,7 +149,7 @@ export const companyInfo = {...}          // Company details
 ## Layout Integration (`app/layout.tsx`)
 
 ### Structure
-```
+\`\`\`
 <html>
   <body class="flex flex-col min-h-screen">
     <Header />
@@ -159,7 +159,7 @@ export const companyInfo = {...}          // Company details
     <Footer />
   </body>
 </html>
-```
+\`\`\`
 
 ### Key Points
 - Flexbox layout ensures footer sticks to bottom

@@ -3,7 +3,7 @@
 ## HEADER LAYOUT
 
 ### Desktop View (≥1024px)
-```
+\`\`\`
 ┌────────────────────────────────────────────────────────────────────┐
 │ ⚡ BuyNswipe │ Credit▼ │ Solutions▼ │ Blog │ Tools▼ │ Resources │ Contact │ [Apply Now] │
 └────────────────────────────────────────────────────────────────────┘
@@ -33,18 +33,18 @@ Dropdown: Tools▼
 │ Interest Rate Comparison │
 │ ROI Calculator           │
 └──────────────────────────┘
-```
+\`\`\`
 
 ### Tablet View (640-1024px)
-```
+\`\`\`
 ┌────────────────────────────────────────────┐
 │ ⚡ BuyNswipe │ Credit │ Solutions │ Blog │ ☰ │
 └────────────────────────────────────────────┘
 Simplified navigation, mobile menu visible
-```
+\`\`\`
 
 ### Mobile View (<640px)
-```
+\`\`\`
 ┌─────────────────────────────┐
 │ ⚡ │ BuyNswipe │ ☰          │
 └─────────────────────────────┘
@@ -68,14 +68,14 @@ Mobile Menu (Overlay)
 │ About                       │
 │ Contact                     │
 └─────────────────────────────┘
-```
+\`\`\`
 
 ---
 
 ## FOOTER LAYOUT
 
 ### Desktop View (≥1024px)
-```
+\`\`\`
 ┌──────────────────────────────────────────────────────────────────────┐
 │                                                                      │
 │  ⚡ BuyNswipe          │ Credit     │ Payment    │ Tools      │ Company │
@@ -105,10 +105,10 @@ Mobile Menu (Overlay)
 │  DPIIT Recognized Startup | RBI Compliant | ISO 27001 Certified    │
 │  CIN: U72900UP2017PTC096789                                         │
 └──────────────────────────────────────────────────────────────────────┘
-```
+\`\`\`
 
 ### Tablet View (640-1024px)
-```
+\`\`\`
 ┌──────────────────────────────────────────┐
 │  ⚡ BuyNswipe         │ Credit  │ Payment │
 │  Brand Description    │ Products│ Solutions
@@ -130,10 +130,10 @@ Mobile Menu (Overlay)
 ├──────────────────────────────────────────┤
 │  © 2025 BuyNswipe | DPIIT | RBI | ISO   │
 └──────────────────────────────────────────┘
-```
+\`\`\`
 
 ### Mobile View (<640px)
-```
+\`\`\`
 ┌────────────────────────────────┐
 │  ⚡ BuyNswipe                 │
 │  India's trusted fintech       │
@@ -174,7 +174,7 @@ Mobile Menu (Overlay)
 │  © 2025 BuyNswipe             │
 │  DPIIT | RBI | ISO 27001      │
 └────────────────────────────────┘
-```
+\`\`\`
 
 ---
 
@@ -236,28 +236,28 @@ Mobile Menu (Overlay)
 ## INTERACTIVE STATES
 
 ### Header Links
-```
+\`\`\`
 Default:     text-gray-700
 Hover:       text-blue-600 + underline
 Active:      text-blue-600 + bold
 Mobile:      Full touch target (44px minimum)
-```
+\`\`\`
 
 ### Footer Links
-```
+\`\`\`
 Default:     text-gray-400
 Hover:       text-white + translate-x-1
 Active:      text-blue-400
 Icons:       text-blue-400
-```
+\`\`\`
 
 ### Buttons
-```
+\`\`\`
 Default:     bg-blue-600 text-white
 Hover:       bg-blue-700
 Active:      bg-blue-800
 Disabled:    opacity-50 cursor-not-allowed
-```
+\`\`\`
 
 ---
 
@@ -288,35 +288,35 @@ Disabled:    opacity-50 cursor-not-allowed
 ## EXAMPLES BY PAGE TYPE
 
 ### Product Page (e.g., /credit/personal-loan)
-```
+\`\`\`
 Header: [BuyNswipe] [Credit▼] [Solutions] ... [Contact] [Apply]
 Content: Product details, comparison, benefits
 Footer: All sections visible
-```
+\`\`\`
 
 ### Blog Post (e.g., /blog/how-to-improve-credit-score)
-```
+\`\`\`
 Header: Same as above
 Breadcrumb: Home > Blog > Post Title
 Content: Article
 Related: 3 related posts
 Footer: All sections visible
-```
+\`\`\`
 
 ### Tool Page (e.g., /tools/emi-calculator)
-```
+\`\`\`
 Header: Sticky, visible while scrolling
 Calculator/Form: Full width
 Footer: Minimal (only links needed)
-```
+\`\`\`
 
 ### Mobile App Page
-```
+\`\`\`
 Header: Logo + Mobile Menu only
 Content: App features, screenshots
 CTA: Download buttons
 Footer: Minimal
-```
+\`\`\`
 
 ---
 
@@ -336,29 +336,29 @@ Footer: Minimal
 ## QUICK UPDATES
 
 ### Change Header Background Color
-```typescript
+\`\`\`typescript
 // In components/header.tsx
 className="... bg-[your-color] ..." 
-```
+\`\`\`
 
 ### Add New Footer Link
-```typescript
+\`\`\`typescript
 // In lib/navigation-config.ts
 footerNavigation[0].links.push({
   label: 'New Link',
   href: '/new-link'
 })
-```
+\`\`\`
 
 ### Update Company Info
-```typescript
+\`\`\`typescript
 // In lib/navigation-config.ts
 export const companyInfo = {
   name: 'Your Company',
   email: 'new-email@company.com',
   // ... other fields
 }
-```
+\`\`\`
 
 ---
 

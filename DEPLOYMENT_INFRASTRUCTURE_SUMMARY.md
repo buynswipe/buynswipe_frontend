@@ -59,11 +59,11 @@ Go to: `GitHub Repo → Settings → Secrets and variables → Actions`
 
 Add these 3 secrets:
 
-```
+\`\`\`
 VERCEL_TOKEN = [Your Vercel API Token]
 VERCEL_ORG_ID = [Your Vercel Organization/Team ID]
 VERCEL_PROJECT_ID = [Your Vercel Project ID]
-```
+\`\`\`
 
 **Get these values:**
 
@@ -76,21 +76,21 @@ VERCEL_PROJECT_ID = [Your Vercel Project ID]
 ### Step 2: Update vercel.json
 
 Replace placeholder values:
-```json
+\`\`\`json
 {
   "projectId": "your-actual-project-id",
   "orgId": "your-actual-org-id"
 }
-```
+\`\`\`
 
 ### Step 3: Verify Configuration
 
-```bash
+\`\`\`bash
 # Test locally
 npm ci
 npm run build
 npm run lint
-```
+\`\`\`
 
 If all pass locally, GitHub Actions will pass too.
 
@@ -100,7 +100,7 @@ If all pass locally, GitHub Actions will pass too.
 
 ### When You Open a PR:
 
-```
+\`\`\`
 Push to branch → PR created
      ↓
 GitHub Actions triggers build-and-test job
@@ -115,11 +115,11 @@ If all pass ✅:
 - Add preview URL comment to PR
      ↓
 User can click preview URL to test changes
-```
+\`\`\`
 
 ### When You Merge to main/master:
 
-```
+\`\`\`
 Merge PR to main
      ↓
 GitHub Actions triggers deploy-to-vercel job
@@ -130,7 +130,7 @@ GitHub Actions triggers deploy-to-vercel job
 Production URL updated with new code
      ↓
 Automatic HTTPS, global CDN, zero-downtime
-```
+\`\`\`
 
 ---
 
@@ -219,7 +219,7 @@ Before any deployment, the pipeline checks:
 
 Typical workflow execution times:
 
-```
+\`\`\`
 Checkout code:           ~5 seconds
 Setup Node.js:          ~20 seconds
 Install dependencies:   ~60 seconds
@@ -229,7 +229,7 @@ Build application:     ~120 seconds
 Deploy to Vercel:       ~60 seconds
 ─────────────────────────────────────
 TOTAL:                 ~340 seconds (5-6 minutes)
-```
+\`\`\`
 
 ---
 

@@ -67,7 +67,7 @@ Your `package.json` has these scripts:
 
 ### When You Open a PR:
 
-```
+\`\`\`
 1. Code pushed to GitHub
    ↓
 2. GitHub Actions triggers build job
@@ -83,11 +83,11 @@ Your `package.json` has these scripts:
 7. Deploy preview to Vercel (if PR approved)
    ↓
 8. Add deployment link to PR comments
-```
+\`\`\`
 
 ### When You Merge to main/master:
 
-```
+\`\`\`
 1. Code merged to main
    ↓
 2. GitHub Actions triggers build job
@@ -97,7 +97,7 @@ Your `package.json` has these scripts:
 4. Production deployment to Vercel
    ↓
 5. All traffic routed to new version
-```
+\`\`\`
 
 ---
 

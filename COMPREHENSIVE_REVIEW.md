@@ -61,10 +61,10 @@ The BuyNswipe application is a well-structured fintech platform with 100+ pages,
 ### ⚠️ **Issue: Missing Anchor Links in Credit Page**
 **Location:** `/app/credit/page.tsx` - Comparison Table section  
 **Problem:** Comparison table has no matching anchor ID
-```
+\`\`\`
 Header links to: #cashback, #travel, #lifetime-free
 Actual IDs on page: None defined
-```
+\`\`\`
 **Severity:** Low | **Impact:** Users clicking submenu items won't scroll to sections
 **Fix Required:** Add section IDs to credit card variants
 
@@ -148,9 +148,9 @@ Actual IDs on page: None defined
 **Problem:** Range sliders exist but don't update displayed EMI values
 **Severity:** Medium | **Impact:** Users cannot calculate custom EMI
 **Example:**
-```jsx
+\`\`\`jsx
 <input type="range" defaultValue="300000" /> {/* Changes nothing */}
-```
+\`\`\`
 
 ### ⚠️ **Issue: Affiliate Product Links**
 **Location:** Multiple affiliate product pages  

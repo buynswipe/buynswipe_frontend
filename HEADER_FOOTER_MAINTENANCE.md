@@ -10,7 +10,7 @@
 - [ ] Verify footer displays on all pages
 
 ### Quick Tests (5 minutes)
-```bash
+\`\`\`bash
 # Test header on desktop
 - Open /
 - Hover over dropdowns
@@ -27,7 +27,7 @@
 - Click hamburger menu
 - Test 3 navigation items
 - Close menu
-```
+\`\`\`
 
 ---
 
@@ -40,9 +40,9 @@
 **Steps**:
 1. Open `lib/navigation-config.ts`
 2. Add to `headerNavigation` Credit submenu:
-   ```typescript
+   \`\`\`typescript
    { label: 'Auto Loan', href: '/credit/auto-loan' }
-   ```
+   \`\`\`
 3. Add to `footerNavigation` Credit Products section
 4. Update `mobileNavigation` if needed
 5. Test on all devices
@@ -57,9 +57,9 @@
 **Steps**:
 1. Open `lib/navigation-config.ts`
 2. Update `companyInfo`:
-   ```typescript
+   \`\`\`typescript
    phone: '+91 NEW-PHONE-NUMBER'
-   ```
+   \`\`\`
 3. Component automatically updates
 4. Test footer contact section
 5. Update contact@buynswipe.com email template
@@ -73,9 +73,9 @@
 **Steps**:
 1. Open `lib/navigation-config.ts`
 2. Add to `socialLinks`:
-   ```typescript
+   \`\`\`typescript
    { icon: 'youtube', label: 'YouTube', href: 'https://youtube.com/buynswipe' }
-   ```
+   \`\`\`
 3. Update `components/footer.tsx` social rendering (if new platform)
 4. Import new Lucide icon if needed
 5. Test link opens correctly
@@ -87,16 +87,16 @@
 **Scenario**: Reorganize Tools section
 
 **Before**:
-```
+\`\`\`
 Tools
 ├─ EMI Calculator
 ├─ Affordability Calculator
 ├─ Interest Rate Comparison
 └─ ROI Calculator
-```
+\`\`\`
 
 **After**:
-```
+\`\`\`
 Tools
 ├─ Calculators
 │  ├─ EMI Calculator
@@ -104,7 +104,7 @@ Tools
 └─ Comparison Tools
    ├─ Interest Rate Comparison
    └─ ROI Calculator
-```
+\`\`\`
 
 **Steps**:
 1. DON'T change config (complex nested structure)
@@ -122,7 +122,7 @@ Tools
 **Steps**:
 1. Open `lib/navigation-config.ts`
 2. Update `companyInfo.certifications`:
-   ```typescript
+   \`\`\`typescript
    certifications: [
      'DPIIT Recognized Startup',
      'RBI Compliant',
@@ -130,7 +130,7 @@ Tools
      'Startup India Recognized',
      'ISO 9001 Certified', // New
    ]
-   ```
+   \`\`\`
 3. Test footer displays all badges
 4. Update About page if needed
 
@@ -141,7 +141,7 @@ Tools
 ## Monthly Maintenance
 
 ### Week 1: Link Audit
-```
+\`\`\`
 Spreadsheet of all footer links:
 ✓ Products (6 links)
 ✓ Payment Solutions (5 links)
@@ -154,7 +154,7 @@ Spreadsheet of all footer links:
 Total: 32 footer links
 Status: _____ / _____ working
 Issues found: _________________
-```
+\`\`\`
 
 ### Week 2: Mobile Testing
 - Test on iPhone 12/13
@@ -245,7 +245,7 @@ Issues found: _________________
 - Mobile menu shows items correctly
 
 **Debug Steps**:
-```typescript
+\`\`\`typescript
 // In components/header.tsx
 // 1. Check submenu array exists
 if (item.submenu && item.submenu.length > 0) {
@@ -259,7 +259,7 @@ if (item.submenu && item.submenu.length > 0) {
 
 // 3. Verify z-index
 // Should be higher than other elements
-```
+\`\`\`
 
 **Solutions**:
 1. Check `lib/navigation-config.ts` has submenu array
@@ -276,7 +276,7 @@ if (item.submenu && item.submenu.length > 0) {
 - Mobile view looks broken
 
 **Debug Steps**:
-```typescript
+\`\`\`typescript
 // Check grid configuration
 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8"
 
@@ -284,7 +284,7 @@ className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8"
 footerSections.forEach(section => {
   console.log(section.title, section.links.length)
 })
-```
+\`\`\`
 
 **Solutions**:
 1. Verify `grid-cols-` values match section count
@@ -301,14 +301,14 @@ footerSections.forEach(section => {
 - Overlay still visible
 
 **Debug Steps**:
-```typescript
+\`\`\`typescript
 // Check state management
 console.log('Menu open state:', isOpen)
 console.log('Click handler:', handleClose)
 
 // Verify click handlers attached
 onClick={handleClose}
-```
+\`\`\`
 
 **Solutions**:
 1. Hard refresh (Ctrl+Shift+R)
@@ -325,13 +325,13 @@ onClick={handleClose}
 - Works on desktop, not mobile
 
 **Debug Steps**:
-```typescript
+\`\`\`typescript
 // Check sticky classes
 className="sticky top-0 z-50"
 
 // Verify z-index is high enough
 // Check for parent overflow hidden
-```
+\`\`\`
 
 **Solutions**:
 1. Verify `sticky top-0` classes exist
@@ -348,7 +348,7 @@ className="sticky top-0 z-50"
 - No 404 error
 
 **Debug Steps**:
-```typescript
+\`\`\`typescript
 // Check href attribute
 href={link.href}
 // Should be: /path/to/page
@@ -358,7 +358,7 @@ import Link from 'next/link'
 
 // Check page exists
 file:///app/path/to/page.tsx
-```
+\`\`\`
 
 **Solutions**:
 1. Verify page file exists
@@ -372,7 +372,7 @@ file:///app/path/to/page.tsx
 ## Performance Optimization
 
 ### Header Optimization
-```typescript
+\`\`\`typescript
 // Use React.memo to prevent re-renders
 export const Header = React.memo(function Header() {
   // Component code
@@ -380,10 +380,10 @@ export const Header = React.memo(function Header() {
 
 // Lazy load dropdown content
 const DropdownContent = React.lazy(() => import('./dropdown'))
-```
+\`\`\`
 
 ### Footer Optimization
-```typescript
+\`\`\`typescript
 // Virtualize long link lists if needed
 import { FixedSizeList } from 'react-window'
 
@@ -391,7 +391,7 @@ import { FixedSizeList } from 'react-window'
 <div className="defer-render">
   {/* Deferred content */}
 </div>
-```
+\`\`\`
 
 ### Bundle Size Targets
 | Component | Target | Current |
@@ -407,15 +407,15 @@ import { FixedSizeList } from 'react-window'
 ## Backup & Recovery
 
 ### Before Making Changes
-```bash
+\`\`\`bash
 # Backup current version
 cp components/header.tsx components/header.tsx.backup
 cp components/footer.tsx components/footer.tsx.backup
 cp lib/navigation-config.ts lib/navigation-config.ts.backup
-```
+\`\`\`
 
 ### If Something Breaks
-```bash
+\`\`\`bash
 # Restore from backup
 cp components/header.tsx.backup components/header.tsx
 cp components/footer.tsx.backup components/footer.tsx
@@ -424,13 +424,13 @@ cp lib/navigation-config.ts.backup lib/navigation-config.ts
 # Or use Git
 git checkout components/header.tsx
 git checkout lib/navigation-config.ts
-```
+\`\`\`
 
 ---
 
 ## Change Log Template
 
-```markdown
+\`\`\`markdown
 ## 2025-01-23 - Header & Footer Optimization
 
 ### Changes
@@ -461,14 +461,14 @@ git checkout lib/navigation-config.ts
 - Load time: +5ms (negligible)
 - Bundle size: +2KB
 - Overall positive
-```
+\`\`\`
 
 ---
 
 ## Quick Reference Commands
 
 ### Test Navigation
-```bash
+\`\`\`bash
 # Visual regression testing
 npx playwright test --headed
 
@@ -477,20 +477,20 @@ npx next-link-check
 
 # Accessibility audit
 npx axe-core
-```
+\`\`\`
 
 ### Update Procedures
-```bash
+\`\`\`bash
 # After editing config
 npm run build
 npm run start
 
 # Test locally
 open http://localhost:3000
-```
+\`\`\`
 
 ### Deployment
-```bash
+\`\`\`bash
 # Verify all changes
 git status
 git diff
@@ -500,7 +500,7 @@ git push origin main
 
 # Monitor
 # Open https://analytics.google.com
-```
+\`\`\`
 
 ---
 

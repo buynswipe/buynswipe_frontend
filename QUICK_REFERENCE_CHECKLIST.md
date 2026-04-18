@@ -144,12 +144,12 @@
 ## NAVIGATION IMPROVEMENTS
 
 ### Header Menu Items
-```
+\`\`\`
 Home | Credit | Payment Solutions | Solutions | Tools | Resources | About | Contact
-```
+\`\`\`
 
 ### Mobile Menu - Enhanced (14 Items)
-```
+\`\`\`
 ✓ Home
 ✓ Credit Products
 ✓ Personal Loan
@@ -164,16 +164,16 @@ Home | Credit | Payment Solutions | Solutions | Tools | Resources | About | Cont
 ✓ Support
 ✓ About
 ✓ Contact
-```
+\`\`\`
 
 ### Footer Sections (5)
-```
+\`\`\`
 1. PRODUCTS (8 items)
 2. TOOLS (4 items)
 3. RESOURCES (6 categories)
 4. COMPANY (8 items)
 5. SOCIAL & TRUST
-```
+\`\`\`
 
 ---
 

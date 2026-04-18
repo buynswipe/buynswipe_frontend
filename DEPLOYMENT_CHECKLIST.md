@@ -18,13 +18,13 @@
 - [ ] Upload all 4 files to their respective directories
 
 **Command to verify:**
-```bash
+\`\`\`bash
 ls -la public/documents/
 ls -la public/media/
-```
+\`\`\`
 
 **Expected Output:**
-```
+\`\`\`
 documents/:
   buynswipe-teaser.pdf
   buynswipe-brand-guidelines.pdf
@@ -32,7 +32,7 @@ documents/:
 
 media/:
   buynswipe-logos.zip
-```
+\`\`\`
 
 ### Step 2: Review All Fixes (30 mins)
 
@@ -46,7 +46,7 @@ media/:
 
 ### Step 3: Run Build Test (30 mins)
 
-```bash
+\`\`\`bash
 # Clean build
 npm run build
 
@@ -61,7 +61,7 @@ npm run dev
 
 # Check console for errors
 # Expected: No errors or warnings
-```
+\`\`\`
 
 - [ ] Build completes successfully
 - [ ] No TypeScript errors
@@ -107,13 +107,13 @@ Test the following critical links in dev environment:
 
 ### Step 5: Deploy to Staging (if available)
 
-```bash
+\`\`\`bash
 # Deploy to staging environment
 vercel deploy --prebuilt
 
 # Verify deployment
 # Expected: Preview URL working
-```
+\`\`\`
 
 - [ ] Staging deployment successful
 - [ ] Staging URL accessible
@@ -157,7 +157,7 @@ Use a tool like Broken Link Checker:
 
 Before deploying to production:
 
-```bash
+\`\`\`bash
 # Verify files are in place
 ls -la public/documents/
 ls -la public/media/
@@ -168,7 +168,7 @@ npm run build
 # Check git status
 git status
 # Expected: Clean working directory
-```
+\`\`\`
 
 - [ ] All files uploaded to public/
 - [ ] Build completes successfully
@@ -177,13 +177,13 @@ git status
 
 ### Step 9: Deploy to Production
 
-```bash
+\`\`\`bash
 # Deploy to production
 vercel deploy --prod
 
 # Verify production deployment
 # Expected: Live URL is now updated
-```
+\`\`\`
 
 - [ ] Production deployment initiated
 - [ ] Deployment completes successfully
@@ -194,13 +194,13 @@ vercel deploy --prod
 
 **Immediate checks (first 10 minutes):**
 
-```bash
+\`\`\`bash
 # Check production URL loads
 curl https://buynswipe.com
 
 # Monitor for errors
 # Watch application logs
-```
+\`\`\`
 
 - [ ] Production home page loads
 - [ ] All critical pages load
@@ -250,13 +250,13 @@ curl https://buynswipe.com
 
 After 24 hours of monitoring:
 
-```
+\`\`\`
 1. Submit sitemap to Google Search Console
 2. Submit sitemap to Bing Webmaster Tools
 3. Verify all pages indexed
 4. Check for crawl errors
 5. Monitor for ranking changes
-```
+\`\`\`
 
 - [ ] Submitted to Google Search Console
 - [ ] Submitted to Bing Webmaster Tools
@@ -280,13 +280,13 @@ If critical issues occur after deployment:
 
 ### Step 1: Immediate Rollback
 
-```bash
+\`\`\`bash
 # Rollback to previous version
 vercel rollback
 
 # Verify previous version is live
 curl https://buynswipe.com
-```
+\`\`\`
 
 - [ ] Identify critical issue
 - [ ] Notify team
@@ -338,7 +338,7 @@ curl https://buynswipe.com
 ## QUICK REFERENCE
 
 ### Critical Files Uploaded
-```
+\`\`\`
 /public/documents/
   ✓ buynswipe-teaser.pdf
   ✓ buynswipe-brand-guidelines.pdf
@@ -346,7 +346,7 @@ curl https://buynswipe.com
 
 /public/media/
   ✓ buynswipe-logos.zip
-```
+\`\`\`
 
 ### Critical Links
 - Mobile app: ✅ Fixed

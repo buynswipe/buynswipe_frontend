@@ -11,7 +11,7 @@ When deploying to v0.app preview, an "An unexpected error occurred" message appe
 **Problem:** The clipboard copy function was called synchronously without checking if the API was available or handling promise rejection.
 
 **Fix Applied:**
-```typescript
+\`\`\`typescript
 // Before (Would fail silently)
 navigator.clipboard.writeText(resultsText)
 
@@ -26,13 +26,13 @@ if (navigator?.clipboard) {
       alert('Results copied to clipboard')
     })
 }
-```
+\`\`\`
 
 ### 2. **EMI Calculator - Window Object in SSR Context**
 **Problem:** `window.open()` for WhatsApp sharing was called without checking if it exists (SSR context).
 
 **Fix Applied:**
-```typescript
+\`\`\`typescript
 // Before
 const whatsappURL = `https://wa.me/?text=${encodeURIComponent(resultsText)}`
 window.open(whatsappURL, '_blank')
@@ -41,13 +41,13 @@ window.open(whatsappURL, '_blank')
 if (typeof window === 'undefined') return
 const whatsappURL = `https://wa.me/?text=${encodeURIComponent(resultsText)}`
 window.open(whatsappURL, '_blank')
-```
+\`\`\`
 
 ### 3. **Eligibility Checker - Window Redirect Error**
 **Problem:** Direct window.location.href assignment without checking if window exists (SSR context).
 
 **Fix Applied:**
-```typescript
+\`\`\`typescript
 // Before
 window.location.href = '/credit/personal-loan'
 
@@ -55,14 +55,14 @@ window.location.href = '/credit/personal-loan'
 if (typeof window !== 'undefined') {
   window.location.href = '/credit/personal-loan'
 }
-```
+\`\`\`
 
 ### 4. **SVG Rendering Issue in Eligibility Checker**
 **Problem:** Complex SVG circle with text elements was causing rendering issues and potential namespace conflicts.
 
 **Fix Applied:**
 Replaced complex SVG with simple CSS-based circular progress indicator:
-```typescript
+\`\`\`typescript
 // Before: Complex SVG with multiple layers
 <svg className="w-24 h-24" viewBox="0 0 100 100">
   <circle cx="50" cy="50" r="45" fill="none" stroke="#e5e7eb" strokeWidth="8" />
@@ -73,13 +73,13 @@ Replaced complex SVG with simple CSS-based circular progress indicator:
 <div className={`w-28 h-28 rounded-full border-8 flex items-center justify-center ${result.eligible ? 'border-emerald-600 bg-emerald-50' : 'border-orange-600 bg-orange-50'}`}>
   {result.percentage}%
 </div>
-```
+\`\`\`
 
 ### 5. **Button Click Handler Type Issues**
 **Problem:** Button components needed explicit `type="button"` to properly handle onClick events.
 
 **Fix Applied:**
-```typescript
+\`\`\`typescript
 // Before
 <Button onClick={handleSubmit} disabled={...}>
   Check Eligibility
@@ -89,7 +89,7 @@ Replaced complex SVG with simple CSS-based circular progress indicator:
 <Button type="button" onClick={handleSubmit} disabled={...}>
   Check Eligibility
 </Button>
-```
+\`\`\`
 
 ---
 
@@ -99,7 +99,7 @@ Replaced complex SVG with simple CSS-based circular progress indicator:
 A new error boundary wrapper (`/components/error-boundary.tsx`) was created to catch any React errors and display graceful fallbacks instead of crashing the entire page.
 
 **Usage in Credit Page:**
-```typescript
+\`\`\`typescript
 <ErrorBoundary fallback={<div className="p-6 text-center text-gray-600">EMI Calculator temporarily unavailable</div>}>
   <EMICalculator />
 </ErrorBoundary>
@@ -107,7 +107,7 @@ A new error boundary wrapper (`/components/error-boundary.tsx`) was created to c
 <ErrorBoundary fallback={<div className="p-6 text-center text-gray-600">Eligibility Checker temporarily unavailable</div>}>
   <EligibilityChecker />
 </ErrorBoundary>
-```
+\`\`\`
 
 ---
 

@@ -146,7 +146,7 @@
 #### Global Navigation Improvements
 
 **Header Navigation - UPDATED:**
-```
+\`\`\`
 ✓ Home
 ✓ Credit Products (Personal Loan, Credit Card, more)
 ✓ Payment Solutions
@@ -155,10 +155,10 @@
 ✓ Resources (Blog, Guides, Glossary, FAQ)
 ✓ About
 ✓ Contact
-```
+\`\`\`
 
 **Mobile Menu - ENHANCED (14 items):**
-```
+\`\`\`
 ✓ Home
 ✓ Credit Products
   ├─ Personal Loan
@@ -175,10 +175,10 @@
 ✓ Support
 ✓ About
 ✓ Contact
-```
+\`\`\`
 
 **Footer Navigation - EXPANDED:**
-```
+\`\`\`
 PRODUCTS (8 items)
 ├─ Personal Loan
 ├─ Credit Card
@@ -212,7 +212,7 @@ COMPANY (8 items)
 ├─ Privacy
 ├─ Terms
 └─ Careers
-```
+\`\`\`
 
 ---
 
@@ -308,7 +308,7 @@ Rather than 301 redirects which lose traffic, we implement:
    - Use rel="alternate" where appropriate
 
 **Example: Personal Loan**
-```
+\`\`\`
 /blog/personal-loan-complete-guide (SEO-focused, educational)
 └─> Links to: /credit/personal-loan
 
@@ -316,7 +316,7 @@ Rather than 301 redirects which lose traffic, we implement:
 └─> Links to: /blog/personal-loan-complete-guide
 
 Both rank, no cannibalization, user chooses their path
-```
+\`\`\`
 
 ---
 
@@ -329,7 +329,7 @@ Both rank, no cannibalization, user chooses their path
 **Recommended Action:**
 1. Delete `/app/api-docs/page.tsx`
 2. Add 301 redirect:
-```javascript
+\`\`\`javascript
 // next.config.mjs
 redirects: async () => ({
   {
@@ -338,7 +338,7 @@ redirects: async () => ({
     permanent: true
   }
 })
-```
+\`\`\`
 
 **Status:** Documented in remediation plan
 

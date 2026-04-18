@@ -72,7 +72,7 @@ The BuyNswipe platform has been comprehensively reviewed and optimized. A total 
 ## 3. COMPLETE SITE NAVIGATION MAP
 
 ### Main Navigation Hierarchy
-```
+\`\`\`
 Home (/)
 ├── Credit Products (/credit)
 │   ├── Personal Loan (/credit/personal-loan)
@@ -133,7 +133,7 @@ Home (/)
     ├── Mobile App (/mobile-app)
     ├── Analytics Setup (/analytics-setup)
     └── Security & Compliance (/security-compliance)
-```
+\`\`\`
 
 ---
 
@@ -238,13 +238,13 @@ Home (/)
 ## 7. INTERNAL LINKING STRATEGY
 
 ### Primary CTAs Across Site:
-```
+\`\`\`
 Every Product Page → Apply Now (/apply/quick-loan-assessment)
 Every Blog Post → Related Product Pages
 Every Tool Page → Comparison Pages
 Every FAQ → Support Page (/support)
 Every Review → Submit Review Page (/reviews/submit-review)
-```
+\`\`\`
 
 ### Cross-Category Linking:
 - Blog posts link to tools (EMI → Calculator)
@@ -395,7 +395,7 @@ Before Going Live:
 
 **Total Pages: 150+**
 
-```
+\`\`\`
 Top-Level Pages:         8 pages
 Credit Products:        11 pages
 Affiliate Products:      4 pages
@@ -408,7 +408,7 @@ Support & Special:       5 pages
 Dynamic/Template Pages: 44 pages
 ─────────────────────────────
 TOTAL:                 150 pages
-```
+\`\`\`
 
 ---
 

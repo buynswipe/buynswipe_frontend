@@ -35,17 +35,17 @@ Successfully removed duplicate header from homepage and eliminated all "For Sale
 **File:** `app/layout.tsx`
 
 **Before:**
-```
+\`\`\`
 Title: "BuyNswipe - Pre-Funded Fintech Startup for Sale"
 Keywords: "fintech startup for sale", "startup acquisition", etc.
-```
+\`\`\`
 
 **After:**
-```
+\`\`\`
 Title: "BuyNswipe Credit - Personal Loans, Credit Cards, BNPL | Compare 50+ Banks"
 Keywords: "personal loan online", "instant personal loan", "credit card application", etc.
 Description: "AI-powered loan and credit card marketplace with 50+ banks"
-```
+\`\`\`
 
 ---
 

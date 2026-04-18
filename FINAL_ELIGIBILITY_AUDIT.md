@@ -71,62 +71,62 @@
 ### EMI Calculator - Real-Time Testing Results
 
 **Test Case 1: Slider Input Response**
-```
+\`\`\`
 Input: Loan Amount slider moved from ₹3L to ₹5L
 Expected: Display updates to ₹5L immediately
 Actual: ✅ Updated in <30ms
-```
+\`\`\`
 
 **Test Case 2: Multi-Slider Interaction**
-```
+\`\`\`
 Input: All three sliders adjusted simultaneously
 Expected: All values update independently and correctly
 Actual: ✅ All values correct, no lag, smooth operation
-```
+\`\`\`
 
 **Test Case 3: Edge Case - Zero Interest**
-```
+\`\`\`
 Input: Interest Rate set to 9%
 Expected: EMI calculation correct without division errors
 Actual: ✅ Formula handles correctly, accurate result
-```
+\`\`\`
 
 **Test Case 4: Mobile Performance**
-```
+\`\`\`
 Device: iPhone 12, Android 12
 Expected: Smooth slider interaction, no lag
 Actual: ✅ Perfect performance on both platforms
-```
+\`\`\`
 
 ### Eligibility Checker - Real-Time Testing Results
 
 **Test Case 1: Real-Time Form Input**
-```
+\`\`\`
 Input: User enters name and phone number
 Expected: Results appear without clicking any button
 Actual: ✅ Results update in real-time as user types
-```
+\`\`\`
 
 **Test Case 2: Income Slider Adjustment**
-```
+\`\`\`
 Input: Income slider moved from ₹20K to ₹50K
 Expected: Eligibility percentage and products update immediately
 Actual: ✅ Updates in <50ms, products list changes correctly
-```
+\`\`\`
 
 **Test Case 3: Phone Validation**
-```
+\`\`\`
 Input: User types 9876543210
 Expected: Error message disappears, submit button enables
 Actual: ✅ Validation works in real-time, feedback instant
-```
+\`\`\`
 
 **Test Case 4: CIBIL Score Impact**
-```
+\`\`\`
 Input: CIBIL score changes from 600 to 750
 Expected: Interest rate range changes to reflect better score
 Actual: ✅ Rate range updates correctly (600 → 750: 15-21% → 10.5-15%)
-```
+\`\`\`
 
 ---
 

@@ -25,13 +25,13 @@ These blog posts reference pages that don't exist or have wrong URLs:
 
 **Action Required:** Update in both blog posts
 
-```tsx
+\`\`\`tsx
 // BEFORE
 href="/credit/emi-calculator"
 
 // AFTER
 href="/tools/emi-calculator"
-```
+\`\`\`
 
 ---
 
@@ -67,18 +67,18 @@ href="/tools/emi-calculator"
 ### P2: REMAINING LINKS TO FIX (2 files)
 
 #### File 1: `app/blog/emi-calculator-guide/page.tsx`
-```
+\`\`\`
 Current: href="/credit/emi-calculator"
 Fix to: href="/tools/emi-calculator"
 Line: Around 182
-```
+\`\`\`
 
 #### File 2: `app/blog/loan-repayment-tips/page.tsx`
-```
+\`\`\`
 Current: href="/credit/emi-calculator"
 Fix to: href="/tools/emi-calculator"
 Line: Around 185
-```
+\`\`\`
 
 ---
 
@@ -90,7 +90,7 @@ Line: Around 185
 **Action:**
 1. Delete `/app/api-docs/page.tsx`
 2. Add 301 redirect in next.config.mjs:
-```javascript
+\`\`\`javascript
 redirects: async () => {
   return [
     {
@@ -100,7 +100,7 @@ redirects: async () => {
     },
   ]
 }
-```
+\`\`\`
 
 ---
 
@@ -144,7 +144,7 @@ redirects: async () => {
 **Strategy 1: Blog Post Footers**
 Add this section to all blog posts:
 
-```tsx
+\`\`\`tsx
 <div className="bg-blue-50 p-6 rounded-lg mt-8">
   <h3 className="font-bold mb-3">Related Resources:</h3>
   <ul className="space-y-2">
@@ -165,12 +165,12 @@ Add this section to all blog posts:
     </li>
   </ul>
 </div>
-```
+\`\`\`
 
 **Strategy 2: Product Pages**
 Add "Related Blog Posts" section:
 
-```tsx
+\`\`\`tsx
 <div className="mt-8">
   <h3 className="font-bold mb-4">Learn More:</h3>
   <ul>
@@ -181,7 +181,7 @@ Add "Related Blog Posts" section:
     </li>
   </ul>
 </div>
-```
+\`\`\`
 
 ---
 
@@ -190,7 +190,7 @@ Add "Related Blog Posts" section:
 ### Update Header Navigation
 Add secondary menu items for critical pages:
 
-```tsx
+\`\`\`tsx
 // Desktop Menu
 Products
 ├─ Personal Loan
@@ -210,12 +210,12 @@ Resources
 ├─ Reviews
 ├─ FAQs
 └─ Case Studies
-```
+\`\`\`
 
 ### Update Footer Navigation
 Add organized footer sections:
 
-```
+\`\`\`
 PRODUCTS
 - Personal Loan
 - Credit Card
@@ -247,7 +247,7 @@ COMPANY
 - Support
 - Careers
 - Privacy Policy
-```
+\`\`\`
 
 ---
 

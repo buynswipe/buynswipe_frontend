@@ -36,7 +36,7 @@ Successfully completed comprehensive cleanup and restructuring of BuyNswipe's he
 
 ## Current System Architecture
 
-```
+\`\`\`
 ┌─────────────────────────────────────┐
 │      app/layout.tsx (Root)          │
 │  - Wraps ALL pages with Header      │
@@ -59,7 +59,7 @@ Successfully completed comprehensive cleanup and restructuring of BuyNswipe's he
     │  - Page Content         │
     │  - Automatic Footer     │
     └─────────────────────────┘
-```
+\`\`\`
 
 ---
 
@@ -68,7 +68,7 @@ Successfully completed comprehensive cleanup and restructuring of BuyNswipe's he
 ### Modified Files (3)
 
 **1. app/page.tsx**
-```
+\`\`\`
 Changes:
 - Removed lines 31-86 (56-line duplicate header)
 - Updated hero h1 title
@@ -76,10 +76,10 @@ Changes:
 - Updated badge from "For Sale" to "Trusted by 500K+ Users"
 
 Result: Clean homepage with single navigation
-```
+\`\`\`
 
 **2. app/layout.tsx**
-```
+\`\`\`
 Changes:
 - Updated page title (18 characters shorter, more specific)
 - Replaced 15 keywords (from "for sale" to credit terms)
@@ -87,17 +87,17 @@ Changes:
 - Updated Twitter card data
 
 Result: Better SEO targeting for credit products
-```
+\`\`\`
 
 **3. components/header.tsx** (Previously enhanced)
-```
+\`\`\`
 Current State:
 - 5 main navigation items
 - 3 dropdown menus (Credit, Solutions, Tools)
 - Mobile hamburger menu
 - 14 total navigation options
 - Properly focused on credit products
-```
+\`\`\`
 
 ---
 
@@ -172,7 +172,7 @@ Current State:
 ## Technical Implementation
 
 ### Component Structure
-```
+\`\`\`
 components/
 ├── header.tsx (Single, shared globally)
 ├── footer.tsx (Single, shared globally)
@@ -183,7 +183,7 @@ app/
 ├── layout.tsx (Root wrapper with Header/Footer)
 ├── page.tsx (Homepage - cleaned up)
 └── [all other pages] (Auto-inherit Header/Footer)
-```
+\`\`\`
 
 ### Navigation Configuration
 - **Header Dropdowns:** Credit, Solutions, Tools
@@ -231,21 +231,21 @@ app/
 ## Deployment Instructions
 
 ### 1. Testing on Staging
-```bash
+\`\`\`bash
 # Verify all pages load with single header/footer
 # Check mobile menu on different devices
 # Test all navigation links
 # Verify footer links work
 # Check metadata in page source
-```
+\`\`\`
 
 ### 2. Production Deployment
-```bash
+\`\`\`bash
 # Deploy updated files:
 - app/page.tsx
 - app/layout.tsx
 # No component changes needed (already deployed)
-```
+\`\`\`
 
 ### 3. Post-Deployment Verification
 - [x] Monitor bounce rate (should stay same or improve)

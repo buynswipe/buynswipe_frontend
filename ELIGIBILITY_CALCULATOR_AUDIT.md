@@ -178,10 +178,10 @@ Current state shows 5 tool cards:
 4. Rate comparison needs live bank data
 
 **Recommended Backend Flow:**
-```
+\`\`\`
 User Input → Validate → Check Eligibility → Return Results
 Frontend   → Frontend  → Backend API       → Frontend Display
-```
+\`\`\`
 
 ---
 
@@ -246,7 +246,7 @@ Frontend   → Frontend  → Backend API       → Frontend Display
 ## 9. CODE ISSUES IN EMI CALCULATOR
 
 ### Issue #1: Missing Accessibility
-```tsx
+\`\`\`tsx
 // CURRENT (Inaccessible):
 <input type="range" value={loanAmount} onChange={...} />
 
@@ -260,10 +260,10 @@ Frontend   → Frontend  → Backend API       → Frontend Display
   value={loanAmount} 
   onChange={...} 
 />
-```
+\`\`\`
 
 ### Issue #2: No Input Validation
-```tsx
+\`\`\`tsx
 // CURRENT: No validation
 onChange={(e) => setLoanAmount(Number(e.target.value))}
 
@@ -274,10 +274,10 @@ onChange={(e) => {
     setLoanAmount(value)
   }
 }}
-```
+\`\`\`
 
 ### Issue #3: No Memoization
-```tsx
+\`\`\`tsx
 // CURRENT: formatCurrency called 6+ times per render
 <p>{formatCurrency(emi)}</p>
 <p>{formatCurrency(totalPayable)}</p>
@@ -285,15 +285,15 @@ onChange={(e) => {
 // RECOMMENDED:
 const memoizedEMI = useMemo(() => formatCurrency(emi), [emi])
 const memoizedTotal = useMemo(() => formatCurrency(totalPayable), [totalPayable])
-```
+\`\`\`
 
 ### Issue #4: Mobile Styling
-```tsx
+\`\`\`tsx
 // Missing webkit prefixes for mobile browsers:
 // Add to range input className:
 // webkit-appearance: slider-horizontal (for iOS)
 // input[type="range"] { -webkit-appearance: none; }
-```
+\`\`\`
 
 ---
 

@@ -79,7 +79,7 @@
 ## How to Verify Fixes in Browser
 
 ### Console Check
-```javascript
+\`\`\`javascript
 // Open DevTools (F12) → Console tab
 // You should see NO errors when:
 // 1. Page loads
@@ -87,7 +87,7 @@
 // 3. Click copy button
 // 4. Click share button
 // 5. Fill eligibility form
-```
+\`\`\`
 
 ### Functional Tests
 - [ ] Loan Amount slider updates EMI instantly

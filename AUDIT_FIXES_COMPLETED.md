@@ -101,24 +101,24 @@ All critical and priority issues identified in the comprehensive audit have been
 **Status:** ✅ COMPLETE
 
 **What Was Broken:**
-```
+\`\`\`
 All 5 credit card links pointed to same URL:
 - Cashback Cards → /credit/credit-card
 - Travel Cards → /credit/credit-card
 - Lifetime Free Cards → /credit/credit-card
 - Student Cards → /credit/credit-card
 - Business Cards → /credit/credit-card
-```
+\`\`\`
 
 **What Was Fixed:**
-```
+\`\`\`
 Now using anchor navigation:
 - Cashback Cards → /credit/credit-card#cashback
 - Travel Cards → /credit/credit-card#travel
 - Lifetime Free Cards → /credit/credit-card#lifetime-free
 - Student Cards → /credit/credit-card#student
 - Business Cards → /credit/credit-card#business
-```
+\`\`\`
 
 **Impact:** Users can now navigate to specific credit card sections
 
@@ -184,7 +184,7 @@ You need to create/upload these files to make downloads work:
 ## TESTING VERIFICATION
 
 ### Mobile App Links ✅
-```
+\`\`\`
 Test: Click "Download on App Store"
 Expected: Opens Apple App Store page
 Status: ✅ WORKING
@@ -192,17 +192,17 @@ Status: ✅ WORKING
 Test: Click "Get on Google Play"  
 Expected: Opens Google Play Store page
 Status: ✅ WORKING
-```
+\`\`\`
 
 ### Investor Relations ✅
-```
+\`\`\`
 Test: Click "Download Teaser" buttons
 Expected: Downloads PDF file
 Status: ✅ READY (needs PDF file)
-```
+\`\`\`
 
 ### Press Page ✅
-```
+\`\`\`
 Test: Click "Read Full Article"
 Expected: Navigates to /blog
 Status: ✅ WORKING
@@ -210,14 +210,14 @@ Status: ✅ WORKING
 Test: Click download buttons
 Expected: Downloads files
 Status: ✅ READY (needs media files)
-```
+\`\`\`
 
 ### Footer Links ✅
-```
+\`\`\`
 Test: Click "Travel Cards" in footer
 Expected: Jumps to #travel section on credit card page
 Status: ✅ WORKING (needs #travel ID on credit page)
-```
+\`\`\`
 
 ---
 

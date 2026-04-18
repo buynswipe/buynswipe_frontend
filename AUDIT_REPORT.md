@@ -144,27 +144,27 @@ The BuyNswipe platform has been built as a comprehensive fintech SaaS marketplac
 ### Priority 🔴 CRITICAL (Do First):
 
 1. **Create Mobile Navigation**
-   ```
+   \`\`\`
    - Hamburger menu for mobile
    - Sheet/Drawer component with all nav items
    - Mobile-specific layout for small screens
-   ```
+   \`\`\`
 
 2. **Create Footer Component**
-   ```
+   \`\`\`
    - Site-wide footer on all pages
    - Company info, links, newsletter signup
    - Legal pages links
    - Social media icons
-   ```
+   \`\`\`
 
 3. **Add Navigation Dropdowns**
-   ```
+   \`\`\`
    - Products: Loans, Credit Cards, BNPL, Payments
    - Tools: EMI Calculator, Affordability, Interest Rates, Filters
    - Resources: Blog, FAQ, Glossary, Guides
    - Company: About, Support, Pricing, Integrations
-   ```
+   \`\`\`
 
 ### Priority 🟠 HIGH (Do Soon):
 
@@ -224,7 +224,7 @@ The BuyNswipe platform has been built as a comprehensive fintech SaaS marketplac
 ### Recommendations:
 
 1. **Reorganize Main Nav into Dropdowns:**
-   ```
+   \`\`\`
    - PRODUCTS
      - Instant Personal Loans
      - Credit Cards
@@ -250,7 +250,7 @@ The BuyNswipe platform has been built as a comprehensive fintech SaaS marketplac
      - API Docs
      - Partnerships
      - Investor Relations
-   ```
+   \`\`\`
 
 2. **Content Page Tabs:**
    - Product pages: Tabs for Features, Eligibility, Documents, Process, FAQ
