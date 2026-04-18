@@ -201,10 +201,7 @@ const transferServices = [
 
 export default function MoneyTransferPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
         {/* Header */}
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -436,52 +433,7 @@ export default function MoneyTransferPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
-                <p className="text-gray-400">Secure and instant money transfer service in India.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Transfer Methods</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>UPI Transfer</li>
-                  <li>NEFT Transfer</li>
-                  <li>RTGS Transfer</li>
-                  <li>International Remittance</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Products</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>
-                    <Link href="/credit/personal-loan" className="hover:text-white">
-                      Personal Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Credit Card
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit" className="hover:text-white">
-                      All Products
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <div className="space-y-2 text-gray-400 text-sm">
-                  <p className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" /> +91 8171169007
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Mail className="w-4 h-4" /> buynswipe@gmail.com
-                  </p>
+
                 </div>
               </div>
             </div>

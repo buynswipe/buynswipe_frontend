@@ -96,10 +96,7 @@ const professionals = [
 
 export default function SelfEmployedLoanPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
         {/* Header */}
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -201,12 +198,7 @@ export default function SelfEmployedLoanPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-400">© 2025 BuyNswipe | Loans for Professionals</p>
-          </div>
-        </footer>
+
       </div>
     </>
   )

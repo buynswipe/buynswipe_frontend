@@ -33,8 +33,10 @@ export default function MobileAppPage() {
               <CardContent>
                 <p className="text-gray-700 mb-6">Download from Apple App Store</p>
                 <a
-                  href="#"
-                  className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 font-semibold"
+                  href="https://apps.apple.com/in/app/buynswipe-credit/id1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 font-semibold transition-colors"
                 >
                   Download on App Store
                 </a>
@@ -49,8 +51,10 @@ export default function MobileAppPage() {
               <CardContent>
                 <p className="text-gray-700 mb-6">Download from Google Play Store</p>
                 <a
-                  href="#"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 font-semibold"
+                  href="https://play.google.com/store/apps/details?id=com.buynswipe.credit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 font-semibold transition-colors"
                 >
                   Get on Google Play
                 </a>
@@ -114,8 +118,10 @@ export default function MobileAppPage() {
           <p className="text-xl text-blue-100 mb-8">Download BuyNswipe and manage your finances on the go</p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="#"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2"
+              href="https://play.google.com/store/apps/details?id=com.buynswipe.credit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2 transition-colors"
             >
               <Download className="w-5 h-5" />
               Download Now

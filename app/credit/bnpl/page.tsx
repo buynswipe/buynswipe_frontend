@@ -234,42 +234,7 @@ const useCases = [
 
 export default function BNPLPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-purple-50">
-        {/* Header */}
-        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/credit" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-pink-600 to-purple-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <div>
-                <span className="font-bold text-xl text-gray-900">BuyNswipe</span>
-                <span className="text-pink-600 font-semibold ml-1">BNPL</span>
-              </div>
-            </Link>
-            <nav className="hidden md:flex items-center gap-6">
-              <Link href="/credit/personal-loan" className="text-gray-600 hover:text-pink-600 transition-colors">
-                Loans
-              </Link>
-              <Link href="/credit/credit-card" className="text-gray-600 hover:text-pink-600 transition-colors">
-                Credit Cards
-              </Link>
-              <Link href="/credit/bnpl" className="text-pink-600 font-medium">
-                BNPL
-              </Link>
-              <Link href="/credit/cibil-score" className="text-gray-600 hover:text-pink-600 transition-colors">
-                CIBIL Score
-              </Link>
-            </nav>
-            <Button className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700">
-              Get Started
-            </Button>
-          </div>
-        </header>
-
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-purple-50">
         {/* Hero Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
@@ -609,89 +574,7 @@ export default function BNPLPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-pink-600 to-purple-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold">B</span>
-                  </div>
-                  <span className="font-bold text-xl">BuyNswipe</span>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  India's trusted BNPL and credit marketplace. Compare and apply for best pay later options.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">BNPL Apps</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Simpl
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      LazyPay
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      ZestMoney
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Amazon Pay Later
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Paytm Postpaid
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Other Products</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>
-                    <Link href="/credit/personal-loan" className="hover:text-white transition-colors">
-                      Personal Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white transition-colors">
-                      Credit Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/business-loan" className="hover:text-white transition-colors">
-                      Business Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/cibil-score" className="hover:text-white transition-colors">
-                      CIBIL Score
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>support@buynswipe.com</li>
-                  <li>+91 8171169007</li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>&copy; 2025 BuyNswipe Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
-            </div>
-          </div>
-        </footer>
+
       </div>
     </>
   )
