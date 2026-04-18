@@ -203,36 +203,7 @@ const features = [
 
 export default function BusinessLoanPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
-        {/* Header */}
-        <header className="bg-white border-b sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
-            </Link>
-            <nav className="hidden md:flex items-center gap-6">
-              <Link href="/credit" className="text-gray-600 hover:text-blue-600">
-                All Products
-              </Link>
-              <Link href="/credit/personal-loan" className="text-gray-600 hover:text-blue-600">
-                Personal Loan
-              </Link>
-              <Link href="/credit/business-loan" className="text-emerald-600 font-medium">
-                Business Loan
-              </Link>
-              <Link href="/credit/credit-card" className="text-gray-600 hover:text-blue-600">
-                Credit Card
-              </Link>
-            </nav>
-            <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
-              <Link href="#apply">Apply Now</Link>
-            </Button>
-          </div>
-        </header>
-
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-emerald-600 to-emerald-800 text-white">
           <div className="container mx-auto px-4">
@@ -512,83 +483,7 @@ export default function BusinessLoanPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
-                <p className="text-gray-400">
-                  India's trusted MSME & business loan marketplace. Quick approvals, best rates.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Business Loans</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <Link href="/credit/business-loan" className="hover:text-white">
-                      MSME Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/business-loan" className="hover:text-white">
-                      Mudra Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/business-loan" className="hover:text-white">
-                      Working Capital
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/business-loan" className="hover:text-white">
-                      Startup Loan
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Other Products</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <Link href="/credit/personal-loan" className="hover:text-white">
-                      Personal Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Credit Card
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/emi-calculator" className="hover:text-white">
-                      EMI Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/cibil-score" className="hover:text-white">
-                      CIBIL Score
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <div className="space-y-2 text-gray-400">
-                  <p className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" /> +91 8171169007
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Mail className="w-4 h-4" /> buynswipe@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
-            </div>
-          </div>
-        </footer>
+
       </div>
     </>
   )

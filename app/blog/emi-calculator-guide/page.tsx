@@ -179,7 +179,7 @@ export default function EMICalculatorGuidePage() {
             <h2 className="text-2xl font-bold mb-4">Calculate Your EMI</h2>
             <p className="text-purple-100 mb-6">Use our free EMI calculator to plan your loan repayment</p>
             <Link
-              href="/credit/emi-calculator"
+              href="/tools/emi-calculator"
               className="inline-block bg-white text-purple-600 font-bold px-8 py-3 rounded-lg hover:bg-purple-50 transition"
             >
               Use Calculator

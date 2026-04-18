@@ -2,50 +2,52 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BuyNswipe - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
+  title: "BuyNswipe Credit - Personal Loans, Credit Cards, BNPL | Compare 50+ Banks Online",
   description:
-    "BuyNswipe Technology Pvt. Ltd. - Government recognized fintech SaaS startup for sale. Registered since 2017, trademarked brand, premium domains, ₹17L seed funded. Ideal for fintech entrepreneurs and strategic acquirers. POS integration ready, co-branded cards potential.",
+    "BuyNswipe Credit - India's AI-powered loan and credit card marketplace. Get instant personal loans, compare credit cards, BNPL options from 50+ banks. Instant eligibility check and quick approval in minutes.",
   keywords: [
-    "fintech startup for sale",
-    "buy fintech company India",
-    "startup acquisition India",
-    "DPIIT startup for sale",
-    "digital payment startup",
-    "POS company acquisition",
-    "fintech SaaS acquisition",
-    "BuyNswipe",
-    "payment gateway startup",
-    "Startup India company for sale",
-    "registered fintech company",
-    "trademarked fintech brand",
-    "instant loan app",
-    "credit card marketplace",
-    "BNPL platform",
+    "personal loan online",
+    "instant personal loan",
+    "credit card application",
+    "best credit cards",
+    "BNPL",
+    "compare loans",
+    "low interest rates",
+    "instant approval",
+    "eligibility checker",
+    "EMI calculator",
+    "CIBIL score",
+    "financial loans",
+    "credit marketplace",
+    "digital lending",
+    "fintech platform",
   ],
   generator: "v0.app",
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "BuyNswipe - Pre-Funded Fintech Startup for Sale",
+    title: "BuyNswipe Credit - Instant Personal Loans & Credit Cards",
     description:
-      "Govt-recognized fintech startup with 7+ years history, trademarked brand, premium domains. ₹17L seed funded. Ready for acquisition.",
+      "Compare and apply for personal loans, credit cards, and BNPL from India's top 50+ banks. Instant eligibility check and approval.",
     url: "https://buynswipe.com",
-    siteName: "BuyNswipe",
+    siteName: "BuyNswipe Credit",
     type: "website",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyNswipe - Fintech Startup Acquisition Opportunity",
+    title: "BuyNswipe Credit - Personal Loans & Credit Cards",
     description:
-      "Pre-funded, govt-recognized fintech SaaS startup for sale. 7+ years registered company with trademarked brand.",
+      "Instant personal loans, credit cards & BNPL. Compare rates from 50+ banks and apply online with instant approval.",
     site: "@buynswipe",
   },
   robots: {
@@ -62,8 +64,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
-        {children}
+      <body className={`font-sans antialiased flex flex-col min-h-screen`}>
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
         <Analytics />
       </body>
     </html>
