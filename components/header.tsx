@@ -37,6 +37,7 @@ const navigationItems = [
     ],
   },
   { label: 'Blog', href: '/blog' },
+  { label: 'BuyNswipe Go', href: '/go' },
 ]
 
 export function Header() {

@@ -6,6 +6,30 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .go-gradient-text {
+    background: linear-gradient(100deg, #16d6d0 10%, #8df3ee 48%, #ff9e68 92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .go-card {
+    background: linear-gradient(145deg, #183b4e, #07121f 65%);
+  }
+
+  .go-route {
+    position: absolute;
+    border: 1px solid rgba(22, 214, 208, .35);
+    border-radius: 999px;
+    transform: rotate(-24deg);
+  }
+
+  .route-one { inset: 20% 4% 34% 28%; }
+  .route-two { inset: 34% 15% 20% 4%; transform: rotate(20deg); border-color: rgba(255, 158, 104, .4); }
+  .route-three { inset: 7% 27% 48% 18%; transform: rotate(48deg); border-color: rgba(255, 255, 255, .16); }
+
+  html { scroll-behavior: smooth; }
 }
 
 @layer base {
