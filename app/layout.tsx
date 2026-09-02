@@ -62,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
-      <body className={`${_geist.variable} ${_geistMono.variable} font-sans antialiased`}>
+      <body className={`${_geist.className} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
