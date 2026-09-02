@@ -12,6 +12,7 @@ export function MobileMenu() {
     { label: "Home", href: "/" },
     { label: "Credit", href: "/credit" },
     { label: "Payment Solutions", href: "/payment-solutions" },
+    { label: "BuyNswipe® Go", href: "/go" },
     { label: "Solutions", href: "/solutions" },
     { label: "Resources", href: "/resources" },
     { label: "Blog", href: "/blog" },

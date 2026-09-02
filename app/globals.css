@@ -90,3 +90,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --go-navy: #06183d;
+  --go-blue: #006eff;
+  --go-cyan: #00c7f2;
+  --go-green: #39d353;
+  --go-lime: #8deb16;
+  --go-bg: #f5f8fc;
+}
+
+.bg-go-navy { background-color: var(--go-navy); }
+.bg-go-blue { background-color: var(--go-blue); }
+.bg-go-bg { background-color: var(--go-bg); }
+.text-go-navy { color: var(--go-navy); }
+.text-go-blue { color: var(--go-blue); }
+.text-go-cyan { color: var(--go-cyan); }
+.text-go-green { color: var(--go-green); }
+.text-go-lime { color: var(--go-lime); }
+.border-go-navy\/10 { border-color: color-mix(in srgb, var(--go-navy) 10%, transparent); }
+.border-go-navy\/15 { border-color: color-mix(in srgb, var(--go-navy) 15%, transparent); }
+.border-go-navy\/20 { border-color: color-mix(in srgb, var(--go-navy) 20%, transparent); }
+.border-go-green\/30 { border-color: color-mix(in srgb, var(--go-green) 30%, transparent); }
+.bg-go-blue\/10 { background-color: color-mix(in srgb, var(--go-blue) 10%, transparent); }
+.bg-go-green\/5 { background-color: color-mix(in srgb, var(--go-green) 5%, transparent); }
+.bg-go-green\/15 { background-color: color-mix(in srgb, var(--go-green) 15%, transparent); }
+.go-gradient-text { background: linear-gradient(110deg, var(--go-blue), var(--go-cyan) 45%, var(--go-green)); background-clip: text; color: transparent; }
+.go-kicker { display: inline-flex; align-items: center; gap: .5rem; border-radius: 9999px; background: color-mix(in srgb, var(--go-blue) 9%, transparent); padding: .5rem .75rem; color: var(--go-blue); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.go-kicker-dark { background: color-mix(in srgb, var(--go-cyan) 15%, transparent); color: var(--go-cyan); }
+.go-input { border: 1px solid color-mix(in srgb, var(--go-navy) 15%, transparent); border-radius: .75rem; background: var(--go-bg); padding: .75rem 1rem; color: var(--go-navy); outline: none; }
+.go-input:focus { border-color: var(--go-blue); box-shadow: 0 0 0 3px color-mix(in srgb, var(--go-blue) 16%, transparent); }
+::selection { background: var(--go-lime); color: var(--go-navy); }

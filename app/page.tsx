@@ -60,6 +60,12 @@ export default function BuyNswipeLanding() {
               Payment Solutions
             </Link>
             <Link
+              href="/go"
+              className="px-3 py-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
+            >
+              BuyNswipe® Go
+            </Link>
+            <Link
               href="/solutions"
               className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
