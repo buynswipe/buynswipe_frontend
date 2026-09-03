@@ -116,6 +116,8 @@
 .bg-go-green\/5 { background-color: color-mix(in srgb, var(--go-green) 5%, transparent); }
 .bg-go-green\/15 { background-color: color-mix(in srgb, var(--go-green) 15%, transparent); }
 .go-gradient-text { background: linear-gradient(110deg, var(--go-blue), var(--go-cyan) 45%, var(--go-green)); background-clip: text; color: transparent; }
+.go-page { font-family: Arial, Helvetica, sans-serif; }
+.go-page code, .go-page kbd { font-family: Arial, Helvetica, sans-serif; }
 .go-kicker { display: inline-flex; align-items: center; gap: .5rem; border-radius: 9999px; background: color-mix(in srgb, var(--go-blue) 9%, transparent); padding: .5rem .75rem; color: var(--go-blue); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .go-kicker-dark { background: color-mix(in srgb, var(--go-cyan) 15%, transparent); color: var(--go-cyan); }
 .go-input { border: 1px solid color-mix(in srgb, var(--go-navy) 15%, transparent); border-radius: .75rem; background: var(--go-bg); padding: .75rem 1rem; color: var(--go-navy); outline: none; }
