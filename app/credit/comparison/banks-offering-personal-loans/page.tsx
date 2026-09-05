@@ -269,6 +269,5 @@ export default function BanksPersonalLoanPage() {
           </div>
         </section>
       </div>
-    </>
   )
 }

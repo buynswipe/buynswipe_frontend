@@ -485,6 +485,5 @@ export default function BusinessLoanPage() {
 
 
       </div>
-    </>
   )
 }

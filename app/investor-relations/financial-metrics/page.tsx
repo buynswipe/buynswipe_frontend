@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   LineChart,
@@ -13,13 +14,6 @@ import {
   ResponsiveContainer,
 } from "recharts"
 import { TrendingUp, Users, DollarSign, Zap } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Financial Metrics | BuyNswipe Investor Relations | Growth Dashboard",
-  description:
-    "View BuyNswipe's financial metrics, transaction volume, user growth, and key performance indicators. Investment opportunity with proven business metrics.",
-  keywords: ["BuyNswipe metrics", "financial performance", "investor metrics", "fintech growth", "transaction volume"],
-}
 
 const transactionData = [
   { month: "Jan", volume: 2400, users: 4000, revenue: 240 },

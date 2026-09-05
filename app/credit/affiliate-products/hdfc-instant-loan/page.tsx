@@ -173,6 +173,5 @@ export default function HDFCInstantLoanPage() {
           </div>
         </section>
       </div>
-    </>
   )
 }

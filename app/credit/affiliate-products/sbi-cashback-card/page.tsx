@@ -153,6 +153,5 @@ export default function SBICashbackCardPage() {
           </div>
         </section>
       </div>
-    </>
   )
 }

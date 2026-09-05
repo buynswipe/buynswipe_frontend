@@ -246,6 +246,5 @@ export default function EMICalculatorPage() {
 
 
       </div>
-    </>
   )
 }

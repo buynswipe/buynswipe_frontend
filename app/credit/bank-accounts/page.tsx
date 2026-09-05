@@ -441,6 +441,5 @@ export default function BankAccountPage() {
 
 
       </div>
-    </>
   )
 }

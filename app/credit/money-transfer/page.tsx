@@ -434,15 +434,6 @@ export default function MoneyTransferPage() {
         </section>
 
 
-                </div>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
-            </div>
-          </div>
-        </footer>
       </div>
-    </>
   )
 }

@@ -719,6 +719,5 @@ export default function PersonalLoanPage() {
 
 
       </div>
-    </>
   )
 }

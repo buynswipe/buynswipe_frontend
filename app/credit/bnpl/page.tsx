@@ -576,6 +576,5 @@ export default function BNPLPage() {
 
 
       </div>
-    </>
   )
 }

@@ -299,6 +299,5 @@ export default function CIBILScorePage() {
 
 
       </div>
-    </>
   )
 }

@@ -200,6 +200,5 @@ export default function SelfEmployedLoanPage() {
 
 
       </div>
-    </>
   )
 }

@@ -780,6 +780,5 @@ export default function CreditCardPage() {
 
 
       </div>
-    </>
   )
 }

@@ -159,6 +159,5 @@ export default function BajajPersonalLoanPage() {
           </div>
         </section>
       </div>
-    </>
   )
 }
