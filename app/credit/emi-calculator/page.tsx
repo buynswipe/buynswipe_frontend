@@ -58,26 +58,7 @@ const jsonLd = {
 
 export default function EMICalculatorPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        {/* Header */}
-        <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/credit" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
-              <ArrowLeft className="w-5 h-5" />
-              <span>Back to Credit</span>
-            </Link>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">B</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
-            </div>
-          </div>
-        </header>
-
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <main className="container mx-auto px-4 py-12">
           {/* Hero */}
           <div className="text-center mb-12">
@@ -263,15 +244,7 @@ export default function EMICalculatorPage() {
           </section>
         </main>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-gray-400 py-8 mt-16">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-sm">
-              BuyNswipe Technology Pvt. Ltd. | Free EMI Calculator for Personal Loan, Home Loan, Car Loan, Education
-              Loan
-            </p>
-          </div>
-        </footer>
+
       </div>
     </>
   )

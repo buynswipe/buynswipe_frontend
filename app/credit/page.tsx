@@ -37,6 +37,9 @@ import {
   ShoppingBag,
 } from "lucide-react"
 import Link from "next/link"
+import { EMICalculator } from "@/components/emi-calculator"
+import { EligibilityChecker } from "@/components/eligibility-checker"
+import { ErrorBoundary } from "@/components/error-boundary"
 
 export const metadata: Metadata = {
   title: "BuyNswipe Credit - Instant Personal Loan Online | Credit Card Apply | BNPL | Best Loan App India 2025",
@@ -240,285 +243,177 @@ export const metadata: Metadata = {
   publisher: "BuyNswipe",
 }
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://buynswipe.com/#organization",
-      name: "BuyNswipe Technology Pvt. Ltd.",
-      url: "https://buynswipe.com",
-      logo: "https://buynswipe.com/logo.png",
-      sameAs: [
-        "https://www.linkedin.com/company/buynswipe",
-        "https://twitter.com/buynswipe",
-        "https://www.facebook.com/buynswipe",
-        "https://www.instagram.com/buynswipe",
-        "https://www.youtube.com/@buynswipe",
-      ],
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+91-8171169007",
-        contactType: "customer service",
-        email: "buynswipe@gmail.com",
-        areaServed: "IN",
-        availableLanguage: ["English", "Hindi"],
-      },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://buynswipe.com/#website",
-      url: "https://buynswipe.com",
-      name: "BuyNswipe Credit",
-      description: "India's trusted AI-driven digital credit marketplace for instant loans and credit cards",
-      publisher: { "@id": "https://buynswipe.com/#organization" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://buynswipe.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
-    },
-    {
-      "@type": "FinancialProduct",
-      "@id": "https://buynswipe.com/credit/#personal-loan",
-      name: "Instant Personal Loan",
-      description:
-        "Get instant personal loan online without documents. Up to ₹50 Lakhs with interest rates starting from 10.5% p.a.",
-      provider: { "@id": "https://buynswipe.com/#organization" },
-      category: "Personal Loan",
-      interestRate: {
-        "@type": "QuantitativeValue",
-        minValue: 10.5,
-        maxValue: 24,
-        unitText: "percent per annum",
-      },
-      amount: {
-        "@type": "MonetaryAmount",
-        minValue: 10000,
-        maxValue: 5000000,
-        currency: "INR",
-      },
-      feesAndCommissionsSpecification: "Processing fee: 0-3%",
-    },
-    {
-      "@type": "FinancialProduct",
-      "@id": "https://buynswipe.com/credit/#business-loan",
-      name: "Business Loan for MSME",
-      description:
-        "Instant business loan for small shop owners and MSMEs. Up to ₹2 Crore without collateral. Quick approval.",
-      provider: { "@id": "https://buynswipe.com/#organization" },
-      category: "Business Loan",
-      interestRate: {
-        "@type": "QuantitativeValue",
-        minValue: 12,
-        maxValue: 28,
-        unitText: "percent per annum",
-      },
-      amount: {
-        "@type": "MonetaryAmount",
-        minValue: 50000,
-        maxValue: 20000000,
-        currency: "INR",
-      },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How to get instant loan without CIBIL check?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BuyNswipe Credit partners with NBFCs that offer loans based on alternative credit scoring using bank statements, UPI transactions, and income proof. You can get instant loans from ₹10,000 to ₹5 Lakhs even with low or no CIBIL score.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Which is the best instant loan app in India?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BuyNswipe Credit is one of the best instant loan apps in India, offering loans from 50+ banks & NBFCs with interest rates starting at 10.5% p.a. Features include 2-minute approval, instant disbursal, and zero paperwork.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How to apply for credit card online with instant approval?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On BuyNswipe Credit, you can compare and apply for credit cards from top banks like HDFC, ICICI, Axis, and SBI. Simply enter your details, check eligibility, and get instant approval within 2 minutes. Cards are delivered within 7-10 days.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is BNPL (Buy Now Pay Later)?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BNPL allows you to purchase products and pay later in easy EMIs or full amount after a grace period. BuyNswipe Credit offers BNPL with 0% interest, instant approval, and acceptance at 10,000+ partner merchants across India.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How to check CIBIL score for free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Check your CIBIL score for free on BuyNswipe Credit. Simply enter your PAN card and mobile number to get your credit score instantly. We also provide tips to improve your score and personalized loan recommendations.",
-          },
-        },
-      ],
-    },
-  ],
-}
-
 export default function BuyNswipeCreditPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-blue-50">
-        {/* Header */}
-        <header className="border-b bg-white/90 backdrop-blur-md sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
-                <CreditCard className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
-                <span className="text-xl font-bold text-emerald-600"> Credit</span>
-              </div>
-            </Link>
-            <nav className="hidden md:flex items-center gap-6">
-              <Link href="#loans" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
-                Loans
-              </Link>
-              <Link href="#credit-cards" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
-                Credit Cards
-              </Link>
-              <Link href="#bnpl" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
-                BNPL
-              </Link>
-              <Link href="#tools" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
-                Tools
-              </Link>
-              <Link href="#faq" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
-                FAQ
-              </Link>
-              <Button className="bg-emerald-600 hover:bg-emerald-700">Apply Now</Button>
-            </nav>
-          </div>
-        </header>
-
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-blue-50">
         {/* Hero Section - SEO Optimized with H1 */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-20 md:py-32 px-4 bg-white">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge className="mb-4 bg-emerald-100 text-emerald-800 border-emerald-200">
-                  <Sparkles className="w-4 h-4 mr-1" />
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Left Column - Text Content */}
+              <div className="flex flex-col justify-center">
+                <Badge className="mb-6 bg-emerald-100 text-emerald-700 border-emerald-200 w-fit text-sm">
+                  <Sparkles className="w-4 h-4 mr-2" />
                   Best Loan App in India 2025
                 </Badge>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight text-balance">
-                  <span className="text-emerald-600">Instant Personal Loan</span> Online | Credit Card Apply |{" "}
-                  <span className="text-blue-600">BNPL</span>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight text-balance">
+                  Instant Personal Loan Online
                 </h1>
 
-                <p className="text-xl text-gray-600 mb-4 font-medium">
-                  Get Loan Without Documents in 2 Minutes. Compare 50+ Banks & NBFCs.
+                <p className="text-xl text-gray-600 mb-6 font-medium leading-relaxed">
+                  Get loan without documents in 2 minutes. Compare 50+ banks and get approved instantly.
                 </p>
 
-                <p className="text-lg text-gray-500 mb-8">
-                  Apply for instant personal loan without CIBIL check, business loan for small shop, credit card with
-                  instant approval, and BNPL pay later. Check loan eligibility free. Trusted by 1 Crore+ Indians.
-                  Interest rates from 10.5% p.a.
+                <p className="text-lg text-gray-500 mb-10 leading-relaxed">
+                  Apply for instant personal loan without CIBIL check, business loan for small shops, credit cards with instant approval, and BNPL. Check loan eligibility free. Trusted by 1 Crore+ Indians. Interest rates from 10.5% p.a.
                 </p>
 
-                {/* Trust Signals */}
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <div className="flex items-center gap-2 text-sm text-gray-600 bg-white px-3 py-2 rounded-full shadow-sm">
-                    <ShieldCheck className="w-5 h-5 text-emerald-600" />
-                    <span>RBI Regulated Partners</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-600 bg-white px-3 py-2 rounded-full shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-emerald-600" />
-                    <span>256-bit SSL Secure</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-600 bg-white px-3 py-2 rounded-full shadow-sm">
-                    <Star className="w-5 h-5 text-yellow-500" />
-                    <span>4.8/5 (50K+ Reviews)</span>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-                    Check Loan Eligibility Free
+                {/* Primary CTA */}
+                <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-base h-14 px-8 rounded-lg">
+                    Check Eligibility Free
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                    Apply Credit Card
+                  <Button size="lg" variant="outline" className="text-gray-700 font-semibold text-base h-14 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-50">
+                    Apply for Credit Card
                   </Button>
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-6">
+                {/* Trust Indicators */}
+                <div className="flex flex-wrap gap-6 border-t pt-10 border-gray-200">
                   <div>
-                    <p className="text-2xl font-bold text-emerald-600">1 Cr+</p>
-                    <p className="text-sm text-gray-500">Happy Users</p>
+                    <p className="text-3xl font-bold text-emerald-600">1 Cr+</p>
+                    <p className="text-sm text-gray-600 mt-1">Happy Users</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-blue-600">50+</p>
-                    <p className="text-sm text-gray-500">Bank Partners</p>
+                    <p className="text-3xl font-bold text-blue-600">50+</p>
+                    <p className="text-sm text-gray-600 mt-1">Bank Partners</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-purple-600">10.5%</p>
-                    <p className="text-sm text-gray-500">Starting Rate</p>
+                    <p className="text-3xl font-bold text-emerald-600">10.5%</p>
+                    <p className="text-sm text-gray-600 mt-1">Starting Interest</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-orange-600">2 Min</p>
-                    <p className="text-sm text-gray-500">Approval Time</p>
+                    <p className="text-3xl font-bold text-blue-600">2 Min</p>
+                    <p className="text-sm text-gray-600 mt-1">Approval Time</p>
                   </div>
                 </div>
               </div>
 
-              {/* Hero Visual */}
+              {/* Right Column - Feature Cards */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-emerald-100 to-blue-100 rounded-3xl p-8">
-                  <div className="grid grid-cols-2 gap-4">
-                    <Card className="bg-white shadow-lg">
-                      <CardContent className="p-4 text-center">
-                        <IndianRupee className="w-10 h-10 text-emerald-600 mx-auto mb-2" />
-                        <p className="font-bold text-2xl text-gray-900">50L+</p>
-                        <p className="text-sm text-gray-600">Max Loan Amount</p>
-                      </CardContent>
-                    </Card>
-                    <Card className="bg-white shadow-lg">
-                      <CardContent className="p-4 text-center">
-                        <Timer className="w-10 h-10 text-blue-600 mx-auto mb-2" />
-                        <p className="font-bold text-2xl text-gray-900">2 Min</p>
-                        <p className="text-sm text-gray-600">Instant Approval</p>
-                      </CardContent>
-                    </Card>
-                    <Card className="bg-white shadow-lg">
-                      <CardContent className="p-4 text-center">
-                        <Percent className="w-10 h-10 text-purple-600 mx-auto mb-2" />
-                        <p className="font-bold text-2xl text-gray-900">10.5%</p>
-                        <p className="text-sm text-gray-600">Interest Rate</p>
-                      </CardContent>
-                    </Card>
-                    <Card className="bg-white shadow-lg">
-                      <CardContent className="p-4 text-center">
-                        <Users className="w-10 h-10 text-orange-600 mx-auto mb-2" />
-                        <p className="font-bold text-2xl text-gray-900">1Cr+</p>
-                        <p className="text-sm text-gray-600">Happy Users</p>
-                      </CardContent>
-                    </Card>
+                {/* Main Features Grid */}
+                <div className="grid grid-cols-2 gap-6">
+                  {/* Feature 1 */}
+                  <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="w-14 h-14 bg-emerald-600 rounded-xl flex items-center justify-center mb-6">
+                      <IndianRupee className="w-7 h-7 text-white" />
+                    </div>
+                    <p className="text-4xl font-bold text-gray-900 mb-2">₹50L+</p>
+                    <p className="text-gray-700 font-medium">Max Loan Amount</p>
                   </div>
 
-                  {/* Floating Cards */}
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-xl p-3 shadow-xl animate-pulse">
-                    <p className="text-xs font-medium">Limited Offer</p>
-                    <p className="text-lg font-bold">0% Processing</p>
+                  {/* Feature 2 */}
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                      <Zap className="w-7 h-7 text-white" />
+                    </div>
+                    <p className="text-4xl font-bold text-gray-900 mb-2">2 Min</p>
+                    <p className="text-gray-700 font-medium">Instant Approval</p>
+                  </div>
+
+                  {/* Feature 3 */}
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                      <Percent className="w-7 h-7 text-white" />
+                    </div>
+                    <p className="text-4xl font-bold text-gray-900 mb-2">10.5%</p>
+                    <p className="text-gray-700 font-medium">Starting Rate p.a.</p>
+                  </div>
+
+                  {/* Feature 4 */}
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                      <FileCheck className="w-7 h-7 text-white" />
+                    </div>
+                    <p className="text-4xl font-bold text-gray-900 mb-2">0%</p>
+                    <p className="text-gray-700 font-medium">Processing Fee</p>
                   </div>
                 </div>
+
+                {/* Limited Offer Badge */}
+                <div className="absolute -top-6 -right-6 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-full p-4 shadow-xl flex flex-col items-center justify-center w-28 h-28">
+                  <p className="text-xs font-semibold uppercase tracking-wide">Limited</p>
+                  <p className="text-2xl font-bold">0%</p>
+                  <p className="text-xs font-semibold">Fee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why BuyNswipe vs Banks Comparison */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Why BuyNswipe vs Traditional Banks?</h2>
+              <p className="text-xl text-gray-600">Get loans 10x faster with zero hassle</p>
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-gray-200 bg-gray-50">
+                      <th className="px-8 py-6 text-left font-bold text-gray-900">Criteria</th>
+                      <th className="px-8 py-6 text-left">
+                        <div className="flex items-center gap-2">
+                          <div className="w-3 h-3 bg-emerald-600 rounded-full"></div>
+                          <span className="font-bold text-gray-900">BuyNswipe</span>
+                        </div>
+                      </th>
+                      <th className="px-8 py-6 text-left">
+                        <div className="flex items-center gap-2">
+                          <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
+                          <span className="font-bold text-gray-700">Traditional Banks</span>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-100 hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">Approval Time</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">2 minutes</td>
+                      <td className="px-8 py-5 text-gray-600">3-7 days</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">Documents Required</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">Minimal (Pan, Aadhaar)</td>
+                      <td className="px-8 py-5 text-gray-600">10+ documents</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">Processing Fee</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">0% (No fees)</td>
+                      <td className="px-8 py-5 text-gray-600">1-3% of loan amount</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">CIBIL Score Required</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">Not required</td>
+                      <td className="px-8 py-5 text-gray-600">650+ mandatory</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">Interest Rates</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">10.5% - 24% p.a.</td>
+                      <td className="px-8 py-5 text-gray-600">12% - 28% p.a.</td>
+                    </tr>
+                    <tr className="hover:bg-emerald-50 transition-colors">
+                      <td className="px-8 py-5 font-medium text-gray-900">Digital Process</td>
+                      <td className="px-8 py-5 text-emerald-600 font-semibold">100% online</td>
+                      <td className="px-8 py-5 text-gray-600">Offline visits needed</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -787,7 +682,7 @@ export default function BuyNswipeCreditPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {/* Cashback Card */}
-              <Card className="bg-gradient-to-br from-emerald-500 to-emerald-700 border-0 text-white overflow-hidden relative">
+              <Card id="cashback" className="bg-gradient-to-br from-emerald-500 to-emerald-700 border-0 text-white overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <CardContent className="p-6 relative">
                   <Badge className="bg-white/20 text-white border-0 mb-4">Most Popular</Badge>
@@ -815,7 +710,7 @@ export default function BuyNswipeCreditPage() {
               </Card>
 
               {/* Travel Card */}
-              <Card className="bg-gradient-to-br from-blue-500 to-blue-700 border-0 text-white overflow-hidden relative">
+              <Card id="travel" className="bg-gradient-to-br from-blue-500 to-blue-700 border-0 text-white overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <CardContent className="p-6 relative">
                   <Badge className="bg-white/20 text-white border-0 mb-4">Best for Travel</Badge>
@@ -902,7 +797,7 @@ export default function BuyNswipeCreditPage() {
 
             {/* More Card Types */}
             <div className="flex flex-wrap justify-center gap-3">
-              <Badge className="bg-white/10 text-white border-white/20 px-4 py-2 text-sm cursor-pointer hover:bg-white/20">
+              <Badge id="lifetime-free" className="bg-white/10 text-white border-white/20 px-4 py-2 text-sm cursor-pointer hover:bg-white/20">
                 Lifetime Free Credit Cards
               </Badge>
               <Badge className="bg-white/10 text-white border-white/20 px-4 py-2 text-sm cursor-pointer hover:bg-white/20">
@@ -1079,6 +974,96 @@ export default function BuyNswipeCreditPage() {
           </div>
         </section>
 
+        {/* Customer Testimonials Section */}
+        <section className="py-20 px-4 bg-gradient-to-b from-white to-emerald-50">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Trusted by 1 Crore+ Happy Customers</h2>
+              <p className="text-xl text-gray-600">See what real users say about BuyNswipe Credit</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Review 1 */}
+              <Card className="border border-gray-200 hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-emerald-600">RK</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">Rajesh Kumar</h4>
+                      <p className="text-sm text-gray-600">Delhi | Approved ₹5 Lakh</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <div key={i} className="w-5 h-5 bg-yellow-400 rounded-full" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    "Got approved in just 2 minutes! No documents hassle, just uploaded Pan and Aadhaar. Received money in my account within 24 hours. Best experience ever!"
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Review 2 */}
+              <Card className="border border-gray-200 hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-blue-600">PM</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">Priya Mishra</h4>
+                      <p className="text-sm text-gray-600">Bangalore | Approved ₹3 Lakh</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <div key={i} className="w-5 h-5 bg-yellow-400 rounded-full" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    "I was scared about my low CIBIL score, but BuyNswipe approved me! Compare feature helped me find the best rate. Very transparent and reliable!"
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Review 3 */}
+              <Card className="border border-gray-200 hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-purple-600">AJ</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">Amit Joshi</h4>
+                      <p className="text-sm text-gray-600">Mumbai | Approved ₹8 Lakh</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <div key={i} className="w-5 h-5 bg-yellow-400 rounded-full" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    "My business needed quick capital. Applied for business loan on BuyNswipe and got approved instantly. Zero processing fees saved me ₹24K!"
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-lg text-gray-600 mb-6">
+                <span className="font-bold text-emerald-600">4.8/5</span> rating from 50,000+ reviews
+              </p>
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+                Read More Reviews
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Financial Tools Section */}
         <section id="tools" className="py-16 px-4 bg-white">
           <div className="container mx-auto max-w-6xl">
@@ -1133,6 +1118,21 @@ export default function BuyNswipeCreditPage() {
                 </CardContent>
               </Card>
             </div>
+
+          </div>
+
+          {/* EMI Calculator */}
+          <div className="mt-16 max-w-6xl mx-auto">
+            <ErrorBoundary fallback={<div className="p-6 text-center text-gray-600">EMI Calculator temporarily unavailable</div>}>
+              <EMICalculator />
+            </ErrorBoundary>
+          </div>
+
+          {/* Eligibility Checker */}
+          <div className="mt-16 max-w-6xl mx-auto">
+            <ErrorBoundary fallback={<div className="p-6 text-center text-gray-600">Eligibility Checker temporarily unavailable</div>}>
+              <EligibilityChecker />
+            </ErrorBoundary>
           </div>
         </section>
 
@@ -1450,146 +1450,6 @@ export default function BuyNswipeCreditPage() {
             </div>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-5 gap-8 mb-8">
-              <div className="md:col-span-2">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <CreditCard className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-lg font-bold">BuyNswipe Credit</span>
-                </div>
-                <p className="text-gray-400 text-sm mb-4">
-                  India's most trusted AI-driven digital credit marketplace for instant personal loans, business loans,
-                  credit cards, BNPL, and smart financial tools. Compare 50+ banks and get best rates.
-                </p>
-                <p className="text-gray-500 text-xs">CIN: U72900UP2017PTC096789 | DPIIT Recognized Startup</p>
-              </div>
-              <div>
-                <h4 className="font-bold mb-4">Loans</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Personal Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Business Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      MSME Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Gold Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Startup Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Home Loan
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold mb-4">Credit Cards</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Cashback Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Travel Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Fuel Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Lifetime Free
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Student Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Business Cards
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold mb-4">Tools</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      EMI Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      CIBIL Score Check
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Eligibility Check
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Rate Comparison
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Card Comparison
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-white">
-                      Loan Calculator
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border-t border-gray-800 pt-8">
-              <p className="text-center text-gray-400 text-sm">
-                BuyNswipe Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially
-                Recognized | All Rights Reserved 2025
-              </p>
-              <p className="text-center text-gray-500 text-xs mt-4 max-w-4xl mx-auto">
-                Disclaimer: BuyNswipe Credit is a loan aggregator and comparison platform. We do not directly lend
-                money. All loan and credit card decisions are made by our RBI-regulated partner banks and NBFCs.
-                Interest rates, loan amounts, and approval are subject to lender policies and your credit profile.
-                Please read all terms and conditions carefully before applying.
-              </p>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </>
+    </div>
   )
 }

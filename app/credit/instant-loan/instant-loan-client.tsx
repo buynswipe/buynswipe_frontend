@@ -24,8 +24,6 @@ export default function InstantLoanClient() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -229,12 +227,7 @@ export default function InstantLoanClient() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 bg-gray-900 text-gray-300">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">BuyNswipe Credit - Your trusted platform for instant loans</p>
-        </div>
-      </footer>
+
     </div>
   )
 }

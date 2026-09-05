@@ -1,0 +1,15 @@
+{
+  "projectId": "${{ secrets.VERCEL_PROJECT_ID }}",
+  "orgId": "${{ secrets.VERCEL_ORG_ID }}",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "devCommand": "next dev",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "@BuyNswipe Credit",
+    "NEXT_PUBLIC_APP_URL": "https://buynswipe.com"
+  },
+  "regions": ["iad1"],
+  "crons": []
+}

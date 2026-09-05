@@ -242,10 +242,7 @@ const features = [
 
 export default function CreditCardPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
         {/* Header */}
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -781,83 +778,7 @@ export default function CreditCardPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
-                <p className="text-gray-400">
-                  India's trusted credit card comparison platform. Find and apply for the best cards.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Credit Cards</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Cashback Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Travel Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Fuel Cards
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/credit-card" className="hover:text-white">
-                      Rewards Cards
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Products</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <Link href="/credit/personal-loan" className="hover:text-white">
-                      Personal Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit" className="hover:text-white">
-                      Business Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/emi-calculator" className="hover:text-white">
-                      EMI Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/credit/cibil-score" className="hover:text-white">
-                      CIBIL Score
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <div className="space-y-2 text-gray-400">
-                  <p className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" /> +91 8171169007
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Mail className="w-4 h-4" /> buynswipe@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
-            </div>
-          </div>
-        </footer>
+
       </div>
     </>
   )

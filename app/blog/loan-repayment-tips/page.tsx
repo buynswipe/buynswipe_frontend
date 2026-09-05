@@ -182,7 +182,7 @@ export default function LoanRepaymentTipsPage() {
             <h2 className="text-2xl font-bold mb-4">Start Your Loan Repayment Journey</h2>
             <p className="text-teal-100 mb-6">Use our tools to calculate savings and plan your repayment</p>
             <Link
-              href="/credit/emi-calculator"
+              href="/tools/emi-calculator"
               className="inline-block bg-white text-teal-600 font-bold px-8 py-3 rounded-lg hover:bg-teal-50 transition"
             >
               Calculate Now
