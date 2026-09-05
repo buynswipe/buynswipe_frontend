@@ -22,7 +22,9 @@ const jsonLd = {
 
 export default function AxisFlipkartCardPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
         <section className="py-16 md:py-24 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -158,5 +160,6 @@ export default function AxisFlipkartCardPage() {
           </div>
         </section>
       </div>
+    </>
   )
 }

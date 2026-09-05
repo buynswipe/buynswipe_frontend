@@ -31,9 +31,8 @@ export default function InvestorRelationsPage() {
               View Metrics
             </Link>
             <a
-              href="/documents/buynswipe-teaser.pdf"
-              download="BuyNswipe-Investment-Teaser.pdf"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              href="#"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
             >
               Download Teaser
             </a>
@@ -181,9 +180,8 @@ export default function InvestorRelationsPage() {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="/documents/buynswipe-teaser.pdf"
-              download="BuyNswipe-Investment-Teaser.pdf"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2 transition-colors"
+              href="#"
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
               Download Teaser

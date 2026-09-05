@@ -135,7 +135,10 @@ const loanTypes = [
 
 export default function StudentLoanPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         {/* Header */}
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -302,7 +305,13 @@ export default function StudentLoanPage() {
           </div>
         </section>
 
-
+        {/* Footer */}
+        <footer className="bg-gray-900 text-white py-12">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-gray-400">© 2025 BuyNswipe | Education Loans Made Easy</p>
+          </div>
+        </footer>
       </div>
+    </>
   )
 }
