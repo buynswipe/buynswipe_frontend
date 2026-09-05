@@ -10,18 +10,12 @@ export function MobileMenu() {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "Credit Products", href: "/credit" },
-    { label: "Personal Loan", href: "/credit/personal-loan" },
-    { label: "Credit Card", href: "/credit/credit-card" },
+    { label: "Credit", href: "/credit" },
     { label: "Payment Solutions", href: "/payment-solutions" },
     { label: "BuyNswipe® Go", href: "/go" },
     { label: "Solutions", href: "/solutions" },
-    { label: "Tools", href: "/tools/emi-calculator" },
     { label: "Resources", href: "/resources" },
     { label: "Blog", href: "/blog" },
-    { label: "FAQ", href: "/faq" },
-    { label: "Reviews", href: "/reviews" },
-    { label: "Support", href: "/support" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ]

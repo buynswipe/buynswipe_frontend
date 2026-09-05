@@ -112,7 +112,7 @@ export default function RetailCaseStudy() {
 
           <div className="text-center">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3">
-              Get Multi-Store POS System
+              Scale Your Retail Business
             </Button>
           </div>
         </div>

@@ -52,7 +52,7 @@ export default function PressPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-4">{news.desc}</p>
-                  <a href="/blog" className="text-slate-700 hover:underline font-semibold transition-colors">
+                  <a href="#" className="text-slate-700 hover:underline font-semibold">
                     Read Full Article →
                   </a>
                 </CardContent>
@@ -74,13 +74,9 @@ export default function PressPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">Official BuyNswipe logos in multiple formats and colors</p>
-                <a
-                  href="/media/buynswipe-logos.zip"
-                  download="BuyNswipe-Logos.zip"
-                  className="block text-center w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800 font-semibold transition-colors"
-                >
+                <button className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800">
                   Download (2.5 MB)
-                </a>
+                </button>
               </CardContent>
             </Card>
 
@@ -91,13 +87,9 @@ export default function PressPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">Complete brand guidelines and style specifications</p>
-                <a
-                  href="/documents/buynswipe-brand-guidelines.pdf"
-                  download="BuyNswipe-Brand-Guidelines.pdf"
-                  className="block text-center w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800 font-semibold transition-colors"
-                >
+                <button className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800">
                   Download (1.8 MB)
-                </a>
+                </button>
               </CardContent>
             </Card>
 
@@ -108,13 +100,9 @@ export default function PressPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">One-page company overview, founding story, and key metrics</p>
-                <a
-                  href="/documents/buynswipe-fact-sheet.pdf"
-                  download="BuyNswipe-Fact-Sheet.pdf"
-                  className="block text-center w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800 font-semibold transition-colors"
-                >
+                <button className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800">
                   Download (500 KB)
-                </a>
+                </button>
               </CardContent>
             </Card>
 
