@@ -406,4 +406,22 @@ export const creditCardProducts = [
     affiliateLink: "https://bitli.in/4ALI9MI",
     category: "Rewards",
   },
+  ...[
+    "PsqKNTu", "toQGZx7", "Z7nqKst", "j901r3u", "GKfH8Mw", "emYmXv3", "fZtCksx", "4eDYmjK", "Kceow2s", "zlk56Pv",
+    "anA2I90", "hmj0lrt", "VggzmBY", "dDrXyXR", "sNnMtb0", "Ll9mMrY", "KxasFG2", "vqYAgKZ", "TuxKBwm", "dBXrKV4",
+    "r3904VS", "9PwZ7Tu", "R1766r2", "gFu5gPC", "8y649kr", "unnsjvO", "PcUvGrO", "hmhWngg", "4HMQlwA", "gpVq6C9",
+    "VVFN5Re", "puaZ35p", "sSE4w2K", "SECFtki", "9LYmhfy", "p9Qfl0M", "LwRWyS9", "Cr3rqqE", "4Xj2dop", "YrHCtVj",
+    "0FUY7TJ", "gKXlv5l", "VjH9mzu", "69I7HK4", "du3L5db", "D6IR6Xy",
+  ].map((code, index) => ({
+    id: `finance-deal-${index + 18}`,
+    name: `Finance Deal ${index + 18}`,
+    description: "Featured finance offer from the BuyNswipe affiliate marketplace",
+    type: "Finance Offer",
+    fees: "See partner terms",
+    benefits: ["Partner offer", "Online application", "Affiliate tracking link"],
+    cashback: "See partner terms",
+    eligibility: ["As per partner terms"],
+    affiliateLink: `https://bitli.in/${code}`,
+    category: "Finance Deals",
+  })),
 ]
