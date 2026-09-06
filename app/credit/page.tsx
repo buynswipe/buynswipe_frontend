@@ -37,6 +37,7 @@ import {
   ShoppingBag,
 } from "lucide-react"
 import Link from "next/link"
+import { CreditCardCatalogSection } from "@/components/credit-card-catalog"
 
 export const metadata: Metadata = {
   title: "BuyNswipe Credit - Instant Personal Loan Online | Credit Card Apply | BNPL | Best Loan App India 2025",
@@ -920,6 +921,8 @@ export default function BuyNswipeCreditPage() {
             </div>
           </div>
         </section>
+
+        <CreditCardCatalogSection />
 
         {/* BNPL Section */}
         <section id="bnpl" className="py-16 px-4 bg-white">
