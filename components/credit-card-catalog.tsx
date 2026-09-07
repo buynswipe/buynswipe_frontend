@@ -29,7 +29,7 @@ function CardTile({ card, selected, onToggle }: { card: CreditCardProduct; selec
             {selected ? "Selected" : "Compare"}
           </button>
         </div>
-        <CardTitle className="text-xl leading-tight text-slate-950">{card.name}</CardTitle>
+        <CardTitle className="text-xl leading-tight text-slate-950"><Link href={`/credit/affiliate-credit-cards/${card.id}`} className="transition hover:text-emerald-700">{card.name}</Link></CardTitle>
         <p className="text-sm leading-6 text-slate-600">{card.description}</p>
       </CardHeader>
       <CardContent className="flex flex-1 flex-col gap-5">
@@ -41,7 +41,8 @@ function CardTile({ card, selected, onToggle }: { card: CreditCardProduct; selec
           {card.benefits.slice(0, 4).map((benefit) => <li key={benefit} className="flex gap-2"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-600" />{benefit}</li>)}
         </ul>
         <div className="mt-auto flex gap-2">
-          <Button asChild className="flex-1 bg-emerald-600 hover:bg-emerald-700"><Link href={card.affiliateLink} target="_blank" rel="noopener noreferrer">Apply Now <ExternalLink className="ml-2 size-4" /></Link></Button>
+          <Button asChild variant="outline" className="flex-1"><Link href={`/credit/affiliate-credit-cards/${card.id}`}>View details</Link></Button>
+          <Button asChild className="flex-1 bg-emerald-600 hover:bg-emerald-700"><a href={card.affiliateLink} target="_blank" rel="noopener noreferrer">Apply Now <ExternalLink className="ml-2 size-4" /></a></Button>
         </div>
       </CardContent>
     </Card>
