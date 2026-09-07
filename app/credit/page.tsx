@@ -922,6 +922,7 @@ export default function BuyNswipeCreditPage() {
           </div>
         </section>
 
+        <section className="bg-slate-950 px-4 py-12 text-white"><div className="mx-auto flex max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">BuyNswipe marketplace</p><h2 className="mt-2 text-3xl font-bold">Explore 60+ partner finance offers.</h2><p className="mt-2 max-w-2xl text-slate-300">Compare available benefits in one place and follow the direct partner link when you are ready to apply.</p></div><Button asChild className="shrink-0 bg-emerald-500 text-emerald-950 hover:bg-emerald-400"><Link href="/credit/affiliate-credit-cards">Explore all offers</Link></Button></div></section>
         <CreditCardCatalogSection />
 
         {/* BNPL Section */}
