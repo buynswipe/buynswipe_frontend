@@ -44,7 +44,7 @@ export function MobileMenu() {
               </Link>
             ))}
             <div className="px-4 py-3">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">Apply Now</Button>
+              <Button asChild className="w-full bg-blue-600 hover:bg-blue-700"><Link href="/credit/affiliate-credit-cards">Explore credit offers</Link></Button>
             </div>
           </nav>
         </div>

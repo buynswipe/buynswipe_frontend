@@ -97,7 +97,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
               <Card>
                 <CardContent className="pt-6">
-                  <form className="space-y-4">
+                  <form action="mailto:buynswipe@gmail.com" method="post" encType="text/plain" className="space-y-4">
                     <div>
                       <label className="block text-sm font-semibold mb-2">Full Name</label>
                       <input

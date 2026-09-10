@@ -87,7 +87,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full">{tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}</Button>
+                  <Button asChild className="w-full"><a href={`mailto:support@buynswipe.com?subject=BuyNswipe%20${tier.name}%20plan`}>{tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}</a></Button>
                 </CardContent>
               </Card>
             ))}

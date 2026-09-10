@@ -153,7 +153,7 @@ export default function WebinarsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Subscribe for Webinar Updates</h2>
           <p className="text-blue-100 mb-8 text-lg">Get notified about upcoming webinars and financial tips</p>
-          <form className="max-w-md mx-auto flex gap-2 mb-6">
+          <form action="mailto:buynswipe@gmail.com?subject=Webinar%20updates" method="post" encType="text/plain" className="max-w-md mx-auto flex gap-2 mb-6">
             <input
               type="email"
               placeholder="Enter your email"
