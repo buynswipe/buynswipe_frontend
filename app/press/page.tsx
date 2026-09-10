@@ -52,8 +52,8 @@ export default function PressPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-4">{news.desc}</p>
-                  <a href="#" className="text-slate-700 hover:underline font-semibold">
-                    Read Full Article →
+                  <a href="mailto:press@buynswipe.com?subject=Press%20enquiry" className="text-slate-700 hover:underline font-semibold">
+                    Contact press team →
                   </a>
                 </CardContent>
               </Card>

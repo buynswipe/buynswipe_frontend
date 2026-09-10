@@ -628,27 +628,27 @@ export default function BNPLPage() {
                 <h4 className="font-semibold mb-4">BNPL Apps</h4>
                 <ul className="space-y-2 text-gray-400 text-sm">
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/contact" className="hover:text-white transition-colors">
                       Simpl
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/contact" className="hover:text-white transition-colors">
                       LazyPay
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/contact" className="hover:text-white transition-colors">
                       ZestMoney
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/contact" className="hover:text-white transition-colors">
                       Amazon Pay Later
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/contact" className="hover:text-white transition-colors">
                       Paytm Postpaid
                     </a>
                   </li>

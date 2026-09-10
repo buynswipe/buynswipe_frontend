@@ -31,7 +31,7 @@ export default function InvestorRelationsPage() {
               View Metrics
             </Link>
             <a
-              href="#"
+              href="/contact"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
             >
               Download Teaser
@@ -180,7 +180,7 @@ export default function InvestorRelationsPage() {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="#"
+              href="/contact"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
