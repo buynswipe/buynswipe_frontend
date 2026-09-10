@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Headphones, Mail, Clock, AlertCircle } from "lucide-react"
@@ -38,9 +39,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">Chat with our support team in real-time</p>
-                <Button size="sm" className="w-full">
-                  Start Chat
-                </Button>
+                <Button asChild size="sm" className="w-full"><a href="mailto:support@buynswipe.com?subject=BuyNswipe%20support%20request">Email support</a></Button>
               </CardContent>
             </Card>
 
@@ -51,9 +50,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">support@buynswipe.com - Response within 24 hours</p>
-                <Button size="sm" className="w-full">
-                  Send Email
-                </Button>
+                <Button asChild size="sm" className="w-full"><a href="mailto:support@buynswipe.com">Send email</a></Button>
               </CardContent>
             </Card>
 
@@ -64,9 +61,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">+91 8171169007 - Mon-Sat 9AM-6PM IST</p>
-                <Button size="sm" className="w-full">
-                  Call Now
-                </Button>
+                <Button asChild size="sm" className="w-full"><a href="tel:+918171169007">Call now</a></Button>
               </CardContent>
             </Card>
 
@@ -77,9 +72,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">Check system status and incidents</p>
-                <Button size="sm" variant="outline" className="w-full bg-transparent">
-                  Check Status
-                </Button>
+                <Button asChild size="sm" variant="outline" className="w-full bg-transparent"><a href="mailto:support@buynswipe.com?subject=BuyNswipe%20status%20question">Contact for status</a></Button>
               </CardContent>
             </Card>
           </div>
@@ -99,9 +92,9 @@ export default function SupportPage() {
                 <p className="text-gray-700 mb-4">
                   Step-by-step guide to set up your payment processing and complete your first transaction.
                 </p>
-                <a href="#" className="text-orange-600 hover:underline font-semibold">
+                <Link href="/resources" className="text-orange-600 hover:underline font-semibold">
                   Read Article →
-                </a>
+                </Link>
               </CardContent>
             </Card>
 
@@ -113,9 +106,9 @@ export default function SupportPage() {
                 <p className="text-gray-700 mb-4">
                   Comprehensive guide to different loan types and how to choose the right one for your needs.
                 </p>
-                <a href="#" className="text-orange-600 hover:underline font-semibold">
+                <Link href="/resources" className="text-orange-600 hover:underline font-semibold">
                   Read Article →
-                </a>
+                </Link>
               </CardContent>
             </Card>
 
@@ -127,9 +120,9 @@ export default function SupportPage() {
                 <p className="text-gray-700 mb-4">
                   Complete setup guide for BuyNswipe POS terminals with software and hardware configuration.
                 </p>
-                <a href="#" className="text-orange-600 hover:underline font-semibold">
+                <Link href="/resources" className="text-orange-600 hover:underline font-semibold">
                   Read Article →
-                </a>
+                </Link>
               </CardContent>
             </Card>
 
@@ -141,16 +134,14 @@ export default function SupportPage() {
                 <p className="text-gray-700 mb-4">
                   Common payment issues and quick fixes to resolve transaction problems.
                 </p>
-                <a href="#" className="text-orange-600 hover:underline font-semibold">
+                <Link href="/resources" className="text-orange-600 hover:underline font-semibold">
                   Read Article →
-                </a>
+                </Link>
               </CardContent>
             </Card>
           </div>
 
-          <div className="text-center">
-            <Button className="bg-orange-600 hover:bg-orange-700">View All Articles</Button>
-          </div>
+          <div className="text-center"><Button asChild className="bg-orange-600 hover:bg-orange-700"><Link href="/resources">View all articles</Link></Button></div>
         </div>
       </section>
 
@@ -200,9 +191,7 @@ export default function SupportPage() {
                       ))}
                     </ul>
                   </div>
-                  <Button className="w-full mt-4" variant={tier.popular ? "default" : "outline"}>
-                    Choose Plan
-                  </Button>
+                  <Button asChild className="w-full mt-4" variant={tier.popular ? "default" : "outline"}><a href={`mailto:support@buynswipe.com?subject=BuyNswipe%20${tier.tier}%20support%20plan`}>Contact sales</a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -214,7 +203,7 @@ export default function SupportPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Still Need Help?</h2>
           <p className="text-xl mb-8 text-orange-100">Our support team is available 24/7 to assist you</p>
-          <Button className="bg-white text-orange-600 hover:bg-orange-50">Contact Support</Button>
+          <Button asChild className="bg-white text-orange-600 hover:bg-orange-50"><a href="mailto:support@buynswipe.com">Contact support</a></Button>
         </div>
       </section>
     </main>
