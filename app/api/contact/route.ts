@@ -10,8 +10,11 @@ export async function POST(request: Request) {
     const subject = typeof body.subject === "string" ? body.subject.trim() : ""
     const message = typeof body.message === "string" ? body.message.trim() : ""
     const phone = typeof body.phone === "string" ? body.phone.trim() : null
+    const source = body.source === "webinar" ? "webinar" : "contact"
+    const submissionName = source === "webinar" && !name ? "Webinar subscriber" : name
+    const submissionMessage = source === "webinar" && !message ? "Subscribed to webinar updates" : message
 
-    if (name.length < 2 || name.length > 120 || !emailPattern.test(email) || message.length < 10 || message.length > 5000) {
+    if (submissionName.length < 2 || submissionName.length > 120 || !emailPattern.test(email) || submissionMessage.length < 10 || submissionMessage.length > 5000) {
       return NextResponse.json({ error: "Please check your details and try again." }, { status: 400 })
     }
 
@@ -23,7 +26,7 @@ export async function POST(request: Request) {
         "Content-Type": "application/json",
         Prefer: "return=minimal",
       },
-      body: JSON.stringify({ name, email, phone, subject, message, source: "contact", status: "new" }),
+      body: JSON.stringify({ name: submissionName, email, phone, subject, message: submissionMessage, source, status: "new" }),
       signal: AbortSignal.timeout(8000),
     })
 
