@@ -1,0 +1,2 @@
+import Link from "next/link"
+export default function AdminBlogsPage() { return <main className="min-h-screen bg-slate-950 p-6 text-slate-950"><div className="mx-auto max-w-5xl rounded-3xl bg-slate-50 p-8"><Link href="/admin/content" className="text-sm font-bold text-sky-600">← Content studio</Link><h1 className="mt-8 text-3xl font-black">Blog posts</h1><p className="mt-2 text-slate-500">Drafts, approvals, SEO metadata, scheduling, and revision history will live here.</p></div></main> }
