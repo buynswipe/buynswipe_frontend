@@ -11,30 +11,17 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "Googlebot",
         allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/"],
       },
       {
         userAgent: "Bingbot",
         allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/"],
       },
       {
-        userAgent: "ChatGPT-User",
+        userAgent: ["ChatGPT-User", "GPTBot", "Google-Extended", "PerplexityBot", "Anthropic-AI"],
         allow: "/",
-      },
-      {
-        userAgent: "GPTBot",
-        allow: "/",
-      },
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
-      },
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-      },
-      {
-        userAgent: "Anthropic-AI",
-        allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/"],
       },
     ],
     sitemap: "https://buynswipe.com/sitemap.xml",

@@ -3,6 +3,13 @@ import { redirect } from "next/navigation"
 import { BarChart3, BookOpen, BriefcaseBusiness, CreditCard, FileClock, LayoutDashboard, Link2, Users } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { LogoutButton } from "./logout-button"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Portal Admin | BuyNswipe",
+  description: "Private BuyNswipe portal administration workspace.",
+  robots: { index: false, follow: false },
+}
 
 const navigation = [
   { href: "/admin", label: "Overview", icon: LayoutDashboard },
