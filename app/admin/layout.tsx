@@ -27,7 +27,7 @@ export default async function AdminLayout({ children }: Readonly<{ children: Rea
         <nav className="mt-7 space-y-1" aria-label="Admin navigation">{navigation.map(({ href, label, icon: Icon }) => <Link key={href} href={href} className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"><Icon className="size-4" aria-hidden="true" />{label}</Link>)}</nav>
         <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-slate-950 p-4 text-white"><p className="text-xs font-bold uppercase tracking-wider text-slate-400">Signed in as</p><p className="mt-2 truncate text-sm font-bold">{staff.display_name || user.email}</p><p className="mt-1 text-xs capitalize text-blue-300">{staff.role.replace("_", " ")}</p></div>
       </aside>
-      <main className="min-h-screen lg:pl-64"><div className="mx-auto max-w-7xl p-5 sm:p-8">{children}</div></main>
+      <main className="min-h-screen lg:pl-64"><div className="border-b border-slate-200 bg-white px-5 py-3 lg:hidden"><nav className="flex gap-2 overflow-x-auto" aria-label="Admin navigation">{navigation.map(({ href, label }) => <Link key={href} href={href} className="shrink-0 rounded-lg bg-slate-50 px-3 py-2 text-xs font-bold text-slate-600 hover:bg-blue-50 hover:text-blue-700">{label}</Link>)}</nav></div><div className="mx-auto max-w-7xl p-5 sm:p-8">{children}</div></main>
     </div>
   )
 }
