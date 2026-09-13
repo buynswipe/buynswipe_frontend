@@ -1,0 +1,7 @@
+import { createClient } from "@/lib/supabase/server"
+
+export default async function AuditPage() {
+  const supabase = await createClient()
+  const { data: events } = await supabase.from("admin_audit_logs").select("id, action, entity_type, entity_id, metadata, created_at").order("created_at", { ascending: false }).limit(100)
+  return <main><header><p className="text-sm font-semibold text-sky-600">Governance</p><h1 className="mt-2 text-3xl font-black tracking-tight">Audit history</h1><p className="mt-2 text-sm text-slate-500">A record of content, lead, catalog, and access changes.</p></header><section className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="grid grid-cols-[1fr_170px_150px] gap-4 border-b border-slate-100 bg-slate-50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-500"><span>Action</span><span>Entity</span><span>Time</span></div>{events?.length ? events.map((event) => <div key={event.id} className="grid grid-cols-[1fr_170px_150px] gap-4 border-b border-slate-100 px-5 py-4 text-sm last:border-0"><div><p className="font-bold text-slate-900">{event.action}</p><p className="mt-1 truncate text-xs text-slate-500">{event.entity_id || "System event"}</p></div><span className="capitalize text-slate-600">{event.entity_type.replaceAll("_", " ")}</span><time className="text-xs text-slate-500">{new Date(event.created_at).toLocaleString("en-IN")}</time></div>) : <p className="p-8 text-sm text-slate-500">No audit events recorded yet.</p>}</section></main>
+}
