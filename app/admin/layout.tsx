@@ -10,6 +10,7 @@ const navigation = [
   { href: "/admin/credit", label: "Credit catalog", icon: CreditCard },
   { href: "/admin/affiliates", label: "Affiliates", icon: Link2 },
   { href: "/admin/team", label: "Team & roles", icon: BriefcaseBusiness },
+  { href: "/admin/analytics", label: "Analytics", icon: BarChart3 },
 ]
 
 export default async function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
