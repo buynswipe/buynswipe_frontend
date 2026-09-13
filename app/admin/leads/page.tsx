@@ -26,7 +26,7 @@ export default async function AdminLeadsPage() {
           <div className="hidden grid-cols-[1.4fr_1.2fr_1fr_1fr_0.8fr] gap-4 border-b border-slate-200 bg-slate-50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-400 md:grid"><span>Lead</span><span>Message</span><span>Source</span><span>Status</span><span>Received</span></div>
           {leads?.length ? leads.map((lead) => (
             <article key={lead.id} className="grid gap-4 border-b border-slate-100 p-5 last:border-0 md:grid-cols-[1.4fr_1.2fr_1fr_1fr_0.8fr] md:items-center">
-              <div><h2 className="font-bold text-slate-950">{lead.name}</h2><a className="mt-1 flex items-center gap-1 text-xs text-slate-500 hover:text-sky-600" href={`mailto:${lead.email}`}><Mail className="size-3" /> {lead.email}</a>{lead.phone && <a className="mt-1 flex items-center gap-1 text-xs text-slate-500" href={`tel:${lead.phone}`}><Phone className="size-3" /> {lead.phone}</a>}</div>
+              <div><Link href={`/admin/leads/${lead.id}`} className="font-bold text-slate-950 hover:text-sky-600">{lead.name}</Link><a className="mt-1 flex items-center gap-1 text-xs text-slate-500 hover:text-sky-600" href={`mailto:${lead.email}`}><Mail className="size-3" /> {lead.email}</a>{lead.phone && <a className="mt-1 flex items-center gap-1 text-xs text-slate-500" href={`tel:${lead.phone}`}><Phone className="size-3" /> {lead.phone}</a>}</div>
               <p className="line-clamp-2 text-sm leading-5 text-slate-500">{lead.subject || lead.message}</p>
               <span className="w-fit rounded-full bg-slate-100 px-3 py-1 text-xs font-bold capitalize text-slate-600">{lead.source}</span>
               <LeadStatusControl id={lead.id} initialStatus={lead.status} />
