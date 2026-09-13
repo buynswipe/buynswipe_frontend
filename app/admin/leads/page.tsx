@@ -4,8 +4,10 @@ import { ArrowLeft, Download, Mail, Phone, Search } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { LeadStatusControl } from "./lead-status-control"
 
-export default async function AdminLeadsPage({ searchParams }: { searchParams: Promise<{ q?: string; status?: string; source?: string }> }) {
+export default async function AdminLeadsPage({ searchParams }: { searchParams: Promise<{ q?: string; status?: string; source?: string; page?: string }> }) {
   const filters = await searchParams
+  const page = Math.max(1, Number.parseInt(filters.page ?? "1", 10) || 1)
+  const pageSize = 25
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect("/auth/login?next=/admin/leads")
@@ -13,11 +15,13 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: P
   const { data: staff } = await supabase.from("admin_users").select("role, display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle()
   if (!staff) redirect("/auth/login?error=admin_access_required")
 
-  let leadsQuery = supabase.from("contact_submissions").select("id, name, email, phone, subject, message, source, status, created_at").order("created_at", { ascending: false }).limit(100)
+  let leadsQuery = supabase.from("contact_submissions").select("id, name, email, phone, subject, message, source, status, created_at", { count: "exact" }).order("created_at", { ascending: false }).range((page - 1) * pageSize, page * pageSize - 1)
   if (filters.q) leadsQuery = leadsQuery.or(`name.ilike.%${filters.q}%,email.ilike.%${filters.q}%`)
   if (filters.status) leadsQuery = leadsQuery.eq("status", filters.status)
   if (filters.source) leadsQuery = leadsQuery.eq("source", filters.source)
-  const { data: leads } = await leadsQuery
+  const { data: leads, count } = await leadsQuery
+  const totalPages = Math.max(1, Math.ceil((count ?? 0) / pageSize))
+  const pageHref = (nextPage: number) => `/admin/leads?${new URLSearchParams({ ...(filters.q ? { q: filters.q } : {}), ...(filters.status ? { status: filters.status } : {}), ...(filters.source ? { source: filters.source } : {}), page: String(nextPage) }).toString()}`
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-950">
@@ -40,6 +44,7 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: P
             </article>
           )) : <div className="p-12 text-center text-sm text-slate-500">No submissions yet.</div>}
         </div>
+        <nav className="flex items-center justify-between border-t border-slate-200 bg-white px-5 py-4 text-sm" aria-label="Lead pagination"><span className="text-slate-500">Page {page} of {totalPages}</span><div className="flex gap-2"><a aria-disabled={page <= 1} className={`rounded-lg border px-3 py-2 font-bold ${page <= 1 ? "pointer-events-none opacity-40" : "hover:bg-slate-50"}`} href={pageHref(page - 1)}>Previous</a><a aria-disabled={page >= totalPages} className={`rounded-lg border px-3 py-2 font-bold ${page >= totalPages ? "pointer-events-none opacity-40" : "hover:bg-slate-50"}`} href={pageHref(page + 1)}>Next</a></div></nav>
       </div>
     </main>
   )
