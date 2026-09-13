@@ -16,14 +16,16 @@ export async function PATCH(request: Request, { params }: RouteContext) {
 
   const body = await request.json().catch(() => null)
   const status = typeof body?.status === "string" ? body.status : ""
+  const assignedTo = body?.assigned_to === null || typeof body?.assigned_to === "string" ? body.assigned_to : undefined
   const { id } = await params
-  if (!statuses.has(status) || !/^[0-9a-f-]{36}$/i.test(id)) {
+  if ((!statuses.has(status) && assignedTo === undefined) || !/^[0-9a-f-]{36}$/i.test(id) || (assignedTo && !/^[0-9a-f-]{36}$/i.test(assignedTo))) {
     return NextResponse.json({ error: "Invalid lead update" }, { status: 400 })
   }
 
-  const { data, error } = await supabase.from("contact_submissions").update({ status }).eq("id", id).select("id, status").single()
+  const update = assignedTo !== undefined ? { assigned_to: assignedTo } : { status }
+  const { data, error } = await supabase.from("contact_submissions").update(update).eq("id", id).select("id, status, assigned_to").single()
   if (error) return NextResponse.json({ error: "Unable to update lead" }, { status: 500 })
 
-  await supabase.from("admin_audit_logs").insert({ actor_id: user.id, action: "lead.status_updated", entity_type: "contact_submission", entity_id: id, metadata: { status } })
+  await supabase.from("admin_audit_logs").insert({ actor_id: user.id, action: assignedTo !== undefined ? "lead.assigned" : "lead.status_updated", entity_type: "contact_submission", entity_id: id, metadata: assignedTo !== undefined ? { assigned_to: assignedTo } : { status } })
   return NextResponse.json({ lead: data })
 }
