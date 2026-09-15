@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { redirect } from "next/navigation"
-import { BarChart3, BookOpen, BriefcaseBusiness, CreditCard, FileClock, LayoutDashboard, Link2, Users } from "lucide-react"
+import { BarChart3, BookOpen, BriefcaseBusiness, CreditCard, FileClock, LayoutDashboard, Link2, Settings, Users } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { LogoutButton } from "./logout-button"
 import { AdminNav } from "./admin-nav"
@@ -21,6 +21,7 @@ const navigation = [
   { href: "/admin/team", label: "Team & roles", icon: BriefcaseBusiness },
   { href: "/admin/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/admin/audit", label: "Audit history", icon: FileClock },
+  { href: "/admin/settings", label: "Settings", icon: Settings },
 ]
 
 export default async function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
