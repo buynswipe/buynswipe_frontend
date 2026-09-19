@@ -3,6 +3,18 @@ import { createClient } from "@/lib/supabase/server"
 
 const slugPattern = /^[a-z0-9-]{2,120}$/
 
+export async function GET() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return NextResponse.json({ error: "Sign in to view your ShopNdeal preferences." }, { status: 401 })
+  const [{ data: wishlist, error: wishlistError }, { data: alerts, error: alertsError }] = await Promise.all([
+    supabase.from("shop_wishlists").select("product_slug, created_at").eq("user_id", user.id).order("created_at", { ascending: false }),
+    supabase.from("shop_price_alerts").select("product_slug, target_price, active").eq("user_id", user.id).eq("active", true),
+  ])
+  if (wishlistError || alertsError) return NextResponse.json({ error: "Unable to load ShopNdeal preferences." }, { status: 500 })
+  return NextResponse.json({ wishlist: wishlist ?? [], alerts: alerts ?? [] })
+}
+
 export async function POST(request: Request) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()

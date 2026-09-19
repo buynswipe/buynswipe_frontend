@@ -1,0 +1,15 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import { createClient } from "@/lib/supabase/server"
+import { formatINR, shopItems } from "@/lib/shop-data"
+
+export const metadata: Metadata = { title: "My ShopNdeal watchlist | BuyNswipe", description: "Review products saved to your ShopNdeal watchlist." }
+
+export default async function ShopWishlistPage() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return <main className="mx-auto max-w-3xl px-6 py-20"><p className="text-sm font-bold uppercase tracking-[0.2em] text-blue-600">ShopNdeal</p><h1 className="mt-4 text-4xl font-black tracking-tight text-slate-950">Your watchlist is waiting.</h1><p className="mt-4 text-slate-600">Sign in to save products and price alerts across ShopNdeal.</p><Link href="/auth/login?next=/shop/wishlist" className="mt-8 inline-flex rounded-xl bg-blue-600 px-5 py-3 text-sm font-black text-white">Sign in to continue</Link></main>
+  const { data: rows } = await supabase.from("shop_wishlists").select("product_slug, created_at").eq("user_id", user.id).order("created_at", { ascending: false })
+  const saved = (rows ?? []).map((row) => shopItems.find((item) => item.slug === row.product_slug)).filter(Boolean)
+  return <main className="min-h-screen bg-[#f7f9fc] px-6 py-12"><div className="mx-auto max-w-6xl"><Link href="/shop" className="text-sm font-bold text-blue-700">← Back to ShopNdeal</Link><div className="mt-8 flex flex-wrap items-end justify-between gap-4"><div><p className="text-sm font-bold uppercase tracking-[0.2em] text-blue-600">My ShopNdeal</p><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-950">Saved products</h1></div><p className="text-sm font-semibold text-slate-500">{saved.length} saved {saved.length === 1 ? "item" : "items"}</p></div>{saved.length === 0 ? <div className="mt-10 rounded-3xl border border-dashed border-slate-300 bg-white p-10 text-center"><h2 className="text-xl font-black text-slate-950">Your watchlist is empty</h2><p className="mt-2 text-slate-600">Save products from a detail page to compare your next buy.</p><Link href="/shop/products" className="mt-6 inline-flex rounded-xl bg-slate-950 px-5 py-3 text-sm font-black text-white">Browse products</Link></div> : <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{saved.map((item) => item && <Link key={item.slug} href={`/shop/product/${item.slug}`} className="rounded-3xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:shadow-xl"><div className={`h-32 rounded-2xl bg-gradient-to-br ${item.accent}`} /><p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-600">{item.category}</p><h2 className="mt-2 text-xl font-black text-slate-950">{item.name}</h2><p className="mt-2 text-sm text-slate-500">{item.merchant}</p><p className="mt-5 text-lg font-black text-slate-950">{formatINR(item.price)} <span className="text-sm font-semibold text-emerald-600">Save {item.discount}%</span></p></Link>)}</div>}</div></main>
+}
