@@ -34,15 +34,20 @@ function isActive(offer: SavingsOffer, asOf: Date) {
   const startsAt = offer.startsAt ? new Date(offer.startsAt).getTime() : -Infinity
   const expiresAt = offer.expiresAt ? new Date(offer.expiresAt).getTime() : Infinity
   const timestamp = asOf.getTime()
-  return Number.isFinite(startsAt) && startsAt > timestamp ? false : Number.isFinite(expiresAt) && expiresAt < timestamp ? false : true
+  if (!Number.isFinite(timestamp)) return false
+  if (offer.startsAt && !Number.isFinite(startsAt)) return false
+  if (offer.expiresAt && !Number.isFinite(expiresAt)) return false
+  return startsAt <= timestamp && expiresAt >= timestamp
 }
 
 export function calculateSavings(input: SavingsInput): SavingsResult {
   const asOf = input.asOf ?? new Date()
-  const price = Math.max(0, input.price)
-  const eligibleOffers = input.offers.filter((offer) => offer.amount > 0 && offer.eligible !== false && isActive(offer, asOf) && (!offer.minimumOrder || price >= offer.minimumOrder))
+  const price = Number.isFinite(input.price) ? Math.max(0, input.price) : 0
+  const eligibleOffers = input.offers.filter((offer) => Number.isFinite(offer.amount) && offer.amount > 0 && offer.eligible !== false && isActive(offer, asOf) && (!offer.minimumOrder || price >= offer.minimumOrder))
   const discounts = eligibleOffers.filter((offer) => offer.type === "discount")
-  const discountTotal = discounts.reduce((sum, offer) => sum + offer.amount, 0)
+  const stackableDiscounts = discounts.filter((offer) => offer.stackable !== false)
+  const nonStackableDiscount = discounts.filter((offer) => offer.stackable === false).sort((a, b) => b.amount - a.amount)[0]
+  const discountTotal = stackableDiscounts.reduce((sum, offer) => sum + offer.amount, 0) + (nonStackableDiscount?.amount ?? 0)
   const totalDiscount = Math.min(price, discountTotal)
   const cashback = eligibleOffers.filter((offer) => offer.type === "cashback").reduce((sum, offer) => sum + offer.amount, 0)
   const reward = eligibleOffers.filter((offer) => offer.type === "reward").reduce((sum, offer) => sum + offer.amount, 0)
