@@ -1,3 +1,5 @@
+import { calculateSavings as calculateSavingsEngine } from "./shop/savings-engine"
+
 export type ShopItem = {
   slug: string
   name: string
@@ -39,8 +41,8 @@ export function formatINR(value: number) {
 }
 
 export function calculateSavings(price: number, coupon = 250, cashback = 180) {
-  const total = coupon + cashback
-  return { coupon, cashback, total, effective: Math.max(price - total, 0) }
+  const result = calculateSavingsEngine({ price, offers: [{ id: "coupon", label: "Coupon discount", amount: coupon, type: "discount", certainty: "potential" }, { id: "cashback", label: "Cashback", amount: cashback, type: "cashback", certainty: "potential" }] })
+  return { coupon: result.totalDiscount, cashback: result.cashback, total: result.potentialSavings, effective: result.effectivePrice }
 }
 
 export function searchShopItems(query = "", category = "") {
