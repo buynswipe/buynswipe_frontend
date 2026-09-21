@@ -11,15 +11,31 @@ export async function GET(request: Request, { params }: { params: Promise<{ offe
   destination.searchParams.set("q", `${item.merchant} ${item.brand} ${item.name}`)
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
+  const clickId = crypto.randomUUID()
+
   if (user) {
-    await supabase.from("shop_attribution_events").insert({
-      event_type: "outbound_click",
+    const { error: clickError } = await supabase.from("shop_clicks").insert({
+      click_id: clickId,
       user_id: user.id,
       offer_id: item.slug,
-      source_url: new URL(request.url).toString(),
+      merchant: item.merchant,
       destination_url: destination.toString(),
-      metadata: { merchant: item.merchant, brand: item.brand, demoDestination: true },
+      status: "redirected",
+      source: "shop_product",
+      route: "savings_route",
     })
+
+    if (!clickError) {
+      await supabase.from("shop_attribution_events").insert({
+        event_type: "outbound_click",
+        user_id: user.id,
+        offer_id: item.slug,
+        source_url: new URL(request.url).toString(),
+        destination_url: destination.toString(),
+        metadata: { clickId, merchant: item.merchant, brand: item.brand, demoDestination: true },
+      })
+    }
   }
+
   return NextResponse.redirect(destination)
 }
