@@ -9,6 +9,7 @@ const modules = [
   { href: "/shop/wishlist", label: "Customer watchlists", description: "Open the customer-facing saved products experience.", icon: Heart },
   { href: "/shop/cashback", label: "Cashback ledger", description: "Review the customer-facing provider-confirmed cashback view.", icon: ShoppingBag },
   { href: "/admin/shop/merchants", label: "Merchant registry", description: "Review lifecycle, verification, affiliate, and cashback readiness.", icon: ShoppingBag },
+  { href: "/shop/creators", label: "Creator campaigns", description: "Preview approved creator campaigns and earnings disclosures.", icon: ShoppingBag },
 ]
 
 export default async function ShopAdminPage() {
