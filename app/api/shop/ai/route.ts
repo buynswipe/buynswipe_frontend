@@ -1,6 +1,7 @@
 import { convertToModelMessages, createUIMessageStreamResponse, gateway, streamText, toUIMessageStream, type UIMessage } from "ai"
 import { z } from "zod"
 import { calculateSavings, searchShopItems } from "@/lib/shop-data"
+import { createClient } from "@/lib/supabase/server"
 
 export const maxDuration = 30
 
@@ -11,6 +12,19 @@ export async function POST(request: Request) {
     const body = await request.json()
     const messages = body.messages as UIMessage[]
     if (!Array.isArray(messages) || messages.length > 20) return new Response("Invalid conversation", { status: 400 })
+
+    const supabase = await createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    const lastMessage = messages.at(-1)
+    const queryText = lastMessage?.parts?.find((part) => part.type === "text")?.text?.slice(0, 240) ?? ""
+    if (user && queryText) {
+      await supabase.from("shop_attribution_events").insert({
+        event_type: "ai_query",
+        user_id: user.id,
+        source_url: new URL(request.url).toString(),
+        metadata: { queryLength: queryText.length },
+      })
+    }
 
     const result = streamText({
       model: gateway("openai/gpt-5.4-mini"),

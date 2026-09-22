@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowUpRight, Bell, Heart, MousePointerClick, ShoppingBag, Search, ShieldCheck } from "lucide-react"
+import { ArrowUpRight, Bell, Heart, MousePointerClick, ShoppingBag, Search, ShieldCheck, Sparkles } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 
 const modules = [
@@ -15,9 +15,10 @@ const modules = [
 
 export default async function ShopAdminPage() {
   const supabase = await createClient()
-  const [{ count: outboundClicks }, { count: analyses }, { count: reportedLinks }, { count: healthyChecks }, { count: couponReports }] = await Promise.all([
+  const [{ count: outboundClicks }, { count: analyses }, { count: aiQueries }, { count: reportedLinks }, { count: healthyChecks }, { count: couponReports }] = await Promise.all([
     supabase.from("shop_attribution_events").select("id", { count: "exact", head: true }).eq("event_type", "outbound_click"),
     supabase.from("shop_attribution_events").select("id", { count: "exact", head: true }).eq("event_type", "url_analysis"),
+    supabase.from("shop_attribution_events").select("id", { count: "exact", head: true }).eq("event_type", "ai_query"),
     supabase.from("affiliate_link_checks").select("id", { count: "exact", head: true }).eq("is_healthy", false),
     supabase.from("affiliate_link_checks").select("id", { count: "exact", head: true }).eq("is_healthy", true),
     supabase.from("shop_coupon_reports").select("id", { count: "exact", head: true }).eq("status", "open"),
@@ -30,7 +31,7 @@ export default async function ShopAdminPage() {
         <h1 className="mt-3 max-w-2xl text-3xl font-black tracking-tight sm:text-4xl">Savings intelligence, ready for review.</h1>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300">Use this workspace to connect catalog quality, customer intent, and verified savings operations as ShopNdeal moves from foundation to live commerce data.</p>
       </header>
-      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4" aria-label="ShopNdeal metrics"><ShopMetric icon={MousePointerClick} label="Outbound clicks" value={outboundClicks ?? 0} detail="Tracked shopping intent" /><ShopMetric icon={Search} label="URL analyses" value={analyses ?? 0} detail="Savings checks requested" /><ShopMetric icon={ShieldCheck} label="Healthy checks" value={healthyChecks ?? 0} detail="Latest link health" /><ShopMetric icon={Bell} label="Needs review" value={(reportedLinks ?? 0) + (couponReports ?? 0)} detail={`${reportedLinks ?? 0} links · ${couponReports ?? 0} coupons`} /></section>
+      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4" aria-label="ShopNdeal metrics"><ShopMetric icon={MousePointerClick} label="Outbound clicks" value={outboundClicks ?? 0} detail="Tracked shopping intent" /><ShopMetric icon={Search} label="URL analyses" value={analyses ?? 0} detail="Savings checks requested" /><ShopMetric icon={Sparkles} label="AI queries" value={aiQueries ?? 0} detail="Shopping intent captured" /><ShopMetric icon={ShieldCheck} label="Healthy checks" value={healthyChecks ?? 0} detail="Latest link health" /><ShopMetric icon={Bell} label="Needs review" value={(reportedLinks ?? 0) + (couponReports ?? 0)} detail={`${reportedLinks ?? 0} links · ${couponReports ?? 0} coupons`} /></section>
       <section className="grid gap-4 md:grid-cols-3" aria-label="ShopNdeal operations modules">
         {modules.map(({ href, label, description, icon: Icon }) => (
           <Link key={href} href={href} className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-300 hover:shadow-md">
