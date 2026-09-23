@@ -1,3 +1,4 @@
+import { NextResponse } from "next/server"
 import { z } from "zod"
 import { createClient } from "@/lib/supabase/server"
 
@@ -12,10 +13,10 @@ const eventSchema = z.object({
 export async function POST(request: Request) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return Response.json({ error: "Authentication required" }, { status: 401 })
+  if (!user) return NextResponse.json({ error: "Authentication required" }, { status: 401 })
 
   const parsed = eventSchema.safeParse(await request.json().catch(() => null))
-  if (!parsed.success) return Response.json({ error: "Invalid event payload" }, { status: 400 })
+  if (!parsed.success) return NextResponse.json({ error: "Invalid event payload" }, { status: 400 })
 
   const { error } = await supabase.from("shop_attribution_events").insert({
     event_type: parsed.data.eventType,
@@ -25,6 +26,6 @@ export async function POST(request: Request) {
     destination_url: parsed.data.destinationUrl ?? null,
     metadata: parsed.data.metadata,
   })
-  if (error) return Response.json({ error: "Unable to record event" }, { status: 500 })
-  return Response.json({ ok: true }, { status: 201 })
+  if (error) return NextResponse.json({ error: "Unable to record event" }, { status: 500 })
+  return NextResponse.json({ ok: true }, { status: 201 })
 }

@@ -16,7 +16,8 @@ export async function POST(request: Request) {
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
     const lastMessage = messages.at(-1)
-    const queryText = lastMessage?.parts?.find((part) => part.type === "text")?.text?.slice(0, 240) ?? ""
+    const textPart = lastMessage?.parts?.find((part): part is Extract<typeof part, { type: "text" }> => part.type === "text")
+    const queryText = textPart?.text?.slice(0, 240) ?? ""
     if (user && queryText) {
       await supabase.from("shop_attribution_events").insert({
         event_type: "ai_query",

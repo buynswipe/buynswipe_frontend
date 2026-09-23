@@ -37,8 +37,8 @@ export function generateSavingsRoutes(price: number, offers: SavingsOffer[]): Sa
 
 export function routeOffersForItem(price: number, coupon: number, cashback: number): SavingsOffer[] {
   return [
-    { id: "catalog-coupon", label: "Verified coupon", amount: coupon, type: "discount", certainty: "verified", stackable: true },
-    { id: "catalog-cashback", label: "Potential cashback", amount: cashback, type: "cashback", certainty: "potential", stackable: true },
+    { id: "catalog-coupon", label: "Verified coupon", amount: coupon, type: "discount" as const, certainty: "verified" as const, stackable: true },
+    { id: "catalog-cashback", label: "Potential cashback", amount: cashback, type: "cashback" as const, certainty: "potential" as const, stackable: true },
   ].filter((offer) => offer.amount > 0 && price > 0)
 }
 

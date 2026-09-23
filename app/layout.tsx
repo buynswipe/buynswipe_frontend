@@ -63,7 +63,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className={`${_geist.className} font-sans antialiased`}>
-        {children}
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-slate-950 focus:px-4 focus:py-3 focus:text-white">Skip to main content</a>
+        <div id="main-content">{children}</div>
         <Analytics />
       </body>
     </html>
