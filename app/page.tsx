@@ -24,13 +24,14 @@ import {
   Network,
 } from "lucide-react"
 import Link from "next/link"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function BuyNswipeLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container relative mx-auto flex items-center justify-between px-4 py-4">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
@@ -87,6 +88,7 @@ export default function BuyNswipeLanding() {
               Contact
             </Link>
           </nav>
+          <MobileMenu />
         </div>
       </header>
 
@@ -108,12 +110,14 @@ export default function BuyNswipeLanding() {
               <Download className="w-5 h-5 mr-2" />
               Download Teaser
             </Button>
-            <Button size="lg" variant="outline">
-              Request Brochure
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">Request Brochure</Link>
             </Button>
-            <Button size="lg" variant="outline">
-              <Phone className="w-5 h-5 mr-2" />
-              Contact Founder
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">
+                <Phone className="w-5 h-5 mr-2" />
+                Contact Founder
+              </Link>
             </Button>
           </div>
 

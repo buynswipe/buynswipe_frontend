@@ -21,18 +21,21 @@ export function MobileMenu() {
   ]
 
   return (
-    <div className="md:hidden">
+    <div className="relative lg:hidden">
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100"
-        aria-label="Toggle menu"
+        className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        aria-controls="mobile-navigation"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-white border-b shadow-lg z-40">
-          <nav className="flex flex-col divide-y">
+        <div id="mobile-navigation" className="absolute left-0 right-0 top-full z-40 border-b bg-white shadow-lg">
+          <nav aria-label="Mobile navigation" className="flex flex-col divide-y">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
