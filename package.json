@@ -6,6 +6,7 @@
     "build": "next build",
     "typecheck": "tsc --noEmit",
     "smoke": "node scripts/check-routes.mjs",
+    "audit:routes": "node scripts/audit-routes.mjs",
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start"

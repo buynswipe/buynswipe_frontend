@@ -34,7 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/credit/aeps", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/credit/recharge", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/credit/comparison/banks-offering-personal-loans", priority: 0.5, changeFrequency: "monthly" as const },
-    { url: "/credit/comparison/best-credit-cards", priority: 0.5, changeFrequency: "monthly" as const },
   ]
 
   const resourcePages = [
@@ -127,7 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/investor-relations", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/investor-relations/financial-metrics", priority: 0.6, changeFrequency: "weekly" as const },
     { url: "/compliance/rbi-regulations", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "/compliance/data-privacy", priority: 0.7, changeFrequency: "monthly" as const },
   ]
 
   const companyPages = [
