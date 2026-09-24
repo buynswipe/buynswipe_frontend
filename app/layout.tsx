@@ -2,12 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SiteStructuredData } from "@/components/site-structured-data"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://buynswipe.com"),
+  alternates: { canonical: "/" },
   title: "BuyNswipe - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
   description:
     "BuyNswipe Technology Pvt. Ltd. - Government recognized fintech SaaS startup for sale. Registered since 2017, trademarked brand, premium domains, ₹17L seed funded. Ideal for fintech entrepreneurs and strategic acquirers. POS integration ready, co-branded cards potential.",
@@ -63,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className={`${_geist.className} font-sans antialiased`}>
+        <SiteStructuredData />
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-slate-950 focus:px-4 focus:py-3 focus:text-white">Skip to main content</a>
         <div id="main-content">{children}</div>
         <Analytics />
