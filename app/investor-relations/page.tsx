@@ -153,10 +153,10 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-gray-700">
-                  <li>✓ RBI Guidelines Adherence</li>
-                  <li>✓ AEPS Security Standards</li>
-                  <li>✓ Data Protection Compliance</li>
-                  <li>✓ Regular Audits & Reviews</li>
+                  <li>Partner-specific regulatory disclosures available on request</li>
+                  <li>Security controls are reviewed as the product evolves</li>
+                  <li>Privacy and data-handling practices are documented in our policies</li>
+                  <li>Independent diligence is recommended for all claims</li>
                 </ul>
               </CardContent>
             </Card>
@@ -175,8 +175,8 @@ export default function InvestorRelationsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Acquire?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            BuyNswipe represents a unique opportunity to acquire a profitable, growing fintech platform with strong
-            regulatory standing and significant growth potential.
+            BuyNswipe is presented as an acquisition opportunity for a growing fintech platform. Operating metrics,
+            partner relationships, and compliance scope should be independently verified during diligence.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
