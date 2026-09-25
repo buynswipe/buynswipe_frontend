@@ -981,24 +981,20 @@ export default function BuyNswipeLanding() {
             </div>
 
             <div className="space-y-4">
-              <Button size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100">
-                <Download className="w-5 h-5 mr-2" />
-                Download Teaser PDF
+              <Button asChild size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100">
+                <Link href="/contact">
+                  <Download className="w-5 h-5 mr-2" />
+                  Request Teaser PDF
+                </Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-              >
-                Request Full Brochure
+              <Button asChild size="lg" variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent">
+                <Link href="/contact">Request Full Brochure</Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Schedule a Call
+              <Button asChild size="lg" variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent">
+                <Link href="/contact">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Schedule a Call
+                </Link>
               </Button>
             </div>
           </div>
