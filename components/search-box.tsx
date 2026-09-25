@@ -10,7 +10,7 @@ export function SearchBox({ query, suggestions }: { query: string; suggestions: 
   const matches = useMemo(() => {
     const normalized = value.trim().toLowerCase()
     if (!normalized) return suggestions
-    return suggestions.filter((item) => `${item.title} ${item.description} ${item.keywords.join(" ")}`.toLowerCase().includes(normalized)).slice(0, 5)
+    return suggestions.filter((item) => `${item.title} ${item.description} ${item.keywords.join(" ")}`.toLowerCase().includes(normalized) || item.keywords.some((keyword) => keyword.toLowerCase().startsWith(normalized.slice(0, Math.max(1, normalized.length - 1))))).slice(0, 5)
   }, [suggestions, value])
 
   return (
