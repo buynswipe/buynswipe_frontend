@@ -16,6 +16,7 @@ export function MobileMenu() {
     { label: "Solutions", href: "/solutions" },
     { label: "Resources", href: "/resources" },
     { label: "Blog", href: "/blog" },
+    { label: "Search", href: "/search" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ]

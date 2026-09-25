@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const shopPages = [
+    { url: "/search", priority: 0.7, changeFrequency: "weekly" as const },
     { url: "/shop", priority: 0.8, changeFrequency: "daily" as const },
     { url: "/shop/products", priority: 0.8, changeFrequency: "daily" as const },
     { url: "/shop/deals", priority: 0.7, changeFrequency: "daily" as const },
