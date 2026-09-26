@@ -2,7 +2,9 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import { SiteStructuredData } from "@/components/site-structured-data"
+import { adsenseConfig } from "@/lib/adsense"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -56,6 +58,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   category: "Finance",
+  other: {
+    "google-adsense-account": "ca-pub-7125756039287575",
+  },
 }
 
 export default function RootLayout({
@@ -67,6 +72,7 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
       <body className={`${_geist.className} font-sans antialiased`}>
         <SiteStructuredData />
+        {adsenseConfig.enabled ? <Script id="google-adsense" async strategy="afterInteractive" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseConfig.publisherId}`} crossOrigin="anonymous" /> : null}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-slate-950 focus:px-4 focus:py-3 focus:text-white">Skip to main content</a>
         <div id="main-content">{children}</div>
         <Analytics />
