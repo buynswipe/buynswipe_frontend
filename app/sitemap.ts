@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next"
+import { shopItems } from "@/lib/shop-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://buynswipe.com"
@@ -34,7 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/credit/aeps", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/credit/recharge", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/credit/comparison/banks-offering-personal-loans", priority: 0.5, changeFrequency: "monthly" as const },
-    { url: "/credit/comparison/best-credit-cards", priority: 0.5, changeFrequency: "monthly" as const },
   ]
 
   const resourcePages = [
@@ -54,11 +54,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/payment-solutions/merchant-services", priority: 0.7, changeFrequency: "weekly" as const },
   ]
 
-  const solutionPages = [
-    { url: "/solutions", priority: 0.8, changeFrequency: "weekly" as const },
-    { url: "/solutions/restaurants", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/solutions/retail", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/solutions/ecommerce", priority: 0.7, changeFrequency: "weekly" as const },
+  const shopPages = [
+    { url: "/search", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/shop", priority: 0.8, changeFrequency: "daily" as const },
+    { url: "/shop/products", priority: 0.8, changeFrequency: "daily" as const },
+    { url: "/shop/deals", priority: 0.7, changeFrequency: "daily" as const },
+    { url: "/shop/coupons", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/shop/cashback", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/shop/analyze", priority: 0.7, changeFrequency: "weekly" as const },
+    { url: "/shop/price-intelligence", priority: 0.6, changeFrequency: "weekly" as const },
   ]
 
   const caseStudyPages = [
@@ -127,7 +131,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/investor-relations", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/investor-relations/financial-metrics", priority: 0.6, changeFrequency: "weekly" as const },
     { url: "/compliance/rbi-regulations", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "/compliance/data-privacy", priority: 0.7, changeFrequency: "monthly" as const },
   ]
 
   const companyPages = [
@@ -172,11 +175,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })),
-    ...solutionPages.map((page) => ({
+    ...shopPages.map((page) => ({
       url: `${baseUrl}${page.url}`,
       lastModified: new Date(),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
+    })),
+    ...shopItems.map((item) => ({
+      url: `${baseUrl}/shop/product/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
     })),
     ...caseStudyPages.map((page) => ({
       url: `${baseUrl}${page.url}`,

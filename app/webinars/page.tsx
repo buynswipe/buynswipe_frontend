@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, Users, Clock } from "lucide-react"
+import { WebinarSignup } from "./webinar-signup"
 
 export const metadata: Metadata = {
   title: "Financial Education Webinars | BuyNswipe Learning",
@@ -153,18 +154,7 @@ export default function WebinarsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Subscribe for Webinar Updates</h2>
           <p className="text-blue-100 mb-8 text-lg">Get notified about upcoming webinars and financial tips</p>
-          <form className="max-w-md mx-auto flex gap-2 mb-6">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-              required
-            />
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50">
-              Subscribe
-            </button>
-          </form>
-          <p className="text-blue-100 text-sm">We send updates only for new webinars, no spam</p>
+          <WebinarSignup />
         </div>
       </section>
     </main>

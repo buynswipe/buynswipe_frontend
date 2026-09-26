@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
   return {
+    host: "https://buynswipe.com",
     rules: [
       {
         userAgent: "*",
@@ -11,30 +12,17 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "Googlebot",
         allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/"],
       },
       {
         userAgent: "Bingbot",
         allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/"],
       },
       {
-        userAgent: "ChatGPT-User",
+        userAgent: ["ChatGPT-User", "GPTBot", "Google-Extended", "PerplexityBot", "Anthropic-AI"],
         allow: "/",
-      },
-      {
-        userAgent: "GPTBot",
-        allow: "/",
-      },
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
-      },
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-      },
-      {
-        userAgent: "Anthropic-AI",
-        allow: "/",
+        disallow: ["/admin/", "/api/", "/_next/", "/auth/", "/shop/alerts", "/shop/wishlist", "/shop/creators"],
       },
     ],
     sitemap: "https://buynswipe.com/sitemap.xml",

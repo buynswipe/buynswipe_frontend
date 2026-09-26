@@ -1476,32 +1476,32 @@ export default function BuyNswipeCreditPage() {
                 <h4 className="font-bold mb-4">Loans</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/personal-loan" className="hover:text-white">
                       Personal Loan
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/business-loan" className="hover:text-white">
                       Business Loan
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/business-loan" className="hover:text-white">
                       MSME Loan
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/gold-loan" className="hover:text-white">
                       Gold Loan
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/startup-loan" className="hover:text-white">
                       Startup Loan
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/home-loan" className="hover:text-white">
                       Home Loan
                     </Link>
                   </li>
@@ -1511,32 +1511,32 @@ export default function BuyNswipeCreditPage() {
                 <h4 className="font-bold mb-4">Credit Cards</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Cashback Cards
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Travel Cards
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Fuel Cards
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Lifetime Free
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Student Cards
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards" className="hover:text-white">
                       Business Cards
                     </Link>
                   </li>
@@ -1546,32 +1546,32 @@ export default function BuyNswipeCreditPage() {
                 <h4 className="font-bold mb-4">Tools</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/tools/emi-calculator" className="hover:text-white">
                       EMI Calculator
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/cibil-score" className="hover:text-white">
                       CIBIL Score Check
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/eligibility-checker" className="hover:text-white">
                       Eligibility Check
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-comparison" className="hover:text-white">
                       Rate Comparison
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/credit/affiliate-credit-cards/compare" className="hover:text-white">
                       Card Comparison
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-white">
+                    <Link href="/tools/emi-calculator" className="hover:text-white">
                       Loan Calculator
                     </Link>
                   </li>

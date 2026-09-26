@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { TrendingDown, Clock, DollarSign, Target, AlertCircle, CheckCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -257,7 +258,7 @@ export default function LoanRepaymentPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Start Your Debt Payoff Journey</h2>
           <p className="text-lg mb-8">Use our EMI calculator to plan your repayment strategy</p>
-          <Button className="bg-white text-orange-600 hover:bg-orange-50">Calculate EMI</Button>
+          <Button asChild className="bg-white text-orange-600 hover:bg-orange-50"><Link href="/tools/emi-calculator">Calculate EMI</Link></Button>
         </div>
       </section>
     </main>

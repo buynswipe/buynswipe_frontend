@@ -127,7 +127,7 @@ const payment = await client.payments.create({
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Integrate?</h2>
           <p className="text-xl mb-8 text-purple-100">Get your API keys and start building today</p>
-          <Button className="bg-white text-purple-600 hover:bg-purple-50">Get API Keys</Button>
+          <Button asChild className="bg-white text-purple-600 hover:bg-purple-50"><a href="mailto:support@buynswipe.com?subject=API%20keys%20request">Request API keys</a></Button>
         </div>
       </section>
     </main>

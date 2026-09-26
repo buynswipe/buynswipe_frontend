@@ -1,107 +1,29 @@
-import type { Metadata } from "next"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Calculator, ArrowLeft } from "lucide-react"
+"use client"
 
-export const metadata: Metadata = {
-  title: "Advanced EMI Calculator - Personal, Home, Auto, Education Loans | BuyNswipe",
-  description:
-    "Advanced EMI calculator with amortization schedule. Calculate monthly EMI for personal loan, home loan, car loan, education loan instantly.",
-  keywords: ["emi calculator", "loan calculator", "monthly payment calculator", "amortization calculator"],
-}
+import Link from "next/link"
+import { useMemo, useState } from "react"
+import { ArrowLeft, Calculator } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+const formatCurrency = (value: number) => `₹${Math.round(value).toLocaleString("en-IN")}`
 
 export default function EMICalculatorPage() {
+  const [amount, setAmount] = useState(500000)
+  const [rate, setRate] = useState(12)
+  const [months, setMonths] = useState(36)
+  const result = useMemo(() => {
+    const monthlyRate = rate / 1200
+    const emi = monthlyRate === 0 ? amount / months : amount * monthlyRate * (1 + monthlyRate) ** months / ((1 + monthlyRate) ** months - 1)
+    return { emi, interest: emi * months - amount, total: emi * months }
+  }, [amount, rate, months])
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/credit" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
-            <ArrowLeft className="w-5 h-5" />
-            <span>Back</span>
-          </Link>
-          <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold">BuyNswipe</span>
-          </div>
-        </div>
-      </header>
-
-      <main className="container mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Advanced EMI Calculator</h1>
-          <p className="text-xl text-gray-600">Calculate loans with detailed amortization schedules and comparisons</p>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="shadow-xl">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Calculator className="w-6 h-6 text-blue-600" />
-                EMI Calculator
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-sm text-gray-600">Enter loan details to calculate your monthly EMI payment.</p>
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Loan Amount (₹)</label>
-                  <input type="number" placeholder="500000" className="w-full border rounded px-3 py-2" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Rate (% p.a.)</label>
-                  <input type="number" step="0.1" placeholder="12" className="w-full border rounded px-3 py-2" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Tenure (Months)</label>
-                  <input type="number" placeholder="36" className="w-full border rounded px-3 py-2" />
-                </div>
-                <Button className="w-full bg-blue-600">Calculate</Button>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="lg:col-span-2 shadow-xl bg-blue-600 text-white">
-            <CardHeader>
-              <CardTitle>Results</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="bg-white/10 rounded-lg p-6">
-                <p className="text-blue-200 mb-2">Monthly EMI</p>
-                <p className="text-5xl font-bold">₹16,607</p>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 rounded p-4">
-                  <p className="text-sm text-blue-200">Principal</p>
-                  <p className="text-2xl font-bold">₹5,00,000</p>
-                </div>
-                <div className="bg-white/10 rounded p-4">
-                  <p className="text-sm text-blue-200">Total Interest</p>
-                  <p className="text-2xl font-bold">₹97,852</p>
-                </div>
-              </div>
-              <Link href="/credit">
-                <Button className="w-full bg-white text-blue-600">Apply Now</Button>
-              </Link>
-            </CardContent>
-          </Card>
-        </div>
-
-        <section className="mt-16 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">Loan Types</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {["Personal Loan", "Home Loan", "Auto Loan", "Education Loan"].map((type) => (
-              <Card key={type}>
-                <CardContent className="p-6 text-center">
-                  <p className="font-semibold">{type} EMI</p>
-                  <p className="text-sm text-gray-600 mt-2">Calculate your monthly payment</p>
-                  <Button variant="outline" className="mt-4 w-full bg-transparent">
-                    Calculate
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+      <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-sm"><div className="container mx-auto flex items-center justify-between px-4 py-4"><Link href="/credit" className="flex items-center gap-2 text-gray-600 hover:text-blue-600"><ArrowLeft className="size-5" />Back</Link><span className="text-xl font-bold">BuyNswipe</span></div></header>
+      <main className="container mx-auto px-4 py-12"><div className="mx-auto mb-12 max-w-3xl text-center"><h1 className="text-4xl font-bold text-gray-900 md:text-5xl">Advanced EMI Calculator</h1><p className="mt-4 text-xl text-gray-600">Calculate your monthly payment, total interest, and repayment total instantly.</p></div>
+        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3"><Card className="shadow-xl"><CardHeader><CardTitle className="flex items-center gap-2"><Calculator className="size-6 text-blue-600" />Loan details</CardTitle></CardHeader><CardContent className="space-y-5"><label className="block text-sm font-semibold">Loan amount (₹)<input aria-label="Loan amount" type="number" min="1" value={amount} onChange={(event) => setAmount(Math.max(1, Number(event.target.value)))} className="mt-2 w-full rounded border px-3 py-2" /></label><label className="block text-sm font-semibold">Interest rate (% p.a.)<input aria-label="Interest rate" type="number" min="0" step="0.1" value={rate} onChange={(event) => setRate(Math.max(0, Number(event.target.value)))} className="mt-2 w-full rounded border px-3 py-2" /></label><label className="block text-sm font-semibold">Tenure (months)<input aria-label="Tenure" type="number" min="1" value={months} onChange={(event) => setMonths(Math.max(1, Number(event.target.value)))} className="mt-2 w-full rounded border px-3 py-2" /></label><p className="text-xs leading-5 text-gray-500">This estimate is for planning only. Actual rates, fees, and approval terms depend on the lender.</p></CardContent></Card>
+          <Card className="bg-blue-600 text-white shadow-xl lg:col-span-2"><CardHeader><CardTitle>Estimated repayment</CardTitle></CardHeader><CardContent className="space-y-6"><div className="rounded-lg bg-white/10 p-6"><p className="text-blue-200">Monthly EMI</p><p className="mt-2 text-5xl font-bold">{formatCurrency(result.emi)}</p></div><div className="grid grid-cols-1 gap-4 sm:grid-cols-3"><div className="rounded bg-white/10 p-4"><p className="text-sm text-blue-200">Principal</p><p className="text-2xl font-bold">{formatCurrency(amount)}</p></div><div className="rounded bg-white/10 p-4"><p className="text-sm text-blue-200">Total interest</p><p className="text-2xl font-bold">{formatCurrency(result.interest)}</p></div><div className="rounded bg-white/10 p-4"><p className="text-sm text-blue-200">Total repayment</p><p className="text-2xl font-bold">{formatCurrency(result.total)}</p></div></div><Button asChild className="w-full bg-white text-blue-600 hover:bg-blue-50"><Link href="/credit/affiliate-credit-cards">Explore credit offers</Link></Button></CardContent></Card></div>
       </main>
     </div>
   )

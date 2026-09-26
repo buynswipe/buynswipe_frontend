@@ -24,13 +24,14 @@ import {
   Network,
 } from "lucide-react"
 import Link from "next/link"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function BuyNswipeLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container relative mx-auto flex items-center justify-between px-4 py-4">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
@@ -80,6 +81,9 @@ export default function BuyNswipeLanding() {
             <Link href="/blog" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
               Blog
             </Link>
+            <Link href="/search" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Search
+            </Link>
             <Link
               href="/contact"
               className="px-3 py-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
@@ -87,6 +91,7 @@ export default function BuyNswipeLanding() {
               Contact
             </Link>
           </nav>
+          <MobileMenu />
         </div>
       </header>
 
@@ -108,12 +113,14 @@ export default function BuyNswipeLanding() {
               <Download className="w-5 h-5 mr-2" />
               Download Teaser
             </Button>
-            <Button size="lg" variant="outline">
-              Request Brochure
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">Request Brochure</Link>
             </Button>
-            <Button size="lg" variant="outline">
-              <Phone className="w-5 h-5 mr-2" />
-              Contact Founder
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">
+                <Phone className="w-5 h-5 mr-2" />
+                Contact Founder
+              </Link>
             </Button>
           </div>
 
@@ -977,24 +984,20 @@ export default function BuyNswipeLanding() {
             </div>
 
             <div className="space-y-4">
-              <Button size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100">
-                <Download className="w-5 h-5 mr-2" />
-                Download Teaser PDF
+              <Button asChild size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100">
+                <Link href="/contact">
+                  <Download className="w-5 h-5 mr-2" />
+                  Request Teaser PDF
+                </Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-              >
-                Request Full Brochure
+              <Button asChild size="lg" variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent">
+                <Link href="/contact">Request Full Brochure</Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Schedule a Call
+              <Button asChild size="lg" variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 bg-transparent">
+                <Link href="/contact">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Schedule a Call
+                </Link>
               </Button>
             </div>
           </div>
@@ -1248,15 +1251,15 @@ export default function BuyNswipeLanding() {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">© 2025 BuyNswipe Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="/privacy-policy" className="hover:text-white transition-colors">
                   Privacy Policy
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </Link>
+                <Link href="/terms-of-service" className="hover:text-white transition-colors">
                   Terms of Service
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </Link>
+                <Link href="/cookie-policy" className="hover:text-white transition-colors">
                   Cookie Policy
-                </a>
+                </Link>
               </div>
             </div>
           </div>

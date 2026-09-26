@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { ContactForm } from "./contact-form"
 import { Mail, Phone, Linkedin, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -97,41 +97,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
               <Card>
                 <CardContent className="pt-6">
-                  <form className="space-y-4">
-                    <div>
-                      <label className="block text-sm font-semibold mb-2">Full Name</label>
-                      <input
-                        type="text"
-                        className="w-full border border-gray-300 rounded-lg p-2"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold mb-2">Email</label>
-                      <input
-                        type="email"
-                        className="w-full border border-gray-300 rounded-lg p-2"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold mb-2">Inquiry Type</label>
-                      <select className="w-full border border-gray-300 rounded-lg p-2">
-                        <option>Acquisition Inquiry</option>
-                        <option>Partnership</option>
-                        <option>Customer Support</option>
-                        <option>General Question</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold mb-2">Message</label>
-                      <textarea
-                        className="w-full border border-gray-300 rounded-lg p-2 h-32"
-                        placeholder="Your message here..."
-                      ></textarea>
-                    </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">Send Message</Button>
-                  </form>
+                  <ContactForm />
                 </CardContent>
               </Card>
             </div>
