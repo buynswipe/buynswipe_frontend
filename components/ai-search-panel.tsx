@@ -15,15 +15,18 @@ export function AiSearchPanel() {
     setLoading(true)
     setError("")
     setAnswer("")
+    const controller = new AbortController()
+    const timeout = window.setTimeout(() => controller.abort(), 20_000)
     try {
-      const response = await fetch("/api/ai-search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query }) })
+      const response = await fetch("/api/ai-search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query }), signal: controller.signal })
       const result = await response.json()
       if (!response.ok) throw new Error(result.error || "AI search is unavailable.")
       setAnswer(result.answer)
       setSources(result.sources || [])
     } catch (submissionError) {
-      setError(submissionError instanceof Error ? submissionError.message : "AI search is unavailable.")
+      setError(submissionError instanceof DOMException && submissionError.name === "AbortError" ? "The answer took too long. Please try again." : submissionError instanceof Error ? submissionError.message : "AI search is unavailable.")
     } finally {
+      window.clearTimeout(timeout)
       setLoading(false)
     }
   }
