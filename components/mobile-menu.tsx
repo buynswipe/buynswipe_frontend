@@ -17,7 +17,7 @@ export function MobileMenu() {
     { label: "Resources", href: "/resources" },
     { label: "Blog", href: "/blog" },
     { label: "Search", href: "/search" },
-    { label: "About", href: "/about" },
+    { label: "About BuyNswipe", href: "/investor-relations" },
     { label: "Contact", href: "/contact" },
   ]
 
