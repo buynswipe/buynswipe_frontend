@@ -25,6 +25,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { MobileMenu } from "@/components/mobile-menu"
+import { primaryDesktopNavigation } from "@/lib/site-navigation"
 
 export default function BuyNswipeLanding() {
   return (
@@ -41,55 +42,12 @@ export default function BuyNswipeLanding() {
               For Sale
             </Badge>
           </div>
-          <nav className="hidden lg:flex space-x-1">
-            <Link href="/" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Home
-            </Link>
-            <Link href="#about" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              About
-            </Link>
-            <Link
-              href="/credit"
-              className="px-3 py-2 text-emerald-600 hover:text-emerald-700 font-semibold transition-colors"
-            >
-              Credit
-            </Link>
-            <Link
-              href="/payment-solutions"
-              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
-            >
-              Payment Solutions
-            </Link>
-            <Link
-              href="/go"
-              className="px-3 py-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
-            >
-              BuyNswipe® Go
-            </Link>
-            <Link
-              href="/solutions"
-              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
-            >
-              Solutions
-            </Link>
-            <Link
-              href="/resources"
-              className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
-            >
-              Resources
-            </Link>
-            <Link href="/blog" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Blog
-            </Link>
-            <Link href="/search" className="px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">
-              Search
-            </Link>
-            <Link
-              href="/contact"
-              className="px-3 py-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-            >
-              Contact
-            </Link>
+          <nav aria-label="Primary navigation" className="hidden lg:flex space-x-1">
+            {primaryDesktopNavigation.map((item) => (
+              <Link key={item.href} href={item.href} className={`px-3 py-2 transition-colors font-medium ${item.accent === "emerald" ? "text-emerald-600 hover:text-emerald-700 font-semibold" : item.accent === "blue" ? "text-blue-600 hover:text-blue-700 font-semibold" : "text-gray-600 hover:text-blue-600"}`}>
+                {item.label}
+              </Link>
+            ))}
           </nav>
           <MobileMenu />
         </div>
