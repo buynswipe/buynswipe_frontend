@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -159,10 +160,12 @@ export default function FAQPage() {
           <h2 className="text-3xl font-bold mb-4">Didn't find your answer?</h2>
           <p className="text-gray-600 mb-8">Our support team is here to help</p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">Contact Support</button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50">
+            <Link href="/contact" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+              Contact Support
+            </Link>
+            <Link href="/contact" className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50">
               Schedule a Call
-            </button>
+            </Link>
           </div>
         </div>
       </section>
