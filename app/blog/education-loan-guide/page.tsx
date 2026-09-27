@@ -4,7 +4,7 @@ import { BookOpen, Globe, DollarSign, BarChart3 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Education Loan Guide - Study in India & Abroad | BuyNswipe",
+  title: "Education Loan Guide - Study in India & Abroad | BuyNswipe®",
   description:
     "Complete education loan guide covering domestic loans, overseas education, eligibility, repayment options, and moratorium details.",
   keywords: [
@@ -24,7 +24,7 @@ export default function EducationLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Code2, FileText, BookOpen } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "API Documentation | BuyNswipe Developers | REST API Guide",
+  title: "API Documentation | BuyNswipe® Developers | REST API Guide",
   description:
-    "Complete API documentation for BuyNswipe. REST API, SDKs, webhooks, and integration guides. Build with BuyNswipe's payment and credit APIs.",
+    "Complete API documentation for BuyNswipe®. REST API, SDKs, webhooks, and integration guides. Build with BuyNswipe®'s payment and credit APIs.",
   keywords: [
-    "BuyNswipe API",
+    "BuyNswipe® API",
     "API documentation",
     "REST API",
     "payment API",
@@ -25,7 +25,7 @@ export default function ApiDocsPage() {
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">API Documentation</h1>
-          <p className="text-xl text-purple-100">Build powerful fintech applications with BuyNswipe APIs</p>
+          <p className="text-xl text-purple-100">Build powerful fintech applications with BuyNswipe® APIs</p>
         </div>
       </section>
 
@@ -151,7 +151,7 @@ export default function ApiDocsPage() {
       <section className="py-16 px-4 bg-purple-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Build?</h2>
-          <p className="text-xl mb-8 text-purple-100">Join thousands of developers building with BuyNswipe</p>
+          <p className="text-xl mb-8 text-purple-100">Join thousands of developers building with BuyNswipe®</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button className="bg-white text-purple-600 hover:bg-purple-50">Start Free Trial</Button>
             <Button variant="outline" className="border-white text-white hover:bg-purple-700 bg-transparent">

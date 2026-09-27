@@ -4,7 +4,7 @@ import { CheckCircle2, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card Eligibility Requirements - Salary, Age, CIBIL Score | BuyNswipe",
+  title: "Credit Card Eligibility Requirements - Salary, Age, CIBIL Score | BuyNswipe®",
   description:
     "Complete guide to credit card eligibility criteria. Learn minimum salary, age, CIBIL score, and employment requirements.",
   keywords: [
@@ -23,7 +23,7 @@ export default function CreditCardEligibilityPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

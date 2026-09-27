@@ -4,7 +4,7 @@ import { Shield, DollarSign, AlertCircle, CheckCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "How to Use Credit Card Wisely - Smart Credit Card Tips | BuyNswipe",
+  title: "How to Use Credit Card Wisely - Smart Credit Card Tips | BuyNswipe®",
   description:
     "Learn how to use credit cards responsibly and wisely. Master credit card best practices to avoid debt and build excellent credit.",
   keywords: [
@@ -24,7 +24,7 @@ export default function HowToUseCreditCardWiselyPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

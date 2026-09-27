@@ -37,7 +37,7 @@ export default function BuyNswipeLanding() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
+            <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
             <Badge variant="secondary" className="ml-2">
               For Sale
             </Badge>
@@ -61,7 +61,7 @@ export default function BuyNswipeLanding() {
             Government Recognized Startup
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            BuyNswipe – Pre-Funded, Govt-Recognized <span className="text-blue-600">Fintech SaaS Startup</span> for Sale
+            BuyNswipe® – Pre-Funded, Govt-Recognized <span className="text-blue-600">Fintech SaaS Startup</span> for Sale
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Registered company (2017) • Trademarked • Premium domains • ₹17 L seed-funded • Clean and compliant
@@ -86,12 +86,12 @@ export default function BuyNswipeLanding() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-left">
                 <Badge className="bg-white/20 text-white border-0 mb-2">Featured Product</Badge>
-                <h3 className="text-xl font-bold">BuyNswipe Credit - AI-Powered Loan & Credit Card Marketplace</h3>
+                <h3 className="text-xl font-bold">BuyNswipe® Credit - AI-Powered Loan & Credit Card Marketplace</h3>
                 <p className="text-emerald-100 text-sm mt-1">Instant loans, credit cards, BNPL - Compare 50+ banks</p>
               </div>
               <Link href="/credit">
                 <Button size="lg" className="bg-white text-emerald-700 hover:bg-gray-100 whitespace-nowrap">
-                  Explore BuyNswipe Credit
+                  Explore BuyNswipe® Credit
                 </Button>
               </Link>
             </div>
@@ -103,7 +103,7 @@ export default function BuyNswipeLanding() {
       <section id="about" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">About BuyNswipe</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">About BuyNswipe®</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               A comprehensive digital payment solutions platform with 7+ years of market presence
             </p>
@@ -141,7 +141,7 @@ export default function BuyNswipeLanding() {
             <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 text-center">
               <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8">
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">BuyNswipe Platform & POS Integration</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">BuyNswipe® Platform & POS Integration</h3>
                   <p className="text-gray-600 text-sm">Future payment infrastructure</p>
                 </div>
 
@@ -151,7 +151,7 @@ export default function BuyNswipeLanding() {
                     {/* POS Terminal Mockup */}
                     <div className="bg-gray-900 rounded-lg p-4 w-48 h-32 flex flex-col justify-between">
                       <div className="bg-blue-600 text-white text-xs px-2 py-1 rounded text-center font-bold">
-                        BuyNswipe POS
+                        BuyNswipe® POS
                       </div>
                       <div className="bg-green-400 text-black text-xs px-2 py-1 rounded text-center">
                         ₹1,250.00 - APPROVED
@@ -166,10 +166,10 @@ export default function BuyNswipeLanding() {
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-4 w-40 h-24 text-white relative overflow-hidden">
                       <div className="absolute top-2 right-2 w-8 h-6 bg-white/20 rounded"></div>
                       <div className="absolute bottom-2 left-4">
-                        <div className="text-xs opacity-80">BuyNswipe Card</div>
+                        <div className="text-xs opacity-80">BuyNswipe® Card</div>
                         <div className="text-sm font-mono">**** 1234</div>
                       </div>
-                      <div className="absolute top-2 left-4 text-xs font-bold">BuyNswipe™</div>
+                      <div className="absolute top-2 left-4 text-xs font-bold">BuyNswipe®</div>
                     </div>
                   </div>
 
@@ -213,11 +213,11 @@ export default function BuyNswipeLanding() {
         </div>
       </section>
 
-      {/* Enhanced Why BuyNswipe Section */}
+      {/* Enhanced Why BuyNswipe® Section */}
       <section id="assets" className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why BuyNswipe? – Complete Growth-Ready Package</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why BuyNswipe®? – Complete Growth-Ready Package</h2>
             <p className="text-lg text-gray-600">Comprehensive digital assets + untapped market potential</p>
           </div>
 
@@ -237,7 +237,7 @@ export default function BuyNswipeLanding() {
                 <CardContent className="p-6 text-center">
                   <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                   <h4 className="font-semibold text-gray-900 mb-2">Trademarked Brand</h4>
-                  <p className="text-gray-600 text-sm">BuyNswipe™ registered trademark</p>
+                  <p className="text-gray-600 text-sm">BuyNswipe® registered trademark</p>
                 </CardContent>
               </Card>
 
@@ -363,7 +363,7 @@ export default function BuyNswipeLanding() {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4">Future POS Integration Plan Infrastructure</h3>
               <p className="text-blue-100 max-w-3xl mx-auto">
-                BuyNswipe's existing payment infrastructure provides the perfect foundation for comprehensive POS
+                BuyNswipe®'s existing payment infrastructure provides the perfect foundation for comprehensive POS
                 solutions
               </p>
             </div>
@@ -921,7 +921,7 @@ export default function BuyNswipeLanding() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">Ratnesh Choubey</h3>
-              <p className="text-blue-100 mb-6">Founder & CEO, BuyNswipe Technology Pvt. Ltd.</p>
+              <p className="text-blue-100 mb-6">Founder & CEO, BuyNswipe® Technology Pvt. Ltd.</p>
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -966,7 +966,7 @@ export default function BuyNswipeLanding() {
       {/* <footer className="py-8 px-4 bg-gray-900 text-gray-300">
         <div className="container mx-auto text-center">
           <p className="text-sm">
-            BuyNswipe Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially Recognized
+            BuyNswipe® Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially Recognized
           </p>
           <p className="text-xs mt-2 text-gray-400">
             All trademarks, domains, and digital assets included in asset sale.
@@ -984,7 +984,7 @@ export default function BuyNswipeLanding() {
                 <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">B</span>
                 </div>
-                <span className="text-lg font-bold">BuyNswipe</span>
+                <span className="text-lg font-bold">BuyNswipe®</span>
               </div>
               <p className="text-gray-400 text-sm">
                 Pre-funded, govt-recognized fintech SaaS startup for strategic acquisition.
@@ -1207,7 +1207,7 @@ export default function BuyNswipeLanding() {
           {/* Legal */}
           <div className="border-t border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">© 2025 BuyNswipe Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
+              <p className="text-gray-400 text-sm">© 2025 BuyNswipe® Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                 <Link href="/privacy-policy" className="hover:text-white transition-colors">
                   Privacy Policy

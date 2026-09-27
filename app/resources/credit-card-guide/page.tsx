@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Complete Credit Card Guide - Types, Benefits & How to Choose | BuyNswipe",
+  title: "Complete Credit Card Guide - Types, Benefits & How to Choose | BuyNswipe®",
   description:
     "Ultimate credit card guide. Learn about credit card types, benefits, rewards programs, and how to choose the right card for you.",
   keywords: [

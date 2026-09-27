@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Store, TrendingDown, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Retail Store Case Study | 5 Store Expansion | BuyNswipe POS",
+  title: "Retail Store Case Study | 5 Store Expansion | BuyNswipe® POS",
   description:
-    "How a retail fashion chain expanded from 1 to 5 stores while reducing inventory costs by 35% and saving 25% operational costs using BuyNswipe unified POS system.",
+    "How a retail fashion chain expanded from 1 to 5 stores while reducing inventory costs by 35% and saving 25% operational costs using BuyNswipe® unified POS system.",
   keywords: [
     "retail POS case study",
     "retail expansion",
@@ -58,7 +58,7 @@ export default function RetailCaseStudy() {
           <div>
             <h2 className="text-3xl font-bold mb-4">The Solution</h2>
             <p className="text-lg text-gray-700 mb-4">
-              StyleHub implemented BuyNswipe's unified retail POS system with centralized inventory management,
+              StyleHub implemented BuyNswipe®'s unified retail POS system with centralized inventory management,
               multi-location support, and detailed analytics. This allowed them to confidently expand while maintaining
               operational efficiency.
             </p>
@@ -104,7 +104,7 @@ export default function RetailCaseStudy() {
 
           <div className="bg-blue-50 p-8 rounded-lg">
             <p className="text-lg italic text-gray-700 mb-4">
-              "BuyNswipe made expansion possible. We went from 1 to 5 stores in a year with better control and
+              "BuyNswipe® made expansion possible. We went from 1 to 5 stores in a year with better control and
               visibility than we had before. The system scales with our business!"
             </p>
             <p className="font-semibold text-gray-800">— Priya Sharma, Founder, StyleHub Fashion</p>

@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "SBI Cashback Credit Card | 5% Online Cashback | Instant Approval | BuyNswipe",
+  title: "SBI Cashback Credit Card | 5% Online Cashback | Instant Approval | BuyNswipe®",
   description:
     "Apply for SBI Cashback Credit Card with 5% cashback on online purchases and 1% on offline. Auto-credited rewards. ₹999 annual fee (waivable).",
   keywords: ["SBI cashback card", "SBI credit card cashback", "online cashback card"],

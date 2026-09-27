@@ -4,7 +4,7 @@ import { Building2, DollarSign, Home, TrendingUp } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Loan Against Property (LAP) Guide - Real Estate Financing | BuyNswipe",
+  title: "Loan Against Property (LAP) Guide - Real Estate Financing | BuyNswipe®",
   description:
     "Complete loan against property guide covering LAP features, eligibility, interest rates, advantages, and comparison with home loans.",
   keywords: [
@@ -24,7 +24,7 @@ export default function LoanAgainstPropertyGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

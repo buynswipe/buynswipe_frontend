@@ -33,7 +33,7 @@ export default function InstantLoanClient() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">BuyNswipe Credit</span>
+            <span className="text-xl font-bold text-gray-900">BuyNswipe® Credit</span>
           </Link>
         </div>
       </header>
@@ -232,7 +232,7 @@ export default function InstantLoanClient() {
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-gray-300">
         <div className="container mx-auto text-center">
-          <p className="text-sm">BuyNswipe Credit - Your trusted platform for instant loans</p>
+          <p className="text-sm">BuyNswipe® Credit - Your trusted platform for instant loans</p>
         </div>
       </footer>
     </div>

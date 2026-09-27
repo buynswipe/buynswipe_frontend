@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { UtensilsCrossed, Clock, Users, TrendingUp, Zap, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Restaurant POS System | Table Management | Order Tracking | BuyNswipe",
+  title: "Restaurant POS System | Table Management | Order Tracking | BuyNswipe®",
   description:
     "Complete restaurant POS solution with table management, kitchen display, delivery integration, and real-time analytics for dine-in and delivery restaurants.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "BuyNswipe Restaurant POS System",
+  name: "BuyNswipe® Restaurant POS System",
   description: "Complete POS solution for restaurants",
 }
 
@@ -70,7 +70,7 @@ export default function RestaurantSolutionsPage() {
 
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Why Restaurants Choose BuyNswipe</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Why Restaurants Choose BuyNswipe®</h2>
             <div className="space-y-4">
               {[
                 "Increase order accuracy and reduce errors",

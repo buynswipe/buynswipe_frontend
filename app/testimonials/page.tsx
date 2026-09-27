@@ -4,11 +4,11 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Testimonials & Reviews | Customer Success Stories",
+  title: "BuyNswipe® Testimonials & Reviews | Customer Success Stories",
   description:
-    "Read testimonials and success stories from BuyNswipe customers. See how merchants and individuals benefit from our payment solutions and credit marketplace.",
+    "Read testimonials and success stories from BuyNswipe® customers. See how merchants and individuals benefit from our payment solutions and credit marketplace.",
   keywords: [
-    "BuyNswipe reviews",
+    "BuyNswipe® reviews",
     "customer testimonials",
     "success stories",
     "customer feedback",
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     role: "Restaurant Owner, Delhi",
     content:
-      "BuyNswipe POS system has transformed my restaurant's billing process. Transaction processing is instant, inventory tracking is real-time, and customer service is excellent. Highly recommended!",
+      "BuyNswipe® POS system has transformed my restaurant's billing process. Transaction processing is instant, inventory tracking is real-time, and customer service is excellent. Highly recommended!",
     rating: 5,
     metrics: "45% transaction growth, 60% faster billing",
   },
@@ -30,7 +30,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Retail Store Manager, Mumbai",
     content:
-      "Managing 5 retail locations has become so much easier with BuyNswipe. The multi-location dashboard gives me complete visibility, and the settlement is quick. Best investment for my business.",
+      "Managing 5 retail locations has become so much easier with BuyNswipe®. The multi-location dashboard gives me complete visibility, and the settlement is quick. Best investment for my business.",
     rating: 5,
     metrics: "35% inventory cost reduction, 5 locations managed",
   },
@@ -38,7 +38,7 @@ const testimonials = [
     name: "Amit Patel",
     role: "Freelance Developer, Bangalore",
     content:
-      "I used BuyNswipe's personal loan service to fund my startup. The process was completely digital, approval was quick, and the interest rate was competitive. Great experience!",
+      "I used BuyNswipe®'s personal loan service to fund my startup. The process was completely digital, approval was quick, and the interest rate was competitive. Great experience!",
     rating: 5,
     metrics: "₹5L loan approved in 24 hours",
   },
@@ -46,7 +46,7 @@ const testimonials = [
     name: "Deepika Nair",
     role: "E-commerce Seller, Pune",
     content:
-      "BuyNswipe payment gateway integration was seamless. Multiple payment options, low MDR, and excellent support. My checkout conversion has improved significantly.",
+      "BuyNswipe® payment gateway integration was seamless. Multiple payment options, low MDR, and excellent support. My checkout conversion has improved significantly.",
     rating: 5,
     metrics: "25% conversion rate increase",
   },
@@ -54,7 +54,7 @@ const testimonials = [
     name: "Vikram Singh",
     role: "Small Business Owner, NCR",
     content:
-      "The credit card application through BuyNswipe was hassle-free. Got approved with good limits and cashback offers. Perfect for managing my business expenses.",
+      "The credit card application through BuyNswipe® was hassle-free. Got approved with good limits and cashback offers. Perfect for managing my business expenses.",
     rating: 5,
     metrics: "₹5L credit limit approved instantly",
   },
@@ -62,7 +62,7 @@ const testimonials = [
     name: "Ananya Desai",
     role: "Travel Agency Owner, Bangalore",
     content:
-      "BuyNswipe's BNPL feature has been a game-changer for my customers. They can book travel now and pay later, which has increased my bookings by 40%. Excellent service!",
+      "BuyNswipe®'s BNPL feature has been a game-changer for my customers. They can book travel now and pay later, which has increased my bookings by 40%. Excellent service!",
     rating: 5,
     metrics: "40% booking increase with BNPL",
   },
@@ -74,7 +74,7 @@ export default function TestimonialsPage() {
       <section className="bg-gradient-to-r from-amber-600 to-yellow-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Customer Testimonials</h1>
-          <p className="text-xl text-amber-100">Real stories from BuyNswipe users</p>
+          <p className="text-xl text-amber-100">Real stories from BuyNswipe® users</p>
         </div>
       </section>
 

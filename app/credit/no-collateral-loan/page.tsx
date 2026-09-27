@@ -1,7 +1,7 @@
 import NoCollateralLoanClient from "./client"
 
 export const metadata = {
-  title: "No Collateral Loan - Unsecured Personal Loan | BuyNswipe",
+  title: "No Collateral Loan - Unsecured Personal Loan | BuyNswipe®",
   description:
     "Get no collateral loans without pledging assets. Instant approval unsecured personal loans online. Compare lenders, interest rates, and apply now.",
   keywords:

@@ -4,7 +4,7 @@ import { Sparkles, Zap, Lock, TrendingDown } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Gold Loan Guide - Quick Cash Against Gold | BuyNswipe",
+  title: "Gold Loan Guide - Quick Cash Against Gold | BuyNswipe®",
   description:
     "Complete gold loan guide covering gold loan features, interest rates, eligibility, process, and benefits of borrowing against gold jewelry.",
   keywords: [
@@ -24,7 +24,7 @@ export default function GoldLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { TrendingUp, Users, Zap, BarChart3, Download, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Investor Relations | BuyNswipe Acquisition Opportunity",
+  title: "Investor Relations | BuyNswipe® Acquisition Opportunity",
   description:
-    "BuyNswipe is available for strategic acquisition. Learn about our market opportunity, financial metrics, growth trajectory, and acquisition details.",
+    "BuyNswipe® is available for strategic acquisition. Learn about our market opportunity, financial metrics, growth trajectory, and acquisition details.",
   keywords: [
     "investor relations",
-    "BuyNswipe acquisition",
+    "BuyNswipe® acquisition",
     "fintech investment",
     "startup metrics",
     "financial performance",
@@ -22,7 +22,7 @@ export default function InvestorRelationsPage() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Investment Opportunity</h1>
-          <p className="text-2xl text-blue-100 mb-8">Strategic acquisition of BuyNswipe fintech platform</p>
+          <p className="text-2xl text-blue-100 mb-8">Strategic acquisition of BuyNswipe® fintech platform</p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Link
               href="#metrics"
@@ -42,7 +42,7 @@ export default function InvestorRelationsPage() {
 
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why Acquire BuyNswipe?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Why Acquire BuyNswipe®?</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
@@ -175,7 +175,7 @@ export default function InvestorRelationsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Acquire?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            BuyNswipe is presented as an acquisition opportunity for a growing fintech platform. Operating metrics,
+            BuyNswipe® is presented as an acquisition opportunity for a growing fintech platform. Operating metrics,
             partner relationships, and compliance scope should be independently verified during diligence.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">

@@ -72,7 +72,7 @@ export default function EligibilityCheckerPage() {
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
                 <Calculator className="w-5 h-5 text-white" />
               </div>
-              <span className="text-lg font-bold text-gray-900">BuyNswipe</span>
+              <span className="text-lg font-bold text-gray-900">BuyNswipe®</span>
             </Link>
           </div>
         </header>
@@ -281,7 +281,7 @@ export default function EligibilityCheckerPage() {
                   <CardContent className="p-6">
                     <h3 className="font-bold text-gray-900 mb-2">Does eligibility check affect CIBIL score?</h3>
                     <p className="text-gray-600 text-sm">
-                      No, checking loan eligibility on BuyNswipe Credit does not impact your CIBIL score. It's a soft
+                      No, checking loan eligibility on BuyNswipe® Credit does not impact your CIBIL score. It's a soft
                       inquiry that does not leave a footprint on your credit report.
                     </p>
                   </CardContent>

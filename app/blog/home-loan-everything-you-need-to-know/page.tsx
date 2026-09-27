@@ -4,7 +4,7 @@ import { Home, DollarSign, FileCheck, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Home Loan Complete Guide - Types, Eligibility, Process | BuyNswipe",
+  title: "Home Loan Complete Guide - Types, Eligibility, Process | BuyNswipe®",
   description:
     "Complete home loan guide covering types, eligibility, documentation, processing time, and cost of home loans in India.",
   keywords: [
@@ -24,7 +24,7 @@ export default function HomeLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

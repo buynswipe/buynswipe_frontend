@@ -4,7 +4,7 @@ import { Zap, CheckCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Personal Loan Guide - Complete Information for India | BuyNswipe",
+  title: "Personal Loan Guide - Complete Information for India | BuyNswipe®",
   description:
     "Complete guide to personal loans in India. Learn types, eligibility, documents required, interest rates, approval process.",
   keywords: [
@@ -25,7 +25,7 @@ export default function PersonalLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

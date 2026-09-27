@@ -3,7 +3,7 @@ import { CheckCircle, Clock } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "How to Improve CIBIL Score - 10 Ways to Boost Credit Score Fast | BuyNswipe",
+  title: "How to Improve CIBIL Score - 10 Ways to Boost Credit Score Fast | BuyNswipe®",
   description:
     "Learn how to improve CIBIL score quickly. 10 actionable tips to boost credit score from 500 to 750+ in 6-12 months.",
   keywords: [

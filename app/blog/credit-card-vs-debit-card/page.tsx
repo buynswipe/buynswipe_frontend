@@ -4,7 +4,7 @@ import { Shield, TrendingUp } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card vs Debit Card - Complete Comparison | BuyNswipe",
+  title: "Credit Card vs Debit Card - Complete Comparison | BuyNswipe®",
   description:
     "Credit card vs debit card: differences, pros, cons, and which is better. Understand rewards, liability, and usage benefits.",
   keywords: [
@@ -35,7 +35,7 @@ export default function CreditCardVsDebitCardPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

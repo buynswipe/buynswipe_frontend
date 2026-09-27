@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "HDFC Instant Loan | ₹15 Lakh | 10.88% Interest | Instant Approval | BuyNswipe",
+  title: "HDFC Instant Loan | ₹15 Lakh | 10.88% Interest | Instant Approval | BuyNswipe®",
   description:
     "Apply for HDFC Instant Loan with instant disbursal, 100% digital process, and pre-approved for cardholders. Get ₹15 Lakh at 10.88% with 6-48 months tenure.",
   keywords: ["HDFC instant loan", "HDFC personal loan", "instant loan HDFC", "HDFC loan instant approval"],

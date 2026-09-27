@@ -4,7 +4,7 @@ import { Calculator, DollarSign, TrendingDown, BarChart3 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "EMI Calculator Guide - Calculate Loan EMI Online | BuyNswipe",
+  title: "EMI Calculator Guide - Calculate Loan EMI Online | BuyNswipe®",
   description:
     "Complete EMI calculator guide with examples for personal loans, auto loans, home loans. Learn how to calculate EMI and optimize your loan.",
   keywords: [
@@ -24,7 +24,7 @@ export default function EMICalculatorGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

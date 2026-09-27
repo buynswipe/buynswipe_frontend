@@ -22,7 +22,7 @@ export default function GlobalError({
       <body className="bg-slate-950 text-white">
         <main className="grid min-h-screen place-items-center px-6 py-16">
           <section className="w-full max-w-lg text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">BuyNswipe</p>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">BuyNswipe®</p>
             <h1 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">We hit an unexpected error</h1>
             <p className="mt-4 text-base leading-7 text-slate-300">
               The application could not complete this request. Try again, or return home if the issue continues.

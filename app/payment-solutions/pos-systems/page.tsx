@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "POS System for Retail | mPOS | Cloud POS | POS Terminal | BuyNswipe",
+  title: "POS System for Retail | mPOS | Cloud POS | POS Terminal | BuyNswipe®",
   description:
     "Complete POS solutions for retail stores. mPOS terminal, cloud-based POS software, and traditional point of sale systems. Accept all payment methods securely.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "retail solutions",
   ],
   openGraph: {
-    title: "POS System for Retail Merchants | BuyNswipe",
+    title: "POS System for Retail Merchants | BuyNswipe®",
     description: "Complete point of sale solutions for retail stores",
     url: "https://buynswipe.com/payment-solutions/pos-systems",
   },
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "BuyNswipe POS System",
+  name: "BuyNswipe® POS System",
   description: "Complete point of sale solution for retail merchants",
-  provider: { "@type": "Organization", name: "BuyNswipe" },
+  provider: { "@type": "Organization", name: "BuyNswipe®" },
 }
 
 export default function POSSystemsPage() {
@@ -126,7 +126,7 @@ export default function POSSystemsPage() {
         {/* Benefits */}
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Why Upgrade to BuyNswipe POS?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Why Upgrade to BuyNswipe® POS?</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { icon: Zap, title: "Instant Settlement", desc: "Money reaches your account in minutes" },

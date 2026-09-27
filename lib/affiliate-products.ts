@@ -415,7 +415,7 @@ export const creditCardProducts = [
   ].map((code, index) => ({
     id: `finance-deal-${index + 18}`,
     name: `Partner finance offer ${index + 18}`,
-    description: "Featured partner offer from the BuyNswipe affiliate marketplace. Product details are confirmed on the partner page.",
+    description: "Featured partner offer from the BuyNswipe® affiliate marketplace. Product details are confirmed on the partner page.",
     type: "Finance Offer",
     fees: "See partner terms",
     benefits: ["Partner offer", "Online application", "Affiliate tracking link"],

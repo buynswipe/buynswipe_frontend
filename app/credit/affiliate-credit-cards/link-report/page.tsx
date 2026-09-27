@@ -3,8 +3,8 @@ import { validateAffiliateLinks } from "@/lib/affiliate-link-validation"
 import { LinkReportClient } from "./report-client"
 
 export const metadata: Metadata = {
-  title: "Affiliate Link Report | BuyNswipe Credit",
-  description: "Validation report for BuyNswipe partner finance offers.",
+  title: "Affiliate Link Report | BuyNswipe® Credit",
+  description: "Validation report for BuyNswipe® partner finance offers.",
 }
 
 export const dynamic = "force-dynamic"

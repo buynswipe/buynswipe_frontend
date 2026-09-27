@@ -23,9 +23,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Business Loan Online | MSME Loan | Startup Loan | Mudra Loan | Low Interest | BuyNswipe",
+  title: "Business Loan Online | MSME Loan | Startup Loan | Mudra Loan | Low Interest | BuyNswipe®",
   description:
-    "Apply for business loan online at lowest interest rate 11%. Get MSME loan up to ₹5 Crore, startup loan, Mudra loan, working capital loan. No collateral. Quick approval in 48 hours. Apply now on BuyNswipe.",
+    "Apply for business loan online at lowest interest rate 11%. Get MSME loan up to ₹5 Crore, startup loan, Mudra loan, working capital loan. No collateral. Quick approval in 48 hours. Apply now on BuyNswipe®.",
   keywords: [
     "business loan",
     "business loan online",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     "SBI business loan",
   ],
   openGraph: {
-    title: "Business Loan Online | MSME Loan ₹5 Crore | 11% Interest | BuyNswipe",
+    title: "Business Loan Online | MSME Loan ₹5 Crore | 11% Interest | BuyNswipe®",
     description:
       "Get instant business loan for MSME, startup, working capital. Low interest rates, no collateral options. Apply now.",
     url: "https://buynswipe.com/credit/business-loan",
@@ -67,11 +67,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "FinancialProduct",
-      name: "BuyNswipe Business Loan",
+      name: "BuyNswipe® Business Loan",
       description: "Business loan for MSME, startups, and SMEs. Loan amount from ₹1 Lakh to ₹5 Crore.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       offers: {
@@ -103,7 +103,7 @@ const jsonLd = {
           name: "Can I get business loan without collateral?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, BuyNswipe offers unsecured business loans up to ₹50 Lakh without collateral for eligible businesses. Mudra loans up to ₹10 Lakh are also collateral-free under government scheme.",
+            text: "Yes, BuyNswipe® offers unsecured business loans up to ₹50 Lakh without collateral for eligible businesses. Mudra loans up to ₹10 Lakh are also collateral-free under government scheme.",
           },
         },
         {
@@ -211,7 +211,7 @@ export default function BusinessLoanPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/credit" className="text-gray-600 hover:text-blue-600">
@@ -245,7 +245,7 @@ export default function BusinessLoanPage() {
               <p className="text-xl md:text-2xl text-emerald-100 mb-8">
                 Get <strong>MSME loan</strong>, <strong>startup loan</strong>, <strong>Mudra loan</strong>, and{" "}
                 <strong>working capital loan</strong> with quick approval. No collateral options available. Compare 20+
-                lenders on BuyNswipe.
+                lenders on BuyNswipe®.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -489,10 +489,10 @@ export default function BusinessLoanPage() {
         {/* SEO Content */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Business Loan Guide 2024 - BuyNswipe</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Business Loan Guide 2024 - BuyNswipe®</h2>
             <div className="prose prose-emerald max-w-none text-gray-600">
               <p>
-                <strong>BuyNswipe Business Loan</strong> marketplace helps MSMEs, startups, and SMEs find the right{" "}
+                <strong>BuyNswipe® Business Loan</strong> marketplace helps MSMEs, startups, and SMEs find the right{" "}
                 <strong>business loan online</strong>. Compare <strong>MSME loan</strong>, <strong>Mudra loan</strong>,{" "}
                 <strong>working capital loan</strong>, and <strong>startup loan</strong> from 20+ lenders at interest
                 rates starting 11% p.a.
@@ -505,7 +505,7 @@ export default function BusinessLoanPage() {
               </p>
               <p>
                 Whether you need <strong>SBI business loan</strong>, <strong>HDFC business loan</strong>,{" "}
-                <strong>machinery loan</strong>, or <strong>invoice financing</strong>, BuyNswipe provides instant
+                <strong>machinery loan</strong>, or <strong>invoice financing</strong>, BuyNswipe® provides instant
                 eligibility check and quick approvals for your business funding needs.
               </p>
             </div>
@@ -517,7 +517,7 @@ export default function BusinessLoanPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
+                <h3 className="text-xl font-bold mb-4">BuyNswipe®</h3>
                 <p className="text-gray-400">
                   India's trusted MSME & business loan marketplace. Quick approvals, best rates.
                 </p>
@@ -585,7 +585,7 @@ export default function BusinessLoanPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
+              <p>© 2025 BuyNswipe® Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
             </div>
           </div>
         </footer>

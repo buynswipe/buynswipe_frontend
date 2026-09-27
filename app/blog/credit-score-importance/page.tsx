@@ -4,7 +4,7 @@ import { TrendingUp, AlertCircle, Zap } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Score Importance - Impact on Loans & Cards | BuyNswipe",
+  title: "Credit Score Importance - Impact on Loans & Cards | BuyNswipe®",
   description:
     "Complete guide on credit score importance, how it's calculated, factors affecting it, and its impact on loan and credit card eligibility.",
   keywords: [
@@ -23,7 +23,7 @@ export default function CreditScoreImportancePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

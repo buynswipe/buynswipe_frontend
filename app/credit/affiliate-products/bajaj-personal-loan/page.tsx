@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Bajaj Finserv Personal Loan | ₹55 Lakh | 11% Interest | Instant Approval | BuyNswipe",
+  title: "Bajaj Finserv Personal Loan | ₹55 Lakh | 11% Interest | Instant Approval | BuyNswipe®",
   description:
     "Apply for Bajaj Finserv Personal Loan with up to ₹55 Lakh, 11% interest rate, 84-month tenure. Quick approval and zero foreclosure charges.",
   keywords: ["Bajaj Finserv personal loan", "Bajaj loan", "personal loan Bajaj"],

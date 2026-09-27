@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Store, Package, Users, BarChart3, Zap, Lock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Retail POS System | Inventory Management | Sales Analytics | BuyNswipe",
+  title: "Retail POS System | Inventory Management | Sales Analytics | BuyNswipe®",
   description:
     "Complete retail POS solution with inventory management, multi-location support, staff management, and real-time sales analytics for retail stores.",
   keywords: [
@@ -59,7 +59,7 @@ export default function RetailSolutionsPage() {
 
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why Retail Stores Choose BuyNswipe</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Why Retail Stores Choose BuyNswipe®</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               "Reduce inventory wastage and shrinkage",

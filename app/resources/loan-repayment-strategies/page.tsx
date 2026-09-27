@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Loan Repayment Strategies - Pay Off Debt Faster | BuyNswipe",
+  title: "Loan Repayment Strategies - Pay Off Debt Faster | BuyNswipe®",
   description:
     "Master loan repayment strategies. Learn different repayment methods, EMI calculators, and debt payoff plans to clear loans faster.",
   keywords: [

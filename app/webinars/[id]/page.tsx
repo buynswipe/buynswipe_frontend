@@ -17,7 +17,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params
   const webinar = webinars[id as WebinarId]
-  return webinar ? { title: `${webinar.title} | BuyNswipe Webinars`, description: webinar.description } : { title: "Webinar not found | BuyNswipe" }
+  return webinar ? { title: `${webinar.title} | BuyNswipe® Webinars`, description: webinar.description } : { title: "Webinar not found | BuyNswipe®" }
 }
 
 export default async function WebinarDetailPage({ params }: { params: Promise<{ id: string }> }) {

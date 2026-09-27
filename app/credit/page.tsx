@@ -40,7 +40,7 @@ import Link from "next/link"
 import { CreditCardCatalogSection } from "@/components/credit-card-catalog"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Credit - Instant Personal Loan Online | Credit Card Apply | BNPL | Best Loan App India 2025",
+  title: "BuyNswipe® Credit - Instant Personal Loan Online | Credit Card Apply | BNPL | Best Loan App India 2025",
   description:
     "Apply for instant personal loan online up to Rs 50 Lakh at lowest interest rates from 10.5%. Compare credit cards, get instant approval in 2 minutes. Best loan app India 2025. Check CIBIL score free. BNPL, UPI credit line, business loan for MSME. RBI regulated. 50+ bank partners.",
   keywords: [
@@ -191,11 +191,11 @@ export const metadata: Metadata = {
     "digital lending platform",
   ],
   openGraph: {
-    title: "BuyNswipe Credit - Best Instant Loan App | Credit Cards | BNPL India",
+    title: "BuyNswipe® Credit - Best Instant Loan App | Credit Cards | BNPL India",
     description:
       "Apply for instant personal loan, business loan & credit cards online. Compare 50+ banks & NBFCs. Get lowest interest rates with instant approval. Trusted by 1 Crore+ Indians.",
     url: "https://buynswipe.com/credit",
-    siteName: "BuyNswipe Credit",
+    siteName: "BuyNswipe® Credit",
     type: "website",
     locale: "en_IN",
     images: [
@@ -203,13 +203,13 @@ export const metadata: Metadata = {
         url: "https://buynswipe.com/og-credit.jpg",
         width: 1200,
         height: 630,
-        alt: "BuyNswipe Credit - Instant Loans & Credit Cards",
+        alt: "BuyNswipe® Credit - Instant Loans & Credit Cards",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyNswipe Credit - Instant Loan App India",
+    title: "BuyNswipe® Credit - Instant Loan App India",
     description:
       "Get instant personal loan without documents, business loan, credit cards with instant approval. Compare & apply online.",
     site: "@buynswipe",
@@ -237,8 +237,8 @@ export const metadata: Metadata = {
     google: "google-site-verification-code",
   },
   category: "Finance",
-  creator: "BuyNswipe Technology Pvt. Ltd.",
-  publisher: "BuyNswipe",
+  creator: "BuyNswipe® Technology Pvt. Ltd.",
+  publisher: "BuyNswipe®",
 }
 
 const jsonLd = {
@@ -247,7 +247,7 @@ const jsonLd = {
     {
       "@type": "Organization",
       "@id": "https://buynswipe.com/#organization",
-      name: "BuyNswipe Technology Pvt. Ltd.",
+      name: "BuyNswipe® Technology Pvt. Ltd.",
       url: "https://buynswipe.com",
       logo: "https://buynswipe.com/logo.png",
       sameAs: [
@@ -270,7 +270,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://buynswipe.com/#website",
       url: "https://buynswipe.com",
-      name: "BuyNswipe Credit",
+      name: "BuyNswipe® Credit",
       description: "India's trusted AI-driven digital credit marketplace for instant loans and credit cards",
       publisher: { "@id": "https://buynswipe.com/#organization" },
       potentialAction: {
@@ -330,7 +330,7 @@ const jsonLd = {
           name: "How to get instant loan without CIBIL check?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BuyNswipe Credit partners with NBFCs that offer loans based on alternative credit scoring using bank statements, UPI transactions, and income proof. You can get instant loans from ₹10,000 to ₹5 Lakhs even with low or no CIBIL score.",
+            text: "BuyNswipe® Credit partners with NBFCs that offer loans based on alternative credit scoring using bank statements, UPI transactions, and income proof. You can get instant loans from ₹10,000 to ₹5 Lakhs even with low or no CIBIL score.",
           },
         },
         {
@@ -338,7 +338,7 @@ const jsonLd = {
           name: "Which is the best instant loan app in India?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BuyNswipe Credit is one of the best instant loan apps in India, offering loans from 50+ banks & NBFCs with interest rates starting at 10.5% p.a. Features include 2-minute approval, instant disbursal, and zero paperwork.",
+            text: "BuyNswipe® Credit is one of the best instant loan apps in India, offering loans from 50+ banks & NBFCs with interest rates starting at 10.5% p.a. Features include 2-minute approval, instant disbursal, and zero paperwork.",
           },
         },
         {
@@ -346,7 +346,7 @@ const jsonLd = {
           name: "How to apply for credit card online with instant approval?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "On BuyNswipe Credit, you can compare and apply for credit cards from top banks like HDFC, ICICI, Axis, and SBI. Simply enter your details, check eligibility, and get instant approval within 2 minutes. Cards are delivered within 7-10 days.",
+            text: "On BuyNswipe® Credit, you can compare and apply for credit cards from top banks like HDFC, ICICI, Axis, and SBI. Simply enter your details, check eligibility, and get instant approval within 2 minutes. Cards are delivered within 7-10 days.",
           },
         },
         {
@@ -354,7 +354,7 @@ const jsonLd = {
           name: "What is BNPL (Buy Now Pay Later)?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BNPL allows you to purchase products and pay later in easy EMIs or full amount after a grace period. BuyNswipe Credit offers BNPL with 0% interest, instant approval, and acceptance at 10,000+ partner merchants across India.",
+            text: "BNPL allows you to purchase products and pay later in easy EMIs or full amount after a grace period. BuyNswipe® Credit offers BNPL with 0% interest, instant approval, and acceptance at 10,000+ partner merchants across India.",
           },
         },
         {
@@ -362,7 +362,7 @@ const jsonLd = {
           name: "How to check CIBIL score for free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Check your CIBIL score for free on BuyNswipe Credit. Simply enter your PAN card and mobile number to get your credit score instantly. We also provide tips to improve your score and personalized loan recommendations.",
+            text: "Check your CIBIL score for free on BuyNswipe® Credit. Simply enter your PAN card and mobile number to get your credit score instantly. We also provide tips to improve your score and personalized loan recommendations.",
           },
         },
       ],
@@ -384,7 +384,7 @@ export default function BuyNswipeCreditPage() {
                 <CreditCard className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
+                <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
                 <span className="text-xl font-bold text-emerald-600"> Credit</span>
               </div>
             </Link>
@@ -922,7 +922,7 @@ export default function BuyNswipeCreditPage() {
           </div>
         </section>
 
-        <section className="bg-slate-950 px-4 py-12 text-white"><div className="mx-auto flex max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">BuyNswipe marketplace</p><h2 className="mt-2 text-3xl font-bold">Explore 60+ partner finance offers.</h2><p className="mt-2 max-w-2xl text-slate-300">Compare available benefits in one place and follow the direct partner link when you are ready to apply.</p></div><Button asChild className="shrink-0 bg-emerald-500 text-emerald-950 hover:bg-emerald-400"><Link href="/credit/affiliate-credit-cards">Explore all offers</Link></Button></div></section>
+        <section className="bg-slate-950 px-4 py-12 text-white"><div className="mx-auto flex max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">BuyNswipe® marketplace</p><h2 className="mt-2 text-3xl font-bold">Explore 60+ partner finance offers.</h2><p className="mt-2 max-w-2xl text-slate-300">Compare available benefits in one place and follow the direct partner link when you are ready to apply.</p></div><Button asChild className="shrink-0 bg-emerald-500 text-emerald-950 hover:bg-emerald-400"><Link href="/credit/affiliate-credit-cards">Explore all offers</Link></Button></div></section>
         <CreditCardCatalogSection />
 
         {/* BNPL Section */}
@@ -1211,7 +1211,7 @@ export default function BuyNswipeCreditPage() {
                     How to get instant personal loan without CIBIL check?
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    BuyNswipe Credit partners with NBFCs that offer loans based on alternative credit scoring using bank
+                    BuyNswipe® Credit partners with NBFCs that offer loans based on alternative credit scoring using bank
                     statements, UPI transactions, and income proof. You can get instant loans from Rs 10,000 to Rs 5
                     Lakhs even with low or no CIBIL score. Simply apply online, upload documents, and get approval in 2
                     minutes.
@@ -1223,7 +1223,7 @@ export default function BuyNswipeCreditPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-gray-900 mb-2">Which is the best instant loan app in India 2025?</h3>
                   <p className="text-gray-600 text-sm">
-                    BuyNswipe Credit is one of the best instant loan apps in India, offering loans from 50+
+                    BuyNswipe® Credit is one of the best instant loan apps in India, offering loans from 50+
                     RBI-regulated banks and NBFCs with interest rates starting at 10.5% p.a. Features include 2-minute
                     approval, instant disbursal, zero paperwork, and loan amounts up to Rs 50 Lakhs. Trusted by 1 Crore+
                     Indians.
@@ -1237,7 +1237,7 @@ export default function BuyNswipeCreditPage() {
                     How to apply for credit card online with instant approval?
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    On BuyNswipe Credit, you can compare and apply for credit cards from top banks like HDFC, ICICI,
+                    On BuyNswipe® Credit, you can compare and apply for credit cards from top banks like HDFC, ICICI,
                     Axis, SBI, and Kotak. Simply enter your details, check eligibility instantly, and get approval
                     within 2 minutes. Lifetime free credit cards and cards for low income individuals also available.
                   </p>
@@ -1251,7 +1251,7 @@ export default function BuyNswipeCreditPage() {
                   </h3>
                   <p className="text-gray-600 text-sm">
                     BNPL (Buy Now Pay Later) allows you to purchase products and pay later in easy EMIs or full amount
-                    after a grace period. BuyNswipe Credit offers BNPL with 0% interest for up to 3 months, instant
+                    after a grace period. BuyNswipe® Credit offers BNPL with 0% interest for up to 3 months, instant
                     approval, and acceptance at 10,000+ partner merchants including Amazon, Flipkart, and Myntra.
                   </p>
                 </CardContent>
@@ -1261,7 +1261,7 @@ export default function BuyNswipeCreditPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-gray-900 mb-2">How to check CIBIL score for free online?</h3>
                   <p className="text-gray-600 text-sm">
-                    Check your CIBIL credit score for free on BuyNswipe Credit. Simply enter your PAN card number and
+                    Check your CIBIL credit score for free on BuyNswipe® Credit. Simply enter your PAN card number and
                     mobile number to get your credit score instantly. We also provide personalized tips to improve your
                     score and loan recommendations based on your credit profile.
                   </p>
@@ -1274,7 +1274,7 @@ export default function BuyNswipeCreditPage() {
                     What documents are required for instant personal loan?
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    For instant personal loan on BuyNswipe Credit, you need: Aadhaar card, PAN card, last 3 months bank
+                    For instant personal loan on BuyNswipe® Credit, you need: Aadhaar card, PAN card, last 3 months bank
                     statement, and salary slips (for salaried). Self-employed individuals need ITR or GST returns. Some
                     NBFCs offer loans without salary slip using UPI transaction history.
                   </p>
@@ -1287,7 +1287,7 @@ export default function BuyNswipeCreditPage() {
                     How to get business loan for small shop without collateral?
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    BuyNswipe Credit offers unsecured business loans for small shop owners and MSMEs up to Rs 2 Crore
+                    BuyNswipe® Credit offers unsecured business loans for small shop owners and MSMEs up to Rs 2 Crore
                     without collateral. Requirements include 2+ years business vintage, GST registration, and last 12
                     months bank statement. Mudra loan and CGTMSE scheme benefits also available.
                   </p>
@@ -1300,7 +1300,7 @@ export default function BuyNswipeCreditPage() {
                   <p className="text-gray-600 text-sm">
                     UPI credit line is an RBI-approved feature that allows you to make UPI payments using credit instead
                     of your bank balance. Get up to Rs 5 Lakh limit with 45 days interest-free period. Works with Google
-                    Pay, PhonePe, and other UPI apps. Apply on BuyNswipe Credit with instant approval.
+                    Pay, PhonePe, and other UPI apps. Apply on BuyNswipe® Credit with instant approval.
                   </p>
                 </CardContent>
               </Card>
@@ -1312,7 +1312,7 @@ export default function BuyNswipeCreditPage() {
         <section className="py-16 px-4 bg-white">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Trust BuyNswipe Credit?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Trust BuyNswipe® Credit?</h2>
               <p className="text-lg text-gray-600">Secure, RBI-compliant, and trusted by millions of Indians</p>
             </div>
 
@@ -1400,9 +1400,9 @@ export default function BuyNswipeCreditPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">About BuyNswipe Technology</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">About BuyNswipe® Technology</h2>
                 <p className="text-gray-600 mb-6">
-                  BuyNswipe Credit is a product of BuyNswipe Technology Pvt. Ltd., a DPIIT-recognized fintech startup
+                  BuyNswipe® Credit is a product of BuyNswipe® Technology Pvt. Ltd., a DPIIT-recognized fintech startup
                   incorporated in 2017. We are building India's most trusted AI-driven digital credit marketplace for
                   instant loans, credit cards, BNPL, and smart financial tools.
                 </p>
@@ -1464,7 +1464,7 @@ export default function BuyNswipeCreditPage() {
                   <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-lg flex items-center justify-center">
                     <CreditCard className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-lg font-bold">BuyNswipe Credit</span>
+                  <span className="text-lg font-bold">BuyNswipe® Credit</span>
                 </div>
                 <p className="text-gray-400 text-sm mb-4">
                   India's most trusted AI-driven digital credit marketplace for instant personal loans, business loans,
@@ -1581,11 +1581,11 @@ export default function BuyNswipeCreditPage() {
 
             <div className="border-t border-gray-800 pt-8">
               <p className="text-center text-gray-400 text-sm">
-                BuyNswipe Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially
+                BuyNswipe® Technology Pvt. Ltd. | Registered in India (2017) | DPIIT & Startup India Officially
                 Recognized | All Rights Reserved 2025
               </p>
               <p className="text-center text-gray-500 text-xs mt-4 max-w-4xl mx-auto">
-                Disclaimer: BuyNswipe Credit is a loan aggregator and comparison platform. We do not directly lend
+                Disclaimer: BuyNswipe® Credit is a loan aggregator and comparison platform. We do not directly lend
                 money. All loan and credit card decisions are made by our RBI-regulated partner banks and NBFCs.
                 Interest rates, loan amounts, and approval are subject to lender policies and your credit profile.
                 Please read all terms and conditions carefully before applying.

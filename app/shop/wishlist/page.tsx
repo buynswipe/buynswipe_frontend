@@ -3,7 +3,7 @@ import Link from "next/link"
 import { createClient } from "@/lib/supabase/server"
 import { formatINR, shopItems } from "@/lib/shop-data"
 
-export const metadata: Metadata = { title: "My ShopNdeal watchlist | BuyNswipe", description: "Review products saved to your ShopNdeal watchlist." }
+export const metadata: Metadata = { title: "My ShopNdeal watchlist | BuyNswipe®", description: "Review products saved to your ShopNdeal watchlist." }
 
 export default async function ShopWishlistPage() {
   const supabase = await createClient()

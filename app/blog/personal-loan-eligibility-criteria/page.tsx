@@ -4,7 +4,7 @@ import { CheckCircle, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Personal Loan Eligibility Criteria - Full Requirements | BuyNswipe",
+  title: "Personal Loan Eligibility Criteria - Full Requirements | BuyNswipe®",
   description:
     "Check personal loan eligibility criteria including age, income, CIBIL score, employment requirements for banks in India.",
   keywords: [
@@ -22,7 +22,7 @@ export default function PersonalLoanEligibilityPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

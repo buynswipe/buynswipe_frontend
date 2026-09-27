@@ -13,11 +13,11 @@ export const primaryNavigation: NavigationItem[] = [
   { label: "Resources", href: "/resources" },
   { label: "Blog", href: "/blog" },
   { label: "Search", href: "/search" },
-  { label: "About BuyNswipe", href: "/investor-relations" },
+  { label: "About BuyNswipe®", href: "/investor-relations" },
   { label: "Contact", href: "/contact", accent: "blue" },
 ]
 
-export const primaryDesktopNavigation = primaryNavigation.filter(({ label }) => label !== "Home" && label !== "About BuyNswipe")
+export const primaryDesktopNavigation = primaryNavigation.filter(({ label }) => label !== "Home" && label !== "About BuyNswipe®")
 
 export function isNavigationItemActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/"

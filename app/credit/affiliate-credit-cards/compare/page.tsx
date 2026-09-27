@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import ComparisonClient from "./comparison-client"
 
 export const metadata: Metadata = {
-  title: "Compare Credit Card Offers | BuyNswipe",
-  description: "Compare selected BuyNswipe credit card and finance offers side by side.",
+  title: "Compare Credit Card Offers | BuyNswipe®",
+  description: "Compare selected BuyNswipe® credit card and finance offers side by side.",
 }
 
 export default async function CompareOffersPage({ searchParams }: { searchParams: Promise<{ offers?: string }> }) {

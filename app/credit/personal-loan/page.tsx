@@ -23,9 +23,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Instant Personal Loan Online | Get ₹50,000 to ₹40 Lakh | Low Interest Rate 10.49% | BuyNswipe",
+  title: "Instant Personal Loan Online | Get ₹50,000 to ₹40 Lakh | Low Interest Rate 10.49% | BuyNswipe®",
   description:
-    "Apply for instant personal loan online at lowest interest rate starting 10.49%. Get personal loan up to ₹40 lakh with minimal documentation. Instant approval in 2 minutes. No collateral required. Check eligibility & apply now on BuyNswipe.",
+    "Apply for instant personal loan online at lowest interest rate starting 10.49%. Get personal loan up to ₹40 lakh with minimal documentation. Instant approval in 2 minutes. No collateral required. Check eligibility & apply now on BuyNswipe®.",
   keywords: [
     "personal loan",
     "instant personal loan",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     "Tata Capital personal loan",
   ],
   openGraph: {
-    title: "Instant Personal Loan Online | ₹50K to ₹40 Lakh | 10.49% Interest | BuyNswipe",
+    title: "Instant Personal Loan Online | ₹50K to ₹40 Lakh | 10.49% Interest | BuyNswipe®",
     description:
-      "Get instant personal loan with lowest interest rate. Apply online, instant approval, same day disbursal. Compare 30+ lenders on BuyNswipe.",
+      "Get instant personal loan with lowest interest rate. Apply online, instant approval, same day disbursal. Compare 30+ lenders on BuyNswipe®.",
     url: "https://buynswipe.com/credit/personal-loan",
     type: "website",
   },
@@ -67,12 +67,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "FinancialProduct",
-      name: "BuyNswipe Personal Loan",
+      name: "BuyNswipe® Personal Loan",
       description:
         "Instant personal loan online with low interest rates starting 10.49%. Loan amount from ₹50,000 to ₹40 lakh.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       offers: {
@@ -106,7 +106,7 @@ const jsonLd = {
           name: "Can I get a personal loan with low CIBIL score?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, some lenders on BuyNswipe offer personal loans for CIBIL scores as low as 600. However, interest rates may be higher. A CIBIL score of 750+ gets the best rates.",
+            text: "Yes, some lenders on BuyNswipe® offer personal loans for CIBIL scores as low as 600. However, interest rates may be higher. A CIBIL score of 750+ gets the best rates.",
           },
         },
         {
@@ -114,7 +114,7 @@ const jsonLd = {
           name: "How fast can I get personal loan disbursal?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "With BuyNswipe partner lenders, you can get instant approval in 2 minutes and same-day disbursal within 4 hours for pre-approved customers. New customers typically receive funds within 24-48 hours.",
+            text: "With BuyNswipe® partner lenders, you can get instant approval in 2 minutes and same-day disbursal within 4 hours for pre-approved customers. New customers typically receive funds within 24-48 hours.",
           },
         },
         {
@@ -224,7 +224,7 @@ export default function PersonalLoanPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/credit" className="text-gray-600 hover:text-blue-600">
@@ -257,7 +257,7 @@ export default function PersonalLoanPage() {
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8">
                 Get <strong>₹50,000 to ₹40 Lakh</strong> personal loan with instant approval. No collateral required.
-                Same day disbursal. Compare 30+ lenders on BuyNswipe.
+                Same day disbursal. Compare 30+ lenders on BuyNswipe®.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -648,11 +648,11 @@ export default function PersonalLoanPage() {
                 },
                 {
                   q: "Can I get a personal loan with 600 CIBIL score?",
-                  a: "Yes, some NBFCs and fintech lenders on BuyNswipe offer personal loans for CIBIL scores as low as 600. However, interest rates will be higher (18-24% p.a.). For best rates (10.49%), maintain a CIBIL score of 750+.",
+                  a: "Yes, some NBFCs and fintech lenders on BuyNswipe® offer personal loans for CIBIL scores as low as 600. However, interest rates will be higher (18-24% p.a.). For best rates (10.49%), maintain a CIBIL score of 750+.",
                 },
                 {
                   q: "How quickly can I get personal loan approval?",
-                  a: "With BuyNswipe, you can get instant approval within 2 minutes for pre-approved offers. New applicants typically receive approval within 24 hours. Disbursal happens within 4 hours to 48 hours depending on the lender.",
+                  a: "With BuyNswipe®, you can get instant approval within 2 minutes for pre-approved offers. New applicants typically receive approval within 24 hours. Disbursal happens within 4 hours to 48 hours depending on the lender.",
                 },
                 {
                   q: "What is the maximum personal loan amount I can get?",
@@ -698,14 +698,14 @@ export default function PersonalLoanPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Personal Loan - Complete Guide 2024</h2>
             <div className="prose prose-blue max-w-none text-gray-600">
               <p>
-                <strong>BuyNswipe Personal Loan</strong> marketplace helps you compare and apply for{" "}
+                <strong>BuyNswipe® Personal Loan</strong> marketplace helps you compare and apply for{" "}
                 <strong>instant personal loan online</strong> from 30+ leading banks and NBFCs. Get{" "}
                 <strong>personal loan at lowest interest rate</strong> starting 10.49% p.a. with{" "}
                 <strong>same day disbursal</strong> and <strong>minimal documentation</strong>.
               </p>
               <p>
                 Whether you need a <strong>personal loan for wedding</strong>, <strong>medical emergency loan</strong>,{" "}
-                <strong>travel loan</strong>, or <strong>debt consolidation loan</strong>, BuyNswipe connects you with
+                <strong>travel loan</strong>, or <strong>debt consolidation loan</strong>, BuyNswipe® connects you with
                 the right lender. Our AI-powered matching ensures you get the <strong>best personal loan offers</strong>{" "}
                 based on your credit profile.
               </p>
@@ -725,7 +725,7 @@ export default function PersonalLoanPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
+                <h3 className="text-xl font-bold mb-4">BuyNswipe®</h3>
                 <p className="text-gray-400">
                   India's trusted personal loan marketplace. Compare, apply, and get instant approval.
                 </p>
@@ -788,7 +788,7 @@ export default function PersonalLoanPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
+              <p>© 2025 BuyNswipe® Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
             </div>
           </div>
         </footer>

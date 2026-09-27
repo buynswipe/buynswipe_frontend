@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Code2, Database, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe API & Integrations | Developer Documentation | REST API",
+  title: "BuyNswipe® API & Integrations | Developer Documentation | REST API",
   description:
-    "BuyNswipe REST API and integrations for developers. Payment processing, POS systems, and credit marketplace integrations.",
+    "BuyNswipe® REST API and integrations for developers. Payment processing, POS systems, and credit marketplace integrations.",
   keywords: [
-    "BuyNswipe API",
+    "BuyNswipe® API",
     "REST API",
     "payment gateway API",
     "developer documentation",
@@ -21,7 +21,7 @@ const integrations = [
   {
     icon: Code2,
     title: "REST API",
-    description: "Full-featured REST API for all BuyNswipe services",
+    description: "Full-featured REST API for all BuyNswipe® services",
     endpoints: ["Payments", "Orders", "Inventory", "Customers"],
   },
   {
@@ -44,7 +44,7 @@ export default function IntegrationsPage() {
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Developer API</h1>
-          <p className="text-xl text-purple-100">Build with BuyNswipe. Integrate everything.</p>
+          <p className="text-xl text-purple-100">Build with BuyNswipe®. Integrate everything.</p>
         </div>
       </section>
 

@@ -16,4 +16,4 @@ export default function FinancialMetricsPage() {
   )
 }
 
-export const metadata = { title: "Financial Metrics | BuyNswipe", description: "Directional operating metrics and disclosures for BuyNswipe." }
+export const metadata = { title: "Financial Metrics | BuyNswipe®", description: "Directional operating metrics and disclosures for BuyNswipe®." }

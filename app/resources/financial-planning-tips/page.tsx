@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Financial Planning Tips - Create Your Wealth Plan | BuyNswipe",
+  title: "Financial Planning Tips - Create Your Wealth Plan | BuyNswipe®",
   description:
     "Master financial planning with expert tips. Learn goal setting, budgeting, saving, investing, and retirement planning strategies.",
   keywords: [

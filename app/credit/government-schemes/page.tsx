@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Government Loan Schemes | Mudra | CGTMSE | Startup India | BuyNswipe",
+  title: "Government Loan Schemes | Mudra | CGTMSE | Startup India | BuyNswipe®",
   description:
-    "Explore government backed loan schemes: PM Mudra Yojana, CGTMSE, Startup India, Stand-Up India. Get subsidized loans with government guarantee. Apply on BuyNswipe.",
+    "Explore government backed loan schemes: PM Mudra Yojana, CGTMSE, Startup India, Stand-Up India. Get subsidized loans with government guarantee. Apply on BuyNswipe®.",
   keywords: [
     "government loan schemes",
     "PM Mudra Yojana",
@@ -103,7 +103,7 @@ export default function GovernmentSchemesPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-orange-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
           <Button asChild className="bg-orange-600 hover:bg-orange-700">
             <Link href="#apply">Explore Schemes</Link>
@@ -183,7 +183,7 @@ export default function GovernmentSchemesPage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">© 2025 BuyNswipe | Government Schemes Made Easy</p>
+          <p className="text-gray-400">© 2025 BuyNswipe® | Government Schemes Made Easy</p>
         </div>
       </footer>
     </div>

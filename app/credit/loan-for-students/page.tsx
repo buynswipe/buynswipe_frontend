@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Student Loan | Education Loan for Higher Studies | Study Abroad | BuyNswipe",
+  title: "Student Loan | Education Loan for Higher Studies | Study Abroad | BuyNswipe®",
   description:
-    "Apply for education loan for higher studies in India and abroad. Get instant approval for engineering, MBA, medical, PG courses. Low interest from 7% p.a. No collateral options. BuyNswipe.",
+    "Apply for education loan for higher studies in India and abroad. Get instant approval for engineering, MBA, medical, PG courses. Low interest from 7% p.a. No collateral options. BuyNswipe®.",
   keywords: [
     "education loan",
     "student loan",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "instant education loan approval",
   ],
   openGraph: {
-    title: "Education Loan for Higher Studies | 7% Interest | BuyNswipe",
+    title: "Education Loan for Higher Studies | 7% Interest | BuyNswipe®",
     description: "Get instant education loan for studies in India or abroad. Quick approval in 48 hours.",
   },
 }
@@ -42,11 +42,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "FinancialProduct",
-      name: "BuyNswipe Education Loan",
+      name: "BuyNswipe® Education Loan",
       description: "Education loan for students pursuing higher education in India and abroad.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       offers: {
@@ -143,7 +143,7 @@ export default function StudentLoanPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <Button asChild className="bg-blue-600 hover:bg-blue-700">
               <Link href="#apply">Apply Now</Link>
@@ -308,7 +308,7 @@ export default function StudentLoanPage() {
         {/* Footer */}
         <footer className="bg-gray-900 text-white py-12">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-400">© 2025 BuyNswipe | Education Loans Made Easy</p>
+            <p className="text-gray-400">© 2025 BuyNswipe® | Education Loans Made Easy</p>
           </div>
         </footer>
       </div>

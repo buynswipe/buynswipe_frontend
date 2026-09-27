@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Merchant Services | Payment Settlement | Wholesale Banking | BuyNswipe",
+  title: "Merchant Services | Payment Settlement | Wholesale Banking | BuyNswipe®",
   description:
     "Complete merchant payment solutions. POS terminals, payment gateway, instant settlement, and wholesale banking services for retail and online merchants.",
   keywords: [
@@ -112,7 +112,7 @@ export default function MerchantServicesPage() {
       {/* CTA */}
       <section className="py-12 px-4 bg-emerald-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Become a BuyNswipe Partner</h2>
+          <h2 className="text-3xl font-bold mb-4">Become a BuyNswipe® Partner</h2>
           <p className="text-xl mb-8 text-emerald-100">Grow your business with our merchant solutions</p>
           <Button className="bg-white text-emerald-600 hover:bg-emerald-50">Partner Now</Button>
         </div>

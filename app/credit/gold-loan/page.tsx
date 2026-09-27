@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import GoldLoanClientPage from "./gold-loan-client"
 
 export const metadata: Metadata = {
-  title: "Gold Loan Online - Instant Approval at Best Rates | BuyNswipe",
+  title: "Gold Loan Online - Instant Approval at Best Rates | BuyNswipe®",
   description:
     "Get instant gold loan online with quick approval. Lowest interest rates, flexible repayment, secure storage. Apply now and get funds in 24 hours.",
   keywords:

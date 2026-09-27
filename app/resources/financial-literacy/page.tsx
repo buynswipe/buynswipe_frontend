@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Financial Literacy 101 - Learn Personal Finance Basics | BuyNswipe",
+  title: "Financial Literacy 101 - Learn Personal Finance Basics | BuyNswipe®",
   description:
     "Financial literacy guide for beginners. Learn budgeting, saving, investing, credit scores, and money management. Start your financial journey today.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "learn finance",
   ],
   openGraph: {
-    title: "Financial Literacy 101 - Learn Personal Finance Basics | BuyNswipe",
+    title: "Financial Literacy 101 - Learn Personal Finance Basics | BuyNswipe®",
     description: "Master the fundamentals of personal finance and money management.",
     url: "https://buynswipe.com/resources/financial-literacy",
   },
@@ -163,7 +163,7 @@ export default function FinancialLiteracyPage() {
       <section className="py-16 px-4 bg-purple-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Start Your Financial Journey Today</h2>
-          <p className="text-lg mb-8">Get personalized financial guidance with BuyNswipe</p>
+          <p className="text-lg mb-8">Get personalized financial guidance with BuyNswipe®</p>
           <Button className="bg-white text-purple-600 hover:bg-purple-50">Get Started</Button>
         </div>
       </section>

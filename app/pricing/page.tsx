@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Pricing | Transparent Pricing for POS & Credit Solutions",
+  title: "BuyNswipe® Pricing | Transparent Pricing for POS & Credit Solutions",
   description:
     "Transparent, flexible pricing for restaurant POS, retail management, credit marketplace, and payment solutions. Choose the plan that fits your business.",
   keywords: [
-    "BuyNswipe pricing",
+    "BuyNswipe® pricing",
     "POS pricing",
     "payment gateway pricing",
     "credit marketplace pricing",
@@ -87,7 +87,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="w-full"><a href={`mailto:support@buynswipe.com?subject=BuyNswipe%20${tier.name}%20plan`}>{tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}</a></Button>
+                  <Button asChild className="w-full"><a href={`mailto:support@buynswipe.com?subject=BuyNswipe®%20${tier.name}%20plan`}>{tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}</a></Button>
                 </CardContent>
               </Card>
             ))}

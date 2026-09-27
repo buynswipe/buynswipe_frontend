@@ -13,9 +13,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   metadataBase: new URL("https://buynswipe.com"),
   alternates: { canonical: "/" },
-  title: "BuyNswipe - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
+  title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
   description:
-    "BuyNswipe Technology Pvt. Ltd. - Government recognized fintech SaaS startup for sale. Registered since 2017, trademarked brand, premium domains, ₹17L seed funded. Ideal for fintech entrepreneurs and strategic acquirers. POS integration ready, co-branded cards potential.",
+    "BuyNswipe® Technology Pvt. Ltd. - Government recognized fintech SaaS startup for sale. Registered since 2017, trademarked brand, premium domains, ₹17L seed funded. Ideal for fintech entrepreneurs and strategic acquirers. POS integration ready, co-branded cards potential.",
   keywords: [
     "fintech startup for sale",
     "buy fintech company India",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "digital payment startup",
     "POS company acquisition",
     "fintech SaaS acquisition",
-    "BuyNswipe",
+    "BuyNswipe®",
     "payment gateway startup",
     "Startup India company for sale",
     "registered fintech company",
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "BuyNswipe - Pre-Funded Fintech Startup for Sale",
+    title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale",
     description:
       "Govt-recognized fintech startup with 7+ years history, trademarked brand, premium domains. ₹17L seed funded. Ready for acquisition.",
     url: "https://buynswipe.com",
-    siteName: "BuyNswipe",
+    siteName: "BuyNswipe®",
     type: "website",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyNswipe - Fintech Startup Acquisition Opportunity",
+    title: "BuyNswipe® - Fintech Startup Acquisition Opportunity",
     description:
       "Pre-funded, govt-recognized fintech SaaS startup for sale. 7+ years registered company with trademarked brand.",
     site: "@buynswipe",

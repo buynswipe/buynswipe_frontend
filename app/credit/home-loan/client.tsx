@@ -227,7 +227,7 @@ export default function HomeLoanClient() {
             <strong>Pradhan Mantri Awas Yojana (PMAY)</strong> offer subsidized interest rates for affordable housing.
           </p>
           <p className="text-gray-700">
-            Get <strong>instant home loan approval</strong> online with BuyNswipe. Compare rates from multiple lenders,
+            Get <strong>instant home loan approval</strong> online with BuyNswipe®. Compare rates from multiple lenders,
             calculate your EMI, check eligibility, and apply with just a few clicks. We help you find the{" "}
             <strong>lowest home loan rates</strong> and fastest approval process.
           </p>

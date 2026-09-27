@@ -35,7 +35,7 @@ export function GoContactForm() {
               name: data.get("name"),
               email: data.get("email"),
               message: data.get("message"),
-              subject: "BuyNswipe Go partnership inquiry",
+              subject: "BuyNswipe® Go partnership inquiry",
               source: "go",
             }),
           })

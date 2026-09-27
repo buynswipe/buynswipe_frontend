@@ -250,7 +250,7 @@ export default function EducationLoanClientPage() {
           </p>
           <p className="text-gray-700 leading-relaxed">
             Whether you're looking for <strong>education loan for engineering</strong>,{" "}
-            <strong>medical education loan</strong>, or <strong>MBA study loan</strong>, BuyNswipe helps you compare
+            <strong>medical education loan</strong>, or <strong>MBA study loan</strong>, BuyNswipe® helps you compare
             rates from top banks. Apply for <strong>education loan online</strong> today and get approval within 5-10
             days.
           </p>

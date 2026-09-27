@@ -1,7 +1,7 @@
 import type React from "react"
 
 export const metadata = {
-  title: "Debt Consolidation Loan - Combine Multiple Debts | BuyNswipe",
+  title: "Debt Consolidation Loan - Combine Multiple Debts | BuyNswipe®",
   description:
     "Consolidate multiple debts into one single loan. Lower interest rates, simplified payments, and reduced financial burden. Apply online today.",
   keywords:

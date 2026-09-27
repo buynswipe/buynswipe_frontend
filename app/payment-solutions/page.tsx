@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Digital Payment Solutions | AEPS | POS System | UPI | Money Transfer | BuyNswipe",
+  title: "Digital Payment Solutions | AEPS | POS System | UPI | Money Transfer | BuyNswipe®",
   description:
     "Complete digital payment solutions for merchants and consumers. AEPS payment system, POS terminals, UPI integration, money transfer, bill payment, and BBPS services.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "digital India",
   ],
   openGraph: {
-    title: "Digital Payment Solutions | BuyNswipe",
+    title: "Digital Payment Solutions | BuyNswipe®",
     description: "Complete payment ecosystem for merchants and consumers",
     url: "https://buynswipe.com/payment-solutions",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "BuyNswipe Payment Solutions",
+  name: "BuyNswipe® Payment Solutions",
   description: "Complete digital payment solutions platform",
   url: "https://buynswipe.com/payment-solutions",
 }
@@ -54,7 +54,7 @@ export default function PaymentSolutionsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Complete Digital Payment Solutions</h1>
             <p className="text-xl text-blue-100 mb-8 text-balance">
-              From AEPS to POS systems, UPI to international remittance - BuyNswipe powers your payment journey
+              From AEPS to POS systems, UPI to international remittance - BuyNswipe® powers your payment journey
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button className="bg-white text-blue-600 hover:bg-blue-50">Get Started</Button>
@@ -122,10 +122,10 @@ export default function PaymentSolutionsPage() {
           </div>
         </section>
 
-        {/* Why Choose BuyNswipe */}
+        {/* Why Choose BuyNswipe® */}
         <section className="py-12 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Why Choose BuyNswipe?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Why Choose BuyNswipe®?</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "RBI Approved", desc: "Certified and regulated payment service" },
@@ -149,7 +149,7 @@ export default function PaymentSolutionsPage() {
         <section className="py-12 px-4 bg-blue-600 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Payment Experience?</h2>
-            <p className="text-xl mb-8 text-blue-100">Join thousands of merchants and consumers using BuyNswipe</p>
+            <p className="text-xl mb-8 text-blue-100">Join thousands of merchants and consumers using BuyNswipe®</p>
             <Button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg">Start Your Journey</Button>
           </div>
         </section>

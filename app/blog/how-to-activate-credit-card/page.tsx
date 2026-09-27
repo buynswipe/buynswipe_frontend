@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "How to Activate Credit Card - Complete Guide (SBI, HDFC, Axis, ICICI) | BuyNswipe",
+  title: "How to Activate Credit Card - Complete Guide (SBI, HDFC, Axis, ICICI) | BuyNswipe®",
   description:
     "Step-by-step guide on how to activate credit card. Learn activation methods for SBI, HDFC, Axis, ICICI cards via app, phone, SMS, or online.",
   keywords: [
@@ -27,7 +27,7 @@ export default function HowToActivateCreditCardPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

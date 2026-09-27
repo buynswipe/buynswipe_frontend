@@ -4,16 +4,16 @@ import { ContactForm } from "./contact-form"
 import { Mail, Phone, Linkedin, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact BuyNswipe | Get in Touch | Founder & Support",
+  title: "Contact BuyNswipe® | Get in Touch | Founder & Support",
   description:
-    "Contact BuyNswipe for acquisition inquiries, partnerships, customer support, or general questions. Reach out to founder Ratnesh Choubey directly.",
+    "Contact BuyNswipe® for acquisition inquiries, partnerships, customer support, or general questions. Reach out to founder Ratnesh Choubey directly.",
   keywords: [
-    "contact BuyNswipe",
-    "BuyNswipe founder",
+    "contact BuyNswipe®",
+    "BuyNswipe® founder",
     "customer support",
     "partnership inquiry",
     "acquisition contact",
-    "BuyNswipe contact",
+    "BuyNswipe® contact",
   ],
 }
 
@@ -111,7 +111,7 @@ export default function ContactPage() {
           <p className="text-xl mb-8">For acquisition inquiries and strategic discussions</p>
           <div className="space-y-4">
             <p className="text-lg">Ratnesh Choubey</p>
-            <p>Founder & CEO, BuyNswipe Technology Pvt. Ltd.</p>
+            <p>Founder & CEO, BuyNswipe® Technology Pvt. Ltd.</p>
             <div className="flex justify-center gap-8 text-sm">
               <div>
                 <p className="font-semibold">Phone</p>

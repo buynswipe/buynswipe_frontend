@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 import { TrendingUp, Clock, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Restaurant Case Study | 45% Revenue Growth | BuyNswipe POS",
+  title: "Restaurant Case Study | 45% Revenue Growth | BuyNswipe® POS",
   description:
-    "How a fine dining restaurant increased transaction volume by 45%, reduced billing time by 60%, and improved customer satisfaction to 90% with BuyNswipe POS system.",
+    "How a fine dining restaurant increased transaction volume by 45%, reduced billing time by 60%, and improved customer satisfaction to 90% with BuyNswipe® POS system.",
   keywords: [
     "restaurant POS case study",
     "restaurant revenue growth",
@@ -58,7 +58,7 @@ export default function RestaurantCaseStudy() {
           <div>
             <h2 className="text-3xl font-bold mb-4">The Solution</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Rajdhani implemented BuyNswipe's Restaurant POS system with table management, kitchen display, and
+              Rajdhani implemented BuyNswipe®'s Restaurant POS system with table management, kitchen display, and
               integrated payment processing. The system connected with their delivery platforms and provided real-time
               inventory tracking.
             </p>
@@ -104,7 +104,7 @@ export default function RestaurantCaseStudy() {
 
           <div className="bg-blue-50 p-8 rounded-lg">
             <p className="text-lg italic text-gray-700 mb-4">
-              "BuyNswipe transformed our restaurant operations. We're processing 45% more transactions while our staff
+              "BuyNswipe® transformed our restaurant operations. We're processing 45% more transactions while our staff
               is less stressed. The system paid for itself in 3 months!"
             </p>
             <p className="font-semibold text-gray-800">— Rajesh Kumar, Owner, Rajdhani Restaurant</p>

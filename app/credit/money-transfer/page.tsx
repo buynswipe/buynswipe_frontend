@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Online Money Transfer 2024 | Domestic Remittance | NEFT RTGS UPI | BuyNswipe",
+  title: "Online Money Transfer 2024 | Domestic Remittance | NEFT RTGS UPI | BuyNswipe®",
   description:
-    "Send money online instantly with lowest charges. Compare money transfer services - NEFT, RTGS, IMPS, UPI, demand draft. Domestic and international remittance at best rates. BuyNswipe money transfer guide.",
+    "Send money online instantly with lowest charges. Compare money transfer services - NEFT, RTGS, IMPS, UPI, demand draft. Domestic and international remittance at best rates. BuyNswipe® money transfer guide.",
   keywords: [
     "money transfer",
     "online money transfer",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "fastest money transfer",
   ],
   openGraph: {
-    title: "Online Money Transfer | Instant Domestic & International | Lowest Charges | BuyNswipe",
+    title: "Online Money Transfer | Instant Domestic & International | Lowest Charges | BuyNswipe®",
     description:
       "Send money online with NEFT, RTGS, UPI, IMPS. Lowest transfer charges and fastest remittance service.",
     url: "https://buynswipe.com/credit/money-transfer",
@@ -46,12 +46,12 @@ const jsonLd = {
     {
       "@type": "FinancialProduct",
       "@id": "https://buynswipe.com/credit/money-transfer#product",
-      name: "BuyNswipe Money Transfer Service",
+      name: "BuyNswipe® Money Transfer Service",
       description:
         "Fast, secure domestic and international money transfer with lowest charges via NEFT, RTGS, UPI, IMPS.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       category: "Money Transfer",
@@ -209,7 +209,7 @@ export default function MoneyTransferPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/credit" className="text-gray-600 hover:text-blue-600">
@@ -441,7 +441,7 @@ export default function MoneyTransferPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
+                <h3 className="text-xl font-bold mb-4">BuyNswipe®</h3>
                 <p className="text-gray-400">Secure and instant money transfer service in India.</p>
               </div>
               <div>
@@ -486,7 +486,7 @@ export default function MoneyTransferPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
+              <p>© 2025 BuyNswipe® Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
             </div>
           </div>
         </footer>

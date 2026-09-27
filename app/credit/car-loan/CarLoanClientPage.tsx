@@ -249,7 +249,7 @@ export function CarLoanClientPage() {
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Whether you're looking for a <strong>new car loan</strong>, <strong>used car loan</strong>, or{" "}
-            <strong>two-wheeler loan</strong>, BuyNswipe helps you compare rates from top lenders. Our{" "}
+            <strong>two-wheeler loan</strong>, BuyNswipe® helps you compare rates from top lenders. Our{" "}
             <strong>car loan calculator</strong> helps you understand your EMI before applying. Check your{" "}
             <strong>car loan eligibility</strong> in seconds without any documentation.
           </p>

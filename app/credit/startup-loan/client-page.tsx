@@ -240,7 +240,7 @@ export default function StartupLoanClientPage() {
             subsidy on Mudra loans to 8-12% p.a. on conventional startup loans.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Apply for <strong>startup loan online</strong> with BuyNswipe and compare rates from multiple lenders. Get{" "}
+            Apply for <strong>startup loan online</strong> with BuyNswipe® and compare rates from multiple lenders. Get{" "}
             <strong>instant startup loan approval</strong> within 3-7 days with minimal documentation. Whether you need
             a <strong>business loan for new venture</strong> or <strong>expansion capital</strong>, our platform helps
             connect you with the right funding options.

@@ -18,7 +18,7 @@ import {
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Check CIBIL Score Free Online | Credit Score Check India | BuyNswipe Credit",
+  title: "Check CIBIL Score Free Online | Credit Score Check India | BuyNswipe® Credit",
   description:
     "Check your CIBIL score for free online instantly. Get free credit score, credit report, and personalized tips to improve your score. Check eligibility for loans and credit cards based on your CIBIL score.",
   keywords: [
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     "credit bureau india",
   ],
   openGraph: {
-    title: "Check CIBIL Score Free Online - BuyNswipe Credit",
+    title: "Check CIBIL Score Free Online - BuyNswipe® Credit",
     description: "Get your free CIBIL score instantly. Check credit score, view report, and improve your score.",
     url: "https://buynswipe.com/credit/cibil-score",
-    siteName: "BuyNswipe Credit",
+    siteName: "BuyNswipe® Credit",
     type: "website",
   },
 }
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "BuyNswipe Free CIBIL Score Check",
+  name: "BuyNswipe® Free CIBIL Score Check",
   description: "Check your CIBIL credit score for free online",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
@@ -66,7 +66,7 @@ const jsonLd = {
   },
   provider: {
     "@type": "Organization",
-    name: "BuyNswipe Technology Pvt. Ltd.",
+    name: "BuyNswipe® Technology Pvt. Ltd.",
   },
 }
 
@@ -87,7 +87,7 @@ export default function CIBILScorePage() {
               <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">B</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
+              <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
             </div>
           </div>
         </header>
@@ -136,7 +136,7 @@ export default function CIBILScorePage() {
                 <div className="flex items-start gap-2">
                   <input type="checkbox" id="consent" className="mt-1" />
                   <label htmlFor="consent" className="text-sm text-gray-600">
-                    I agree to the terms and authorize BuyNswipe to fetch my credit score from CIBIL/Credit Bureaus
+                    I agree to the terms and authorize BuyNswipe® to fetch my credit score from CIBIL/Credit Bureaus
                   </label>
                 </div>
 
@@ -276,8 +276,8 @@ export default function CIBILScorePage() {
             <div className="space-y-4">
               {[
                 {
-                  q: "Is checking CIBIL score free on BuyNswipe?",
-                  a: "Yes, checking your CIBIL score on BuyNswipe is 100% free. There are no hidden charges.",
+                  q: "Is checking CIBIL score free on BuyNswipe®?",
+                  a: "Yes, checking your CIBIL score on BuyNswipe® is 100% free. There are no hidden charges.",
                 },
                 {
                   q: "Does checking CIBIL score affect my credit?",
@@ -320,7 +320,7 @@ export default function CIBILScorePage() {
         <footer className="bg-gray-900 text-gray-400 py-8 mt-16">
           <div className="container mx-auto px-4 text-center">
             <p className="text-sm">
-              BuyNswipe Technology Pvt. Ltd. | Check CIBIL Score Free | Credit Score Check Online India
+              BuyNswipe® Technology Pvt. Ltd. | Check CIBIL Score Free | Credit Score Check Online India
             </p>
           </div>
         </footer>

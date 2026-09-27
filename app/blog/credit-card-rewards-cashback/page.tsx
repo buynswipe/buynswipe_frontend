@@ -4,7 +4,7 @@ import { Gift, TrendingUp, Zap, BarChart3 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card Rewards & Cashback Guide - Maximize Benefits | BuyNswipe",
+  title: "Credit Card Rewards & Cashback Guide - Maximize Benefits | BuyNswipe®",
   description:
     "Complete guide to credit card rewards and cashback programs. Learn how to maximize credit card benefits and earn rewards on every purchase.",
   keywords: [
@@ -24,7 +24,7 @@ export default function CreditCardRewardsCashbackPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

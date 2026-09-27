@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { createClient } from "@/lib/supabase/server"
 
-export const metadata: Metadata = { title: "ShopNdeal creators | BuyNswipe", description: "Discover ShopNdeal creator campaigns and review your creator earnings." }
+export const metadata: Metadata = { title: "ShopNdeal creators | BuyNswipe®", description: "Discover ShopNdeal creator campaigns and review your creator earnings." }
 
 export default async function ShopCreatorsPage() {
   const supabase = await createClient()

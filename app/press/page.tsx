@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, FileText } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Press Room | News & Media Kit | Brand Assets",
+  title: "BuyNswipe® Press Room | News & Media Kit | Brand Assets",
   description:
-    "BuyNswipe Press Room with news, media coverage, brand kit, and press releases. Download logos, fact sheets, and investor information.",
-  keywords: ["BuyNswipe press", "media kit", "press release", "brand assets", "investor relations", "news coverage"],
+    "BuyNswipe® Press Room with news, media coverage, brand kit, and press releases. Download logos, fact sheets, and investor information.",
+  keywords: ["BuyNswipe® press", "media kit", "press release", "brand assets", "investor relations", "news coverage"],
 }
 
 export default function PressPage() {
@@ -27,18 +27,18 @@ export default function PressPage() {
             {[
               {
                 date: "December 2024",
-                title: "BuyNswipe Launches Advanced POS Solution for SMEs",
+                title: "BuyNswipe® Launches Advanced POS Solution for SMEs",
                 desc: "New cloud-based POS system helps small merchants scale their business with real-time analytics and multi-location support.",
               },
               {
                 date: "November 2024",
-                title: "BuyNswipe Secures ₹17L Seed Funding",
-                desc: "Founded by Ratnesh Choubey, BuyNswipe raises seed funding from Startup India and two private investors to scale digital payments.",
+                title: "BuyNswipe® Secures ₹17L Seed Funding",
+                desc: "Founded by Ratnesh Choubey, BuyNswipe® raises seed funding from Startup India and two private investors to scale digital payments.",
               },
               {
                 date: "October 2024",
                 title: "Expands Credit Marketplace with 20+ Lending Partners",
-                desc: "BuyNswipe now offers personal loans, credit cards, and BNPL from India's leading fintech and banking partners.",
+                desc: "BuyNswipe® now offers personal loans, credit cards, and BNPL from India's leading fintech and banking partners.",
               },
             ].map((news) => (
               <Card key={news.date}>
@@ -73,7 +73,7 @@ export default function PressPage() {
                 <CardTitle>Logo Pack</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">Official BuyNswipe logos in multiple formats and colors</p>
+                <p className="text-gray-600 mb-4">Official BuyNswipe® logos in multiple formats and colors</p>
                 <a href="mailto:press@buynswipe.com?subject=Logo%20pack%20request" className="block w-full rounded bg-slate-700 px-4 py-2 text-center text-white hover:bg-slate-800">
                   Request logo pack
                 </a>

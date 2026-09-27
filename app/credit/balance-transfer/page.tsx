@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Credit Card Balance Transfer | Low Interest Rate | BuyNswipe",
+  title: "Credit Card Balance Transfer | Low Interest Rate | BuyNswipe®",
   description:
     "Transfer high-interest credit card balance to low-interest cards. Compare balance transfer offers and save up to 3% interest.",
   keywords: [
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     "balance transfer benefits",
   ],
   openGraph: {
-    title: "Credit Card Balance Transfer | BuyNswipe",
+    title: "Credit Card Balance Transfer | BuyNswipe®",
     description:
       "Reduce interest burden with credit card balance transfer. Compare low-interest offers and transfer your debt easily.",
     url: "https://buynswipe.com/credit/balance-transfer",
-    siteName: "BuyNswipe",
+    siteName: "BuyNswipe®",
   },
 }
 

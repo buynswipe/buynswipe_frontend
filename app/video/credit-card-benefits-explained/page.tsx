@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Credit Card Benefits Explained Video | Rewards & Cashback | BuyNswipe",
+  title: "Credit Card Benefits Explained Video | Rewards & Cashback | BuyNswipe®",
   description:
     "Watch our 7-minute video explaining credit card benefits, rewards points, cashback, and how to maximize your earnings.",
   keywords: [

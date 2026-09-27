@@ -4,7 +4,7 @@ import { CheckCircle, AlertCircle, Clock } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "How to Improve Credit Score Quickly - 10 Proven Tips | BuyNswipe",
+  title: "How to Improve Credit Score Quickly - 10 Proven Tips | BuyNswipe®",
   description:
     "10 actionable strategies to improve your CIBIL credit score quickly with realistic timelines and step-by-step guidance.",
   keywords: [
@@ -22,7 +22,7 @@ export default function HowToImproveCreditScorePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

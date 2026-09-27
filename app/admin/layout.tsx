@@ -7,8 +7,8 @@ import { AdminNav } from "./admin-nav"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Portal Admin | BuyNswipe",
-  description: "Private BuyNswipe portal administration workspace.",
+  title: "Portal Admin | BuyNswipe®",
+  description: "Private BuyNswipe® portal administration workspace.",
   robots: { index: false, follow: false },
 }
 
@@ -36,7 +36,7 @@ export default async function AdminLayout({ children }: Readonly<{ children: Rea
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
       <aside className="fixed inset-y-0 left-0 hidden w-64 border-r border-slate-200 bg-white p-5 lg:block">
-        <Link href="/admin" className="block border-b border-slate-100 pb-6"><p className="text-xl font-black tracking-tight">BuyNswipe</p><p className="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">Portal admin</p></Link>
+        <Link href="/admin" className="block border-b border-slate-100 pb-6"><p className="text-xl font-black tracking-tight">BuyNswipe®</p><p className="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">Portal admin</p></Link>
         <AdminNav navigation={navigation} />
         <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-slate-950 p-4 text-white"><p className="text-xs font-bold uppercase tracking-wider text-slate-400">Signed in as</p><p className="mt-2 truncate text-sm font-bold">{staff.display_name || user.email}</p><p className="mt-1 text-xs capitalize text-blue-300">{staff.role.replace("_", " ")}</p><LogoutButton /></div>
       </aside>
