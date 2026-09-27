@@ -74,9 +74,9 @@ export default function PressPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">Official BuyNswipe logos in multiple formats and colors</p>
-                <button className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800">
-                  Download (2.5 MB)
-                </button>
+                <a href="mailto:press@buynswipe.com?subject=Logo%20pack%20request" className="block w-full rounded bg-slate-700 px-4 py-2 text-center text-white hover:bg-slate-800">
+                  Request logo pack
+                </a>
               </CardContent>
             </Card>
 
@@ -87,9 +87,9 @@ export default function PressPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">Complete brand guidelines and style specifications</p>
-                <button className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800">
-                  Download (1.8 MB)
-                </button>
+                <a href="mailto:press@buynswipe.com?subject=Brand%20guidelines%20request" className="block w-full rounded bg-slate-700 px-4 py-2 text-center text-white hover:bg-slate-800">
+                  Request brand guidelines
+                </a>
               </CardContent>
             </Card>
 

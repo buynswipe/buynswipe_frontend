@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Star } from "lucide-react"
 
@@ -139,9 +140,9 @@ export default function TestimonialsPage() {
               <p className="text-gray-600">Reviews & Ratings</p>
             </div>
           </div>
-          <button className="bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 font-semibold">
+          <Link href="/contact" className="inline-flex bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 font-semibold">
             Start Your Journey Today
-          </button>
+          </Link>
         </div>
       </section>
     </main>
