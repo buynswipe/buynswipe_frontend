@@ -20,7 +20,7 @@ const audiences = [
   ["Merchants", "Reach commuters with contextual offers and rewards.", QrCode],
 ]
 
-function Logo() { return <Link href="/" className="flex items-center gap-2" aria-label="BuyNswipe® home"><span className="flex size-9 items-center justify-center rounded-xl bg-go-blue text-lg font-black text-primary-foreground">B</span><span className="text-lg font-extrabold tracking-tight text-go-navy">BuyNswipe®<sup>®</sup></span></Link> }
+function Logo() { return <Link href="/" className="flex items-center gap-2" aria-label="BuyNswipe® home"><span className="flex size-9 items-center justify-center rounded-xl bg-go-blue text-lg font-black text-primary-foreground">B</span><span className="text-lg font-extrabold tracking-tight text-go-navy">BuyNswipe®</span></Link> }
 function CardMockup() { return <div className="relative mx-auto w-full max-w-[610px] overflow-hidden rounded-[2rem] border border-primary-foreground/10 bg-go-navy shadow-2xl shadow-go-blue/20"><Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2016%2C%202026%2C%2005_02_11%20PM-mabLbx8Xr75u7hvdFeZVJbqBr1WdjN.png" alt="BuyNswipe® Go RuPay prepaid NCMC card with a futuristic train" width={1220} height={820} sizes="(max-width: 1024px) 100vw, 610px" className="block h-auto w-full object-cover" priority /><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-go-navy/90 to-transparent px-5 pb-5 pt-16"><span className="rounded-full bg-go-lime px-4 py-2 text-xs font-black tracking-widest text-go-navy">NCMC ENABLED</span></div></div> }
 function WifiMark() { return <span className="text-2xl" aria-hidden="true">)))</span> }
 
