@@ -5,7 +5,7 @@ import { ArrowRight, Banknote, BusFront, Check, CircleDollarSign, CreditCard, Ha
 import { GoContactForm } from "@/components/go-contact-form"
 import { MobileMenu } from "@/components/mobile-menu"
 
-export const metadata: Metadata = { title: "BuyNswipe® Go | Tap. Travel. Earn.", description: "A mobility-led payments and rewards platform built around NCMC-enabled travel." }
+export const metadata: Metadata = { title: "BuyNswipe® Go | Tap. Travel. Earn.", description: "A mobility-led payments and rewards platform built around NCMC-enabled travel.", alternates: { canonical: "/go" } }
 
 const nav = ["About", "Credit", "Payment Solutions", "BuyNswipe® Go", "Solutions", "Resources", "Blog"]
 const pillars = [
