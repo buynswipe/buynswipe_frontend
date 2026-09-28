@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { shopItems } from "@/lib/shop-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://buynswipe.com"
+  const baseUrl = "https://www.buynswipe.com"
 
   const creditPages = [
     { url: "/credit", priority: 0.9, changeFrequency: "daily" as const },

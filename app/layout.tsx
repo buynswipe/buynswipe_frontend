@@ -11,7 +11,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://buynswipe.com"),
+  metadataBase: new URL("https://www.buynswipe.com"),
   alternates: { canonical: "/" },
   title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
   description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale",
     description:
       "Govt-recognized fintech startup with 7+ years history, trademarked brand, premium domains. ₹17L seed funded. Ready for acquisition.",
-    url: "https://buynswipe.com",
+    url: "https://www.buynswipe.com",
     siteName: "BuyNswipe®",
     type: "website",
     locale: "en_IN",
