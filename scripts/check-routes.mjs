@@ -20,18 +20,20 @@ const routes = [
   "/support",
   "/ads.txt",
   "/admin",
+  "/buynswipe-go",
 ]
 
-const allowedRedirects = new Set(["/auth/login", "/admin"])
+const allowedRedirects = new Set(["/auth/login", "/admin", "/buynswipe-go"])
 const expectedTextRoutes = new Set(["/ads.txt"])
 let failures = 0
 for (const route of routes) {
   const response = await fetch(new URL(route, baseUrl), { redirect: "manual" })
   const location = response.headers.get("location") || ""
   const redirectedToLogin = response.status >= 300 && response.status < 400 && location.includes("/auth/login")
+  const redirectedToCanonicalGo = route === "/buynswipe-go" && response.status === 308 && location.endsWith("/go")
   const contentType = response.headers.get("content-type") || ""
   const validAdsText = route === "/ads.txt" && response.ok && contentType.includes("text/plain")
-  const allowed = response.ok || validAdsText || (allowedRedirects.has(route) && redirectedToLogin)
+  const allowed = response.ok || validAdsText || redirectedToCanonicalGo || (allowedRedirects.has(route) && redirectedToLogin)
   console.log(`${allowed ? "PASS" : "FAIL"} ${response.status} ${route}${location ? ` -> ${location}` : ""}${expectedTextRoutes.has(route) ? ` [${contentType}]` : ""}`)
   if (!allowed) failures += 1
 }
