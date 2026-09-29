@@ -5,7 +5,10 @@ const nextConfig = {
     remotePatterns: [{ protocol: "https", hostname: "hebbkx1anhila5yf.public.blob.vercel-storage.com" }],
   },
   async redirects() {
-    return [{ source: "/buynswipe-go", destination: "/go", permanent: true }]
+    return [
+      { source: "/buynswipe-go", destination: "/go", permanent: true },
+      { source: "/admin", destination: "/admin/dashboard", permanent: false },
+    ]
   },
   async headers() {
     return [{
