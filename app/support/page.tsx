@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Headphones, Mail, Clock, AlertCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Support & Help Center | BuyNswipe Customer Support",
+  title: "Support & Help Center | BuyNswipe® Customer Support",
   description:
-    "BuyNswipe Customer Support and Help Center. Live chat, email support, knowledge base articles, and troubleshooting guides.",
+    "BuyNswipe® Customer Support and Help Center. Live chat, email support, knowledge base articles, and troubleshooting guides.",
   keywords: [
-    "BuyNswipe support",
+    "BuyNswipe® support",
     "customer support",
     "help center",
     "troubleshooting",
@@ -39,7 +39,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">Chat with our support team in real-time</p>
-                <Button asChild size="sm" className="w-full"><a href="mailto:support@buynswipe.com?subject=BuyNswipe%20support%20request">Email support</a></Button>
+                <Button asChild size="sm" className="w-full"><a href="mailto:support@buynswipe.com?subject=BuyNswipe®%20support%20request">Email support</a></Button>
               </CardContent>
             </Card>
 
@@ -72,7 +72,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">Check system status and incidents</p>
-                <Button asChild size="sm" variant="outline" className="w-full bg-transparent"><a href="mailto:support@buynswipe.com?subject=BuyNswipe%20status%20question">Contact for status</a></Button>
+                <Button asChild size="sm" variant="outline" className="w-full bg-transparent"><a href="mailto:support@buynswipe.com?subject=BuyNswipe®%20status%20question">Contact for status</a></Button>
               </CardContent>
             </Card>
           </div>
@@ -118,7 +118,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">
-                  Complete setup guide for BuyNswipe POS terminals with software and hardware configuration.
+                  Complete setup guide for BuyNswipe® POS terminals with software and hardware configuration.
                 </p>
                 <Link href="/resources" className="text-orange-600 hover:underline font-semibold">
                   Read Article →
@@ -191,7 +191,7 @@ export default function SupportPage() {
                       ))}
                     </ul>
                   </div>
-                  <Button asChild className="w-full mt-4" variant={tier.popular ? "default" : "outline"}><a href={`mailto:support@buynswipe.com?subject=BuyNswipe%20${tier.tier}%20support%20plan`}>Contact sales</a></Button>
+                  <Button asChild className="w-full mt-4" variant={tier.popular ? "default" : "outline"}><a href={`mailto:support@buynswipe.com?subject=BuyNswipe®%20${tier.tier}%20support%20plan`}>Contact sales</a></Button>
                 </CardContent>
               </Card>
             ))}

@@ -4,7 +4,7 @@ import { CheckCircle, FileText, Clock } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "How to Apply for Credit Card - Step by Step Guide | BuyNswipe",
+  title: "How to Apply for Credit Card - Step by Step Guide | BuyNswipe®",
   description:
     "Complete guide on how to apply for credit card. Learn eligibility, required documents, online & offline application process.",
   keywords: [
@@ -22,7 +22,7 @@ export default function HowToApplyCreditCardPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>
@@ -53,7 +53,7 @@ export default function HowToApplyCreditCardPage() {
                   step: 1,
                   title: "Choose the Right Credit Card",
                   desc: "Compare different cards based on benefits, fees, and your spending pattern",
-                  action: "Visit bank website or BuyNswipe credit card comparison page",
+                  action: "Visit bank website or BuyNswipe® credit card comparison page",
                 },
                 {
                   step: 2,

@@ -8,7 +8,7 @@ import { Calculator, ArrowLeft, IndianRupee, Percent, Calendar, CheckCircle } fr
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "EMI Calculator - Calculate Loan EMI Online Free | BuyNswipe Credit",
+  title: "EMI Calculator - Calculate Loan EMI Online Free | BuyNswipe® Credit",
   description:
     "Free EMI calculator for personal loan, home loan, car loan, education loan. Calculate monthly EMI, total interest, and loan amortization schedule instantly. Best EMI calculator India 2025.",
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "EMI Calculator - Calculate Loan EMI Online Free",
     description: "Calculate your loan EMI instantly. Free calculator for personal, home, car, and education loans.",
     url: "https://buynswipe.com/credit/emi-calculator",
-    siteName: "BuyNswipe Credit",
+    siteName: "BuyNswipe® Credit",
     type: "website",
   },
 }
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "BuyNswipe EMI Calculator",
+  name: "BuyNswipe® EMI Calculator",
   description: "Free online EMI calculator for all types of loans",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
@@ -52,7 +52,7 @@ const jsonLd = {
   },
   provider: {
     "@type": "Organization",
-    name: "BuyNswipe Technology Pvt. Ltd.",
+    name: "BuyNswipe® Technology Pvt. Ltd.",
   },
 }
 
@@ -73,7 +73,7 @@ export default function EMICalculatorPage() {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">B</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">BuyNswipe</span>
+              <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
             </div>
           </div>
         </header>
@@ -267,7 +267,7 @@ export default function EMICalculatorPage() {
         <footer className="bg-gray-900 text-gray-400 py-8 mt-16">
           <div className="container mx-auto px-4 text-center">
             <p className="text-sm">
-              BuyNswipe Technology Pvt. Ltd. | Free EMI Calculator for Personal Loan, Home Loan, Car Loan, Education
+              BuyNswipe® Technology Pvt. Ltd. | Free EMI Calculator for Personal Loan, Home Loan, Car Loan, Education
               Loan
             </p>
           </div>

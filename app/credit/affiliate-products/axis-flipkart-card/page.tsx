@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Axis Flipkart Credit Card | 7.5% Cashback | Instant Approval | BuyNswipe",
+  title: "Axis Flipkart Credit Card | 7.5% Cashback | Instant Approval | BuyNswipe®",
   description:
     "Apply for Axis Flipkart Credit Card with 7.5% Flipkart cashback, 5% Cleartrip, and ₹250 welcome voucher. ₹500 annual fee (waivable).",
   keywords: ["Axis Flipkart credit card", "Flipkart card", "shopping credit card"],

@@ -3,9 +3,9 @@ import { shopItems } from "@/lib/shop-data"
 export type SearchResult = { title: string; description: string; href: string; type: string; keywords: string[] }
 
 const pages: SearchResult[] = [
-  { title: "BuyNswipe Credit", description: "Explore credit products, education, comparisons and calculators.", href: "/credit", type: "Product", keywords: ["loan", "cards", "emi", "finance"] },
+  { title: "BuyNswipe® Credit", description: "Explore credit products, education, comparisons and calculators.", href: "/credit", type: "Product", keywords: ["loan", "cards", "emi", "finance"] },
   { title: "ShopNdeal", description: "Compare products, deals, coupons and savings signals.", href: "/shop", type: "Product", keywords: ["shopping", "deals", "coupons", "cashback"] },
-  { title: "BuyNswipe Go", description: "Explore mobility, transit and NCMC payment experiences.", href: "/go", type: "Product", keywords: ["metro", "transit", "ncmc", "mobility"] },
+  { title: "BuyNswipe® Go", description: "Explore mobility, transit and NCMC payment experiences.", href: "/go", type: "Product", keywords: ["metro", "transit", "ncmc", "mobility"] },
   { title: "Payment Solutions", description: "Payment experiences for merchants, partners and platforms.", href: "/payment-solutions", type: "Solution", keywords: ["payments", "merchant", "checkout", "platform"] },
   { title: "Financial Tools", description: "Use calculators and planning tools for everyday decisions.", href: "/tools", type: "Tool", keywords: ["calculator", "emi", "affordability", "roi"] },
   { title: "Investor Relations", description: "Review company information, financial metrics and diligence context.", href: "/investor-relations", type: "Company", keywords: ["investors", "metrics", "company", "diligence"] },
@@ -14,9 +14,9 @@ const pages: SearchResult[] = [
   { title: "EMI Calculator", description: "Estimate monthly loan payments and understand repayment scenarios.", href: "/tools/emi-calculator", type: "Tool", keywords: ["emi", "monthly payment", "loan calculator"] },
   { title: "Affordability Calculator", description: "Explore an indicative borrowing range using income and repayment inputs.", href: "/tools/affordability-calculator", type: "Tool", keywords: ["affordability", "eligibility", "income"] },
   { title: "ROI Calculator", description: "Model indicative returns for an investment scenario.", href: "/tools/investment-roi-calculator", type: "Tool", keywords: ["roi", "investment", "returns"] },
-  { title: "Webinars", description: "Watch practical sessions and explainers from the BuyNswipe ecosystem.", href: "/webinars", type: "Resource", keywords: ["webinar", "video", "learning"] },
+  { title: "Webinars", description: "Watch practical sessions and explainers from the BuyNswipe® ecosystem.", href: "/webinars", type: "Resource", keywords: ["webinar", "video", "learning"] },
   { title: "Glossary", description: "Understand common credit, payments and fintech terminology.", href: "/glossary", type: "Resource", keywords: ["terms", "definitions", "finance"] },
-  { title: "Contact BuyNswipe", description: "Start a conversation with the BuyNswipe team.", href: "/contact", type: "Company", keywords: ["support", "partnership", "brochure"] },
+  { title: "Contact BuyNswipe®", description: "Start a conversation with the BuyNswipe® team.", href: "/contact", type: "Company", keywords: ["support", "partnership", "brochure"] },
 ]
 
 const products: SearchResult[] = shopItems.map((item) => ({

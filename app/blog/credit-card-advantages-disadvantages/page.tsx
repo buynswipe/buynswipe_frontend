@@ -4,7 +4,7 @@ import { ThumbsUp, ThumbsDown, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card Advantages & Disadvantages - Pros and Cons | BuyNswipe",
+  title: "Credit Card Advantages & Disadvantages - Pros and Cons | BuyNswipe®",
   description:
     "Credit card advantages and disadvantages explained. Learn benefits vs drawbacks of using credit cards responsibly.",
   keywords: [
@@ -23,7 +23,7 @@ export default function CreditCardAdvantagesPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Online Bill Payment | Electricity, Water, Mobile Bills | BuyNswipe",
+  title: "Online Bill Payment | Electricity, Water, Mobile Bills | BuyNswipe®",
   description:
     "Pay electricity, water, gas, mobile, DTH, insurance bills online instantly. Secure BBPS bill payment with 24/7 support. Zero transaction charges.",
   keywords: [
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     "online utility payment",
   ],
   openGraph: {
-    title: "Online Bill Payment | BuyNswipe",
+    title: "Online Bill Payment | BuyNswipe®",
     description:
       "Pay all your bills online securely. Electricity, water, mobile, DTH, insurance bills payment with zero charges.",
     url: "https://buynswipe.com/credit/bill-payment",
-    siteName: "BuyNswipe",
+    siteName: "BuyNswipe®",
   },
 }
 
@@ -43,7 +43,7 @@ export default function BillPaymentPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Online Bill Payment Made Easy</h1>
           <p className="text-xl text-blue-100 mb-8 text-balance">
-            Pay all your bills in seconds with BuyNswipe. Electricity, water, mobile, DTH, insurance - everything in one
+            Pay all your bills in seconds with BuyNswipe®. Electricity, water, mobile, DTH, insurance - everything in one
             place.
           </p>
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
@@ -58,7 +58,7 @@ export default function BillPaymentPage() {
           <h2 className="text-3xl font-bold mb-6">What is Online Bill Payment?</h2>
           <p className="text-lg text-gray-700 mb-4">
             Online bill payment allows you to pay all your utility bills, subscriptions, and financial obligations from
-            the comfort of your home using BuyNswipe's secure platform. With BBPS (Bharat Bill Payment System)
+            the comfort of your home using BuyNswipe®'s secure platform. With BBPS (Bharat Bill Payment System)
             integration, you can pay bills instantly without visiting banks or payment centers.
           </p>
           <div className="grid md:grid-cols-4 gap-4 mt-8">
@@ -190,7 +190,7 @@ export default function BillPaymentPage() {
       <section className="py-12 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Start Paying Bills Instantly</h2>
-          <p className="text-xl mb-8 text-blue-100">Download BuyNswipe app and pay all your bills in one click</p>
+          <p className="text-xl mb-8 text-blue-100">Download BuyNswipe® app and pay all your bills in one click</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Download App
@@ -205,19 +205,19 @@ export default function BillPaymentPage() {
       {/* SEO Content Section */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6">About BuyNswipe Bill Payment</h2>
+          <h2 className="text-2xl font-bold mb-6">About BuyNswipe® Bill Payment</h2>
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p>
-              BuyNswipe's <strong>online bill payment service</strong> leverages the Bharat Bill Payment System (BBPS)
+              BuyNswipe®'s <strong>online bill payment service</strong> leverages the Bharat Bill Payment System (BBPS)
               to enable seamless <strong>instant bill payments</strong> across India. Whether you need to pay{" "}
               <strong>electricity bills online</strong>, <strong>water bill payment</strong>,{" "}
-              <strong>mobile bill</strong>, or any other utility, BuyNswipe simplifies the process with a single, secure
+              <strong>mobile bill</strong>, or any other utility, BuyNswipe® simplifies the process with a single, secure
               platform.
             </p>
             <p>
               Our <strong>digital bill payment app</strong> supports 50+ billers across categories including utilities,
               insurance, subscriptions, and financial obligations. With <strong>zero transaction charges</strong> and{" "}
-              <strong>24/7 availability</strong>, BuyNswipe ensures you never miss a bill deadline.
+              <strong>24/7 availability</strong>, BuyNswipe® ensures you never miss a bill deadline.
             </p>
             <p>
               Experience the convenience of <strong>automatic bill payment</strong> with our autopay feature. Set up{" "}
@@ -227,7 +227,7 @@ export default function BillPaymentPage() {
             </p>
             <p>
               Whether you're looking to pay <strong>loan EMI online</strong>, <strong>credit card bills</strong>, or
-              utility bills, BuyNswipe's integrated platform makes <strong>bill payment in India</strong> faster and
+              utility bills, BuyNswipe®'s integrated platform makes <strong>bill payment in India</strong> faster and
               more convenient than ever before.
             </p>
           </div>

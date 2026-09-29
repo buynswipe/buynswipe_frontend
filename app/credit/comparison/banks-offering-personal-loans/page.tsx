@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Best Banks Offering Personal Loans 2024 | Compare Interest Rates | BuyNswipe",
+  title: "Best Banks Offering Personal Loans 2024 | Compare Interest Rates | BuyNswipe®",
   description:
     "Compare personal loan interest rates from HDFC, ICICI, SBI, Axis, Kotak, IndusInd, Yes Bank, and IDBI. Get best personal loan rates starting 9.5%. Compare features, eligibility, and apply online.",
   keywords: [
@@ -139,7 +139,7 @@ export default function BanksPersonalLoanPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <Button asChild>
               <Link href="#compare">Compare Now</Link>

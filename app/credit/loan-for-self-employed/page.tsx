@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Self-Employed Loan | Freelancer Loan | Professional Loan | BuyNswipe",
+  title: "Self-Employed Loan | Freelancer Loan | Professional Loan | BuyNswipe®",
   description:
     "Get instant loan for self-employed professionals, freelancers, doctors, CA, lawyers. No collateral loans up to ₹50 lakh. Quick approval in 48 hours. Low interest rates from 10% p.a.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "consultant personal loan",
   ],
   openGraph: {
-    title: "Self-Employed Loan | Freelancer Loan @ 10% | BuyNswipe",
+    title: "Self-Employed Loan | Freelancer Loan @ 10% | BuyNswipe®",
     description: "Instant loan for self-employed and freelancers. No collateral up to ₹50 Lakh.",
   },
 }
@@ -44,7 +44,7 @@ const jsonLd = {
       description: "Personal loan designed for self-employed professionals and freelancers.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
       },
       interestRate: {
         "@type": "QuantitativeValue",
@@ -104,7 +104,7 @@ export default function SelfEmployedLoanPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-purple-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <Button asChild className="bg-purple-600 hover:bg-purple-700">
               <Link href="#apply">Apply Now</Link>
@@ -204,7 +204,7 @@ export default function SelfEmployedLoanPage() {
         {/* Footer */}
         <footer className="bg-gray-900 text-white py-12">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-400">© 2025 BuyNswipe | Loans for Professionals</p>
+            <p className="text-gray-400">© 2025 BuyNswipe® | Loans for Professionals</p>
           </div>
         </footer>
       </div>

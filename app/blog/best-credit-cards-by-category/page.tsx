@@ -4,7 +4,7 @@ import { Award } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Best Credit Cards by Category - Top Picks in India | BuyNswipe",
+  title: "Best Credit Cards by Category - Top Picks in India | BuyNswipe®",
   description:
     "Best credit cards in India by category - Premium, Cashback, Travel, Fuel, Student cards. Compare features, benefits, and apply online.",
   keywords: [
@@ -103,7 +103,7 @@ export default function BestCreditCardsByCategoryPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

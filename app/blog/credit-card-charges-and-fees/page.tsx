@@ -4,7 +4,7 @@ import { DollarSign, AlertTriangle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card Charges & Fees Explained - Hidden Costs | BuyNswipe",
+  title: "Credit Card Charges & Fees Explained - Hidden Costs | BuyNswipe®",
   description:
     "Complete guide to credit card charges, fees, and hidden costs. Learn annual fee, GST, withdrawal charges, and how to avoid them.",
   keywords: [
@@ -24,7 +24,7 @@ export default function CreditCardChargesPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

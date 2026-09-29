@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ShoppingCart, CreditCard, Shield, TrendingUp, Zap, Globe } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "E-commerce Payment Gateway | Online Payment Processing | BuyNswipe",
+  title: "E-commerce Payment Gateway | Online Payment Processing | BuyNswipe®",
   description:
     "Complete e-commerce payment solution with payment gateway, order management, subscription billing, and fraud protection for online stores.",
   keywords: [
@@ -57,7 +57,7 @@ export default function EcommerceSolutionsPage() {
 
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why E-commerce Businesses Choose BuyNswipe</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Why E-commerce Businesses Choose BuyNswipe®</h2>
           <div className="space-y-4">
             {[
               "Accept payments from all major cards and wallets",

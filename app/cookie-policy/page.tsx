@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Cookie Policy - BuyNswipe",
-  description: "BuyNswipe Cookie Policy - Information about cookies and tracking technologies",
+  title: "Cookie Policy - BuyNswipe®",
+  description: "BuyNswipe® Cookie Policy - Information about cookies and tracking technologies",
 }
 
 export default function CookiePolicyPage() {
@@ -23,7 +23,7 @@ export default function CookiePolicyPage() {
 
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">2. Types of Cookies We Use</h2>
-            <p className="text-gray-700 mb-4">BuyNswipe uses the following types of cookies:</p>
+            <p className="text-gray-700 mb-4">BuyNswipe® uses the following types of cookies:</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>
                 <strong>Essential Cookies:</strong> Required for website functionality and security
@@ -63,7 +63,7 @@ export default function CookiePolicyPage() {
             <h2 className="text-2xl font-bold mt-8 mb-4">5. Changes to This Policy</h2>
             <p className="text-gray-700">
               We may update this Cookie Policy from time to time. Changes become effective when posted to our website.
-              Your continued use of BuyNswipe after any changes indicates your acceptance of the updated policy.
+              Your continued use of BuyNswipe® after any changes indicates your acceptance of the updated policy.
             </p>
           </section>
 

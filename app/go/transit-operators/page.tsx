@@ -29,7 +29,7 @@ export default function TransitOperatorsPage() {
 
     <section id="benefits" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
       <div className="mb-16">
-        <span className="go-kicker">Why operators choose BuyNswipe Go</span>
+        <span className="go-kicker">Why operators choose BuyNswipe® Go</span>
         <h3 className="mt-5 text-4xl font-black tracking-tight">Smarter operations. Happier riders.</h3>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -85,7 +85,7 @@ export default function TransitOperatorsPage() {
 
     <footer className="bg-go-navy px-5 py-8 text-primary-foreground/60 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 text-xs leading-6 sm:flex-row sm:items-center sm:justify-between">
-        <span>© {new Date().getFullYear()} BuyNswipe Technology Pvt. Ltd. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} BuyNswipe® Technology Pvt. Ltd. All rights reserved.</span>
         <span>BuyNswipe® Go is a proposed platform. Availability varies by partner and regulations.</span>
       </div>
     </footer>

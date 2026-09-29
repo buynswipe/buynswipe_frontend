@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    host: "https://buynswipe.com",
+    host: "https://www.buynswipe.com",
     rules: [
       {
         userAgent: "*",
@@ -25,6 +25,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/", "/_next/", "/auth/", "/shop/alerts", "/shop/wishlist", "/shop/creators"],
       },
     ],
-    sitemap: "https://buynswipe.com/sitemap.xml",
+    sitemap: "https://www.buynswipe.com/sitemap.xml",
   }
 }

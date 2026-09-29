@@ -20,14 +20,14 @@ async function checkUrl(product: (typeof creditCardProducts)[number]): Promise<A
       method: "HEAD",
       redirect: "follow",
       signal: AbortSignal.timeout(7000),
-      headers: { "user-agent": "BuyNswipe affiliate link monitor" },
+      headers: { "user-agent": "BuyNswipe® affiliate link monitor" },
     })
     if (response.status === 403 || response.status === 405) {
       response = await fetch(product.affiliateLink, {
         method: "GET",
         redirect: "follow",
         signal: AbortSignal.timeout(7000),
-        headers: { "user-agent": "BuyNswipe affiliate link monitor", accept: "text/html" },
+        headers: { "user-agent": "BuyNswipe® affiliate link monitor", accept: "text/html" },
       })
     }
     const status = response.ok ? (response.url !== product.affiliateLink ? "redirected" : "verified") : "unavailable"

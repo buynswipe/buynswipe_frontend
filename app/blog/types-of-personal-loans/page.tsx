@@ -4,7 +4,7 @@ import { Zap, TrendingUp } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Types of Personal Loans - Complete Guide | BuyNswipe",
+  title: "Types of Personal Loans - Complete Guide | BuyNswipe®",
   description:
     "Learn about different types of personal loans: unsecured, secured, debt consolidation, and special purpose loans.",
   keywords: [
@@ -73,7 +73,7 @@ export default function TypesOfPersonalLoansPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

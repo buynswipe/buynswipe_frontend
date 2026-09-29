@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "AEPS | Aadhaar Enabled Payment System | BuyNswipe",
+  title: "AEPS | Aadhaar Enabled Payment System | BuyNswipe®",
   description:
     "AEPS - Aadhaar Enabled Payment System for digital payments. Withdraw cash without card using Aadhaar biometric authentication.",
   keywords: [
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     "Aadhaar payment system",
   ],
   openGraph: {
-    title: "AEPS | Aadhaar Payment System | BuyNswipe",
+    title: "AEPS | Aadhaar Payment System | BuyNswipe®",
     description:
       "Use Aadhaar for digital payments and cash withdrawal. Secure biometric authentication for financial transactions.",
     url: "https://buynswipe.com/credit/aeps",
-    siteName: "BuyNswipe",
+    siteName: "BuyNswipe®",
   },
 }
 

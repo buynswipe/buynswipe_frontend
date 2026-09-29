@@ -1,7 +1,7 @@
 import InstantLoanClient from "./instant-loan-client"
 
 export const metadata = {
-  title: "Instant Loan Online - Quick Approval in 24-48 Hours | BuyNswipe",
+  title: "Instant Loan Online - Quick Approval in 24-48 Hours | BuyNswipe®",
   description:
     "Get instant personal loans with fast approval (24-48 hours). Compare instant loan options, eligibility, interest rates, and apply online now.",
   keywords:

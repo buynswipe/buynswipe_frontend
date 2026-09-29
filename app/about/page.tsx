@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check, Users, Zap, Globe } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About BuyNswipe | Company Story | Founder | Acquisition Opportunity",
+  title: "About BuyNswipe® | Company Story | Founder | Acquisition Opportunity",
   description:
-    "Learn about BuyNswipe's mission to democratize digital payments and credit access. Founded in 2017, govt-recognized, pre-funded fintech startup ready for acquisition.",
+    "Learn about BuyNswipe®'s mission to democratize digital payments and credit access. Founded in 2017, govt-recognized, pre-funded fintech startup ready for acquisition.",
   keywords: [
-    "about BuyNswipe",
-    "BuyNswipe founder",
+    "about BuyNswipe®",
+    "BuyNswipe® founder",
     "company mission",
     "fintech startup",
     "digital payments",
@@ -21,7 +21,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About BuyNswipe</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About BuyNswipe®</h1>
           <p className="text-xl text-blue-100">Making digital payments and credit universally accessible since 2017</p>
         </div>
       </section>
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-8">Our Story</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              BuyNswipe Technology Pvt. Ltd. was founded in 2017 with a singular mission: to make digital payments so
+              BuyNswipe® Technology Pvt. Ltd. was founded in 2017 with a singular mission: to make digital payments so
               easy, safe, and universally accepted that people never feel the need to carry cash.
             </p>
             <p className="text-gray-700 mb-6">
@@ -40,7 +40,7 @@ export default function AboutPage() {
               thousands of customers and processed billions in transactions.
             </p>
             <p className="text-gray-700">
-              Today, BuyNswipe stands as a government-recognized startup under Startup India (DPIIT), with trademark
+              Today, BuyNswipe® stands as a government-recognized startup under Startup India (DPIIT), with trademark
               protection, premium domain assets, and a clean regulatory track record. We're now at an inflection point
               where the right strategic acquirer can scale this platform exponentially.
             </p>
@@ -137,12 +137,12 @@ export default function AboutPage() {
             <CardContent className="pt-8">
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-2">Ratnesh Choubey</h3>
-                <p className="text-gray-600 mb-4">Founder & CEO, BuyNswipe Technology Pvt. Ltd.</p>
+                <p className="text-gray-600 mb-4">Founder & CEO, BuyNswipe® Technology Pvt. Ltd.</p>
                 <div className="bg-blue-50 p-4 rounded-lg mb-6 text-left">
                   <p className="text-gray-700">
                     Ratnesh Choubey is a serial entrepreneur with deep expertise in fintech and digital payments. His
-                    vision for BuyNswipe was born from recognizing the gap between payment infrastructure and
-                    accessibility for everyday Indians. Under his leadership, BuyNswipe has grown from a startup concept
+                    vision for BuyNswipe® was born from recognizing the gap between payment infrastructure and
+                    accessibility for everyday Indians. Under his leadership, BuyNswipe® has grown from a startup concept
                     to a multi-product fintech platform serving hundreds of thousands of customers.
                   </p>
                 </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Acquisition Opportunity</h2>
           <p className="text-xl mb-8 text-blue-100">
-            BuyNswipe is available for strategic acquisition by qualified buyers
+            BuyNswipe® is available for strategic acquisition by qualified buyers
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 font-semibold">

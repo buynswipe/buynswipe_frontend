@@ -3,7 +3,7 @@ import { Download, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Free CIBIL Credit Report Guide | Download PDF | BuyNswipe",
+  title: "Free CIBIL Credit Report Guide | Download PDF | BuyNswipe®",
   description:
     "Free downloadable guide to understanding your CIBIL credit report and credit score. Learn what factors affect your score and how to improve it.",
   keywords: [

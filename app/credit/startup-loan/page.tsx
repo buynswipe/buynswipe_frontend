@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Startup Loan - Funding for New Businesses | BuyNswipe",
+  title: "Startup Loan - Funding for New Businesses | BuyNswipe®",
   description:
     "Get instant startup loan approval with minimal documentation. Loans up to ₹50 Lakh at competitive rates. Government-backed schemes and private lenders available.",
   keywords:

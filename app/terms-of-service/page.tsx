@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - BuyNswipe",
-  description: "BuyNswipe Terms of Service - Conditions and policies for using our platform",
+  title: "Terms of Service - BuyNswipe®",
+  description: "BuyNswipe® Terms of Service - Conditions and policies for using our platform",
 }
 
 export default function TermsOfServicePage() {
@@ -16,7 +16,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">1. Agreement to Terms</h2>
             <p className="text-gray-700">
-              By accessing and using BuyNswipe's website and services, you agree to be bound by these Terms of Service.
+              By accessing and using BuyNswipe®'s website and services, you agree to be bound by these Terms of Service.
               If you do not agree to abide by the above, please do not use this service.
             </p>
           </section>
@@ -32,7 +32,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">3. Disclaimer</h2>
             <p className="text-gray-700">
-              The materials on BuyNswipe's website are provided on an 'as is' basis. BuyNswipe makes no warranties,
+              The materials on BuyNswipe®'s website are provided on an 'as is' basis. BuyNswipe® makes no warranties,
               expressed or implied, and hereby disclaims and negates all other warranties including, without limitation,
               implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement
               of intellectual property or other violation of rights.
@@ -42,16 +42,16 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">4. Limitations</h2>
             <p className="text-gray-700">
-              In no event shall BuyNswipe or its suppliers be liable for any damages (including, without limitation,
+              In no event shall BuyNswipe® or its suppliers be liable for any damages (including, without limitation,
               damages for loss of data or profit, or due to business interruption) arising out of the use or inability
-              to use the materials on BuyNswipe's website, even if BuyNswipe or an authorized representative has been
+              to use the materials on BuyNswipe®'s website, even if BuyNswipe® or an authorized representative has been
               notified orally or in writing of the possibility of such damage.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">5. Loan Application Terms</h2>
-            <p className="text-gray-700 mb-4">When applying for loans or credit products through BuyNswipe:</p>
+            <p className="text-gray-700 mb-4">When applying for loans or credit products through BuyNswipe®:</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>You must provide accurate and truthful information</li>
               <li>You agree to undergo credit and background checks</li>
@@ -76,7 +76,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">7. Modifications to Terms</h2>
             <p className="text-gray-700">
-              BuyNswipe may revise these terms of service at any time without notice. By using this website, you are
+              BuyNswipe® may revise these terms of service at any time without notice. By using this website, you are
               agreeing to be bound by the then current version of these terms of service.
             </p>
           </section>

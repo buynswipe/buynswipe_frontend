@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button"
 import { TrendingUp, Store } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Case Studies | Success Stories | Restaurant & Retail ROI",
+  title: "BuyNswipe® Case Studies | Success Stories | Restaurant & Retail ROI",
   description:
-    "Real-world success stories from restaurants and retail stores using BuyNswipe POS and payment solutions. See measurable ROI and growth results.",
+    "Real-world success stories from restaurants and retail stores using BuyNswipe® POS and payment solutions. See measurable ROI and growth results.",
   keywords: [
     "case studies",
     "success stories",
     "restaurant POS case study",
     "retail POS ROI",
-    "BuyNswipe success",
+    "BuyNswipe® success",
     "payment solution ROI",
   ],
 }
@@ -22,7 +22,7 @@ const caseStudies = [
   {
     icon: TrendingUp,
     title: "Restaurant Transaction Growth",
-    description: "Fine dining restaurant increased transaction volume by 45% with BuyNswipe POS",
+    description: "Fine dining restaurant increased transaction volume by 45% with BuyNswipe® POS",
     href: "/case-studies/restaurant-success-story",
     metrics: ["45% Revenue Growth", "60% Faster Billing", "90% Customer Satisfaction"],
   },
@@ -41,7 +41,7 @@ export default function CaseStudiesPage() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Success Stories</h1>
-          <p className="text-xl text-blue-100">Real results from businesses using BuyNswipe solutions</p>
+          <p className="text-xl text-blue-100">Real results from businesses using BuyNswipe® solutions</p>
         </div>
       </section>
 
@@ -75,7 +75,7 @@ export default function CaseStudiesPage() {
 
       <section className="py-16 px-4 bg-blue-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Why Businesses Trust BuyNswipe</h2>
+          <h2 className="text-3xl font-bold mb-8">Why Businesses Trust BuyNswipe®</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { number: "500+", label: "Businesses Served" },

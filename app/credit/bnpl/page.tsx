@@ -21,7 +21,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Buy Now Pay Later (BNPL) | No Cost EMI | Pay Later Apps India - BuyNswipe",
+  title: "Buy Now Pay Later (BNPL) | No Cost EMI | Pay Later Apps India - BuyNswipe®",
   description:
     "Best Buy Now Pay Later (BNPL) apps in India 2024. Compare Simpl, LazyPay, ZestMoney, Paytm Postpaid, Amazon Pay Later. Instant credit line up to ₹5 Lakhs. No cost EMI on shopping. Zero interest pay later options.",
   keywords: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "pay in 3 installments",
   ].join(", "),
   openGraph: {
-    title: "Buy Now Pay Later (BNPL) | Best Pay Later Apps India - BuyNswipe",
+    title: "Buy Now Pay Later (BNPL) | Best Pay Later Apps India - BuyNswipe®",
     description: "Compare best BNPL apps. Instant credit up to ₹5 Lakhs. No cost EMI. Zero interest options.",
     url: "https://buynswipe.com/credit/bnpl",
     type: "website",
@@ -59,11 +59,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "FinancialProduct",
-      name: "BuyNswipe BNPL Marketplace",
+      name: "BuyNswipe® BNPL Marketplace",
       description: "Compare and apply for best Buy Now Pay Later options in India",
       provider: {
         "@type": "Organization",
-        name: "BuyNswipe Technology Pvt. Ltd.",
+        name: "BuyNswipe® Technology Pvt. Ltd.",
       },
       areaServed: "India",
       feesAndCommissionsSpecification: "0% interest on select purchases",
@@ -246,7 +246,7 @@ export default function BNPLPage() {
                 <span className="text-white font-bold text-lg">B</span>
               </div>
               <div>
-                <span className="font-bold text-xl text-gray-900">BuyNswipe</span>
+                <span className="font-bold text-xl text-gray-900">BuyNswipe®</span>
                 <span className="text-pink-600 font-semibold ml-1">BNPL</span>
               </div>
             </Link>
@@ -586,7 +586,7 @@ export default function BNPLPage() {
             <div className="max-w-4xl mx-auto prose prose-sm text-gray-500">
               <h3 className="text-lg font-semibold text-gray-700 mb-4">Buy Now Pay Later (BNPL) - Complete Guide</h3>
               <p>
-                <strong>BuyNswipe BNPL Marketplace</strong> helps you find the best <strong>Buy Now Pay Later</strong>{" "}
+                <strong>BuyNswipe® BNPL Marketplace</strong> helps you find the best <strong>Buy Now Pay Later</strong>{" "}
                 apps in India. Compare <strong>Simpl</strong>, <strong>LazyPay</strong>, <strong>ZestMoney</strong>,
                 <strong> Paytm Postpaid</strong>, <strong>Amazon Pay Later</strong>, and{" "}
                 <strong>Flipkart Pay Later</strong>.
@@ -618,7 +618,7 @@ export default function BNPLPage() {
                   <div className="w-10 h-10 bg-gradient-to-br from-pink-600 to-purple-600 rounded-xl flex items-center justify-center">
                     <span className="text-white font-bold">B</span>
                   </div>
-                  <span className="font-bold text-xl">BuyNswipe</span>
+                  <span className="font-bold text-xl">BuyNswipe®</span>
                 </div>
                 <p className="text-gray-400 text-sm">
                   India's trusted BNPL and credit marketplace. Compare and apply for best pay later options.
@@ -688,7 +688,7 @@ export default function BNPLPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>&copy; 2025 BuyNswipe Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
+              <p>&copy; 2025 BuyNswipe® Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
             </div>
           </div>
         </footer>

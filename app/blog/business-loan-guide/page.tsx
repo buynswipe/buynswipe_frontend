@@ -4,7 +4,7 @@ import { Briefcase, BarChart3 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Business Loan Guide - Startup to SME Financing | BuyNswipe",
+  title: "Business Loan Guide - Startup to SME Financing | BuyNswipe®",
   description:
     "Complete business loan guide covering startup loans, MSME loans, working capital, and government schemes.",
   keywords: [
@@ -23,7 +23,7 @@ export default function BusinessLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

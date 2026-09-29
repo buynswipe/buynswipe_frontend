@@ -4,7 +4,7 @@ import { CreditCard, DollarSign, BarChart3, CheckCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Loan vs Credit Card - Which is Better? | BuyNswipe",
+  title: "Loan vs Credit Card - Which is Better? | BuyNswipe®",
   description:
     "Complete comparison between personal loans and credit cards with detailed analysis of features, benefits, and use cases.",
   keywords: [
@@ -23,7 +23,7 @@ export default function LoanVsCreditCardPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

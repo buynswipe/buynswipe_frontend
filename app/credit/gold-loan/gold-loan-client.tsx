@@ -63,7 +63,7 @@ export default function GoldLoanClientPage() {
       {/* Key Features */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Why Gold Loan from BuyNswipe?</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Why Gold Loan from BuyNswipe®?</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Instant Approval", desc: "24-hour fund disbursal", icon: Zap },

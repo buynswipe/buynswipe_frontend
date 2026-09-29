@@ -4,10 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, Apple, Smartphone, Star, Users, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Mobile App | iOS & Android | Download Now",
+  title: "BuyNswipe® Mobile App | iOS & Android | Download Now",
   description:
-    "Download BuyNswipe mobile app for instant access to credit cards, personal loans, and payment solutions. Available on iOS and Android.",
-  keywords: ["BuyNswipe app", "mobile app download", "iOS app", "Android app", "financial app", "credit card app"],
+    "Download BuyNswipe® mobile app for instant access to credit cards, personal loans, and payment solutions. Available on iOS and Android.",
+  keywords: ["BuyNswipe® app", "mobile app download", "iOS app", "Android app", "financial app", "credit card app"],
 }
 
 export default function MobileAppPage() {
@@ -15,7 +15,7 @@ export default function MobileAppPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4">BuyNswipe Mobile App</h1>
+          <h1 className="text-5xl font-bold mb-4">BuyNswipe® Mobile App</h1>
           <p className="text-2xl text-blue-100 mb-8">Financial services in your pocket</p>
           <Smartphone className="w-32 h-32 mx-auto text-blue-200 mb-8" />
         </div>
@@ -23,7 +23,7 @@ export default function MobileAppPage() {
 
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Download BuyNswipe</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Download BuyNswipe®</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="border-2">
               <CardHeader>
@@ -33,7 +33,7 @@ export default function MobileAppPage() {
               <CardContent>
                 <p className="text-gray-700 mb-6">Download from Apple App Store</p>
                 <a
-                  href="mailto:support@buynswipe.com?subject=BuyNswipe%20mobile%20app"
+                  href="mailto:support@buynswipe.com?subject=BuyNswipe®%20mobile%20app"
                   className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 font-semibold"
                 >
                   Download on App Store
@@ -49,7 +49,7 @@ export default function MobileAppPage() {
               <CardContent>
                 <p className="text-gray-700 mb-6">Download from Google Play Store</p>
                 <a
-                  href="mailto:support@buynswipe.com?subject=BuyNswipe%20mobile%20app"
+                  href="mailto:support@buynswipe.com?subject=BuyNswipe®%20mobile%20app"
                   className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 font-semibold"
                 >
                   Get on Google Play
@@ -111,10 +111,10 @@ export default function MobileAppPage() {
       <section className="py-20 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Get Started Today</h2>
-          <p className="text-xl text-blue-100 mb-8">Download BuyNswipe and manage your finances on the go</p>
+          <p className="text-xl text-blue-100 mb-8">Download BuyNswipe® and manage your finances on the go</p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="mailto:support@buynswipe.com?subject=BuyNswipe%20mobile%20app"
+              href="mailto:support@buynswipe.com?subject=BuyNswipe®%20mobile%20app"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2"
             >
               <Download className="w-5 h-5" />

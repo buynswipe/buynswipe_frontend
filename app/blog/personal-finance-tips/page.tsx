@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Personal Finance Tips & Money Management Guide | BuyNswipe Blog",
+  title: "Personal Finance Tips & Money Management Guide | BuyNswipe® Blog",
   description:
     "10 proven personal finance tips to build wealth, save money, and achieve financial goals. Expert money management strategies for 2025.",
   keywords: [
@@ -49,7 +49,7 @@ export default function PersonalFinanceTipsPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

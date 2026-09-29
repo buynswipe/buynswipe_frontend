@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { loanProducts } from "@/lib/affiliate-products"
 
 export const metadata: Metadata = {
-  title: "Best Personal Loans 2025 | Compare 16+ Lenders | Instant Approval | BuyNswipe",
+  title: "Best Personal Loans 2025 | Compare 16+ Lenders | Instant Approval | BuyNswipe®",
   description:
     "Compare and apply for the best personal loans from 16+ trusted lenders. Get instant approval, same-day disbursal, and lowest interest rates starting 9.99%. No collateral required.",
   keywords: [
@@ -44,7 +44,7 @@ export default function AffiliateLoansPage() {
             <Badge className="bg-yellow-400 text-yellow-900 mb-4">Compare 16+ Lenders</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Personal Loans from Trusted Lenders</h1>
             <p className="text-xl text-blue-100 mb-8">
-              Get instant approval, same-day disbursal, and lowest interest rates. Compare all top lenders on BuyNswipe.
+              Get instant approval, same-day disbursal, and lowest interest rates. Compare all top lenders on BuyNswipe®.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-8">

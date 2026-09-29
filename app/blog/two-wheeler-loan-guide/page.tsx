@@ -4,7 +4,7 @@ import { Bike, TrendingDown, FileCheck, Zap } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Two Wheeler Loan Guide - Bike & Scooter Financing | BuyNswipe",
+  title: "Two Wheeler Loan Guide - Bike & Scooter Financing | BuyNswipe®",
   description:
     "Complete two wheeler loan guide covering motorcycle financing, scooter loans, eligibility, interest rates, and quick approval.",
   keywords: [
@@ -24,7 +24,7 @@ export default function TwoWheelerLoanGuidePage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

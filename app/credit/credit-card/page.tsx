@@ -22,9 +22,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Best Credit Card Apply Online 2024 | Instant Approval | Cashback & Rewards | BuyNswipe",
+  title: "Best Credit Card Apply Online 2024 | Instant Approval | Cashback & Rewards | BuyNswipe®",
   description:
-    "Apply for best credit card online with instant approval. Compare 50+ credit cards - cashback credit card, travel credit card, fuel credit card, rewards credit card. Lifetime free credit cards available. Check eligibility on BuyNswipe.",
+    "Apply for best credit card online with instant approval. Compare 50+ credit cards - cashback credit card, travel credit card, fuel credit card, rewards credit card. Lifetime free credit cards available. Check eligibility on BuyNswipe®.",
   keywords: [
     "credit card",
     "credit card apply online",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     "credit card for low income",
   ],
   openGraph: {
-    title: "Best Credit Card Apply Online | Instant Approval | 50+ Cards | BuyNswipe",
+    title: "Best Credit Card Apply Online | Instant Approval | 50+ Cards | BuyNswipe®",
     description:
       "Compare and apply for best credit cards online. Cashback, travel, fuel cards with instant approval. Lifetime free options available.",
     url: "https://buynswipe.com/credit/credit-card",
@@ -67,11 +67,11 @@ const jsonLd = {
     {
       "@type": "FinancialProduct",
       "@id": "https://buynswipe.com/credit/credit-card#product",
-      name: "BuyNswipe Credit Card Marketplace",
+      name: "BuyNswipe® Credit Card Marketplace",
       description: "Compare and apply for best credit cards online with instant approval. 50+ cards from top banks.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       category: "Credit Card",
@@ -250,7 +250,7 @@ export default function CreditCardPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/credit" className="text-gray-600 hover:text-blue-600">
@@ -283,7 +283,7 @@ export default function CreditCardPage() {
               </h1>
               <p className="text-xl md:text-2xl text-purple-100 mb-8">
                 Apply for <strong>best credit card online</strong> with instant approval. Cashback up to 5%, free lounge
-                access, welcome bonus worth ₹5,000. Compare and choose on BuyNswipe.
+                access, welcome bonus worth ₹5,000. Compare and choose on BuyNswipe®.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -757,10 +757,10 @@ export default function CreditCardPage() {
         {/* SEO Content */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Credit Card Guide 2024 - BuyNswipe</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Credit Card Guide 2024 - BuyNswipe®</h2>
             <div className="prose prose-purple max-w-none text-gray-600">
               <p>
-                <strong>BuyNswipe Credit Card</strong> marketplace helps you find and apply for the{" "}
+                <strong>BuyNswipe® Credit Card</strong> marketplace helps you find and apply for the{" "}
                 <strong>best credit card in India 2024</strong>. Compare 50+ credit cards from HDFC, ICICI, SBI, Axis,
                 and other top banks. Get <strong>instant credit card approval</strong> with{" "}
                 <strong>lifetime free options</strong> and rewards up to 5% cashback.
@@ -768,7 +768,7 @@ export default function CreditCardPage() {
               <p>
                 Whether you need a <strong>cashback credit card</strong>, <strong>travel credit card</strong> with
                 lounge access, <strong>fuel credit card</strong> with surcharge waiver, or{" "}
-                <strong>rewards credit card</strong> with accelerated points, BuyNswipe matches you with the perfect
+                <strong>rewards credit card</strong> with accelerated points, BuyNswipe® matches you with the perfect
                 card based on your spending pattern.
               </p>
               <p>
@@ -786,7 +786,7 @@ export default function CreditCardPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
+                <h3 className="text-xl font-bold mb-4">BuyNswipe®</h3>
                 <p className="text-gray-400">
                   India's trusted credit card comparison platform. Find and apply for the best cards.
                 </p>
@@ -854,7 +854,7 @@ export default function CreditCardPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
+              <p>© 2025 BuyNswipe® Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
             </div>
           </div>
         </footer>

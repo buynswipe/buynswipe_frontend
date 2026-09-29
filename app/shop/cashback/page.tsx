@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { createClient } from "@/lib/supabase/server"
 
-export const metadata: Metadata = { title: "My ShopNdeal cashback | BuyNswipe", description: "Review provider-confirmed ShopNdeal cashback activity and statuses." }
+export const metadata: Metadata = { title: "My ShopNdeal cashback | BuyNswipe®", description: "Review provider-confirmed ShopNdeal cashback activity and statuses." }
 
 const statusStyles: Record<string, string> = { pending: "bg-amber-50 text-amber-700", confirmed: "bg-cyan-50 text-cyan-700", paid: "bg-emerald-50 text-emerald-700", returned: "bg-rose-50 text-rose-700", cancelled: "bg-slate-100 text-slate-600", rejected: "bg-rose-50 text-rose-700" }
 

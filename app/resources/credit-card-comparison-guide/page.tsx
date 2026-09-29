@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Credit Card Comparison Guide - 20+ Cards Compared | BuyNswipe",
+  title: "Credit Card Comparison Guide - 20+ Cards Compared | BuyNswipe®",
   description:
     "Compare 20+ popular credit cards with detailed features, fees, cashback, and rewards. Download our comprehensive comparison guide.",
   keywords: [

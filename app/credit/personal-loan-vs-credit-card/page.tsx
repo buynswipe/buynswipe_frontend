@@ -1,7 +1,7 @@
 import PersonalLoanVsCreditCardClient from "./PersonalLoanVsCreditCardClient"
 
 export const metadata = {
-  title: "Personal Loan vs Credit Card - Which is Better? | BuyNswipe",
+  title: "Personal Loan vs Credit Card - Which is Better? | BuyNswipe®",
   description:
     "Compare personal loans and credit cards. Understand differences in interest rates, eligibility, usage, and choose the best option for your financial needs.",
   keywords:

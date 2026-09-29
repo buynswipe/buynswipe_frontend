@@ -4,7 +4,7 @@ import { CheckCircle, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "How to Increase Credit Card Limit - Step-by-Step Guide | BuyNswipe",
+  title: "How to Increase Credit Card Limit - Step-by-Step Guide | BuyNswipe®",
   description:
     "How to increase credit card limit? Learn automatic and manual methods, eligibility criteria, and tips to get instant limit increase.",
   keywords: [
@@ -25,7 +25,7 @@ export default function IncreaseCardLimitPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

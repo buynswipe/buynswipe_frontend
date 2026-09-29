@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Building2, Link2, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "BuyNswipe Partnerships | Strategic Partners | Integration Program",
+  title: "BuyNswipe® Partnerships | Strategic Partners | Integration Program",
   description:
-    "Join BuyNswipe's partner ecosystem. Bank partnerships, fintech integrations, merchant aggregators, and technology partnerships.",
+    "Join BuyNswipe®'s partner ecosystem. Bank partnerships, fintech integrations, merchant aggregators, and technology partnerships.",
   keywords: [
-    "BuyNswipe partnerships",
+    "BuyNswipe® partnerships",
     "bank partnerships",
     "fintech integrations",
     "partner program",
@@ -42,7 +42,7 @@ export default function PartnershipsPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Partner With BuyNswipe</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Partner With BuyNswipe®</h1>
           <p className="text-xl text-green-100">Build together. Grow together. Win together.</p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function PartnershipsPage() {
 
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why Partner With BuyNswipe?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Why Partner With BuyNswipe®?</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               "Proven fintech platform with 500+ users",

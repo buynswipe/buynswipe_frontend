@@ -4,7 +4,7 @@ import { TrendingDown, Zap, Target, DollarSign } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Loan Repayment Tips - Strategies to Pay Loans Faster | BuyNswipe",
+  title: "Loan Repayment Tips - Strategies to Pay Loans Faster | BuyNswipe®",
   description:
     "Smart loan repayment strategies and tips to pay off loans faster, reduce interest, and improve financial health.",
   keywords: [
@@ -24,7 +24,7 @@ export default function LoanRepaymentTipsPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

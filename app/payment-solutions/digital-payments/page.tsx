@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Digital Payment Methods | UPI | NEFT | RTGS | IMPS | BuyNswipe",
+  title: "Digital Payment Methods | UPI | NEFT | RTGS | IMPS | BuyNswipe®",
   description:
     "Complete guide to digital payment methods. UPI instant payment, NEFT transfers, RTGS for large amounts, IMPS, and more. Compare speeds and charges.",
   keywords: [

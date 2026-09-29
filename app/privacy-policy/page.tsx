@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - BuyNswipe",
-  description: "BuyNswipe Privacy Policy - How we protect your personal data and information",
+  title: "Privacy Policy - BuyNswipe®",
+  description: "BuyNswipe® Privacy Policy - How we protect your personal data and information",
 }
 
 export default function PrivacyPolicyPage() {
@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
             <p className="text-gray-700">
-              BuyNswipe Technology Pvt. Ltd. ("Company", "we", "our", or "us") is committed to protecting your privacy.
+              BuyNswipe® Technology Pvt. Ltd. ("Company", "we", "our", or "us") is committed to protecting your privacy.
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit
               our website and use our services.
             </p>

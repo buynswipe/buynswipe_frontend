@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Mobile Recharge Online | Instant DTH & Data Recharge | BuyNswipe",
+  title: "Mobile Recharge Online | Instant DTH & Data Recharge | BuyNswipe®",
   description:
-    "Instant mobile recharge online for all operators. DTH recharge, data plans, and prepaid subscriptions. 24/7 availability with zero charges. Recharge now on BuyNswipe.",
+    "Instant mobile recharge online for all operators. DTH recharge, data plans, and prepaid subscriptions. 24/7 availability with zero charges. Recharge now on BuyNswipe®.",
   keywords: [
     "mobile recharge online",
     "instant mobile recharge",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "broadband recharge",
   ],
   openGraph: {
-    title: "Mobile Recharge Online | Instant DTH Recharge | BuyNswipe",
+    title: "Mobile Recharge Online | Instant DTH Recharge | BuyNswipe®",
     description:
       "Recharge your mobile, DTH, and broadband instantly. All operators supported. Zero transaction charges.",
     url: "https://buynswipe.com/credit/recharge",

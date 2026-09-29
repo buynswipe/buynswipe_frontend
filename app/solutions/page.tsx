@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button"
 import { UtensilsCrossed, Store, ShoppingCart } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Industry Solutions | Restaurant POS | Retail | E-commerce | BuyNswipe",
+  title: "Industry Solutions | Restaurant POS | Retail | E-commerce | BuyNswipe®",
   description:
-    "Tailored payment and POS solutions for restaurants, retail stores, and e-commerce businesses. Increase sales and streamline operations with BuyNswipe.",
+    "Tailored payment and POS solutions for restaurants, retail stores, and e-commerce businesses. Increase sales and streamline operations with BuyNswipe®.",
   keywords: [
     "restaurant POS",
     "retail solutions",

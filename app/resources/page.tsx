@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Financial Resources & Blog | Learn Finance | BuyNswipe",
+  title: "Financial Resources & Blog | Learn Finance | BuyNswipe®",
   description:
     "Learn about personal finance, credit scores, loans, and investment. Read expert articles, guides, and tips on financial literacy.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "money management",
   ],
   openGraph: {
-    title: "Financial Resources & Blog | BuyNswipe",
+    title: "Financial Resources & Blog | BuyNswipe®",
     description: "Learn about personal finance, credit scores, loans, and investment. Expert articles and guides.",
     url: "https://buynswipe.com/resources",
     type: "website",

@@ -4,7 +4,7 @@ import { Smartphone, Clock } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Credit Card Payment Methods - How to Pay Bill | BuyNswipe",
+  title: "Credit Card Payment Methods - How to Pay Bill | BuyNswipe®",
   description:
     "How to pay credit card bill? Learn 8 payment methods - UPI, netbanking, auto-pay, cash, cheque, NEFT, IMPS. Pay on time.",
   keywords: [
@@ -69,7 +69,7 @@ export default function CreditCardPaymentMethodsPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

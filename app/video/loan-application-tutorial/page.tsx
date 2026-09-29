@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Loan Application Tutorial Video | Step-by-Step Guide | BuyNswipe",
+  title: "Loan Application Tutorial Video | Step-by-Step Guide | BuyNswipe®",
   description:
     "Watch our comprehensive 8-minute video tutorial on how to apply for a personal loan. Step-by-step guidance with real examples.",
   keywords: [

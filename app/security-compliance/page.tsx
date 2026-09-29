@@ -3,11 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, FileCheck, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Security & Compliance | BuyNswipe | Data Protection & Certifications",
+  title: "Security & Compliance | BuyNswipe® | Data Protection & Certifications",
   description:
-    "BuyNswipe Security & Compliance. RBI-compliant, DPIIT-recognized, ISO certified. Enterprise-grade data protection with 256-bit encryption and GDPR compliance.",
+    "BuyNswipe® Security & Compliance. RBI-compliant, DPIIT-recognized, ISO certified. Enterprise-grade data protection with 256-bit encryption and GDPR compliance.",
   keywords: [
-    "BuyNswipe security",
+    "BuyNswipe® security",
     "data protection",
     "RBI compliance",
     "DPIIT recognized",
@@ -39,7 +39,7 @@ export default function SecurityCompliancePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">
-                  BuyNswipe follows all Reserve Bank of India guidelines for payment systems and financial services.
+                  BuyNswipe® follows all Reserve Bank of India guidelines for payment systems and financial services.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">

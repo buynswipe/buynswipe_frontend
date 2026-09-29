@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Financial Blog & Articles | Money Tips & Loan Guide | BuyNswipe",
+  title: "Financial Blog & Articles | Money Tips & Loan Guide | BuyNswipe®",
   description:
     "Read expert financial articles, loan guides, and money management tips. Learn about personal loans, credit cards, budgeting, and smart financial planning.",
   keywords: [
@@ -69,7 +69,7 @@ export default function BlogPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/credit" className="text-gray-600 hover:text-blue-600">

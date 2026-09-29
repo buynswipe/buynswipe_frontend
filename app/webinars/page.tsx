@@ -5,7 +5,7 @@ import { Calendar, Users, Clock } from "lucide-react"
 import { WebinarSignup } from "./webinar-signup"
 
 export const metadata: Metadata = {
-  title: "Financial Education Webinars | BuyNswipe Learning",
+  title: "Financial Education Webinars | BuyNswipe® Learning",
   description:
     "Attend free webinars on credit cards, personal loans, credit building, and financial planning. Expert speakers and live Q&A sessions.",
   keywords: ["financial webinars", "credit education", "loan information", "financial planning", "credit card tips"],

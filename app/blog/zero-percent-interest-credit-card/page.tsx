@@ -4,7 +4,7 @@ import { Zap, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "0% Interest Credit Card - Zero EMI & Balance Transfer | BuyNswipe",
+  title: "0% Interest Credit Card - Zero EMI & Balance Transfer | BuyNswipe®",
   description:
     "What is 0% interest credit card? Learn about 0% EMI, 0% balance transfer, 0% purchase offers. Best zero interest credit cards in India.",
   keywords: [
@@ -24,7 +24,7 @@ export default function ZeroInterestCreditCardPage() {
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe
+            BuyNswipe®
           </Link>
         </div>
       </header>

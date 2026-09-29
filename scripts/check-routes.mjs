@@ -5,23 +5,36 @@ const routes = [
   "/shop/products",
   "/shop/product/echo-headphones",
   "/shop/ai",
+  "/shop/analyze",
+  "/shop/coupons",
+  "/shop/cashback",
   "/auth/login",
   "/investor-relations",
   "/investor-relations/financial-metrics",
   "/compliance/rbi-regulations",
   "/credit",
+  "/credit/emi-calculator",
+  "/tools/affordability-calculator",
+  "/search?q=credit",
+  "/resources",
   "/support",
+  "/ads.txt",
   "/admin",
+  "/buynswipe-go",
 ]
 
-const allowedRedirects = new Set(["/auth/login", "/admin"])
+const allowedRedirects = new Set(["/auth/login", "/admin", "/buynswipe-go"])
+const expectedTextRoutes = new Set(["/ads.txt"])
 let failures = 0
 for (const route of routes) {
   const response = await fetch(new URL(route, baseUrl), { redirect: "manual" })
   const location = response.headers.get("location") || ""
   const redirectedToLogin = response.status >= 300 && response.status < 400 && location.includes("/auth/login")
-  const allowed = response.ok || (allowedRedirects.has(route) && redirectedToLogin)
-  console.log(`${allowed ? "PASS" : "FAIL"} ${response.status} ${route}${location ? ` -> ${location}` : ""}`)
+  const redirectedToCanonicalGo = route === "/buynswipe-go" && response.status === 308 && location.endsWith("/go")
+  const contentType = response.headers.get("content-type") || ""
+  const validAdsText = route === "/ads.txt" && response.ok && contentType.includes("text/plain")
+  const allowed = response.ok || validAdsText || redirectedToCanonicalGo || (allowedRedirects.has(route) && redirectedToLogin)
+  console.log(`${allowed ? "PASS" : "FAIL"} ${response.status} ${route}${location ? ` -> ${location}` : ""}${expectedTextRoutes.has(route) ? ` [${contentType}]` : ""}`)
   if (!allowed) failures += 1
 }
 if (failures) process.exit(1)

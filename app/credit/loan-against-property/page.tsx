@@ -55,7 +55,7 @@ export default function LoanAgainstPropertyPage() {
             url: "https://buynswipe.com/credit/loan-against-property",
             provider: {
               "@type": "Organization",
-              name: "BuyNswipe Technology",
+              name: "BuyNswipe® Technology",
             },
             interestRate: {
               "@type": "QuantitativeValue",
@@ -80,7 +80,7 @@ export default function LoanAgainstPropertyPage() {
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
                 <Home className="w-5 h-5 text-white" />
               </div>
-              <span className="text-lg font-bold text-gray-900">BuyNswipe</span>
+              <span className="text-lg font-bold text-gray-900">BuyNswipe®</span>
             </Link>
           </div>
         </header>

@@ -69,7 +69,7 @@ export default function PersonalLoanVsCreditCardClient() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">BuyNswipe Credit</span>
+            <span className="text-xl font-bold text-gray-900">BuyNswipe® Credit</span>
           </Link>
           <nav className="hidden md:flex space-x-6">
             <Link href="/credit" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -413,7 +413,7 @@ export default function PersonalLoanVsCreditCardClient() {
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-gray-300">
         <div className="container mx-auto text-center">
-          <p className="text-sm">BuyNswipe Credit | Helping you find the right financial product for your needs</p>
+          <p className="text-sm">BuyNswipe® Credit | Helping you find the right financial product for your needs</p>
         </div>
       </footer>
     </div>

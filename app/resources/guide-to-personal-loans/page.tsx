@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Personal Loans - Everything You Need to Know | BuyNswipe",
+  title: "Complete Guide to Personal Loans - Everything You Need to Know | BuyNswipe®",
   description:
     "Comprehensive guide to personal loans. Learn about types, eligibility, interest rates, documents, and how to apply for personal loans online.",
   keywords: [

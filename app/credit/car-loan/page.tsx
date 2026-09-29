@@ -1,7 +1,7 @@
 import { CarLoanClientPage } from "./CarLoanClientPage"
 
 export const metadata = {
-  title: "Best Car Loan Online - Low Interest Rates & Instant Approval | BuyNswipe",
+  title: "Best Car Loan Online - Low Interest Rates & Instant Approval | BuyNswipe®",
   description:
     "Get instant car loan approval with low interest rates starting from 7.2%. Compare car loans from top lenders. EMI calculator, eligibility check, and fast disbursal in 24-48 hours.",
   keywords:

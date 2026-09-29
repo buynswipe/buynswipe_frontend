@@ -85,7 +85,7 @@ export default function BanksIssuersPage() {
 
     <footer className="bg-go-navy px-5 py-8 text-primary-foreground/60 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 text-xs leading-6 sm:flex-row sm:items-center sm:justify-between">
-        <span>© {new Date().getFullYear()} BuyNswipe Technology Pvt. Ltd. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} BuyNswipe® Technology Pvt. Ltd. All rights reserved.</span>
         <span>BuyNswipe® Go is a proposed platform. Availability varies by partner and regulations.</span>
       </div>
     </footer>

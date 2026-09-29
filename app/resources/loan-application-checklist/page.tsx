@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Loan Application Checklist - All Required Documents | BuyNswipe",
+  title: "Loan Application Checklist - All Required Documents | BuyNswipe®",
   description:
     "Complete checklist of all documents required for personal loan, home loan, education loan, and business loan applications. Download PDF.",
   keywords: [

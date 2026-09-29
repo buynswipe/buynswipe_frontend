@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Zero Balance Bank Account Online 2024 | Salary Account | Digital Bank | BuyNswipe",
+  title: "Zero Balance Bank Account Online 2024 | Salary Account | Digital Bank | BuyNswipe®",
   description:
     "Open zero balance bank account online in 5 minutes. Compare salary accounts, savings accounts, digital bank accounts from HDFC, ICICI, SBI, Axis, Kotak. No minimum balance required. Instant account opening.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "demat account",
   ],
   openGraph: {
-    title: "Zero Balance Bank Account Online | Instant Opening | Best Banks | BuyNswipe",
+    title: "Zero Balance Bank Account Online | Instant Opening | Best Banks | BuyNswipe®",
     description:
       "Open bank account online with zero minimum balance. Compare accounts from top banks. Instant approval.",
     url: "https://buynswipe.com/credit/bank-accounts",
@@ -45,12 +45,12 @@ const jsonLd = {
     {
       "@type": "FinancialProduct",
       "@id": "https://buynswipe.com/credit/bank-accounts#product",
-      name: "BuyNswipe Bank Account Comparison",
+      name: "BuyNswipe® Bank Account Comparison",
       description:
         "Compare and open zero balance bank accounts online. Salary, savings, and digital accounts from top banks.",
       provider: {
         "@type": "FinancialService",
-        name: "BuyNswipe",
+        name: "BuyNswipe®",
         url: "https://buynswipe.com",
       },
       category: "Bank Account",
@@ -193,7 +193,7 @@ export default function BankAccountPage() {
         <header className="bg-white border-b sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              BuyNswipe
+              BuyNswipe®
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/credit" className="text-gray-600 hover:text-blue-600">
@@ -418,10 +418,10 @@ export default function BankAccountPage() {
         {/* SEO Content */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Bank Accounts in India 2024 - BuyNswipe</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Bank Accounts in India 2024 - BuyNswipe®</h2>
             <div className="prose prose-blue max-w-none text-gray-600 space-y-4">
               <p>
-                <strong>BuyNswipe Bank Account</strong> platform helps you open and manage the{" "}
+                <strong>BuyNswipe® Bank Account</strong> platform helps you open and manage the{" "}
                 <strong>best bank account in India</strong>. Compare <strong>zero balance accounts</strong>,{" "}
                 <strong>salary accounts</strong>, <strong>digital bank accounts</strong>, and{" "}
                 <strong>savings accounts</strong> from major banks. Get <strong>instant account opening</strong> online
@@ -447,7 +447,7 @@ export default function BankAccountPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">BuyNswipe</h3>
+                <h3 className="text-xl font-bold mb-4">BuyNswipe®</h3>
                 <p className="text-gray-400">India's trusted bank account comparison platform.</p>
               </div>
               <div>
@@ -503,7 +503,7 @@ export default function BankAccountPage() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-              <p>© 2025 BuyNswipe Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
+              <p>© 2025 BuyNswipe® Technology Pvt. Ltd. | Startup India Recognized | All Rights Reserved</p>
             </div>
           </div>
         </footer>

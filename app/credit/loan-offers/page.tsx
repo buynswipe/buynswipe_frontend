@@ -60,7 +60,7 @@ export default function LoanOffersPage() {
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
                 <Gift className="w-5 h-5 text-white" />
               </div>
-              <span className="text-lg font-bold text-gray-900">BuyNswipe</span>
+              <span className="text-lg font-bold text-gray-900">BuyNswipe®</span>
             </Link>
           </div>
         </header>
