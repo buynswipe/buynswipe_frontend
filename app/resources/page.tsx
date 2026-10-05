@@ -3,6 +3,7 @@ import Link from "next/link"
 import { BookOpen, TrendingUp, DollarSign, Heart, Brain, Shield } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { SiteFooter, SiteHeader } from "@/components/site-chrome"
 
 export const metadata: Metadata = {
   title: "Financial Resources & Blog | Learn Finance | BuyNswipe®",
@@ -58,7 +59,9 @@ export default function ResourcesPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <SiteHeader current="/resources" />
+      <main>
       {/* Hero */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -118,6 +121,8 @@ export default function ResourcesPage() {
           <Button className="bg-white text-blue-600 hover:bg-blue-50">Subscribe Now</Button>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </div>
   )
 }

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
+import { SiteFooter, SiteHeader } from "@/components/site-chrome"
 
 export const metadata: Metadata = {
   title: "Financial Blog & Articles | Money Tips & Loan Guide | BuyNswipe®",
@@ -65,25 +66,7 @@ const blogCategories = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe®
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/credit" className="text-gray-600 hover:text-blue-600">
-              Products
-            </Link>
-            <Link href="/resources" className="text-gray-600 hover:text-blue-600">
-              Resources
-            </Link>
-            <Link href="/blog" className="text-blue-600 font-semibold">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader current="/blog" />
 
       {/* Hero */}
       <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
@@ -130,6 +113,7 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
+      <SiteFooter />
     </div>
   )
 }

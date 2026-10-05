@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ContactForm } from "./contact-form"
 import { Mail, Phone, Linkedin, MapPin } from "lucide-react"
+import { SiteFooter, SiteHeader } from "@/components/site-chrome"
 
 export const metadata: Metadata = {
   title: "Contact BuyNswipe® | Get in Touch | Founder & Support",
@@ -19,7 +20,9 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <SiteHeader current="/contact" />
+      <main>
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
@@ -125,6 +128,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </div>
   )
 }
