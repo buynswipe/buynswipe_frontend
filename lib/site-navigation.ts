@@ -28,7 +28,7 @@ export const criticalRoutes = [
   "/",
   "/shop",
   "/shop/products",
-  "/shop/product/echo-headphones",
+  "/shop/product/noise-cancelling-headphones",
   "/shop/ai",
   "/auth/login",
   "/investor-relations",
