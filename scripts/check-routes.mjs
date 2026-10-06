@@ -3,7 +3,7 @@ const routes = [
   "/",
   "/shop",
   "/shop/products",
-  "/shop/product/echo-headphones",
+  "/shop/product/noise-cancelling-headphones",
   "/shop/ai",
   "/shop/analyze",
   "/shop/coupons",
