@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
+import { SiteFooter, SiteHeader } from "@/components/site-chrome"
 
 export const metadata: Metadata = {
   title: "Financial Blog & Articles | Money Tips & Loan Guide | BuyNswipe®",
@@ -25,14 +26,14 @@ const blogCategories = [
     description: "Everything about personal loans, business loans, and credit management",
     articles: [
       {
-        slug: "how-to-improve-credit-score",
+        slug: "how-to-improve-credit-score-quickly",
         title: "How to Improve CIBIL Score Fast",
         excerpt: "10 proven strategies to boost your credit score from 600 to 750+",
         date: "Jan 15, 2025",
         category: "Credit Management",
       },
       {
-        slug: "personal-loan-guide",
+        slug: "personal-loan-complete-guide",
         title: "Complete Guide to Personal Loans",
         excerpt: "Everything you need to know about applying for and managing personal loans",
         date: "Jan 10, 2025",
@@ -45,14 +46,14 @@ const blogCategories = [
     description: "Smart money management and wealth building strategies",
     articles: [
       {
-        slug: "financial-planning-tips",
+        slug: "personal-finance-tips",
         title: "6-Step Financial Planning Guide",
         excerpt: "Create a solid financial plan for short-term and long-term goals",
         date: "Jan 8, 2025",
         category: "Financial Planning",
       },
       {
-        slug: "loan-repayment-strategies",
+        slug: "loan-repayment-tips",
         title: "Best Loan Repayment Strategies",
         excerpt: "Compare Avalanche, Snowball, and other methods to pay off debt faster",
         date: "Jan 5, 2025",
@@ -65,25 +66,7 @@ const blogCategories = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-blue-600">
-            BuyNswipe®
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/credit" className="text-gray-600 hover:text-blue-600">
-              Products
-            </Link>
-            <Link href="/resources" className="text-gray-600 hover:text-blue-600">
-              Resources
-            </Link>
-            <Link href="/blog" className="text-blue-600 font-semibold">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader current="/blog" />
 
       {/* Hero */}
       <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
@@ -130,6 +113,7 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
+      <SiteFooter />
     </div>
   )
 }

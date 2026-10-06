@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { UtensilsCrossed, Store, ShoppingCart } from "lucide-react"
+import { SiteFooter, SiteHeader } from "@/components/site-chrome"
 
 export const metadata: Metadata = {
   title: "Industry Solutions | Restaurant POS | Retail | E-commerce | BuyNswipe®",
@@ -48,7 +49,9 @@ const solutions = [
 
 export default function SolutionsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <SiteHeader current="/solutions" />
+      <main>
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Industry-Specific Solutions</h1>
@@ -106,6 +109,8 @@ export default function SolutionsPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </div>
   )
 }

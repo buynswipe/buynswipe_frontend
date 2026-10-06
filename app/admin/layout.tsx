@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { redirect } from "next/navigation"
+import { headers } from "next/headers"
 import { BarChart3, BookOpen, BriefcaseBusiness, CreditCard, FileClock, LayoutDashboard, Link2, Settings, ShoppingBag, Users } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { LogoutButton } from "./logout-button"
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 const navigation = [
-  { href: "/admin", label: "Overview", icon: LayoutDashboard },
+  { href: "/admin/dashboard", label: "Overview", icon: LayoutDashboard },
   { href: "/admin/leads", label: "Leads & CRM", icon: Users },
   { href: "/admin/content", label: "Content studio", icon: BookOpen },
   { href: "/admin/credit", label: "Credit catalog", icon: CreditCard },
@@ -26,12 +27,15 @@ const navigation = [
 ]
 
 export default async function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const pathname = (await headers()).get("x-next-pathname")
+  if (pathname === "/admin/login") return children
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect("/auth/login?next=/admin")
+  if (!user) redirect("/admin/login?next=/admin/dashboard")
 
   const { data: staff } = await supabase.from("admin_users").select("role,display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle()
-  if (!staff) redirect("/")
+  if (!staff) redirect("/admin/login?error=admin_access_required")
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
