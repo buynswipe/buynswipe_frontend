@@ -26,14 +26,14 @@ const blogCategories = [
     description: "Everything about personal loans, business loans, and credit management",
     articles: [
       {
-        slug: "how-to-improve-credit-score",
+        slug: "how-to-improve-credit-score-quickly",
         title: "How to Improve CIBIL Score Fast",
         excerpt: "10 proven strategies to boost your credit score from 600 to 750+",
         date: "Jan 15, 2025",
         category: "Credit Management",
       },
       {
-        slug: "personal-loan-guide",
+        slug: "personal-loan-complete-guide",
         title: "Complete Guide to Personal Loans",
         excerpt: "Everything you need to know about applying for and managing personal loans",
         date: "Jan 10, 2025",
@@ -46,14 +46,14 @@ const blogCategories = [
     description: "Smart money management and wealth building strategies",
     articles: [
       {
-        slug: "financial-planning-tips",
+        slug: "personal-finance-tips",
         title: "6-Step Financial Planning Guide",
         excerpt: "Create a solid financial plan for short-term and long-term goals",
         date: "Jan 8, 2025",
         category: "Financial Planning",
       },
       {
-        slug: "loan-repayment-strategies",
+        slug: "loan-repayment-tips",
         title: "Best Loan Repayment Strategies",
         excerpt: "Compare Avalanche, Snowball, and other methods to pay off debt faster",
         date: "Jan 5, 2025",
