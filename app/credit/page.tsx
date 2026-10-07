@@ -451,12 +451,14 @@ export default function BuyNswipeCreditPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-                    Check Loan Eligibility Free
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                  <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
+                    <Link href="/credit/eligibility-checker">
+                      Check Loan Eligibility Free
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                    Apply Credit Card
+                  <Button asChild size="lg" variant="outline" className="text-lg px-8 bg-transparent">
+                    <Link href="/credit/affiliate-credit-cards">Apply Credit Card</Link>
                   </Button>
                 </div>
 
@@ -632,7 +634,7 @@ export default function BuyNswipeCreditPage() {
                       Loan without salary slip
                     </li>
                   </ul>
-                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Apply Personal Loan</Button>
+                  <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700"><Link href="/credit/personal-loan">Apply Personal Loan</Link></Button>
                 </CardContent>
               </Card>
 
@@ -664,7 +666,7 @@ export default function BuyNswipeCreditPage() {
                       No guarantor needed
                     </li>
                   </ul>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">Apply Business Loan</Button>
+                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700"><Link href="/credit/business-loan">Apply Business Loan</Link></Button>
                 </CardContent>
               </Card>
 
@@ -696,7 +698,7 @@ export default function BuyNswipeCreditPage() {
                       Govt subsidy benefits
                     </li>
                   </ul>
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700">Apply MSME Loan</Button>
+                  <Button asChild className="w-full bg-purple-600 hover:bg-purple-700"><Link href="/credit/business-loan">Apply MSME Loan</Link></Button>
                 </CardContent>
               </Card>
 
@@ -729,7 +731,7 @@ export default function BuyNswipeCreditPage() {
                       Startup India benefits
                     </li>
                   </ul>
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700">Apply Startup Loan</Button>
+                  <Button asChild className="w-full bg-orange-600 hover:bg-orange-700"><Link href="/credit/startup-loan">Apply Startup Loan</Link></Button>
                 </CardContent>
               </Card>
             </div>
@@ -811,7 +813,7 @@ export default function BuyNswipeCreditPage() {
                       <span>Welcome bonus Rs 1000</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-white text-emerald-700 hover:bg-gray-100">Compare Cashback Cards</Button>
+                  <Button asChild className="w-full bg-white text-emerald-700 hover:bg-gray-100"><Link href="/credit/affiliate-credit-cards/compare">Compare Cashback Cards</Link></Button>
                 </CardContent>
               </Card>
 
@@ -838,7 +840,7 @@ export default function BuyNswipeCreditPage() {
                       <span>Rs 50L travel insurance</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-white text-blue-700 hover:bg-gray-100">Compare Travel Cards</Button>
+                  <Button asChild className="w-full bg-white text-blue-700 hover:bg-gray-100"><Link href="/credit/affiliate-credit-cards/compare">Compare Travel Cards</Link></Button>
                 </CardContent>
               </Card>
 
@@ -865,7 +867,7 @@ export default function BuyNswipeCreditPage() {
                       <span>HP, IOCL, BP partner</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-white text-orange-700 hover:bg-gray-100">Compare Fuel Cards</Button>
+                  <Button asChild className="w-full bg-white text-orange-700 hover:bg-gray-100"><Link href="/credit/affiliate-credit-cards/compare">Compare Fuel Cards</Link></Button>
                 </CardContent>
               </Card>
             </div>
@@ -1100,7 +1102,7 @@ export default function BuyNswipeCreditPage() {
               <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6">
                   <Calculator className="w-10 h-10 text-emerald-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-bold text-gray-900 mb-1">EMI Calculator</h3>
+                  <Link href="/tools/emi-calculator" className="contents"><h3 className="font-bold text-gray-900 mb-1">EMI Calculator</h3></Link>
                   <p className="text-xs text-gray-600">Calculate monthly EMI</p>
                 </CardContent>
               </Card>
@@ -1108,7 +1110,7 @@ export default function BuyNswipeCreditPage() {
               <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6">
                   <FileCheck className="w-10 h-10 text-blue-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-bold text-gray-900 mb-1">Eligibility Check</h3>
+                  <Link href="/credit/eligibility-checker" className="contents"><h3 className="font-bold text-gray-900 mb-1">Eligibility Check</h3></Link>
                   <p className="text-xs text-gray-600">Check loan eligibility</p>
                 </CardContent>
               </Card>
@@ -1116,7 +1118,7 @@ export default function BuyNswipeCreditPage() {
               <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6">
                   <BarChart3 className="w-10 h-10 text-purple-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-bold text-gray-900 mb-1">CIBIL Score</h3>
+                  <Link href="/credit/cibil-score" className="contents"><h3 className="font-bold text-gray-900 mb-1">CIBIL Score</h3></Link>
                   <p className="text-xs text-gray-600">Check credit score free</p>
                 </CardContent>
               </Card>
