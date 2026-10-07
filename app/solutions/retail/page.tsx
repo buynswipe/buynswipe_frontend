@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Store, Package, Users, BarChart3, Zap, Lock } from "lucide-react"
@@ -27,7 +28,7 @@ export default function RetailSolutionsPage() {
           <p className="text-xl text-green-100 mb-8">
             Inventory management and payment processing for modern retail stores
           </p>
-          <Button className="bg-white text-green-600 hover:bg-green-50">Get Retail POS</Button>
+          <Button asChild className="bg-white text-green-600 hover:bg-green-50"><Link href="/contact">Get Retail POS</Link></Button>
         </div>
       </section>
 
@@ -82,7 +83,7 @@ export default function RetailSolutionsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Upgrade Your Retail Store Today</h2>
           <p className="text-xl mb-8 text-green-100">Setup in 24 hours with complete training</p>
-          <Button className="bg-white text-green-600 hover:bg-green-50">Get Retail POS</Button>
+          <Button asChild className="bg-white text-green-600 hover:bg-green-50"><Link href="/contact">Get Retail POS</Link></Button>
         </div>
       </section>
     </main>
