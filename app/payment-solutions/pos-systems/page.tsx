@@ -101,7 +101,7 @@ export default function POSSystemsPage() {
                         ))}
                       </div>
                       <div className="text-2xl font-bold text-purple-600">{pos.price}</div>
-                      <Button className="w-full">Learn More</Button>
+                      <Button asChild className="w-full"><Link href="/contact">Learn More</Link></Button>
                     </div>
                   </CardContent>
                 </Card>

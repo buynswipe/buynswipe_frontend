@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Store, Zap, Users, DollarSign, BarChart3, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -28,7 +29,7 @@ export default function MerchantServicesPage() {
           <p className="text-xl text-emerald-100 mb-8 text-balance">
             Complete ecosystem for accepting, processing, and settling payments
           </p>
-          <Button className="bg-white text-emerald-600 hover:bg-emerald-50">Partner With Us</Button>
+          <Button asChild className="bg-white text-emerald-600 hover:bg-emerald-50"><Link href="/contact">Partner With Us</Link></Button>
         </div>
       </section>
 
@@ -101,7 +102,7 @@ export default function MerchantServicesPage() {
                     <p className="text-2xl font-bold text-emerald-600">{pricing.rate}</p>
                   </div>
                   <p className="text-sm text-gray-600">{pricing.volume}</p>
-                  <Button className="w-full">Learn More</Button>
+                  <Button asChild className="w-full"><Link href="/contact">Learn More</Link></Button>
                 </CardContent>
               </Card>
             ))}
@@ -114,7 +115,7 @@ export default function MerchantServicesPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Become a BuyNswipe® Partner</h2>
           <p className="text-xl mb-8 text-emerald-100">Grow your business with our merchant solutions</p>
-          <Button className="bg-white text-emerald-600 hover:bg-emerald-50">Partner Now</Button>
+          <Button asChild className="bg-white text-emerald-600 hover:bg-emerald-50"><Link href="/contact">Partner Now</Link></Button>
         </div>
       </section>
     </main>

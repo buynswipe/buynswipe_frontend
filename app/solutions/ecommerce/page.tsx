@@ -81,7 +81,7 @@ export default function EcommerceSolutionsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Start Accepting Payments Online Today</h2>
           <p className="text-xl mb-8 text-blue-100">Integration takes less than 1 hour</p>
-          <Button className="bg-white text-blue-600 hover:bg-blue-50">Get Payment Gateway</Button>
+          <Button asChild className="bg-white text-blue-600 hover:bg-blue-50"><Link href="/contact">Get Payment Gateway</Link></Button>
         </div>
       </section>
     </main>
