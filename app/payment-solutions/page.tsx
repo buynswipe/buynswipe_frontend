@@ -57,10 +57,8 @@ export default function PaymentSolutionsPage() {
               From AEPS to POS systems, UPI to international remittance - BuyNswipe® powers your payment journey
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Button className="bg-white text-blue-600 hover:bg-blue-50">Get Started</Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
-                Learn More
-              </Button>
+              <Button asChild className="bg-white text-blue-600 hover:bg-blue-50"><Link href="/contact">Get Started</Link></Button>
+              <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent"><Link href="#solutions">Learn More</Link></Button>
             </div>
           </div>
         </section>

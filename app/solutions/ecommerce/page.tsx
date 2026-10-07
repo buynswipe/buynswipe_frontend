@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ShoppingCart, CreditCard, Shield, TrendingUp, Zap, Globe } from "lucide-react"
@@ -25,7 +26,7 @@ export default function EcommerceSolutionsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">E-commerce Payment Gateway</h1>
           <p className="text-xl text-blue-100 mb-8">Seamless payment processing for online stores and marketplaces</p>
-          <Button className="bg-white text-blue-600 hover:bg-blue-50">Get Payment Gateway</Button>
+          <Button asChild className="bg-white text-blue-600 hover:bg-blue-50"><Link href="/contact">Get Payment Gateway</Link></Button>
         </div>
       </section>
 

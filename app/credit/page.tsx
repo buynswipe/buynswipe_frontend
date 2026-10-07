@@ -404,7 +404,7 @@ export default function BuyNswipeCreditPage() {
               <Link href="#faq" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">
                 FAQ
               </Link>
-              <Button className="bg-emerald-600 hover:bg-emerald-700">Apply Now</Button>
+              <Button asChild className="bg-emerald-600 hover:bg-emerald-700"><Link href="/credit/eligibility-checker">Apply Now</Link></Button>
             </nav>
           </div>
         </header>
