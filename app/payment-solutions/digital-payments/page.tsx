@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Zap, Send, Globe, Shield, CheckCircle, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -116,7 +117,7 @@ export default function DigitalPaymentsPage() {
       {/* CTA */}
       <section className="py-12 px-4 bg-indigo-600 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Start Digital Payments Today</h2>
-        <Button className="bg-white text-indigo-600 hover:bg-indigo-50">Get Started</Button>
+        <Button asChild className="bg-white text-indigo-600 hover:bg-indigo-50"><Link href="/contact">Get Started</Link></Button>
       </section>
     </main>
   )

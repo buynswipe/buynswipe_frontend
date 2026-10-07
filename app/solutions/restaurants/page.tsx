@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { UtensilsCrossed, Clock, Users, TrendingUp, Zap, Shield } from "lucide-react"
@@ -38,7 +39,7 @@ export default function RestaurantSolutionsPage() {
             <p className="text-xl text-orange-100 mb-8">
               Complete solution for dine-in, delivery, and takeout restaurants
             </p>
-            <Button className="bg-white text-orange-600 hover:bg-orange-50">Get Restaurant POS</Button>
+            <Button asChild className="bg-white text-orange-600 hover:bg-orange-50"><Link href="/contact">Get Restaurant POS</Link></Button>
           </div>
         </section>
 
@@ -93,7 +94,7 @@ export default function RestaurantSolutionsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Restaurant?</h2>
             <p className="text-xl mb-8 text-orange-100">Get set up in 24 hours with dedicated support</p>
-            <Button className="bg-white text-orange-600 hover:bg-orange-50">Get Restaurant POS</Button>
+            <Button asChild className="bg-white text-orange-600 hover:bg-orange-50"><Link href="/contact">Get Restaurant POS</Link></Button>
           </div>
         </section>
       </main>

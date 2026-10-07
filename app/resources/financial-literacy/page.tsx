@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { BookOpen, DollarSign, TrendingUp, Shield, PieChart, Zap } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -164,7 +165,7 @@ export default function FinancialLiteracyPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Start Your Financial Journey Today</h2>
           <p className="text-lg mb-8">Get personalized financial guidance with BuyNswipe®</p>
-          <Button className="bg-white text-purple-600 hover:bg-purple-50">Get Started</Button>
+          <Button asChild className="bg-white text-purple-600 hover:bg-purple-50"><Link href="/contact">Get Started</Link></Button>
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Store, Smartphone, Monitor, CreditCard, TrendingUp, CheckCircle, Shield, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -51,7 +52,7 @@ export default function POSSystemsPage() {
             <p className="text-xl text-purple-100 mb-8 text-balance">
               Accept all payment methods with secure, reliable point of sale solutions
             </p>
-            <Button className="bg-white text-purple-600 hover:bg-purple-50">Get POS Terminal</Button>
+            <Button asChild className="bg-white text-purple-600 hover:bg-purple-50"><Link href="/contact">Get POS Terminal</Link></Button>
           </div>
         </section>
 
@@ -100,7 +101,7 @@ export default function POSSystemsPage() {
                         ))}
                       </div>
                       <div className="text-2xl font-bold text-purple-600">{pos.price}</div>
-                      <Button className="w-full">Learn More</Button>
+                      <Button asChild className="w-full"><Link href="/contact">Learn More</Link></Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -149,7 +150,7 @@ export default function POSSystemsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Upgrade Your Checkout?</h2>
             <p className="text-xl mb-8 text-purple-100">Get a POS system set up in 24 hours</p>
-            <Button className="bg-white text-purple-600 hover:bg-purple-50">Get POS Now</Button>
+            <Button asChild className="bg-white text-purple-600 hover:bg-purple-50"><Link href="/contact">Get POS Now</Link></Button>
           </div>
         </section>
       </main>

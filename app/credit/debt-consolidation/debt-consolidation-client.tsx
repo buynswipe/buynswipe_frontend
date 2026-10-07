@@ -117,7 +117,7 @@ export default function DebtConsolidationClient() {
                   </div>
                 </div>
               </div>
-              <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">Calculate Your Savings</Button>
+              <Button asChild className="w-full mt-6 bg-purple-600 hover:bg-purple-700"><Link href="/tools/emi-calculator">Calculate Your Savings</Link></Button>
             </CardContent>
           </Card>
         </div>

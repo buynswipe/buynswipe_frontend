@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Building2, Link2, Zap } from "lucide-react"
@@ -98,7 +99,7 @@ export default function PartnershipsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Partner?</h2>
           <p className="text-xl mb-8 text-green-100">Let's build something great together</p>
-          <Button className="bg-white text-green-600 hover:bg-green-50">Start Partnership Discussion</Button>
+          <Button asChild className="bg-white text-green-600 hover:bg-green-50"><Link href="/contact">Start Partnership Discussion</Link></Button>
         </div>
       </section>
     </main>

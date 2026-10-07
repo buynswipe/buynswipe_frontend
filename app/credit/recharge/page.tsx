@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Zap, Clock, Shield, DollarSign } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -145,7 +146,7 @@ export default function RechargePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Recharge?</h2>
           <p className="text-lg mb-8">Get instant activation in seconds</p>
-          <Button className="bg-white text-orange-600 px-8 py-3 hover:bg-orange-50">Start Recharging</Button>
+          <Button asChild className="bg-white text-orange-600 px-8 py-3 hover:bg-orange-50"><Link href="/contact">Start Recharging</Link></Button>
         </div>
       </section>
     </main>

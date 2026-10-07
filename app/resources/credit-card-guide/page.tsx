@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { CreditCard, TrendingUp, Gift, Zap, Shield, DollarSign } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -225,7 +226,7 @@ export default function CreditCardGuidePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Find Your Perfect Credit Card</h2>
           <p className="text-lg mb-8">Compare cards and apply for the best rewards</p>
-          <Button className="bg-white text-amber-600 hover:bg-amber-50">Browse Cards</Button>
+          <Button asChild className="bg-white text-amber-600 hover:bg-amber-50"><Link href="/credit/affiliate-credit-cards">Browse Cards</Link></Button>
         </div>
       </section>
     </main>
