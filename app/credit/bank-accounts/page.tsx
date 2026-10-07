@@ -325,7 +325,7 @@ export default function BankAccountPage() {
                         <p className="text-sm text-gray-600">{account.features}</p>
                       </div>
                     </div>
-                    <Button className="w-full mt-4">Open Now</Button>
+                    <Button asChild className="w-full mt-4"><Link href="/contact">Open Now</Link></Button>
                   </CardContent>
                 </Card>
               ))}

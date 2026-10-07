@@ -188,7 +188,7 @@ export default function BanksPersonalLoanPage() {
                       <td className="px-4 py-4">{bank.processing}</td>
                       <td className="px-4 py-4">{bank.days}</td>
                       <td className="px-4 py-4">
-                        <Button size="sm">Apply</Button>
+                        <Button asChild size="sm"><Link href="/credit/eligibility-checker">Apply</Link></Button>
                       </td>
                     </tr>
                   ))}

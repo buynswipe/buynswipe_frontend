@@ -43,7 +43,7 @@ export default function ApiDocsPage() {
               <p className="text-gray-700 mb-4">
                 Sign up for a developer account to get your API keys and test credentials.
               </p>
-              <Button className="bg-purple-600 hover:bg-purple-700">Generate API Keys</Button>
+              <Button asChild className="bg-purple-600 hover:bg-purple-700"><Link href="/contact">Generate API Keys</Link></Button>
             </CardContent>
           </Card>
 
@@ -54,7 +54,7 @@ export default function ApiDocsPage() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 mb-4">Review our comprehensive API reference and integration guides.</p>
-              <Button variant="outline">View API Reference</Button>
+              <Button asChild variant="outline"><Link href="#api-endpoints">View API Reference</Link></Button>
             </CardContent>
           </Card>
 
@@ -67,13 +67,13 @@ export default function ApiDocsPage() {
               <p className="text-gray-700 mb-4">
                 Use our sandbox environment to test your integration before going live.
               </p>
-              <Button variant="outline">Access Sandbox</Button>
+              <Button asChild variant="outline"><Link href="/contact">Access Sandbox</Link></Button>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section id="api-endpoints" className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">API Endpoints</h2>
 
@@ -154,10 +154,8 @@ export default function ApiDocsPage() {
           <h2 className="text-3xl font-bold mb-4">Ready to Build?</h2>
           <p className="text-xl mb-8 text-purple-100">Join thousands of developers building with BuyNswipe®</p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button className="bg-white text-purple-600 hover:bg-purple-50">Start Free Trial</Button>
-            <Button variant="outline" className="border-white text-white hover:bg-purple-700 bg-transparent">
-              View Documentation
-            </Button>
+            <Button asChild className="bg-white text-purple-600 hover:bg-purple-50"><Link href="/contact">Start Free Trial</Link></Button>
+            <Button asChild variant="outline" className="border-white text-white hover:bg-purple-700 bg-transparent"><Link href="#api-endpoints">View Documentation</Link></Button>
           </div>
         </div>
       </section>

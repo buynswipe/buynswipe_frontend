@@ -454,7 +454,7 @@ export default function PersonalLoanPage() {
                       <td className="px-6 py-4">{lender.amount}</td>
                       <td className="px-6 py-4">{lender.tenure}</td>
                       <td className="px-6 py-4">
-                        <Button size="sm">Apply</Button>
+                        <Button asChild size="sm"><Link href="/credit/eligibility-checker">Apply</Link></Button>
                       </td>
                     </tr>
                   ))}

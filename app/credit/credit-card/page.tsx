@@ -514,7 +514,7 @@ export default function CreditCardPage() {
                         <span className="font-medium text-sm">{card.reward}</span>
                       </div>
                     </div>
-                    <Button className="w-full mt-4">Apply Now</Button>
+                    <Button asChild className="w-full mt-4"><Link href="/credit/affiliate-credit-cards">Apply Now</Link></Button>
                   </CardContent>
                 </Card>
               ))}
