@@ -296,16 +296,12 @@ export default function CreditCardPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 text-lg px-8">
-                  Check Best Card for You
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10 text-lg px-8 bg-transparent"
-                >
-                  Compare All Cards
-                </Button>
+<Button asChild size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 text-lg px-8">
+              <Link href="/credit/affiliate-credit-cards">Check Best Card for You</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 bg-transparent">
+              <Link href="/credit/affiliate-credit-cards/compare">Compare All Cards</Link>
+            </Button>
               </div>
             </div>
           </div>
@@ -472,9 +468,9 @@ export default function CreditCardPage() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full mt-4 bg-transparent" variant="outline">
-                      View All <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+<Button asChild className="w-full mt-4 bg-transparent" variant="outline">
+                <Link href="/credit/affiliate-credit-cards">View All <ArrowRight className="w-4 h-4 ml-2" /></Link>
+              </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -744,12 +740,12 @@ export default function CreditCardPage() {
               Answer 5 simple questions to get personalized card recommendations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 text-lg px-8">
-                Get Card Recommendations
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
-                <Phone className="w-5 h-5 mr-2" /> Call +91 8171169007
-              </Button>
+<Button asChild size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 text-lg px-8">
+              <Link href="/credit/affiliate-credit-cards">Get Card Recommendations</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
+              <a href="tel:+918171169007"><Phone className="w-5 h-5 mr-2" /> Call +91 8171169007</a>
+            </Button>
             </div>
           </div>
         </section>
