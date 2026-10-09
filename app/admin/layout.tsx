@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { headers } from "next/headers"
-import { BarChart3, BookOpen, BriefcaseBusiness, CreditCard, FileClock, LayoutDashboard, Link2, Settings, ShoppingBag, Users } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { LogoutButton } from "./logout-button"
 import { AdminNav } from "./admin-nav"
@@ -14,17 +13,17 @@ export const metadata: Metadata = {
 }
 
 const navigation = [
-  { href: "/admin/dashboard", label: "Overview", icon: LayoutDashboard },
-  { href: "/admin/leads", label: "Leads & CRM", icon: Users },
-  { href: "/admin/content", label: "Content studio", icon: BookOpen },
-  { href: "/admin/credit", label: "Credit catalog", icon: CreditCard },
-  { href: "/admin/affiliates", label: "Affiliates", icon: Link2 },
-  { href: "/admin/team", label: "Team & roles", icon: BriefcaseBusiness },
-  { href: "/admin/analytics", label: "Analytics", icon: BarChart3 },
-  { href: "/admin/audit", label: "Audit history", icon: FileClock },
-  { href: "/admin/settings", label: "Settings", icon: Settings },
-  { href: "/admin/shop", label: "ShopNdeal", icon: ShoppingBag },
-]
+  { href: "/admin/dashboard", label: "Overview", icon: "dashboard" },
+  { href: "/admin/leads", label: "Leads & CRM", icon: "users" },
+  { href: "/admin/content", label: "Content studio", icon: "book" },
+  { href: "/admin/credit", label: "Credit catalog", icon: "credit-card" },
+  { href: "/admin/affiliates", label: "Affiliates", icon: "link" },
+  { href: "/admin/team", label: "Team & roles", icon: "briefcase" },
+  { href: "/admin/analytics", label: "Analytics", icon: "chart" },
+  { href: "/admin/audit", label: "Audit history", icon: "file-clock" },
+  { href: "/admin/settings", label: "Settings", icon: "settings" },
+  { href: "/admin/shop", label: "ShopNdeal", icon: "shopping-bag" },
+] as const
 
 export default async function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const pathname = (await headers()).get("x-next-pathname")
