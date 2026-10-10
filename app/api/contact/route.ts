@@ -10,9 +10,11 @@ export async function POST(request: Request) {
     const subject = typeof body.subject === "string" ? body.subject.trim() : ""
     const message = typeof body.message === "string" ? body.message.trim() : ""
     const phone = typeof body.phone === "string" ? body.phone.trim() : null
-    const source = body.source === "webinar" ? "webinar" : "contact"
+    const source = body.source === "webinar" ? "webinar" : body.source === "go" ? "go" : "contact"
+    const inquiryType = typeof body.type === "string" ? body.type.trim() : ""
     const submissionName = source === "webinar" && !name ? "Webinar subscriber" : name
     const submissionMessage = source === "webinar" && !message ? "Subscribed to webinar updates" : message
+    const storedSubject = inquiryType ? `${subject}${subject ? " — " : ""}${inquiryType}` : subject
 
     if (submissionName.length < 2 || submissionName.length > 120 || !emailPattern.test(email) || submissionMessage.length < 10 || submissionMessage.length > 5000) {
       return NextResponse.json({ error: "Please check your details and try again." }, { status: 400 })
@@ -21,12 +23,12 @@ export async function POST(request: Request) {
     const response = await fetch(`${process.env.SUPABASE_URL}/rest/v1/contact_submissions`, {
       method: "POST",
       headers: {
-        apikey: process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? "",
-        Authorization: `Bearer ${process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? ""}`,
+        apikey: process.env.SUPABASE_SECRET_KEY ?? process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? "",
+        Authorization: `Bearer ${process.env.SUPABASE_SECRET_KEY ?? process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? ""}`,
         "Content-Type": "application/json",
         Prefer: "return=minimal",
       },
-      body: JSON.stringify({ name: submissionName, email, phone, subject, message: submissionMessage, source, status: "new" }),
+      body: JSON.stringify({ name: submissionName, email, phone, subject: storedSubject, message: submissionMessage, source, status: "new" }),
       signal: AbortSignal.timeout(8000),
     })
 
