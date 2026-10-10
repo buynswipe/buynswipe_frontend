@@ -33,8 +33,8 @@ export default async function AdminLayout({ children }: Readonly<{ children: Rea
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect("/admin/login?next=/admin/dashboard")
 
-  const { data: staff } = await supabase.from("admin_users").select("role,display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle()
-  if (!staff) redirect("/admin/login?error=admin_access_required")
+  const { data: staff, error: staffError } = await supabase.from("admin_users").select("role,display_name").eq("user_id", user.id).eq("is_active", true).limit(1).maybeSingle()
+  if (staffError || !staff) redirect("/admin/login?error=admin_access_required")
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
