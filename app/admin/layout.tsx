@@ -43,7 +43,7 @@ export default async function AdminLayout({ children }: Readonly<{ children: Rea
         <AdminNav navigation={navigation} />
         <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-slate-950 p-4 text-white"><p className="text-xs font-bold uppercase tracking-wider text-slate-400">Signed in as</p><p className="mt-2 truncate text-sm font-bold">{staff.display_name || user.email}</p><p className="mt-1 text-xs capitalize text-blue-300">{staff.role?.replace("_", " ") || "staff"}</p><LogoutButton /></div>
       </aside>
-      <main className="min-h-screen lg:pl-64"><div className="border-b border-slate-200 bg-white px-5 py-3 lg:hidden"><AdminNav navigation={navigation} mobile /></div><div className="mx-auto max-w-7xl p-5 sm:p-8">{children}</div></main>
+      <main className="min-h-screen lg:pl-64"><div className="border-b border-slate-200 bg-white px-4 py-3 lg:hidden"><div className="mb-3 flex items-center justify-between"><div><p className="text-base font-black tracking-tight">BuyNswipe®</p><p className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-600">Portal admin</p></div><LogoutButton /></div><AdminNav navigation={navigation} mobile /></div><div className="mx-auto max-w-7xl p-5 sm:p-8">{children}</div></main>
     </div>
   )
 }
