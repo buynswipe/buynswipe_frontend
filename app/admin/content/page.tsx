@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, FileText } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { NewContentForm } from "./new-content-form"
 
 const contentAreas = [
@@ -10,9 +11,10 @@ const contentAreas = [
 ] as const
 
 export default async function AdminContentPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return null
+  const supabase = createAdminClient()
   const { data: staff } = await supabase.from("admin_users").select("role, is_active").eq("user_id", user.id).maybeSingle()
   if (!staff?.is_active) return null
   const { data: documents } = await supabase.from("cms_documents").select("id, slug, title, document_type, status, updated_at").order("updated_at", { ascending: false }).limit(50)

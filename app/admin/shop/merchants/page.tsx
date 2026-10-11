@@ -1,9 +1,9 @@
 import Link from "next/link"
 import { ArrowLeft, Store } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function ShopMerchantsAdminPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data: merchants, error } = await supabase.from("shop_merchants").select("id, name, slug, category, status, verification_status, affiliate_status, cashback_available, created_at").order("created_at", { ascending: false }).limit(100)
 
   const merchantRows = merchants ?? []

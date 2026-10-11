@@ -1,13 +1,13 @@
 import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { LinkCheckControl } from "../link-check-control"
 
 export default async function AffiliateOfferPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!/^[0-9a-f-]{36}$/i.test(id)) redirect("/admin/affiliates")
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ data: offer }, { data: checks }] = await Promise.all([
     supabase.from("affiliate_offers").select("id, name, partner, category, destination_url, tracking_url, disclosure, status, health_status, last_checked_at").eq("id", id).maybeSingle(),
     supabase.from("affiliate_link_checks").select("id, http_status, is_healthy, error_message, checked_at").eq("offer_id", id).order("checked_at", { ascending: false }).limit(20),

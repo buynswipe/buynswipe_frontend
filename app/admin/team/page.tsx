@@ -1,9 +1,9 @@
 import Link from "next/link"
 import { ArrowLeft, ShieldCheck, Users } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AdminTeamPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return null
 

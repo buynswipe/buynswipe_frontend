@@ -1,7 +1,7 @@
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AdminCreatorsPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ data: creators }, { data: campaigns }, { data: applications }, { data: earnings }] = await Promise.all([
     supabase.from("shop_creators").select("id, display_name, niche, status, verification_status, created_at").order("created_at", { ascending: false }).limit(100),
     supabase.from("shop_campaigns").select("id, name, status, campaign_type, starts_at, ends_at").order("created_at", { ascending: false }).limit(100),

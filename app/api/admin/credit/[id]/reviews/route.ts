@@ -1,14 +1,16 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 const decisions = new Set(["approved", "rejected", "needs_changes"])
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!/^[0-9a-f-]{36}$/i.test(id)) return NextResponse.json({ error: "Invalid product" }, { status: 400 })
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const supabase = createAdminClient()
   const { data: allowed } = await supabase.rpc("is_admin_staff", { required_roles: ["owner", "admin", "editor"] })
   if (!allowed) return NextResponse.json({ error: "Forbidden" }, { status: 403 })
   const body = await request.json()
@@ -24,9 +26,10 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
 
 export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const supabase = createAdminClient()
   const { data, error } = await supabase.from("credit_reviews").select("id, decision, notes, created_at, reviewer_id").eq("product_id", id).order("created_at", { ascending: false })
   if (error) return NextResponse.json({ error: "Unable to load reviews" }, { status: 500 })
   return NextResponse.json(data)
