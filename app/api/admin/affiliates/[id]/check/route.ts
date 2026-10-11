@@ -1,14 +1,16 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 const blockedHosts = new Set(["localhost", "127.0.0.1", "::1"])
 
 export async function POST(_: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!/^[0-9a-f-]{36}$/i.test(id)) return NextResponse.json({ error: "Invalid offer" }, { status: 400 })
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const supabase = createAdminClient()
   const { data: allowed } = await supabase.rpc("is_admin_staff", { required_roles: ["owner", "admin", "affiliate_manager"] })
   if (!allowed) return NextResponse.json({ error: "Forbidden" }, { status: 403 })
   const { data: offer } = await supabase.from("affiliate_offers").select("destination_url").eq("id", id).single()

@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export async function GET() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const supabase = createAdminClient()
   const { data: staff } = await supabase.from("admin_users").select("role").eq("user_id", user.id).eq("is_active", true).maybeSingle()
   if (!staff) return NextResponse.json({ error: "Forbidden" }, { status: 403 })
   const { data, error } = await supabase.from("contact_submissions").select("name,email,phone,subject,message,source,status,created_at").order("created_at", { ascending: false }).limit(5000)
