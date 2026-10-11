@@ -2,15 +2,17 @@ import Link from "next/link"
 import { redirect } from "next/navigation"
 import { ArrowLeft, Download, Mail, Phone, Search } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { LeadStatusControl } from "./lead-status-control"
 
 export default async function AdminLeadsPage({ searchParams }: { searchParams: Promise<{ q?: string; status?: string; source?: string; page?: string }> }) {
   const filters = await searchParams
   const page = Math.max(1, Number.parseInt(filters.page ?? "1", 10) || 1)
   const pageSize = 25
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) redirect("/auth/login?next=/admin/leads")
+  const supabase = createAdminClient()
 
   const { data: staff } = await supabase.from("admin_users").select("role, display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle()
   if (!staff) redirect("/auth/login?error=admin_access_required")

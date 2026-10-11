@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Activity, ArrowUpRight, FileClock, FileText, Handshake, Inbox, LayoutDashboard, Users } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 const modules = [
   { href: "/admin/leads", label: "Lead inbox", description: "Review and triage contact submissions.", icon: Inbox, accent: "bg-sky-100 text-sky-700" },
@@ -13,9 +14,10 @@ const modules = [
 ]
 
 export default async function AdminPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return null
+  const supabase = createAdminClient()
   const [{ data: staff }, leads, auditEvents, contentReview, brokenLinks] = await Promise.all([
     supabase.from("admin_users").select("role, display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle(),
     safeCount(() => supabase.from("contact_submissions").select("id", { count: "exact", head: true }).eq("status", "new")),

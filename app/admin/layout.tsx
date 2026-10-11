@@ -2,6 +2,7 @@ import Link from "next/link"
 import { redirect } from "next/navigation"
 import { headers } from "next/headers"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { LogoutButton } from "./logout-button"
 import { AdminNav } from "./admin-nav"
 import type { Metadata } from "next"
@@ -29,9 +30,10 @@ export default async function AdminLayout({ children }: Readonly<{ children: Rea
   const pathname = (await headers()).get("x-next-pathname")
   if (pathname === "/admin/login") return children
 
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) redirect("/admin/login?next=/admin/dashboard")
+  const supabase = createAdminClient()
 
   const { data: staff, error: staffError } = await supabase.from("admin_users").select("role,display_name").eq("user_id", user.id).eq("is_active", true).limit(1).maybeSingle()
   if (staffError || !staff) redirect("/admin/login?error=admin_access_required")
