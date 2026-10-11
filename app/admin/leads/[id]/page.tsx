@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
 import { ArrowLeft, Mail, Phone } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { LeadStatusControl } from "../lead-status-control"
 import { LeadNotesForm } from "../lead-notes-form"
 import { LeadAssignmentControl } from "../lead-assignment-control"
@@ -9,9 +10,10 @@ import { LeadAssignmentControl } from "../lead-assignment-control"
 export default async function LeadDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!/^[0-9a-f-]{36}$/i.test(id)) redirect("/admin/leads")
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) redirect(`/auth/login?next=/admin/leads/${id}`)
+  const supabase = createAdminClient()
   const { data: staff } = await supabase.from("admin_users").select("role").eq("user_id", user.id).eq("is_active", true).maybeSingle()
   if (!staff) redirect("/auth/login?error=admin_access_required")
   const [{ data: lead }, { data: notes }, { data: members }] = await Promise.all([
