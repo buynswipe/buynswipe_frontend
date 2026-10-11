@@ -1,7 +1,7 @@
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AuditPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ data: events }, { data: reports }] = await Promise.all([
     supabase.from("admin_audit_logs").select("id, action, entity_type, entity_id, metadata, created_at").order("created_at", { ascending: false }).limit(100),
     supabase.from("shop_coupon_reports").select("id, coupon_code, merchant, reason, details, status, created_at").eq("status", "open").order("created_at", { ascending: false }).limit(50),

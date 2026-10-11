@@ -1,10 +1,10 @@
 import Link from "next/link"
 import { ArrowLeft, CheckCircle2, Clock3, ShieldCheck } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { NewProductForm } from "./new-product-form"
 
 export default async function AdminCreditPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data } = await supabase.from("credit_products").select("id,name,provider,product_type,status,source_url,review_due_at,updated_at").order("updated_at", { ascending: false })
   const products = data ?? []
   const published = products.filter((product) => product.status === "published").length

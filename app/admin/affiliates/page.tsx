@@ -1,10 +1,10 @@
 import Link from "next/link"
 import { ArrowLeft, CheckCircle2, Link2, RefreshCw, XCircle } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { NewOfferForm } from "./new-offer-form"
 
 export default async function AdminAffiliatesPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data } = await supabase.from("affiliate_offers").select("id,name,partner,category,status,health_status,destination_url,disclosure,last_checked_at,updated_at").order("updated_at", { ascending: false })
   const offers = data ?? []
   const active = offers.filter((offer) => offer.status === "active").length

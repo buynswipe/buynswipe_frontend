@@ -1,12 +1,12 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { CreditReviewForm } from "../credit-review-form"
 
 export default async function CreditProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!/^[0-9a-f-]{36}$/i.test(id)) notFound()
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ data: product }, { data: sources }, { data: reviews }] = await Promise.all([
     supabase.from("credit_products").select("id, name, provider, product_type, status, rate_text, fee_text, eligibility, source_url, review_due_at, updated_at").eq("id", id).maybeSingle(),
     supabase.from("credit_claim_sources").select("id, claim_type, claim_text, source_url, verified_at, expires_at").eq("product_id", id).order("created_at", { ascending: false }),

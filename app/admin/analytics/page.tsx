@@ -1,8 +1,8 @@
 import { BarChart3, CheckCircle2, FileText, Link2, Users } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AdminAnalyticsPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ data: leads }, { data: content }, { data: offers }, { data: products }] = await Promise.all([
     supabase.from("contact_submissions").select("source,status,created_at"),
     supabase.from("cms_documents").select("document_type,status"),

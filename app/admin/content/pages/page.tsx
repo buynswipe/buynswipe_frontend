@@ -1,11 +1,13 @@
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AdminPagesPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return null
+  const supabase = createAdminClient()
   const { data: pages } = await supabase.from("cms_documents").select("id, title, slug, status, updated_at, seo_title").eq("document_type", "page").order("updated_at", { ascending: false })
 
   return (

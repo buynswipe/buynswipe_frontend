@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowUpRight, Bell, Heart, MousePointerClick, ShoppingBag, Search, ShieldCheck, Sparkles } from "lucide-react"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 const modules = [
   { href: "/admin/audit", label: "Coupon reports", description: "Review open customer reports before changing trust status.", icon: Bell },
@@ -14,7 +14,7 @@ const modules = [
 ]
 
 export default async function ShopAdminPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const [{ count: outboundClicks }, { count: analyses }, { count: aiQueries }, { count: reportedLinks }, { count: healthyChecks }, { count: couponReports }] = await Promise.all([
     supabase.from("shop_attribution_events").select("id", { count: "exact", head: true }).eq("event_type", "outbound_click"),
     supabase.from("shop_attribution_events").select("id", { count: "exact", head: true }).eq("event_type", "url_analysis"),
