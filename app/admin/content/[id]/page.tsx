@@ -1,15 +1,17 @@
 import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
+import { createClient } from "@/lib/supabase/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { ContentEditForm } from "./edit-form"
 import { RevisionHistory } from "./revision-history"
 
 export default async function AdminContentDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const supabase = createAdminClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) redirect(`/auth/login?next=/admin/content/${id}`)
+  const supabase = createAdminClient()
   const { data: staff } = await supabase.from("admin_users").select("role, is_active").eq("user_id", user.id).maybeSingle()
   if (!staff?.is_active || !["owner", "admin", "editor"].includes(staff.role)) redirect("/auth/login?error=admin_access_required")
   const { data: document } = await supabase.from("cms_documents").select("id, title, excerpt, content, status, scheduled_at, seo_title, seo_description, slug, document_type").eq("id", id).single()

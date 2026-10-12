@@ -1,11 +1,13 @@
 import Link from "next/link"
 import { ArrowLeft, ShieldCheck, Users } from "lucide-react"
+import { createClient } from "@/lib/supabase/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 
 export default async function AdminTeamPage() {
-  const supabase = createAdminClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
   if (!user) return null
+  const supabase = createAdminClient()
 
   const { data: staff } = await supabase.from("admin_users").select("role, display_name").eq("user_id", user.id).eq("is_active", true).maybeSingle()
   if (!staff || !["owner", "admin"].includes(staff.role)) return <main className="min-h-screen bg-slate-950 p-6 text-white"><p>Access denied.</p></main>

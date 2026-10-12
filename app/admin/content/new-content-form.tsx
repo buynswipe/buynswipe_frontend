@@ -19,7 +19,7 @@ export function NewContentForm() {
     const response = await fetch("/api/admin/content", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title, slug, documentType }) })
     const result = await response.json()
     if (!response.ok) setError(result.error || "Unable to create content")
-    else { setOpen(false); setTitle(""); setSlug(""); router.refresh() }
+    else { setOpen(false); setTitle(""); setSlug(""); router.push(`/admin/content/${result.data.id}`) }
     setSaving(false)
   }
 
