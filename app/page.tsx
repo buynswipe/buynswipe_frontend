@@ -39,7 +39,7 @@ export default function BuyNswipeLanding() {
             </div>
             <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
             <Badge variant="secondary" className="ml-2">
-              For Sale
+              Acquisition opportunity
             </Badge>
           </div>
           <nav aria-label="Primary navigation" className="hidden lg:flex space-x-1">
@@ -64,7 +64,7 @@ export default function BuyNswipeLanding() {
             BuyNswipe® – Pre-Funded, Govt-Recognized <span className="text-blue-600">Fintech SaaS Startup</span> for Sale
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Registered company (2017) • Trademarked • Premium domains • ₹17 L seed-funded • Clean and compliant
+            Registered company since 2017 • Trademarked brand • Premium domains • ₹17 lakh reported seed funding
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -87,13 +87,11 @@ export default function BuyNswipeLanding() {
               <div className="text-left">
                 <Badge className="bg-white/20 text-white border-0 mb-2">Featured Product</Badge>
                 <h3 className="text-xl font-bold">BuyNswipe® Credit - AI-Powered Loan & Credit Card Marketplace</h3>
-                <p className="text-emerald-100 text-sm mt-1">Instant loans, credit cards, BNPL - Compare 50+ banks</p>
+                <p className="text-emerald-100 text-sm mt-1">Compare loan, card, and BNPL options from participating providers</p>
               </div>
-              <Link href="/credit">
-                <Button size="lg" className="bg-white text-emerald-700 hover:bg-gray-100 whitespace-nowrap">
-                  Explore BuyNswipe® Credit
-                </Button>
-              </Link>
+              <Button asChild size="lg" className="bg-white text-emerald-700 hover:bg-gray-100 whitespace-nowrap">
+                <Link href="/credit">Explore BuyNswipe® Credit</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -142,7 +140,7 @@ export default function BuyNswipeLanding() {
               <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">BuyNswipe® Platform & POS Integration</h3>
-                  <p className="text-gray-600 text-sm">Future payment infrastructure</p>
+                  <p className="text-gray-600 text-sm">Concept and integration roadmap</p>
                 </div>
 
                 {/* POS System Mockup */}
@@ -259,8 +257,8 @@ export default function BuyNswipeLanding() {
               <Card className="border-2 hover:border-blue-200 transition-colors">
                 <CardContent className="p-6 text-center">
                   <Smartphone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Mobile App</h4>
-                  <p className="text-gray-600 text-sm">N/A</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Mobile-ready experience</h4>
+                  <p className="text-gray-600 text-sm">Responsive web access across modern devices</p>
                 </CardContent>
               </Card>
 

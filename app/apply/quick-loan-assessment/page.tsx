@@ -24,7 +24,7 @@ export default function QuickLoanAssessmentPage() {
         <div className="max-w-3xl mx-auto text-center">
           <Badge className="bg-yellow-400 text-yellow-900 mb-4">Quick Assessment</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Quick Loan Eligibility Check</h1>
-          <p className="text-xl text-green-100">Get your instant eligibility result in 3 simple steps</p>
+          <p className="text-xl text-green-100">Get an indicative result in 3 simple steps; final decisions are made by the lender</p>
         </div>
       </section>
 
@@ -128,8 +128,10 @@ export default function QuickLoanAssessmentPage() {
                 </div>
               </div>
 
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-3 h-auto">
-                Check Eligibility
+              <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-green-600 focus:ring-green-600" /><span>I understand this is an indicative assessment, not a loan approval. My information may be used to connect me with participating providers.</span></label>
+              <p className="text-xs text-gray-500">We do not guarantee approval, rates, or disbursal. Final eligibility, pricing, and documentation are determined by the provider.</p>
+              <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-3 h-auto">
+                Review eligibility
               </Button>
             </form>
           </div>

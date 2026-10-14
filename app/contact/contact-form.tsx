@@ -22,10 +22,12 @@ export function ContactForm() {
       <div><label htmlFor="contact-email" className="block text-sm font-semibold mb-2">Email</label><input id="contact-email" name="email" type="email" required className="w-full border border-gray-300 rounded-lg p-2" placeholder="your@email.com" /></div>
       <div><label htmlFor="contact-phone" className="block text-sm font-semibold mb-2">Phone (optional)</label><input id="contact-phone" name="phone" type="tel" className="w-full border border-gray-300 rounded-lg p-2" placeholder="+91" /></div>
       <div><label htmlFor="contact-subject" className="block text-sm font-semibold mb-2">Inquiry Type</label><select id="contact-subject" name="subject" className="w-full border border-gray-300 rounded-lg p-2"><option>Acquisition Inquiry</option><option>Partnership</option><option>Customer Support</option><option>General Question</option></select></div>
-      <div><label htmlFor="contact-message" className="block text-sm font-semibold mb-2">Message</label><textarea id="contact-message" name="message" required minLength={10} maxLength={5000} className="w-full border border-gray-300 rounded-lg p-2 h-32" placeholder="Your message here..." /></div>
+      <div><label htmlFor="contact-message" className="block text-sm font-semibold mb-2">Message</label><textarea id="contact-message" name="message" required minLength={10} maxLength={5000} className="w-full border border-gray-300 rounded-lg p-2 h-32" placeholder="Tell us how we can help" aria-describedby="contact-message-help" /><p id="contact-message-help" className="mt-1 text-xs text-gray-500">Please do not include passwords, card numbers, or other sensitive information.</p></div>
+      <label className="flex items-start gap-3 text-sm text-gray-600"><input name="consent" type="checkbox" value="yes" required className="mt-1 size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" /><span>I agree that BuyNswipe may use these details to respond to my inquiry. See our <a href="/privacy" className="font-semibold text-blue-700 underline">privacy notice</a>.</span></label>
       <Button type="submit" disabled={status === "submitting"} className="w-full bg-blue-600 hover:bg-blue-700">{status === "submitting" ? "Sending…" : "Send Message"}</Button>
-      {status === "success" && <p role="status" className="text-sm text-green-700">Thanks — your message was submitted successfully.</p>}
-      {status === "error" && <p role="alert" className="text-sm text-red-700">We could not submit your message. Please try again.</p>}
+      <p className="text-xs text-gray-500">We usually respond within one business day. This form is for general, partnership, support, and acquisition inquiries—not loan approval.</p>
+      {status === "success" && <p role="status" aria-live="polite" className="text-sm text-green-700">Thanks — your message was submitted successfully.</p>}
+      {status === "error" && <p role="alert" className="text-sm text-red-700">We could not submit your message. Please check your details and try again.</p>}
     </form>
   )
 }

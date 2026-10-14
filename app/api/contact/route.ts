@@ -11,12 +11,13 @@ export async function POST(request: Request) {
     const message = typeof body.message === "string" ? body.message.trim() : ""
     const phone = typeof body.phone === "string" ? body.phone.trim() : null
     const source = body.source === "webinar" ? "webinar" : body.source === "go" ? "go" : "contact"
+    const consent = body.consent === "yes"
     const inquiryType = typeof body.type === "string" ? body.type.trim() : ""
     const submissionName = source === "webinar" && !name ? "Webinar subscriber" : name
     const submissionMessage = source === "webinar" && !message ? "Subscribed to webinar updates" : message
     const storedSubject = inquiryType ? `${subject}${subject ? " — " : ""}${inquiryType}` : subject
 
-    if (submissionName.length < 2 || submissionName.length > 120 || !emailPattern.test(email) || submissionMessage.length < 10 || submissionMessage.length > 5000) {
+    if (!consent || submissionName.length < 2 || submissionName.length > 120 || !emailPattern.test(email) || submissionMessage.length < 10 || submissionMessage.length > 5000) {
       return NextResponse.json({ error: "Please check your details and try again." }, { status: 400 })
     }
 

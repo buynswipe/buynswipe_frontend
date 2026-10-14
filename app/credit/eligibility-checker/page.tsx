@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Loan Eligibility Calculator - Check Instant Loan Eligibility Free Online",
   description:
-    "Check instant loan eligibility for personal loan, business loan, credit card online free. Real-time eligibility checker with AI-powered algorithm. Get instant approval status in 2 minutes. No impact on credit score.",
+    "Estimate potential eligibility for personal loan, business loan, or credit card options. Results are indicative only, are not approval, and do not guarantee an offer or rate.",
   keywords: [
     "loan eligibility calculator",
     "check loan eligibility",
@@ -85,11 +85,11 @@ export default function EligibilityCheckerPage() {
                 AI-Powered Eligibility Check
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">
-                Check Loan Eligibility Instantly - Free Online Calculator
+                Estimate loan eligibility with clear assumptions
               </h1>
               <p className="text-xl text-gray-600 mb-4">
-                Real-time instant eligibility check for personal loan, business loan, credit card, and BNPL. Get
-                approval probability in 2 minutes. No impact on credit score.
+                Indicative eligibility check for personal loan, business loan, credit card, and BNPL options. Get
+                an estimate in about 2 minutes. Results are not approval and do not guarantee an offer or rate.
               </p>
               <p className="text-gray-500 mb-8">
                 Trusted by 10+ million Indians. Check eligibility free with our AI-powered loan eligibility calculator.
@@ -175,9 +175,11 @@ export default function EligibilityCheckerPage() {
                     />
                   </div>
 
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg" size="lg">
+                  <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" /><span>I understand this is an indicative assessment, not a loan approval, and agree to the <a href="/privacy" className="font-semibold text-blue-700 underline">privacy notice</a>.</span></label>
+                  <p className="text-xs text-gray-500">Final decisions, rates, fees, and documentation come from the selected provider. We do not guarantee approval.</p>
+                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg" size="lg">
                     <CheckCircle className="w-5 h-5 mr-2" />
-                    Check Eligibility Instantly Free
+                    Review indicative result
                   </Button>
                 </div>
               </CardContent>
@@ -211,8 +213,8 @@ export default function EligibilityCheckerPage() {
                 <Card>
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-orange-600 mb-2">4</div>
-                    <h3 className="font-bold text-gray-900 mb-2">Quick Approval</h3>
-                    <p className="text-sm text-gray-600">Apply instantly and get approval in 2 minutes</p>
+                    <h3 className="font-bold text-gray-900 mb-2">Review options</h3>
+                    <p className="text-sm text-gray-600">Review indicative matches; final decisions come from the provider</p>
                   </CardContent>
                 </Card>
               </div>
