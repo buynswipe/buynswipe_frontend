@@ -265,8 +265,8 @@ export default function BuyNswipeLanding() {
               <Card className="border-2 hover:border-blue-200 transition-colors">
                 <CardContent className="p-6 text-center">
                   <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Govt Recognition</h4>
-                  <p className="text-gray-600 text-sm">Startup India certified</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Company records</h4>
+                  <p className="text-gray-600 text-sm">Verify current Startup India or DPIIT status during diligence</p>
                 </CardContent>
               </Card>
             </div>
@@ -458,8 +458,8 @@ export default function BuyNswipeLanding() {
                 <div className="flex items-start space-x-3">
                   <CreditCard className="w-6 h-6 text-green-600 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">₹1,200+ Crore Prepaid Market</h4>
-                    <p className="text-gray-600">Growing at 22% CAGR with corporate adoption</p>
+<h4 className="font-semibold text-gray-900">Prepaid opportunity</h4>
+                  <p className="text-gray-600">Validate current market size, growth, and adoption data during diligence</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -651,8 +651,8 @@ export default function BuyNswipeLanding() {
                     <span className="text-gray-600">Regulatory Compliance</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600">Government Recognition</span>
-                    <Badge className="bg-green-100 text-green-800">✓ DPIIT Certified</Badge>
+<span className="text-gray-600">Government records</span>
+                <Badge className="bg-green-100 text-green-800">Verify during diligence</Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-600">Intellectual Property</span>
@@ -805,8 +805,8 @@ export default function BuyNswipeLanding() {
                 <p className="text-sm text-gray-500 mt-1">At scale operations</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">₹50+ Cr</div>
-                <p className="text-gray-600 font-medium">5-Year Revenue Potential</p>
+                <div className="text-3xl font-bold text-orange-600 mb-2">Revenue plan</div>
+                <p className="text-gray-600 font-medium">Validate projections, assumptions, and records during diligence</p>
                 <p className="text-sm text-gray-500 mt-1">With strategic partnerships</p>
               </div>
             </div>
@@ -826,8 +826,8 @@ export default function BuyNswipeLanding() {
             <div className="flex items-start space-x-3">
               <CheckCircle className="w-6 h-6 text-green-600 mt-1" />
               <div>
-                <h3 className="font-semibold text-gray-900">Fintech / SaaS Entrepreneurs</h3>
-                <p className="text-gray-600">Seeking instant brand + legal infrastructure</p>
+<h3 className="font-semibold text-gray-900">Fintech / SaaS acquirers</h3>
+                  <p className="text-gray-600">Seeking an established brand and platform to evaluate through diligence</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">

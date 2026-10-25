@@ -39,7 +39,7 @@ export default function EcommerceSolutionsPage() {
               { icon: ShoppingCart, title: "Order Management", desc: "Track and manage all orders" },
               { icon: TrendingUp, title: "Subscription Billing", desc: "Recurring payment support" },
               { icon: Shield, title: "Fraud Protection", desc: "Advanced fraud detection" },
-              { icon: Zap, title: "Instant Settlement", desc: "Quick payouts to your account" },
+              { icon: Zap, title: "Settlement visibility", desc: "Review payout timing and terms for your provider and plan" },
               { icon: Globe, title: "Multi-currency", desc: "Support for global transactions" },
             ].map((feature) => (
               <Card key={feature.title}>
@@ -63,7 +63,7 @@ export default function EcommerceSolutionsPage() {
             {[
               "Accept payments from all major cards and wallets",
               "Reduce cart abandonment with smooth checkout",
-              "Process refunds instantly and automatically",
+              "Manage refunds through documented workflows and provider terms",
               "Manage subscriptions and recurring billing",
               "Get detailed transaction reports and analytics",
               "Protect customer data with PCI DSS compliance",

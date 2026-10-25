@@ -51,7 +51,7 @@ export default function StartupLoanClientPage() {
         "Mudra Loans: 0-2% subsidy available. Other startup loans: 8-12% p.a. depending on credit profile and collateral. CGTMSE guaranteed loans offer competitive rates with government guarantee.",
     },
     {
-      question: "How long does startup loan approval take?",
+      question: "How long does startup loan provider review take?",
       answer:
         "Mudra loans: 3-7 days. CGTMSE loans: 10-15 days. Private sector startups: 2-4 weeks. Online applications are processed faster.",
     },
@@ -72,7 +72,7 @@ export default function StartupLoanClientPage() {
             Startup Loans - Fuel Your Business Growth
           </h1>
           <p className="text-xl text-emerald-100 mb-8">
-            Mudra loans, CGTMSE guarantee, government schemes • Zero to minimal collateral • Instant approval
+            Explore Mudra, CGTMSE, and other scheme information • Collateral requirements vary • Provider review required
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-white text-emerald-600 font-semibold px-8 py-3 rounded-lg hover:bg-emerald-50 transition">
@@ -129,7 +129,7 @@ export default function StartupLoanClientPage() {
             {[
               { step: 1, title: "Register", desc: "Create account and enter basic details" },
               { step: 2, title: "Submit Documents", desc: "Upload business plan and KYC docs" },
-              { step: 3, title: "Get Approval", desc: "Receive approval within 3-7 days" },
+              { step: 3, title: "Await provider review", desc: "Decision timing depends on the provider and documentation" },
               { step: 4, title: "Receive Funds", desc: "Funds disbursed to your account" },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -240,8 +240,7 @@ export default function StartupLoanClientPage() {
             subsidy on Mudra loans to 8-12% p.a. on conventional startup loans.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Apply for <strong>startup loan online</strong> with BuyNswipe® and compare rates from multiple lenders. Get{" "}
-            <strong>instant startup loan approval</strong> within 3-7 days with minimal documentation. Whether you need
+Explore <strong>startup loan options</strong> with BuyNswipe® and compare information from participating providers. Approval, pricing, timing, collateral, and documentation requirements vary. Whether you need
             a <strong>business loan for new venture</strong> or <strong>expansion capital</strong>, our platform helps
             connect you with the right funding options.
           </p>

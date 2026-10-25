@@ -22,7 +22,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     role: "Restaurant Owner, Delhi",
     content:
-      "BuyNswipe® POS system has transformed my restaurant's billing process. Transaction processing is instant, inventory tracking is real-time, and customer service is excellent. Highly recommended!",
+      "Illustrative POS workflow example: a restaurant can centralize billing and inventory views, subject to the selected product, integrations, and provider support.",
     rating: 5,
     metrics: "45% transaction growth, 60% faster billing",
   },
@@ -54,7 +54,7 @@ const testimonials = [
     name: "Vikram Singh",
     role: "Small Business Owner, NCR",
     content:
-      "The credit card application through BuyNswipe® was hassle-free. Got approved with good limits and cashback offers. Perfect for managing my business expenses.",
+      "Illustrative credit journey example: applicants may compare available products and terms, while approval, limits, rewards, and fees depend on the provider.",
     rating: 5,
     metrics: "Illustrative outcome; eligibility and limits vary",
   },

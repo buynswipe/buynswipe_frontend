@@ -40,7 +40,7 @@ export default function LoanApplicationTutorialPage() {
             {[
               { icon: "📋", title: "Step 1: Prepare Documents", desc: "Gather all required documents" },
               { icon: "📝", title: "Step 2: Fill Application", desc: "Complete the application form" },
-              { icon: "✅", title: "Step 3: Get Approved", desc: "Receive approval in 24-48 hours" },
+              { icon: "✅", title: "Step 3: Await provider review", desc: "Decision timing depends on the provider and your documentation" },
             ].map((step, idx) => (
               <Card key={idx}>
                 <CardContent className="pt-6 text-center">
@@ -81,8 +81,8 @@ export default function LoanApplicationTutorialPage() {
                 </h3>
                 <ul className="space-y-2 text-gray-700 text-sm">
                   <li>✓ Apply in 5 minutes</li>
-                  <li>✓ Instant eligibility check</li>
-                  <li>✓ 24-48 hour approval</li>
+<li>✓ Indicative eligibility assessment</li>
+              <li>✓ Provider review timelines vary</li>
                   <li>✓ Same-day disbursal available</li>
                 </ul>
               </CardContent>

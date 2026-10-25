@@ -7,13 +7,13 @@ import { Card, CardContent } from "@/components/ui/card"
 export const metadata: Metadata = {
   title: "Quick Loan Assessment | Check Your Eligibility | BuyNswipe®",
   description:
-    "Quick 3-step eligibility check for personal loans. Get instant results and recommendations based on your income and credit profile.",
+    "Three-step indicative assessment for personal-loan planning. Results and provider recommendations depend on your information and participating providers.",
   keywords: [
     "loan eligibility",
     "personal loan eligibility",
     "check loan eligibility",
     "loan assessment",
-    "instant loan approval",
+    "loan eligibility assessment",
   ],
 }
 
