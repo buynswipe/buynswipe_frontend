@@ -5,7 +5,7 @@ import { Shield, Lock, FileCheck, Award } from "lucide-react"
 export const metadata: Metadata = {
   title: "Security & Compliance | BuyNswipe® | Data Protection & Certifications",
   description:
-    "BuyNswipe® Security & Compliance. RBI-compliant, DPIIT-recognized, ISO certified. Enterprise-grade data protection with 256-bit encryption and GDPR compliance.",
+    "BuyNswipe® security practices, privacy controls, and compliance information. Verify certifications and provider responsibilities during diligence.",
   keywords: [
     "BuyNswipe® security",
     "data protection",
@@ -24,7 +24,7 @@ export default function SecurityCompliancePage() {
       <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Security & Compliance</h1>
-          <p className="text-xl text-green-100">Enterprise-grade security and regulatory compliance</p>
+          <p className="text-xl text-green-100">Security practices and compliance information for customer and partner review</p>
         </div>
       </section>
 
@@ -39,7 +39,7 @@ export default function SecurityCompliancePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">
-                  BuyNswipe® follows all Reserve Bank of India guidelines for payment systems and financial services.
+                  Where a product involves regulated payment or lending activity, the relevant licensed provider is responsible for applicable Reserve Bank of India requirements. Confirm product scope and provider details before relying on this page.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
@@ -90,7 +90,7 @@ export default function SecurityCompliancePage() {
                 <CardTitle>Data Security</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4">Industry-leading encryption and data protection measures.</p>
+                <p className="text-gray-700 mb-4">Security controls should be reviewed against the specific product, provider, and deployment environment.</p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span> 256-bit SSL encryption
@@ -114,19 +114,19 @@ export default function SecurityCompliancePage() {
                 <CardTitle>Certifications</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4">Multiple industry certifications and standards compliance.</p>
+                <p className="text-gray-700 mb-4">Any certification or attestation should be confirmed through current, scope-specific documentation.</p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">✓</span> PCI-DSS Compliant
+                    <span className="text-green-600 font-bold">•</span> PCI-DSS scope: confirm current documentation
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">✓</span> ISO 27001 (Information Security)
+                    <span className="text-green-600 font-bold">•</span> ISO 27001 scope: confirm current documentation
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">✓</span> GDPR Compliant
+                    <span className="text-green-600 font-bold">•</span> GDPR applicability: review with counsel
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">✓</span> SOC 2 Type II
+                    <span className="text-green-600 font-bold">•</span> SOC 2 scope: confirm current documentation
                   </li>
                 </ul>
               </CardContent>
@@ -157,8 +157,8 @@ export default function SecurityCompliancePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  We comply with GDPR and Indian data protection laws. Customers have rights to access, correct, and
-                  delete their data. We have a dedicated data protection officer and privacy policy.
+                  Our handling of personal data is described in the Privacy Policy. Available rights, retention periods, and
+                  request processes depend on the applicable law, product, and role of the relevant provider.
                 </p>
               </CardContent>
             </Card>
@@ -181,8 +181,8 @@ export default function SecurityCompliancePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  We have a 24/7 security operations center monitoring for threats. In case of any security incident, we
-                  have a documented response plan and notify affected customers within legal timeframes.
+                  Security incidents are handled according to the applicable response process and legal obligations. Contact us
+                  promptly if you believe your information or an account has been exposed.
                 </p>
               </CardContent>
             </Card>
@@ -216,9 +216,9 @@ export default function SecurityCompliancePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Questions about Security?</h2>
           <p className="text-xl mb-8 text-blue-100">Contact our security team for detailed compliance documentation</p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 font-semibold">
+          <a href="/contact?type=security" className="inline-flex items-center rounded-lg bg-white px-8 py-3 font-semibold text-blue-600 hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600">
             Contact Security Team
-          </button>
+          </a>
         </div>
       </section>
     </main>
