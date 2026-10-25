@@ -77,18 +77,30 @@ export default function QuickLoanAssessmentPage() {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Monthly Income (₹)*</label>
+                    <label htmlFor="assessment-income" className="block text-sm font-semibold mb-2">Monthly income (₹)*</label>
+                    <span id="assessment-income-help" className="sr-only">Enter your approximate monthly income in whole rupees.</span>
                     <input
                       type="number"
+                      id="assessment-income"
+                      name="monthlyIncome"
+                      inputMode="numeric"
+                      min="0"
+                      max="10000000"
+                      aria-describedby="assessment-income-help"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="50,000"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Existing Monthly EMI (₹)*</label>
+                    <label htmlFor="assessment-existing-emi" className="block text-sm font-semibold mb-2">Existing monthly EMI (₹)*</label>
                     <input
+                      id="assessment-existing-emi"
+                      name="existingMonthlyEmi"
                       type="number"
+                      inputMode="numeric"
+                      min="0"
+                      max="10000000"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="10,000"
                       required
@@ -107,9 +119,14 @@ export default function QuickLoanAssessmentPage() {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Loan Amount (₹)*</label>
+                    <label htmlFor="assessment-loan-amount" className="block text-sm font-semibold mb-2">Loan amount (₹)*</label>
                     <input
+                      id="assessment-loan-amount"
+                      name="loanAmount"
                       type="number"
+                      inputMode="numeric"
+                      min="1"
+                      max="100000000"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="5,00,000"
                       required
@@ -140,15 +157,15 @@ export default function QuickLoanAssessmentPage() {
             <Card>
               <CardContent className="pt-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">Fast Results</h3>
-                <p className="text-sm text-gray-600">Get instant eligibility confirmation within seconds</p>
+                <h3 className="font-bold text-gray-900 mb-2">Indicative results</h3>
+                <p className="text-sm text-gray-600">Review an estimate based on the information you provide</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="pt-6">
                 <AlertCircle className="w-8 h-8 text-blue-600 mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">No Hard Inquiry</h3>
-                <p className="text-sm text-gray-600">Soft check only - won't affect your credit score</p>
+                <h3 className="font-bold text-gray-900 mb-2">Provider checks may apply</h3>
+                <p className="text-sm text-gray-600">Credit policies and consent requirements depend on the provider and product</p>
               </CardContent>
             </Card>
           </div>
