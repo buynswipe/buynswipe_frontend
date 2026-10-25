@@ -33,7 +33,7 @@ export function MobileMenu() {
       </button>
 
       {isOpen ? (
-        <div id="mobile-navigation" className="absolute right-0 top-full z-40 mt-2 w-[min(22rem,calc(100vw-2rem))] overflow-hidden rounded-xl border bg-white shadow-xl">
+        <div id="mobile-navigation" role="dialog" aria-label="Site navigation" className="absolute right-0 top-full z-40 mt-2 w-[min(22rem,calc(100vw-2rem))] overflow-hidden rounded-xl border bg-white shadow-xl">
           <nav aria-label="Mobile navigation" className="flex flex-col divide-y">
             {primaryNavigation.map((item) => (
               <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="px-4 py-3 transition-colors hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:outline-none">
