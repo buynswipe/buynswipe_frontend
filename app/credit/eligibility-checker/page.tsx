@@ -189,7 +189,7 @@ export default function EligibilityCheckerPage() {
                     <p id="eligibility-loan-amount-help" className="mt-1 text-xs text-gray-500">Use whole rupees; this is an indicative assessment, not a quote.</p>
                   </div>
 
-                  <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" /><span>I understand this is an indicative assessment, not a loan approval, and agree to the <a href="/privacy" className="font-semibold text-blue-700 underline">privacy notice</a>.</span></label>
+                  <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" /><span>I understand this is an indicative assessment, not a loan approval, and agree to the <a href="/privacy-policy" className="font-semibold text-blue-700 underline">privacy notice</a>.</span></label>
                   <p className="text-xs text-gray-500">Final decisions, rates, fees, and documentation come from the selected provider. We do not guarantee approval.</p>
                   <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg" size="lg">
                     <CheckCircle className="w-5 h-5 mr-2" />
