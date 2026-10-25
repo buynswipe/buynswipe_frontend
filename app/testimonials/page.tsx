@@ -40,7 +40,7 @@ const testimonials = [
     content:
       "I used BuyNswipe®'s personal loan service to fund my startup. The process was completely digital, approval was quick, and the interest rate was competitive. Great experience!",
     rating: 5,
-    metrics: "₹5L loan approved in 24 hours",
+    metrics: "Illustrative customer outcome; provider approval required",
   },
   {
     name: "Deepika Nair",
@@ -56,7 +56,7 @@ const testimonials = [
     content:
       "The credit card application through BuyNswipe® was hassle-free. Got approved with good limits and cashback offers. Perfect for managing my business expenses.",
     rating: 5,
-    metrics: "₹5L credit limit approved instantly",
+    metrics: "Illustrative outcome; eligibility and limits vary",
   },
   {
     name: "Ananya Desai",
