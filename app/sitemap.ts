@@ -55,14 +55,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const shopPages = [
-    { url: "/search", priority: 0.7, changeFrequency: "weekly" as const },
     { url: "/shop", priority: 0.8, changeFrequency: "daily" as const },
     { url: "/shop/products", priority: 0.8, changeFrequency: "daily" as const },
     { url: "/shop/deals", priority: 0.7, changeFrequency: "daily" as const },
     { url: "/shop/coupons", priority: 0.7, changeFrequency: "weekly" as const },
     { url: "/shop/cashback", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/shop/analyze", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/shop/price-intelligence", priority: 0.6, changeFrequency: "weekly" as const },
   ]
 
   const caseStudyPages = [
@@ -120,11 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/resources/credit-card-comparison-guide", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/video/loan-application-tutorial", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/video/credit-card-benefits-explained", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "/apply/quick-loan-assessment", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/mobile-app", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "/webinars", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/webinars/personal-loan-101", priority: 0.6, changeFrequency: "monthly" as const },
-    { url: "/webinars/credit-card-mastery", priority: 0.6, changeFrequency: "monthly" as const },
   ]
 
   const investorPages = [
@@ -141,7 +134,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/security-compliance", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/api-docs", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/support", priority: 0.7, changeFrequency: "weekly" as const },
-    { url: "/testimonials", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/press", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/partnerships", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/integrations", priority: 0.6, changeFrequency: "monthly" as const },

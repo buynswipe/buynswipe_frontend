@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   description:
     "BuyNswipe® is a fintech and commerce technology platform covering credit education, merchant solutions, shopping tools, and an acquisition opportunity.",
   keywords: [
-    "fintech startup for sale",
-    "buy fintech company India",
-    "startup acquisition India",
+    "fintech technology India",
+    "merchant solutions India",
+    "credit education India",
     "digital payments",
     "merchant solutions",
     "fintech technology",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyNswipe® - Fintech Startup Acquisition Opportunity",
+    title: "BuyNswipe® | Fintech and commerce technology",
     description:
-      "Pre-funded, govt-recognized fintech SaaS startup for sale. 7+ years registered company with trademarked brand.",
+      "Explore BuyNswipe® credit education, merchant solutions, shopping tools, and company information.",
     site: "@buynswipe",
   },
   robots: {
