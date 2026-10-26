@@ -1205,7 +1205,7 @@ export default function BuyNswipeLanding() {
           {/* Legal */}
           <div className="border-t border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">© 2025 BuyNswipe® Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
+              <p className="text-gray-400 text-sm">© 2026 BuyNswipe® Technology Pvt. Ltd.</p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                 <Link href="/privacy-policy" className="hover:text-white transition-colors">
                   Privacy Policy

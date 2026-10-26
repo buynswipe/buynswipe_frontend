@@ -3,14 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Search, ShieldCheck } from "lucide-react"
-import type { Metadata } from "next"
 import { formatINR } from "@/lib/shop-data"
-
-export const metadata: Metadata = {
-  title: "Shopping savings analyzer | ShopNdeal",
-  description: "Analyze a supported shopping link for potential savings routes. Results are estimates and merchant terms apply.",
-  robots: { index: false, follow: true },
-}
 
 type Result = { supported: boolean; message?: string; merchant?: string; item?: { slug: string; name: string; price: number; cashback: number; verified: boolean } | null; savings?: { potentialSavings: number; effectivePrice: number; cashback: number } | null; estimated?: boolean }
 

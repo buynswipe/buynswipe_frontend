@@ -140,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/privacy-policy", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/terms-of-service", priority: 0.5, changeFrequency: "monthly" as const },
     { url: "/cookie-policy", priority: 0.5, changeFrequency: "monthly" as const },
+    { url: "/editorial-policy", priority: 0.5, changeFrequency: "monthly" as const },
   ]
 
   const allPages = [
