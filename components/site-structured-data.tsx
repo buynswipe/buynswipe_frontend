@@ -1,4 +1,4 @@
-const siteUrl = "https://buynswipe.com"
+const siteUrl = "https://www.buynswipe.com"
 
 export function SiteStructuredData() {
   const graph = {
