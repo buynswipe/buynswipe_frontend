@@ -34,7 +34,7 @@ export default function InvestorRelationsPage() {
               href="mailto:investors@buynswipe.com?subject=Investor%20relations%20enquiry"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
             >
-              Download Teaser
+              Request acquisition materials
             </a>
           </div>
         </div>
@@ -51,8 +51,7 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Consistent month-over-month growth with expanding user base and transaction volume across payment and
-                  credit segments.
+                  Growth, user, and transaction information should be supported by current records and verified during diligence.
                 </p>
               </CardContent>
             </Card>
@@ -64,8 +63,7 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Access to underserved segments in digital payments and credit marketplace with massive TAM in fintech
-                  lending.
+                  Potential exposure to digital payments and credit marketplace segments; market size and demand should be independently validated.
                 </p>
               </CardContent>
             </Card>
@@ -77,8 +75,7 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Modern, scalable technology platform built on Next.js and cloud infrastructure, ready for rapid
-                  scaling.
+                  A web platform built with modern tooling; production readiness, scalability, and ownership should be assessed during technical diligence.
                 </p>
               </CardContent>
             </Card>
@@ -90,8 +87,7 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Multiple revenue streams from affiliates, merchant services, loan processing fees, and transaction
-                  commissions.
+                  Potential revenue pathways include referrals and merchant services; actual revenue, contracts, and provider economics require verification.
                 </p>
               </CardContent>
             </Card>
@@ -104,10 +100,10 @@ export default function InvestorRelationsPage() {
           <h2 className="text-4xl font-bold mb-12 text-center">Key Metrics</h2>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { label: "Users Active", value: "100K+" },
-              { label: "Monthly Transactions", value: "50K+" },
-              { label: "Total GMV", value: "₹10Cr+" },
-              { label: "Monthly Growth", value: "15-20%" },
+              { label: "User records", value: "Diligence" },
+              { label: "Transaction records", value: "Diligence" },
+              { label: "GMV records", value: "Diligence" },
+              { label: "Growth records", value: "Diligence" },
               { label: "Affiliate Links", value: "35+" },
               { label: "Available Products", value: "36+" },
             ].map((metric) => (
@@ -139,10 +135,10 @@ export default function InvestorRelationsPage() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-gray-700">
-                  <li>✓ Startup India (DPIIT) Recognition</li>
-                  <li>✓ Clean ROC Filing Status</li>
-                  <li>✓ Trademark Registration (™)</li>
-                  <li>✓ Premium Domain Assets</li>
+                  <li>• Startup India / DPIIT status: verify current records</li>
+                  <li>• Company filings: review during diligence</li>
+                  <li>• Trademark status: verify current registration</li>
+                  <li>• Domain assets: verify ownership and transferability</li>
                 </ul>
               </CardContent>
             </Card>
@@ -184,14 +180,14 @@ export default function InvestorRelationsPage() {
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
-              Download Teaser
+              Request acquisition materials
             </a>
-            <Link
+            <a
               href="mailto:investors@buynswipe.com?subject=Investor%20relations%20enquiry"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
             >
               Contact Founder
-            </Link>
+            </a>
           </div>
         </div>
       </section>

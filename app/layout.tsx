@@ -12,35 +12,29 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.buynswipe.com"),
-  alternates: { canonical: "/" },
-  title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale | DPIIT Recognized | Acquisition Opportunity",
+  title: "BuyNswipe® | Fintech and commerce technology",
   description:
-    "BuyNswipe® Technology Pvt. Ltd. - Government recognized fintech SaaS startup for sale. Registered since 2017, trademarked brand, premium domains, ₹17L seed funded. Ideal for fintech entrepreneurs and strategic acquirers. POS integration ready, co-branded cards potential.",
+    "BuyNswipe® is a fintech and commerce technology platform covering credit education, merchant solutions, shopping tools, and an acquisition opportunity.",
   keywords: [
-    "fintech startup for sale",
-    "buy fintech company India",
-    "startup acquisition India",
-    "DPIIT startup for sale",
-    "digital payment startup",
-    "POS company acquisition",
-    "fintech SaaS acquisition",
+    "fintech technology India",
+    "merchant solutions India",
+    "credit education India",
+    "digital payments",
+    "merchant solutions",
+    "fintech technology",
     "BuyNswipe®",
-    "payment gateway startup",
-    "Startup India company for sale",
-    "registered fintech company",
-    "trademarked fintech brand",
-    "instant loan app",
-    "credit card marketplace",
-    "BNPL platform",
+    "credit education",
+    "shopping tools",
+    "acquisition opportunity",
   ],
   generator: "v0.app",
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "BuyNswipe® - Pre-Funded Fintech Startup for Sale",
+    title: "BuyNswipe® | Fintech and commerce technology",
     description:
-      "Govt-recognized fintech startup with 7+ years history, trademarked brand, premium domains. ₹17L seed funded. Ready for acquisition.",
+      "Explore BuyNswipe® credit education, merchant solutions, shopping tools, and company information.",
     url: "https://www.buynswipe.com",
     siteName: "BuyNswipe®",
     type: "website",
@@ -48,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyNswipe® - Fintech Startup Acquisition Opportunity",
+    title: "BuyNswipe® | Fintech and commerce technology",
     description:
-      "Pre-funded, govt-recognized fintech SaaS startup for sale. 7+ years registered company with trademarked brand.",
+      "Explore BuyNswipe® credit education, merchant solutions, shopping tools, and company information.",
     site: "@buynswipe",
   },
   robots: {

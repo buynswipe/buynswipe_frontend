@@ -30,7 +30,7 @@ const faqCategories = [
       },
       {
         q: "How long does loan approval take?",
-        a: "Most loans are approved within 24-48 hours with instant disbursal options available. Approval depends on documentation and credit verification.",
+        a: "Timelines vary by provider, product, documentation, and verification. Some providers may offer faster decisions, but BuyNswipe® does not guarantee approval or disbursal timing.",
       },
       {
         q: "Can I get a loan without CIBIL check?",
@@ -55,11 +55,11 @@ const faqCategories = [
       },
       {
         q: "What is the transaction fee for UPI?",
-        a: "UPI transactions have no processing fee plus just 0.9% MDR. This makes it the most cost-effective payment method for merchants.",
+        a: "Fees, MDR, settlement timing, and payment-method availability depend on the provider, plan, merchant category, and current commercial terms. Confirm the applicable schedule before onboarding.",
       },
       {
         q: "Is BuyNswipe® POS secure?",
-        a: "Yes, BuyNswipe® POS is PCI-DSS compliant with SSL encryption, tokenization, and fraud detection. All data is stored securely.",
+        a: "Security controls and provider responsibilities vary by product and deployment. Review the current security documentation and applicable provider terms before integrating.",
       },
       {
         q: "How quickly does settlement happen?",
@@ -72,11 +72,11 @@ const faqCategories = [
     questions: [
       {
         q: "Is BuyNswipe® RBI approved?",
-        a: "BuyNswipe® Technology Pvt. Ltd. is registered under Startup India (DPIIT) and follows all RBI guidelines for financial transactions.",
+        a: "BuyNswipe® may connect visitors with relevant providers. The licensed provider is responsible for applicable regulatory obligations; confirm the provider and product scope before proceeding.",
       },
       {
         q: "How is my data protected?",
-        a: "All data is encrypted using 256-bit SSL encryption, stored on secure servers, and complies with GDPR and India's data protection laws.",
+        a: "Data handling is described in the Privacy Policy. Controls, retention, and legal rights depend on the product, applicable law, and relevant provider.",
       },
       {
         q: "Can I integrate BuyNswipe® with my existing system?",
@@ -84,7 +84,7 @@ const faqCategories = [
       },
       {
         q: "What is BuyNswipe®'s uptime guarantee?",
-        a: "BuyNswipe® guarantees 99.9% uptime with redundant systems, automatic failover, and 24/7 monitoring for service reliability.",
+        a: "Availability depends on the relevant service and provider. Any uptime commitment should be confirmed in the applicable service agreement; no universal uptime guarantee is made here.",
       },
       {
         q: "How do I report a security issue?",
@@ -105,7 +105,7 @@ const faqCategories = [
       },
       {
         q: "Is BuyNswipe® available for acquisition?",
-        a: "Yes, BuyNswipe® is a pre-funded startup (₹17L seed funding) registered under Startup India. Acquisition inquiries welcome - contact founder directly.",
+        a: "BuyNswipe® is presented as an acquisition opportunity. Funding history, company records, assets, and operating status should be verified independently during diligence.",
       },
       {
         q: "What is the asking price for BuyNswipe®?",

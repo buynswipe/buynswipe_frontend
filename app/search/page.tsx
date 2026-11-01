@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Search BuyNswipe®",
   description: "Search BuyNswipe® products, services, tools, resources and ShopNdeal offers.",
   alternates: { canonical: "/search" },
+  robots: { index: false, follow: true },
 }
 
 export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string; type?: string }> }) {

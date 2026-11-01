@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Loan Eligibility Calculator - Check Instant Loan Eligibility Free Online",
   description:
-    "Check instant loan eligibility for personal loan, business loan, credit card online free. Real-time eligibility checker with AI-powered algorithm. Get instant approval status in 2 minutes. No impact on credit score.",
+    "Estimate potential eligibility for personal loan, business loan, or credit card options. Results are indicative only, are not approval, and do not guarantee an offer or rate.",
   keywords: [
     "loan eligibility calculator",
     "check loan eligibility",
@@ -82,25 +82,25 @@ export default function EligibilityCheckerPage() {
             <div className="text-center mb-12">
               <Badge className="mb-4 bg-blue-100 text-blue-800 border-blue-200">
                 <Target className="w-4 h-4 mr-1" />
-                AI-Powered Eligibility Check
+                Indicative eligibility check
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">
-                Check Loan Eligibility Instantly - Free Online Calculator
+                Estimate loan eligibility with clear assumptions
               </h1>
               <p className="text-xl text-gray-600 mb-4">
-                Real-time instant eligibility check for personal loan, business loan, credit card, and BNPL. Get
-                approval probability in 2 minutes. No impact on credit score.
+                Indicative eligibility check for personal loan, business loan, credit card, and BNPL options. Get
+                an estimate in about 2 minutes. Results are not approval and do not guarantee an offer or rate.
               </p>
               <p className="text-gray-500 mb-8">
-                Trusted by 10+ million Indians. Check eligibility free with our AI-powered loan eligibility calculator.
-                Works for loans without CIBIL check.
+                Use this free planning tool to organize your information. Results are indicative; provider checks, consent,
+                documentation, and credit policies can affect the final outcome.
               </p>
             </div>
 
             {/* Main Calculator Card */}
             <Card className="border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white mb-12">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Check Your Instant Loan Eligibility</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Review an indicative eligibility estimate</h2>
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
@@ -132,8 +132,8 @@ export default function EligibilityCheckerPage() {
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Employment Type</label>
-                      <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-600">
+                      <label htmlFor="eligibility-employment" className="block text-sm font-medium text-gray-700 mb-2">Employment type</label>
+                      <select id="eligibility-employment" defaultValue="" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-600" required>
                         <option>Select employment type</option>
                         <option>Salaried</option>
                         <option>Self-Employed</option>
@@ -143,9 +143,15 @@ export default function EligibilityCheckerPage() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">CIBIL Score</label>
+                      <label htmlFor="eligibility-cibil" className="block text-sm font-medium text-gray-700 mb-2">CIBIL score (optional)</label>
                       <input
+                        id="eligibility-cibil"
+                        name="cibilScore"
                         type="number"
+                        min="300"
+                        max="900"
+                        inputMode="numeric"
+                        aria-describedby="eligibility-cibil-help"
                         placeholder="300 to 900"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -153,8 +159,8 @@ export default function EligibilityCheckerPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Loan Type</label>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-600">
+<label htmlFor="eligibility-loan-type" className="block text-sm font-medium text-gray-700 mb-2">Loan type</label>
+                      <select id="eligibility-loan-type" defaultValue="" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-600" required>
                       <option>Select loan type</option>
                       <option>Personal Loan</option>
                       <option>Business Loan</option>
@@ -167,17 +173,27 @@ export default function EligibilityCheckerPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Loan Amount Required</label>
+                    <label htmlFor="eligibility-loan-amount" className="block text-sm font-medium text-gray-700 mb-2">Loan amount required (₹)</label>
                     <input
+                      id="eligibility-loan-amount"
+                      name="loanAmount"
                       type="number"
-                      placeholder="Enter amount in Rs"
+                      inputMode="numeric"
+                      min="1"
+                      max="100000000"
+                      placeholder="Enter amount in rupees"
+                      aria-describedby="eligibility-loan-amount-help"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      required
                     />
+                    <p id="eligibility-loan-amount-help" className="mt-1 text-xs text-gray-500">Use whole rupees; this is an indicative assessment, not a quote.</p>
                   </div>
 
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg" size="lg">
+                  <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" /><span>I understand this is an indicative assessment, not a loan approval, and agree to the <a href="/privacy-policy" className="font-semibold text-blue-700 underline">privacy notice</a>.</span></label>
+                  <p className="text-xs text-gray-500">Final decisions, rates, fees, and documentation come from the selected provider. We do not guarantee approval.</p>
+                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg" size="lg">
                     <CheckCircle className="w-5 h-5 mr-2" />
-                    Check Eligibility Instantly Free
+                    Review indicative result
                   </Button>
                 </div>
               </CardContent>
@@ -211,8 +227,8 @@ export default function EligibilityCheckerPage() {
                 <Card>
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-orange-600 mb-2">4</div>
-                    <h3 className="font-bold text-gray-900 mb-2">Quick Approval</h3>
-                    <p className="text-sm text-gray-600">Apply instantly and get approval in 2 minutes</p>
+                    <h3 className="font-bold text-gray-900 mb-2">Review options</h3>
+                    <p className="text-sm text-gray-600">Review indicative matches; final decisions come from the provider</p>
                   </CardContent>
                 </Card>
               </div>
@@ -281,8 +297,7 @@ export default function EligibilityCheckerPage() {
                   <CardContent className="p-6">
                     <h3 className="font-bold text-gray-900 mb-2">Does eligibility check affect CIBIL score?</h3>
                     <p className="text-gray-600 text-sm">
-                      No, checking loan eligibility on BuyNswipe® Credit does not impact your CIBIL score. It's a soft
-                      inquiry that does not leave a footprint on your credit report.
+                      This tool is intended as an indicative assessment. Whether a later provider check affects your CIBIL score depends on the provider, product, and the consent you give at that step.
                     </p>
                   </CardContent>
                 </Card>
@@ -313,8 +328,7 @@ export default function EligibilityCheckerPage() {
                   <CardContent className="p-6">
                     <h3 className="font-bold text-gray-900 mb-2">How accurate is the eligibility checker?</h3>
                     <p className="text-gray-600 text-sm">
-                      Our AI-powered eligibility checker has 85%+ accuracy. It analyzes your profile against 50+ lender
-                      criteria to predict approval probability and suggest best-fit lenders.
+                      This tool provides an indicative estimate from the information you enter. It does not predict approval, and provider criteria, documentation, and credit checks may change the outcome.
                     </p>
                   </CardContent>
                 </Card>

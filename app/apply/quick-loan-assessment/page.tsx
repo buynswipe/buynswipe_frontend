@@ -7,13 +7,13 @@ import { Card, CardContent } from "@/components/ui/card"
 export const metadata: Metadata = {
   title: "Quick Loan Assessment | Check Your Eligibility | BuyNswipe®",
   description:
-    "Quick 3-step eligibility check for personal loans. Get instant results and recommendations based on your income and credit profile.",
+    "Three-step indicative assessment for personal-loan planning. Results and provider recommendations depend on your information and participating providers.",
   keywords: [
     "loan eligibility",
     "personal loan eligibility",
     "check loan eligibility",
     "loan assessment",
-    "instant loan approval",
+    "loan eligibility assessment",
   ],
 }
 
@@ -24,7 +24,7 @@ export default function QuickLoanAssessmentPage() {
         <div className="max-w-3xl mx-auto text-center">
           <Badge className="bg-yellow-400 text-yellow-900 mb-4">Quick Assessment</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Quick Loan Eligibility Check</h1>
-          <p className="text-xl text-green-100">Get your instant eligibility result in 3 simple steps</p>
+          <p className="text-xl text-green-100">Get an indicative result in 3 simple steps; final decisions are made by the lender</p>
         </div>
       </section>
 
@@ -77,18 +77,30 @@ export default function QuickLoanAssessmentPage() {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Monthly Income (₹)*</label>
+                    <label htmlFor="assessment-income" className="block text-sm font-semibold mb-2">Monthly income (₹)*</label>
+                    <span id="assessment-income-help" className="sr-only">Enter your approximate monthly income in whole rupees.</span>
                     <input
                       type="number"
+                      id="assessment-income"
+                      name="monthlyIncome"
+                      inputMode="numeric"
+                      min="0"
+                      max="10000000"
+                      aria-describedby="assessment-income-help"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="50,000"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Existing Monthly EMI (₹)*</label>
+                    <label htmlFor="assessment-existing-emi" className="block text-sm font-semibold mb-2">Existing monthly EMI (₹)*</label>
                     <input
+                      id="assessment-existing-emi"
+                      name="existingMonthlyEmi"
                       type="number"
+                      inputMode="numeric"
+                      min="0"
+                      max="10000000"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="10,000"
                       required
@@ -107,9 +119,14 @@ export default function QuickLoanAssessmentPage() {
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Loan Amount (₹)*</label>
+                    <label htmlFor="assessment-loan-amount" className="block text-sm font-semibold mb-2">Loan amount (₹)*</label>
                     <input
+                      id="assessment-loan-amount"
+                      name="loanAmount"
                       type="number"
+                      inputMode="numeric"
+                      min="1"
+                      max="100000000"
                       className="w-full border border-gray-300 rounded-lg p-3"
                       placeholder="5,00,000"
                       required
@@ -128,8 +145,10 @@ export default function QuickLoanAssessmentPage() {
                 </div>
               </div>
 
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-3 h-auto">
-                Check Eligibility
+              <label className="flex items-start gap-3 text-sm text-gray-600"><input type="checkbox" required className="mt-1 size-4 rounded border-gray-300 text-green-600 focus:ring-green-600" /><span>I understand this is an indicative assessment, not a loan approval. My information may be used to connect me with participating providers.</span></label>
+              <p className="text-xs text-gray-500">We do not guarantee approval, rates, or disbursal. Final eligibility, pricing, and documentation are determined by the provider.</p>
+              <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-3 h-auto">
+                Review eligibility
               </Button>
             </form>
           </div>
@@ -138,15 +157,15 @@ export default function QuickLoanAssessmentPage() {
             <Card>
               <CardContent className="pt-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">Fast Results</h3>
-                <p className="text-sm text-gray-600">Get instant eligibility confirmation within seconds</p>
+                <h3 className="font-bold text-gray-900 mb-2">Indicative results</h3>
+                <p className="text-sm text-gray-600">Review an estimate based on the information you provide</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="pt-6">
                 <AlertCircle className="w-8 h-8 text-blue-600 mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">No Hard Inquiry</h3>
-                <p className="text-sm text-gray-600">Soft check only - won't affect your credit score</p>
+                <h3 className="font-bold text-gray-900 mb-2">Provider checks may apply</h3>
+                <p className="text-sm text-gray-600">Credit policies and consent requirements depend on the provider and product</p>
               </CardContent>
             </Card>
           </div>

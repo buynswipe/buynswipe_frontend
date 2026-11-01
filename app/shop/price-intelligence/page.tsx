@@ -3,7 +3,7 @@ import Link from "next/link"
 import { createClient } from "@/lib/supabase/server"
 import { formatINR, shopItems } from "@/lib/shop-data"
 
-export const metadata: Metadata = { title: "Price intelligence | ShopNdeal", description: "Review verified ShopNdeal price observations without invented history." }
+export const metadata: Metadata = { title: "Price intelligence | ShopNdeal", description: "Review verified ShopNdeal price observations without invented history.", robots: { index: false, follow: true } }
 
 export default async function PriceIntelligencePage() {
   const supabase = await createClient()

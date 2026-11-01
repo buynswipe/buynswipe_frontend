@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export const metadata: Metadata = {
   title: "Loan Application Checklist - All Required Documents | BuyNswipe®",
   description:
-    "Complete checklist of all documents required for personal loan, home loan, education loan, and business loan applications. Download PDF.",
+    "A planning checklist for documents that lenders may request for personal, home, education, and business loan applications.",
   keywords: [
     "loan application checklist",
     "required documents for loan",
@@ -76,7 +76,7 @@ export default function LoanApplicationChecklistPage() {
         <div className="max-w-3xl mx-auto text-center">
           <Badge className="bg-yellow-400 text-yellow-900 mb-4">Free Checklist</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Loan Application Checklist</h1>
-          <p className="text-xl text-green-100 mb-8">Never miss a required document - get organized and apply faster</p>
+          <p className="text-xl text-green-100 mb-8">Use this planning list to organize common documents; requirements vary by lender and profile.</p>
           <Button className="bg-white text-green-600 hover:bg-green-50 text-lg px-8 py-3 h-auto">
             <Download className="w-5 h-5 mr-2" />
             Download Checklist (PDF)
@@ -119,9 +119,9 @@ export default function LoanApplicationChecklistPage() {
             <CardContent className="text-gray-700 space-y-3">
               <p>• Documents must be originals or notarized copies</p>
               <p>• Ensure all documents are valid and not expired</p>
-              <p>• CIBIL score should be 600+ for better approval chances</p>
-              <p>• Some banks may require additional documents based on profile</p>
-              <p>• Having all documents ready speeds up the approval process</p>
+              <p>• Credit-score thresholds and pricing vary by lender and product</p>
+              <p>• Providers may require additional documents based on your profile</p>
+              <p>• Complete documentation can help reduce avoidable back-and-forth, but does not guarantee approval or timing</p>
             </CardContent>
           </Card>
 

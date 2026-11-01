@@ -13,8 +13,15 @@ export default function AnalyzePage() {
   const [loading, setLoading] = useState(false)
   async function analyze(event: React.FormEvent) {
     event.preventDefault(); setLoading(true); setResult(null)
-    const response = await fetch("/api/shop/analyze", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url }) })
-    setResult(await response.json()); setLoading(false)
+    try {
+      const response = await fetch("/api/shop/analyze", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url }) })
+      const data = await response.json().catch(() => ({ message: "We could not analyze that link. Please try again." }))
+      setResult(response.ok ? data : { supported: false, message: data.message || "We could not analyze that link. Please check the URL and try again." })
+    } catch {
+      setResult({ supported: false, message: "We could not reach the savings service. Please try again." })
+    } finally {
+      setLoading(false)
+    }
   }
   return <main className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
     <div className="max-w-2xl"><p className="text-xs font-black uppercase tracking-[.2em] text-blue-600">ShopNdeal savings intelligence</p><h1 className="mt-4 text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">Find the smarter way to buy.</h1><p className="mt-5 text-lg leading-8 text-slate-600">Paste a supported shopping link and see the available savings routes in one clear view.</p></div>

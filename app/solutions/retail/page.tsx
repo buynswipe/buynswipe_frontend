@@ -42,7 +42,7 @@ export default function RetailSolutionsPage() {
               { icon: Users, title: "Staff Management", desc: "Employee access control and performance" },
               { icon: BarChart3, title: "Sales Reports", desc: "Daily, weekly, and monthly analytics" },
               { icon: Zap, title: "Fast Checkout", desc: "Barcode scanning and quick billing" },
-              { icon: Lock, title: "Secure", desc: "PCI DSS compliant payment processing" },
+              { icon: Lock, title: "Security-aware", desc: "Payment controls and provider terms should be reviewed for your setup" },
             ].map((feature) => (
               <Card key={feature.title}>
                 <CardHeader>

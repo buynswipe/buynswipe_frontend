@@ -39,7 +39,7 @@ export default function BuyNswipeLanding() {
             </div>
             <span className="text-xl font-bold text-gray-900">BuyNswipe®</span>
             <Badge variant="secondary" className="ml-2">
-              For Sale
+              Acquisition opportunity
             </Badge>
           </div>
           <nav aria-label="Primary navigation" className="hidden lg:flex space-x-1">
@@ -61,10 +61,10 @@ export default function BuyNswipeLanding() {
             Government Recognized Startup
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            BuyNswipe® – Pre-Funded, Govt-Recognized <span className="text-blue-600">Fintech SaaS Startup</span> for Sale
+            BuyNswipe® – A <span className="text-blue-600">fintech SaaS acquisition opportunity</span> with an established brand
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Registered company (2017) • Trademarked • Premium domains • ₹17 L seed-funded • Clean and compliant
+            Registered company since 2017 • Trademarked brand • Premium domains • ₹17 lakh reported seed funding
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -87,13 +87,11 @@ export default function BuyNswipeLanding() {
               <div className="text-left">
                 <Badge className="bg-white/20 text-white border-0 mb-2">Featured Product</Badge>
                 <h3 className="text-xl font-bold">BuyNswipe® Credit - AI-Powered Loan & Credit Card Marketplace</h3>
-                <p className="text-emerald-100 text-sm mt-1">Instant loans, credit cards, BNPL - Compare 50+ banks</p>
+                <p className="text-emerald-100 text-sm mt-1">Compare loan, card, and BNPL options from participating providers</p>
               </div>
-              <Link href="/credit">
-                <Button size="lg" className="bg-white text-emerald-700 hover:bg-gray-100 whitespace-nowrap">
-                  Explore BuyNswipe® Credit
-                </Button>
-              </Link>
+              <Button asChild size="lg" className="bg-white text-emerald-700 hover:bg-gray-100 whitespace-nowrap">
+                <Link href="/credit">Explore BuyNswipe® Credit</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -142,7 +140,7 @@ export default function BuyNswipeLanding() {
               <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">BuyNswipe® Platform & POS Integration</h3>
-                  <p className="text-gray-600 text-sm">Future payment infrastructure</p>
+                  <p className="text-gray-600 text-sm">Concept and integration roadmap</p>
                 </div>
 
                 {/* POS System Mockup */}
@@ -154,7 +152,7 @@ export default function BuyNswipeLanding() {
                         BuyNswipe® POS
                       </div>
                       <div className="bg-green-400 text-black text-xs px-2 py-1 rounded text-center">
-                        ₹1,250.00 - APPROVED
+                        ₹1,250.00 - SAMPLE
                       </div>
                       <div className="flex justify-between text-white text-xs">
                         <span>Card: ****1234</span>
@@ -199,12 +197,12 @@ export default function BuyNswipeLanding() {
                 {/* Key Stats */}
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="bg-white/50 rounded-lg p-3">
-                    <div className="text-lg font-bold text-blue-600">₹2,500+ Cr</div>
-                    <div className="text-xs text-gray-600">POS Market Size</div>
+                    <div className="text-lg font-bold text-blue-600">Market context</div>
+                    <div className="text-xs text-gray-600">POS opportunity; verify figures during diligence</div>
                   </div>
                   <div className="bg-white/50 rounded-lg p-3">
-                    <div className="text-lg font-bold text-green-600">50M+</div>
-                    <div className="text-xs text-gray-600">Target Merchants</div>
+                    <div className="text-lg font-bold text-green-600">Merchant focus</div>
+                    <div className="text-xs text-gray-600">Designed for growing businesses and payment partners</div>
                   </div>
                 </div>
               </div>
@@ -229,7 +227,7 @@ export default function BuyNswipeLanding() {
                 <CardContent className="p-6 text-center">
                   <Building2 className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                   <h4 className="font-semibold text-gray-900 mb-2">Registered Company</h4>
-                  <p className="text-gray-600 text-sm">7+ years of existence, clean ROC records</p>
+                  <p className="text-gray-600 text-sm">Incorporation history and records available for diligence</p>
                 </CardContent>
               </Card>
 
@@ -259,16 +257,16 @@ export default function BuyNswipeLanding() {
               <Card className="border-2 hover:border-blue-200 transition-colors">
                 <CardContent className="p-6 text-center">
                   <Smartphone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Mobile App</h4>
-                  <p className="text-gray-600 text-sm">N/A</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Mobile-ready experience</h4>
+                  <p className="text-gray-600 text-sm">Responsive web access across modern devices</p>
                 </CardContent>
               </Card>
 
               <Card className="border-2 hover:border-blue-200 transition-colors">
                 <CardContent className="p-6 text-center">
                   <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Govt Recognition</h4>
-                  <p className="text-gray-600 text-sm">Startup India certified</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Company records</h4>
+                  <p className="text-gray-600 text-sm">Verify current Startup India or DPIIT status during diligence</p>
                 </CardContent>
               </Card>
             </div>
@@ -283,7 +281,7 @@ export default function BuyNswipeLanding() {
                 <ul className="space-y-3">
                   <li className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <span className="text-gray-700">Future payment infrastructure plan for POS integration</span>
+                    <span className="text-gray-700">Planned payment infrastructure roadmap for potential POS integrations</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
@@ -291,7 +289,7 @@ export default function BuyNswipeLanding() {
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <span className="text-gray-700">Established merchant relationships for rapid deployment</span>
+                    <span className="text-gray-700">Potential merchant distribution opportunities to validate during diligence</span>
                   </li>
                 </ul>
               </div>
@@ -324,7 +322,7 @@ export default function BuyNswipeLanding() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Market Opportunity & Strategic Value Proposition</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Positioned to capitalize on India's rapidly expanding digital payments, POS, and card issuance markets
+              Explores opportunities across India’s digital payments, POS, and card issuance markets; figures should be independently verified
             </p>
           </div>
 
@@ -333,27 +331,27 @@ export default function BuyNswipeLanding() {
             <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
               <CardContent className="p-8 text-center">
                 <TrendingUp className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-blue-800 mb-2">₹2,500+ Cr</h3>
-                <p className="text-blue-700 font-medium">POS Terminal Market</p>
-                <p className="text-sm text-blue-600 mt-2">15% CAGR through 2027</p>
+                <h3 className="text-2xl font-bold text-blue-800 mb-2">POS opportunity</h3>
+                <p className="text-blue-700 font-medium">Terminal and merchant acquiring</p>
+                <p className="text-sm text-blue-600 mt-2">Validate market size and CAGR during diligence</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
               <CardContent className="p-8 text-center">
                 <CreditCard className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-green-800 mb-2">₹1,200+ Cr</h3>
-                <p className="text-green-700 font-medium">Prepaid Card Market</p>
-                <p className="text-sm text-green-600 mt-2">22% CAGR growth rate</p>
+                <h3 className="text-2xl font-bold text-green-800 mb-2">Card programs</h3>
+                <p className="text-green-700 font-medium">Prepaid and co-branded opportunities</p>
+                <p className="text-sm text-green-600 mt-2">Validate market size and growth during diligence</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
               <CardContent className="p-8 text-center">
                 <Wallet className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-purple-800 mb-2">₹8,500+ Cr</h3>
-                <p className="text-purple-700 font-medium">Digital Payments TAM</p>
-                <p className="text-sm text-purple-600 mt-2">Combined addressable market</p>
+                <h3 className="text-2xl font-bold text-purple-800 mb-2">Digital payments</h3>
+                <p className="text-purple-700 font-medium">Large and evolving market</p>
+                <p className="text-sm text-purple-600 mt-2">Use current, sourced research for investment decisions</p>
               </CardContent>
             </Card>
           </div>
@@ -460,8 +458,8 @@ export default function BuyNswipeLanding() {
                 <div className="flex items-start space-x-3">
                   <CreditCard className="w-6 h-6 text-green-600 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">₹1,200+ Crore Prepaid Market</h4>
-                    <p className="text-gray-600">Growing at 22% CAGR with corporate adoption</p>
+<h4 className="font-semibold text-gray-900">Prepaid opportunity</h4>
+                  <p className="text-gray-600">Validate current market size, growth, and adoption data during diligence</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -653,8 +651,8 @@ export default function BuyNswipeLanding() {
                     <span className="text-gray-600">Regulatory Compliance</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600">Government Recognition</span>
-                    <Badge className="bg-green-100 text-green-800">✓ DPIIT Certified</Badge>
+<span className="text-gray-600">Government records</span>
+                <Badge className="bg-green-100 text-green-800">Verify during diligence</Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-600">Intellectual Property</span>
@@ -807,8 +805,8 @@ export default function BuyNswipeLanding() {
                 <p className="text-sm text-gray-500 mt-1">At scale operations</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">₹50+ Cr</div>
-                <p className="text-gray-600 font-medium">5-Year Revenue Potential</p>
+                <div className="text-3xl font-bold text-orange-600 mb-2">Revenue plan</div>
+                <p className="text-gray-600 font-medium">Validate projections, assumptions, and records during diligence</p>
                 <p className="text-sm text-gray-500 mt-1">With strategic partnerships</p>
               </div>
             </div>
@@ -828,8 +826,8 @@ export default function BuyNswipeLanding() {
             <div className="flex items-start space-x-3">
               <CheckCircle className="w-6 h-6 text-green-600 mt-1" />
               <div>
-                <h3 className="font-semibold text-gray-900">Fintech / SaaS Entrepreneurs</h3>
-                <p className="text-gray-600">Seeking instant brand + legal infrastructure</p>
+<h3 className="font-semibold text-gray-900">Fintech / SaaS acquirers</h3>
+                  <p className="text-gray-600">Seeking an established brand and platform to evaluate through diligence</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
@@ -1207,7 +1205,7 @@ export default function BuyNswipeLanding() {
           {/* Legal */}
           <div className="border-t border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">© 2025 BuyNswipe® Technology Pvt. Ltd. | DPIIT Recognized Startup</p>
+              <p className="text-gray-400 text-sm">© 2026 BuyNswipe® Technology Pvt. Ltd.</p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                 <Link href="/privacy-policy" className="hover:text-white transition-colors">
                   Privacy Policy

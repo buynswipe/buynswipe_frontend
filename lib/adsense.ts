@@ -4,7 +4,7 @@ export const adsenseConfig = {
   enabled: process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_ADSENSE_ENABLED !== "false",
   autoAds: process.env.NEXT_PUBLIC_ADSENSE_AUTO_ADS === "true",
   publisherId: ADSENSE_PUBLISHER_ID,
-  allowedRoutePrefixes: ["/blog", "/resources", "/webinars", "/video", "/glossary", "/faq", "/case-studies"],
+  allowedRoutePrefixes: ["/blog", "/resources"],
   excludedRoutePrefixes: ["/admin", "/auth", "/apply", "/account", "/dashboard", "/checkout", "/payment", "/onboarding", "/kyc", "/private", "/api"],
 } as const
 
