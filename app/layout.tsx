@@ -66,6 +66,15 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
       <body className={`${_geist.className} font-sans antialiased`}>
         <SiteStructuredData />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CHNX8XNNC6" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CHNX8XNNC6', { anonymize_ip: true });
+          `}
+        </Script>
         {adsenseConfig.enabled ? <Script id="google-adsense" async strategy="afterInteractive" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseConfig.publisherId}`} crossOrigin="anonymous" /> : null}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-slate-950 focus:px-4 focus:py-3 focus:text-white">Skip to main content</a>
         <div id="main-content">{children}</div>
